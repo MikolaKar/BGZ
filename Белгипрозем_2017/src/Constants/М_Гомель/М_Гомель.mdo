@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c71e977b-d04a-4b77-9e00-12c18c785d90">
+  <producedTypes>
+    <managerType typeId="425c71a8-50b3-4ff2-8c50-cccdbb6bb198" valueTypeId="ad8e30cb-a34e-4b7a-b344-47099a230320"/>
+    <valueManagerType typeId="d6aff171-19e1-4ee6-9486-b9fa6f0c06ed" valueTypeId="a5ee378a-4c50-491d-9fc5-d1cd0e7f7efc"/>
+  </producedTypes>
+  <name>М_Гомель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гомель</value>
+  </synonym>
+  <comment>Это база Гомель</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

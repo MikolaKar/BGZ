@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Отправитель</dataPath>
+			<field>Отправитель</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЛица</dataPath>
+			<field>ВидЛица</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид лица</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Могилевская</dataPath>
+			<field>Могилевская</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Могилевская</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего</dataPath>
+			<field>Всего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Письменно</dataPath>
+			<field>Письменно</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Письменно</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Минская</dataPath>
+			<field>Минская</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минская</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Витебская</dataPath>
+			<field>Витебская</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Витебская</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Гродненская</dataPath>
+			<field>Гродненская</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гродненская</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Минск</dataPath>
+			<field>Минск</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минск</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Email</dataPath>
+			<field>Email</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Гомельская</dataPath>
+			<field>Гомельская</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гомельская</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Брестская</dataPath>
+			<field>Брестская</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Брестская</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеРБ</dataPath>
+			<field>НеРБ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не РБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Адрес</dataPath>
+			<field>Адрес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">40</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ВходящиеДокументы.Ссылка) КАК Всего,
+	ВЫБОР
+		КОГДА ВходящиеДокументы.РегистрационныйНомер ПОДОБНО "ЮЛ%"
+			ТОГДА "2. Сведения об обращениях юридических лиц"
+		ИНАЧЕ "1. Сведения об обращениях граждан"
+	КОНЕЦ КАК ВидЛица,
+	ВЫБОР
+		КОГДА ВходящиеДокументы.СпособПолучения.Наименование ПОДОБНО "Email"
+			ТОГДА КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ВходящиеДокументы.Ссылка)
+		ИНАЧЕ 0
+	КОНЕЦ КАК Email,
+	ВходящиеДокументы.Отправитель,
+	ВЫБОР
+		КОГДА НЕ ВходящиеДокументы.СпособПолучения.Наименование ПОДОБНО "Email"
+			ТОГДА КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ВходящиеДокументы.Ссылка)
+		ИНАЧЕ 0
+	КОНЕЦ КАК Письменно
+ПОМЕСТИТЬ Отправители
+ИЗ
+	Справочник.ВходящиеДокументы КАК ВходящиеДокументы
+ГДЕ
+	ВходящиеДокументы.ДатаРегистрации МЕЖДУ &amp;ДатаНач И &amp;ДатаКон
+	И ВходящиеДокументы.ВидДокумента.ЯвляетсяОбращениемОтГраждан
+	И НЕ ВходящиеДокументы.ПометкаУдаления
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА ВходящиеДокументы.РегистрационныйНомер ПОДОБНО "ЮЛ%"
+			ТОГДА "2. Сведения об обращениях юридических лиц"
+		ИНАЧЕ "1. Сведения об обращениях граждан"
+	КОНЕЦ,
+	ВходящиеДокументы.Отправитель,
+	ВходящиеДокументы.СпособПолучения.Наименование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КорреспондентыКонтактнаяИнформация.Представление КАК Адрес,
+	Отправители.Всего КАК Всего,
+	Отправители.ВидЛица КАК ВидЛица,
+	Отправители.Отправитель,
+	Отправители.Email,
+	Отправители.Письменно,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Брестская%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Брестская,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Витебская%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Витебская,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Гомельская%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Гомельская,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Гродненская%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Гродненская,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Минская%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Минская,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Могилевская%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Могилевская,
+	ВЫБОР
+		КОГДА КорреспондентыКонтактнаяИнформация.Регион ПОДОБНО "%Минск"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК Минск,
+	ВЫБОР
+		КОГДА НЕ КорреспондентыКонтактнаяИнформация.Страна ПОДОБНО "%Беларусь%"
+			ТОГДА Отправители.Всего
+	КОНЕЦ КАК НеРБ
+ИЗ
+	Отправители КАК Отправители
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Корреспонденты.КонтактнаяИнформация КАК КорреспондентыКонтактнаяИнформация
+		ПО Отправители.Отправитель = КорреспондентыКонтактнаяИнформация.Ссылка
+ГДЕ
+	КорреспондентыКонтактнаяИнформация.Ссылка В
+			(ВЫБРАТЬ
+				Отправители.Отправитель
+			ИЗ
+				Отправители КАК Отправители)
+	И КорреспондентыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ДомашнийАдресФизическогоЛица)</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Повторно</dataPath>
+		<expression>Выбор Когда Всего&gt;1 Тогда Всего-1 Иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Повторно</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>Email</dataPath>
+		<expression>Сумма(Email)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Брестская</dataPath>
+		<expression>Сумма(Брестская)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Витебская</dataPath>
+		<expression>Сумма(Витебская)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Всего</dataPath>
+		<expression>Сумма(Всего)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Гомельская</dataPath>
+		<expression>Сумма(Гомельская)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Гродненская</dataPath>
+		<expression>Сумма(Гродненская)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Минск</dataPath>
+		<expression>Сумма(Минск)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Минская</dataPath>
+		<expression>Сумма(Минская)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Могилевская</dataPath>
+		<expression>Сумма(Могилевская)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеРБ</dataPath>
+		<expression>Сумма(НеРБ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Письменно</dataPath>
+		<expression>Сумма(Письменно)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Повторно</dataPath>
+		<expression>Сумма(Повторно)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаКон</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата кон</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаНач</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата нач</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидЛица</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Письменно</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Email</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Всего</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Брестская</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Витебская</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Гомельская</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Гродненская</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Минская</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Могилевская</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Минск</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НеРБ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Повторно</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>6eb4c3d4-56a2-4741-b412-93105f02476f</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сведения об обращениях граждан и юридических лиц</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВидЛица</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Повторно</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Отправитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Адрес</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

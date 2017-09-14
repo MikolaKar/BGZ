@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14a72fc0-25fc-4342-9b45-374099f8d2dd">
+  <name>мТолькоРаботаСВнутреннимиДокументами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с внутренними документами (без отчетов)</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

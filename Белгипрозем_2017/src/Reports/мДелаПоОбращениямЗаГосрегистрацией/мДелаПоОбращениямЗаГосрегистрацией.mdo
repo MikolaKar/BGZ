@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c12111f7-7475-42c7-af8a-d489debca1bb">
+  <producedTypes>
+    <objectType typeId="1b5f627b-49ec-4e72-beec-7ba399a70302" valueTypeId="72a695c5-1f21-4548-83e2-fb47b4173b53"/>
+    <managerType typeId="813a4247-06f0-44ef-989d-346c68e7b8ee" valueTypeId="b08656a9-4cb4-43f5-baae-e9f04905cf6a"/>
+  </producedTypes>
+  <name>мДелаПоОбращениямЗаГосрегистрацией</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дела по обращениям за госрегистрацией</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мДелаПоОбращениямЗаГосрегистрацией.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e6257139-0d7b-46a0-8697-22ca513d7fae">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

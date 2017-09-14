@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98d0b9ea-fe1c-4902-891d-62d73f86daef">
+  <name>мОткрытьФормуГородаПредприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Открыть форму города предприятия</value>
+  </synonym>
+  <comment></comment>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="220599c8-6b4c-439c-85f1-0e25a1e983da">
+  <producedTypes>
+    <objectType typeId="27c188c2-da8f-4162-8b40-b261ed1d2eb9" valueTypeId="590c395d-2d79-469e-baf2-fd43055ddfbc"/>
+    <managerType typeId="00fc48fd-dbf1-41f3-ba19-57e9a08dadc1" valueTypeId="72eab6b8-3bdf-41c7-ac93-688bc4bd614f"/>
+  </producedTypes>
+  <name>мКонтрольАктирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль актирования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мКонтрольАктирования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="5b7f716a-1b50-465a-987d-6b70cba2db0a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

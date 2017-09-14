@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a4b43a0-a532-48d7-a547-18a8c7221c7b">
+  <producedTypes>
+    <objectType typeId="7a01900c-7c8a-4c7a-b9ef-f29c61026237" valueTypeId="c8006756-505f-4f2f-be6f-9b0817321285"/>
+    <managerType typeId="ee5cc408-27b7-4b34-9743-637ad82e6b6d" valueTypeId="68269311-5ded-4b0c-96d4-89bf54f036b5"/>
+  </producedTypes>
+  <name>мСоздатьАктирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создать актирование</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мСоздатьАктирование.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Создает и проводит документы Актирование, подбирая Акты выполненных работ.</value>
+  </explanation>
+  <forms uuid="6307ee90-5ceb-4757-95d0-045bbf53496d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

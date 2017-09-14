@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<ExternalDataSource uuid="e95a51eb-500e-407e-94fa-e6e7f62732b1">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.Гродно" category="Manager">
+				<xr:TypeId>3f21892f-1ef1-4bd2-bdb8-08d1b8c4e78c</xr:TypeId>
+				<xr:ValueId>1b23e00a-75af-404c-80cd-f6d3b055727c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.Гродно" category="TablesManager">
+				<xr:TypeId>4a31d528-3350-4c2c-a4a1-3fc459d93e12</xr:TypeId>
+				<xr:ValueId>95f04638-aa77-49db-befa-646c63d2f886</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.Гродно" category="CubesManager">
+				<xr:TypeId>21298d4e-4690-4e90-b79e-16678e0145e2</xr:TypeId>
+				<xr:ValueId>bf337150-a49a-4c0d-81ef-1c856d423f82</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Гродно</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гродно</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>DOGOVOR</Table>
+			<Table>ETAP</Table>
+			<Table>SPR_BANK</Table>
+			<Table>SPR_ETAP</Table>
+			<Table>SPR_ISP</Table>
+			<Table>SPR_ZAK</Table>
+			<Table>ZAJAVKI</Table>
+			<Table>ARHIV</Table>
+			<Table>REESTR</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>

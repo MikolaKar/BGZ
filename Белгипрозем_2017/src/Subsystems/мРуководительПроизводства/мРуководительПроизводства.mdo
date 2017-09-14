@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5ae4e60-8124-45bd-8240-bc0c213d0bc5">
+  <name>мРуководительПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>М руководитель производства</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Role.мРаботаСАктамиПроверки</content>
+  <content>Role.мРуководительПроизводства</content>
+  <content>Role.мСозданиеДел</content>
+  <content>Role.мЧтениеАктовВыполненныхРабот</content>
+  <content>Role.РаботаСВнутреннимиДокументами</content>
+  <content>Role.ЧтениеВидовВходящихДокументов</content>
+  <content>Role.ЧтениеВидовИсходящихДокументов</content>
+  <content>Role.ЧтениеВходящихДокументов</content>
+  <content>Role.ЧтениеИсходящихДокументов</content>
+  <content>Role.ЧтениеОрганизаций</content>
+  <content>Role.мНазначениеИсполнителей</content>
+</mdclass:Subsystem>

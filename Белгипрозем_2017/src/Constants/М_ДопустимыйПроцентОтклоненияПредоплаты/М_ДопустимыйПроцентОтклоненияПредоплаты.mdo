@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="919fcdbf-42ad-40b9-a29e-2dfd3d383434">
+  <producedTypes>
+    <managerType typeId="d4a78098-6259-4fdf-8db6-e9f1bace5a83" valueTypeId="95a39725-003f-4816-877e-b6e18b527125"/>
+    <valueManagerType typeId="599ea881-9d8a-4401-8848-564d85dce14e" valueTypeId="1dd91af0-fa23-4bda-b804-2fc87794e457"/>
+  </producedTypes>
+  <name>М_ДопустимыйПроцентОтклоненияПредоплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Допустимый процент отклонения предоплаты</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для расчета планового срока, когда предоплата поступила меньше, чем по условию договора</value>
+  </explanation>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

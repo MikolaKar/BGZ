@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="041e3a1f-5b09-414e-932e-67081da3c2cb">
+  <name>мПечатьТитульногоЛистаДела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать титульного листа дела</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

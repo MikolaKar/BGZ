@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cd2e03c-2077-4e0e-84f0-ebabd05d343a">
+  <name>БизнесПроцессыИЗадачиПоПредмету</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процессы и задачи</value>
+  </synonym>
+  <comment></comment>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>CatalogRef.УведомленияПрограммы</types>
+    <types>CatalogRef.ТемыОбсуждений</types>
+    <types>CatalogRef.Корреспонденты</types>
+    <types>DocumentRef.ВходящееПисьмо</types>
+    <types>DocumentRef.ИсходящееПисьмо</types>
+    <types>CatalogRef.Файлы</types>
+    <types>CatalogRef.ВходящиеДокументы</types>
+    <types>CatalogRef.ВнутренниеДокументы</types>
+    <types>CatalogRef.СообщенияОбсуждений</types>
+    <types>CatalogRef.ИсходящиеДокументы</types>
+    <types>CatalogRef.Мероприятия</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.Task</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8288d25e-7401-43e1-9bd2-6ac870f26d4a">
+  <producedTypes>
+    <objectType typeId="1c27dbe3-9d68-4b39-8be1-e09afdae7e48" valueTypeId="01dd1645-40b3-41fb-b5d1-6e452d160aea"/>
+    <refType typeId="b094460c-8d3c-4694-9e82-9dc428190da5" valueTypeId="83b35896-30d2-4bb5-a12b-144ed63410a1"/>
+    <selectionType typeId="55b0a50c-9015-46d8-8e51-1e8730573d38" valueTypeId="69d3ead9-1211-4b71-acec-88e7931f1768"/>
+    <listType typeId="c93ffbad-1fe6-4b00-bba0-d3b7ceb849df" valueTypeId="72d168e9-8fea-4624-b123-efdfe98178c2"/>
+    <managerType typeId="c6a975b9-46e4-4d0e-bbed-3cd3369dee79" valueTypeId="b443a5f7-89de-47fc-8175-3ccfe3930149"/>
+  </producedTypes>
+  <name>ДескрипторыДоступаФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дескрипторы доступа файлов</value>
+  </synonym>
+  <comment></comment>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Дескриптор доступа файлов</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ДескрипторыДоступаФайлов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="16a82378-82cb-4162-ae9b-bfe037543f5c">
+    <name>ДескрипторВладельца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дескриптор владельца</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДескрипторыДоступаОбъектов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d0188d99-2308-4e5c-8ee2-8cca11d0df35">
+    <name>ВладелецФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец файла</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Корреспонденты</types>
+      <types>BusinessProcessRef.РешениеВопросовВыполненияЗадач</types>
+      <types>BusinessProcessRef.Исполнение</types>
+      <types>DocumentRef.ВходящееСообщениеСВД</types>
+      <types>CatalogRef.ПапкиФайлов</types>
+      <types>DocumentRef.ИсходящееСообщениеСВД</types>
+      <types>DocumentRef.ВходящееПисьмо</types>
+      <types>BusinessProcessRef.Приглашение</types>
+      <types>DocumentRef.ИсходящееПисьмо</types>
+      <types>CatalogRef.СерверныеСообщенияСВД</types>
+      <types>CatalogRef.ВходящиеДокументы</types>
+      <types>BusinessProcessRef.ОбработкаИсходящегоДокумента</types>
+      <types>BusinessProcessRef.ОбработкаВнутреннегоДокумента</types>
+      <types>BusinessProcessRef.Поручение</types>
+      <types>CatalogRef.Должности</types>
+      <types>BusinessProcessRef.Утверждение</types>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+      <types>CatalogRef.СообщенияОбсуждений</types>
+      <types>BusinessProcessRef.КомплексныйПроцесс</types>
+      <types>BusinessProcessRef.ОбработкаВходящегоДокумента</types>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+      <types>BusinessProcessRef.Рассмотрение</types>
+      <types>CatalogRef.Мероприятия</types>
+      <types>BusinessProcessRef.Согласование</types>
+      <types>BusinessProcessRef.Ознакомление</types>
+      <types>BusinessProcessRef.Регистрация</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="d5b8efbf-266d-42f8-bb28-453fa03a4406">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

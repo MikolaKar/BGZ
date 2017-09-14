@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b752054-6002-4bed-aa08-33a0480d21f3">
+  <name>ИспользоватьСпискиРассылкиПоКорреспондентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать списки рассылки по корреспондентам</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ИспользоватьСпискиРассылкиПоКорреспондентам</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.СпискиРассылкиПоКорреспондентам</content>
+</mdclass:FunctionalOption>

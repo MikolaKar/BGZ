@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f28598ff-f300-4b56-ad5a-0eaee413b2b1">
+  <producedTypes>
+    <objectType typeId="d92f488e-5d6a-41bf-9877-8e6c5272836b" valueTypeId="d8259fae-0901-451c-bfb4-1eff7a2a5a45"/>
+    <managerType typeId="f0232426-c3fc-4916-b50a-b2a630a661e5" valueTypeId="a08fd854-cd7e-440d-be18-e2ae1e775d2f"/>
+  </producedTypes>
+  <name>мНеВозвращенныеАкты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по актам выполненных работ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мНеВозвращенныеАкты.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="693805c4-9a62-4572-ab19-2d4ac3f292a4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

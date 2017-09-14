@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7342bf24-3051-4612-acf6-ad7bbbab515a">
+  <producedTypes>
+    <objectType typeId="a822ba18-c899-4a0f-a3c0-f3aa1ac8d993" valueTypeId="3188c444-d95e-4c9b-8dfd-79df6594c440"/>
+    <managerType typeId="d9a145dd-29d5-4cdd-9ac5-7b1bcb671970" valueTypeId="69f005f4-3a42-4f24-bc84-9a392df3026d"/>
+  </producedTypes>
+  <name>мСозданиеВнутреннихДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание внутренних документов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мСозданиеВнутреннихДокументов.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Предназначен для создания однотипных внутренних документов с последующей их печатью.</value>
+  </explanation>
+  <forms uuid="67f811a9-6b43-4b18-89e7-650c958849ae">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

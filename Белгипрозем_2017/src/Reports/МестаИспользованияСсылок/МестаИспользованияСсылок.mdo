@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cda5ec8b-920a-4c7d-817c-41cdebef07a4">
+  <producedTypes>
+    <objectType typeId="054ca4d2-d164-44cb-ab6d-026328271d9c" valueTypeId="2865df5b-bfa1-4fda-8db8-d3f4270a3b25"/>
+    <managerType typeId="586bbbb9-01c7-4afb-a18e-cd2bca4d84d0" valueTypeId="d31989dc-1778-4cb9-9865-5d4e01df1203"/>
+  </producedTypes>
+  <name>МестаИспользованияСсылок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места использования ссылок</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.МестаИспользованияСсылок.Form.МестаИспользования</defaultForm>
+  <mainDataCompositionSchema>Report.МестаИспользованияСсылок.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="4f8c9d71-5a28-46d5-afae-05bafca6706b">
+    <name>МестаИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Места использования</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f8400f6f-0c5a-4b25-9b48-2325b5b122dd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="edb75ff7-0539-48e4-9070-7cbbd3ffeb89">
+  <producedTypes>
+    <selectionType typeId="f03c44b6-0df0-4dd2-b2b8-0da94c351ace" valueTypeId="0bfcb7b2-94b2-4420-8912-3be0b4088e8f"/>
+    <listType typeId="dffb219e-b53b-43a1-b79c-74586fdc7e6a" valueTypeId="659ea999-2268-448a-a624-02bb51a9f98b"/>
+    <managerType typeId="5050c9ac-32bd-4488-ab89-fe937a786c8e" valueTypeId="15233105-c11f-43ad-8194-a7a988de129e"/>
+    <recordSetType typeId="981f93bc-d66c-44c7-8c41-89c167f9b3a9" valueTypeId="acf0150e-d779-4012-86d5-adcdc3ce5c55"/>
+    <recordKeyType typeId="324a1420-16f2-4e7c-a474-f1604c3454b0" valueTypeId="5fe8bb3b-7765-4727-add3-336b084f81ee"/>
+    <recordType typeId="e6cae1e6-1573-42c7-8136-4b7ac3046bad" valueTypeId="fe9515a4-d965-4b1b-87c4-0560daa9349c"/>
+    <recordManagerType typeId="f81c8b77-2c5b-4337-add7-5b60e3c9d998" valueTypeId="fc5ea3f2-b060-4fb5-8b56-e4a1e3a05bd5"/>
+  </producedTypes>
+  <name>мПроцентПремииЗаРуководство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент премии за руководство</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Процент премии за руководство</value>
+  </explanation>
+  <resources uuid="fb5f8b58-73d5-4af5-9584-9ed510959b46">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="57f2c29c-e1dc-4168-893c-e69a3e40883c">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1ac10139-fa5c-49bc-bbac-d1d9fa036fba">
+    <name>ЧисленностьОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Численность от</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6a779c35-5a9e-4320-806c-d81dd734de81">
+    <name>ЧисленностьДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Численность до</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="640a2f1d-6f75-4882-8b26-2fa9e2f00f34">
+  <producedTypes>
+    <objectType typeId="34327aaf-b221-489a-adc1-9aeb77053801" valueTypeId="ad3e9ec5-f2d2-4301-b6a8-e888bada9955"/>
+    <refType typeId="2d01bfc3-6840-42f7-98ab-dd771760ec78" valueTypeId="69d9899a-9426-48d5-8b0f-13d731d318e5"/>
+    <selectionType typeId="d6f45a11-84ec-4683-9789-ddee3b6dc7e2" valueTypeId="372e10c7-c543-4de6-baea-6e4440da3ae2"/>
+    <listType typeId="e6021351-c69d-47e2-9842-5277a52d57b4" valueTypeId="5be58276-ad63-4783-89ef-5cc8d823be2a"/>
+    <managerType typeId="5d57075c-d4fa-439f-8f6f-382e36b69472" valueTypeId="5096ceca-6018-4395-956e-3cf979a437f9"/>
+  </producedTypes>
+  <name>мДеноминацияРасчетовСПокупателями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Деноминация расчетов с покупателями</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.мДеноминацияРасчетовСПокупателями.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>Posted</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Date</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Number</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.мДеноминацияРасчетовСПокупателями.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.РасчетыСПокупателями</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="379b8d3d-7e92-4b84-bfa7-4683511b6674">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="a9cba5aa-ef36-4298-a945-46883ba50fcc">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="c5b3b9ac-fada-45e4-a735-a744bb9bfa71">
+    <producedTypes>
+      <objectType typeId="39ecaf14-30e8-40f3-8a79-f63473657660" valueTypeId="2dbf0bf3-0914-45df-9e43-5146a721531e"/>
+      <rowType typeId="4af20527-1a0d-4e81-b6dc-21d28d31099f" valueTypeId="60f86c75-33f9-401e-9d50-87b5fcdda5f1"/>
+    </producedTypes>
+    <name>РасчетыСПокупателями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты с покупателями</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="57436ae3-2429-4892-b8fe-7d766933e109">
+      <name>Корреспондент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Корреспондент</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Корреспонденты</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="315e634e-54d9-4987-8195-291f5071368a">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВнутренниеДокументы</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3022fd9f-8dab-464d-a8e8-eadb0748783a">
+      <name>ЭтапДоговора</name>
+      <synonym>
+        <key>ru</key>
+        <value>Этап договора</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.мЭтапыДоговоров</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="70fe7985-6fdd-45f9-addc-846d8a51aa9d">
+      <name>СуммаДо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма до</value>
+      </synonym>
+      <comment>Сумма с НДС</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма с НДС</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fdc3574d-3442-4df3-ba24-8c6c12f09b4b">
+      <name>СуммаПосле</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма после</value>
+      </synonym>
+      <comment>Сумма с НДС</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма с НДС</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="9f6792ca-9fe6-414a-b246-18c9440fafb6">
+    <name>ВедомостьПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость пересчета</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Document>

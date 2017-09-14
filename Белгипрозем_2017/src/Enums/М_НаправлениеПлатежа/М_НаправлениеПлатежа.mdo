@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c0efaa5-fef5-4ca2-91a2-3bd317092f2a">
+  <producedTypes>
+    <refType typeId="700ee1a2-9584-4e69-ba9d-85d80b0c5889" valueTypeId="518b4938-dbc1-4f36-ada3-bc822e009a34"/>
+    <listType typeId="418e9f57-5cef-4174-aec4-351c25d997eb" valueTypeId="30bf7b5d-dd89-479a-9eb5-1601a4881cdc"/>
+    <managerType typeId="f2e55482-40e4-4f3e-9eb9-482dbfbddd0d" valueTypeId="2f18d1a5-1194-4c36-b9dd-f88a277c9554"/>
+  </producedTypes>
+  <name>М_НаправлениеПлатежа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направление платежа</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Относительно нашей организации. Поступление - Приход денежных средств, Возврат - сторнирование прихода денежных средств </value>
+  </explanation>
+  <enumValues uuid="beb9761c-6f7f-4110-8c89-e778669e736d">
+    <name>Поступление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="49ed6dc2-7edb-4948-a6e6-cfe77c2dd42b">
+    <name>Возврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

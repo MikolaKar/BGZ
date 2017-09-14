@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a594e96-3d32-470f-9079-1a4690a02756">
+  <producedTypes>
+    <objectType typeId="2a4ca59f-713d-4d8c-9835-2739505fbdaf" valueTypeId="85028f65-69c6-49d5-a8de-09bfae5b6b14"/>
+    <refType typeId="9a045189-e789-4ac0-81ba-856ecc1444d4" valueTypeId="b6096f1b-82a2-4509-923a-a48fd4e93663"/>
+    <selectionType typeId="2b3d40d9-8565-47a3-8178-6149df116ecf" valueTypeId="b344bf87-22ab-4086-ae6e-b34bd4bc2a73"/>
+    <listType typeId="1e588bbc-6b35-4ff1-b795-54b2629d0a36" valueTypeId="70c0ac9e-c385-438a-a344-f8e26003685e"/>
+    <managerType typeId="7b59e88a-f7d2-4272-b903-c41cc2794256" valueTypeId="604cef2a-ea87-44a2-99fc-459832a8fd43"/>
+  </producedTypes>
+  <name>М_ВедомостьКомиссии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость комиссии</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.М_ВедомостьКомиссии.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>Posted</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Date</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Number</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.М_ВедомостьКомиссии.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.М_ВедомостьКомиссии.Form.ФормаСписка</defaultListForm>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.НачислениеЗП</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="482c2646-fa22-4f81-87db-d2731212aa81">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="c96f1855-66b3-49d9-9624-8f66dffa8c76">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f2de893d-61da-4f2d-9021-af3648f36bc2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="905b5ab2-cbc7-4fc7-8453-3e82d418933d">
+    <producedTypes>
+      <objectType typeId="62ded35e-9b5a-4d76-9d2b-c4848c41f5cc" valueTypeId="4bdf7651-6a59-4bc7-8f5a-957d7e22ad95"/>
+      <rowType typeId="5a64472a-512d-45d5-bfd6-300151b5cfe1" valueTypeId="578d1b54-5177-4759-b976-7ca88634c008"/>
+    </producedTypes>
+    <name>АктыПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акты проверки</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f52b06ac-9770-4e16-b224-e27c9f691694">
+      <name>АктПроверки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Акт проверки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.мАктыПроверки</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d26c7e5c-5f7a-43c9-a97d-13afb2316d55">
+      <name>ВидПроверки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид проверки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.М_ВидыПроверкиКачества</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3724b58f-4533-4f81-81f0-bc7c41067b86">
+      <name>КоэффициентПроверки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент проверки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5b25a6cc-9a19-4449-a933-5d1d6f189619">
+      <name>Исполнитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Исполнитель</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cd45fd3a-00eb-4e5b-8f44-ff3b83b997a9">
+      <name>ОценкаКомиссии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка комиссии</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="44d1bb3e-cef2-4f71-aae2-9b72eb7a6f66">
+      <name>ОценкаНачОтдела</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка нач отдела</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4e07f928-a92d-4a62-b04b-1e537e9964ef">
+      <name>ОценкаГлавСпеца</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка глав спеца</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="998db4fd-6014-4369-a048-9373eea105af">
+      <name>ОценкаНачОтряда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка нач отряда</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="53702b0c-1fb0-4a58-92c5-a49096006fe8">
+      <name>НачальникОтдела</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начальник отдела</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7f142c9d-c895-4bc9-bc16-3805c6922d4b">
+      <name>ГлавныйСпециалист</name>
+      <synonym>
+        <key>ru</key>
+        <value>Главный специалист</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e8c12051-280e-4a80-a776-1cb38f96b914">
+      <name>НачальникОтряда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начальник отряда</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d482fd30-6352-4eb1-9323-024666a394b7">
+      <name>ПроверяющийСТКК</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверяющий СТКК</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="48884bb0-e9a5-4e93-aa14-7af588dc3e47">
+      <name>Корреспондент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Корреспондент</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Корреспонденты</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cd4ee70e-1f32-4923-b428-3d0fdbd01d19">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВнутренниеДокументы</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e1dfc3fd-bd9a-412d-91d0-5951e01073da">
+      <name>ВидРабот</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид работ</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.мВидыРаботПоДоговорам</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="26cba9f8-67a1-4fb2-a95c-db4a35b3ffbd">
+      <name>НаименованиеОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7060a55f-b915-4ed9-97f8-504396d1c894">
+      <name>ДатаАктирования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата актирования</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </editFormat>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c4a05def-100d-498c-bf40-5e3220cc29d9">
+      <name>ОценкаСТКК</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка СТКК</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f29e4c78-a714-477e-ba63-9ef2254d06d3">
+      <name>ОценкаНачОтделаИтоговая</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка нач отдела итоговая</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1417c50d-7d80-4a2f-943c-8b91cac22485">
+      <name>ОценкаГлавСпецаИтоговая</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка глав спеца итоговая</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7a6918d9-8d30-4af8-8c1f-bf1382094f61">
+      <name>ОценкаНачОтрядаИтоговая</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка нач отряда итоговая</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a4cc18e9-11d0-4df9-9cef-815b10d97905">
+      <name>ОценкаИсполнителю</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка исполнителю</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d5732464-eec5-42a6-a675-d360db3daa8a">
+      <name>Выставлена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выставлена</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="330a7254-3ddc-4f18-bc1a-d38969b92fe7">
+      <name>ОценкаЗамНачФилиала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка зам нач филиала</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="30fcd56f-781c-4193-ae94-de9ecc220e81">
+      <name>ОценкаЗамНачФилиалаИтоговая</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка зам нач филиала итоговая</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d4422847-dfef-4ab2-80c5-ee1efb8d689f">
+      <name>ЗамНачФилиала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Зам нач филиала</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="167ca347-4823-4480-938b-5baae2dd28e0">
+    <name>ПФ_MXL_ВедомостьКомиссииСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL ведомость комиссии с ошибками</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="f1ed38e9-534b-4c41-9024-29a72355526d">
+    <name>ПФ_MXL_ВедомостьКомиссииБезОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL ведомость комиссии без ошибок</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Document>

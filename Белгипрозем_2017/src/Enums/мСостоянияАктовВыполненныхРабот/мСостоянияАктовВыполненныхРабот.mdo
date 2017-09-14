@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bad62d29-b7f1-4b9d-94d4-efe07193b449">
+  <producedTypes>
+    <refType typeId="f3143e68-33f1-43d7-9053-4f2210a049fc" valueTypeId="85c4ef33-f661-4624-8e02-61ffc64a1fd6"/>
+    <listType typeId="5a9b381e-7616-4ad7-a4fc-1a7f0bb65b69" valueTypeId="bece0da8-f652-4952-9aa0-46827c0850ac"/>
+    <managerType typeId="c432bbe9-8a6e-4a00-adb8-f54631e0ae15" valueTypeId="1e95c46f-8f97-40bd-9eb0-b791d48da536"/>
+  </producedTypes>
+  <name>мСостоянияАктовВыполненныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния актов выполненных работ</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4b96435d-7d32-4be1-82b8-b7914b58b944">
+    <name>Черновик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+    <comment>При создании акта</comment>
+  </enumValues>
+  <enumValues uuid="c914d487-dad0-4b1c-a430-a63588821a31">
+    <name>Подготовлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подготовлен</value>
+    </synonym>
+    <comment>Акт распечатан и готов к отправке</comment>
+  </enumValues>
+  <enumValues uuid="81af9ece-3857-4db5-8ffb-278f59aac2a1">
+    <name>НаправленЗаказчику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направлен заказчику</value>
+    </synonym>
+    <comment>Подготовлено исходящее письмо</comment>
+  </enumValues>
+  <enumValues uuid="b68cc439-7add-4fdc-bdc5-8be818d9ee4a">
+    <name>ВрученЗаказчику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вручен заказчику</value>
+    </synonym>
+    <comment>Получено уведомление о доставке заказчику</comment>
+  </enumValues>
+  <enumValues uuid="fa9a722e-3b53-4631-b3e9-6090c9693c13">
+    <name>ПодписанЗаказчикомКопия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписан заказчиком копия</value>
+    </synonym>
+    <comment>Есть факсовая копия подписанного акта</comment>
+  </enumValues>
+  <enumValues uuid="fe83019c-228d-4468-a80d-13a63b46e79a">
+    <name>ПодписанЗаказчиком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписан заказчиком</value>
+    </synonym>
+    <comment>Подписанный акт возвращен заказчиком</comment>
+  </enumValues>
+  <enumValues uuid="0db5bc7b-0f4a-40f1-b92f-ae2a6601ba7e">
+    <name>ПодписанЗаказчикомСЗамечаниями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписан заказчиком с замечаниями</value>
+    </synonym>
+    <comment>Акт возвращен с замечаниями заказчика</comment>
+  </enumValues>
+  <enumValues uuid="203a14cd-7e57-4a14-802f-ea69efccb10c">
+    <name>НеПодписан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не подписан</value>
+    </synonym>
+    <comment>Не подписан заказчиком</comment>
+  </enumValues>
+</mdclass:Enum>

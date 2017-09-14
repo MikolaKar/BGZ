@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>0:82a1f512-967f-480e-b09f-5d20293be981</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>InformationRegister.ДействиеПримечаний.StandardCommand.OpenList</commands>
+      <commands>Catalog.мКлассификаторЕдиницИзмерения.StandardCommand.OpenList</commands>
+      <commands>0:632d0c4f-0cb1-43de-879a-75264e233964</commands>
+      <commands>0:82a1f512-967f-480e-b09f-5d20293be981</commands>
+      <commands>0:19668090-96db-4680-9868-349e0cfe1b3f</commands>
+      <commands>0:56798291-72d4-43e3-a986-02477f729786</commands>
+      <commands>0:f9dd6284-a931-4a34-9e7f-bea9b50e5792</commands>
+      <commands>Catalog.мВидыСтоимостиНормоЧаса.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ПолевыеРаботы.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.мСтоимостьНормоЧаса.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

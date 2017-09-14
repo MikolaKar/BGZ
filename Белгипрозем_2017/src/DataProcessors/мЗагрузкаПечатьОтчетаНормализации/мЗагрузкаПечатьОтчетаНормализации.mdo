@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c6a90cb-6d08-48bb-b93d-a97f8f67426c">
+  <producedTypes>
+    <objectType typeId="960338f3-3612-4788-a682-b8e1e1cde802" valueTypeId="28c347a3-c9f7-49c7-9730-f80822e320ab"/>
+    <managerType typeId="19b10dae-f25b-43a9-b3ff-0c615076695f" valueTypeId="1d776a0f-aee8-4f62-9ae3-29e6caf53d1d"/>
+  </producedTypes>
+  <name>мЗагрузкаПечатьОтчетаНормализации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка и печать отчета нормализации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мЗагрузкаПечатьОтчетаНормализации.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="ac3fbfe2-c86a-4876-abb8-ed120bbf2ec3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d7ab9ad3-8fe5-4eb8-8a29-56f400de0bfa">
+    <name>ПФ_DOCX_ОтчетНормОдин</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_ОтчетНормОдин</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="35b75d15-6e77-4cb3-8f51-c045ff240375">
+    <name>ПФ_DOCX_ОтчетНормМного</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_ОтчетНормМного</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

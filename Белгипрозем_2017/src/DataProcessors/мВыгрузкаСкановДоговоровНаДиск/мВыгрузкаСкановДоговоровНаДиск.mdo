@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="905dc809-e181-4bcd-8bd1-3ff16b0e146a">
+  <producedTypes>
+    <objectType typeId="20682207-bbce-4617-825e-0f83e9b63e87" valueTypeId="085f916d-278b-4503-a1ca-1feace7d4b41"/>
+    <managerType typeId="7adcbb38-47fe-41f9-9dca-aa01c22d6ccd" valueTypeId="0efd14d2-ad09-4657-8437-d7d9e2008876"/>
+  </producedTypes>
+  <name>мВыгрузкаСкановДоговоровНаДиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка сканов договоров на диск</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мВыгрузкаСкановДоговоровНаДиск.Form.Форма</defaultForm>
+  <auxiliaryForm>DataProcessor.мВыгрузкаСкановДоговоровНаДиск.Form.Форма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="fb6d4627-d33c-4b08-9d55-9ada4fd9c206">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

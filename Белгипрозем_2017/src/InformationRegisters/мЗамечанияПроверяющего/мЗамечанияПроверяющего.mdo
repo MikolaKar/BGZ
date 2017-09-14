@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9aa6c577-945d-4431-ad8d-e676a6591a85">
+  <producedTypes>
+    <selectionType typeId="47d70466-b906-43cd-9553-06f8bd197e14" valueTypeId="600eee4e-9ff0-4dd5-ba93-b53f28f2a0c3"/>
+    <listType typeId="42c09531-0b9e-44b5-a295-496781d84f57" valueTypeId="e31c1206-ff0a-4016-9d61-bd82e2e5e994"/>
+    <managerType typeId="0b25e680-559a-4e26-8110-05f74a295f48" valueTypeId="ee75e0b3-4c2d-404b-bd82-97827e543d24"/>
+    <recordSetType typeId="6a43005e-3a2c-4dda-9b23-070af23c352b" valueTypeId="28ae57cb-19cc-45ee-afd2-8c7484877333"/>
+    <recordKeyType typeId="40f3bbec-69ae-435c-8c80-66b2bece8b51" valueTypeId="93d76965-3b77-4f51-b5e1-4e776d01559c"/>
+    <recordType typeId="2fbf474d-b0a8-4528-94fe-a857a7ba6793" valueTypeId="19700566-563e-4a91-b401-606c4aca0938"/>
+    <recordManagerType typeId="57917783-d2d0-49cb-892b-b32d16cfb52d" valueTypeId="aabf4d64-3e4c-450f-a745-bd86efbf4e07"/>
+  </producedTypes>
+  <name>мЗамечанияПроверяющего</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замечания проверяющего</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.мЗамечанияПроверяющего.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Замечание проверяющего</value>
+  </recordPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Дополнительные замечания к справочнику Классификатор замечаний</value>
+  </explanation>
+  <dimensions uuid="9cc3eb45-0e3b-4194-bf2c-f4c3845d3fec">
+    <name>Замечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замечание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мКлассификаторЗамечаний</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1117bb77-b2bb-492d-887e-a886521b4823">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f28211ff-1f6d-449e-885a-1288ae6f56a9">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b942e02e-625e-44e1-b3d9-f3118ca0bef6">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

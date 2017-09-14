@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="709c0832-67ca-47f7-a116-f9b22da6bb89">
+  <producedTypes>
+    <objectType typeId="14ea8812-7b2e-4c64-b382-434d560ec723" valueTypeId="97e3b053-f69f-41ce-81d1-d8d640086cbf"/>
+    <managerType typeId="c1faaa37-03aa-4bfc-8db2-e591bf6a5f65" valueTypeId="7b75b3d8-fc2f-4da6-a377-3bbd56b71d20"/>
+  </producedTypes>
+  <name>мВедомостьСниженияПроцентаПремии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость снижения процента премии</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мВедомостьСниженияПроцентаПремии.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="cfc23af6-a2eb-497d-afe5-d0a3b330543a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

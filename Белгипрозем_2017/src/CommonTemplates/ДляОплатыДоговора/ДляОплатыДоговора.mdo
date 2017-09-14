@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3451d76-6c76-4bc6-935c-d1139d22eec4">
+  <name>ДляОплатыДоговора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Для оплаты договора</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonTemplate>

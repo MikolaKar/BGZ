@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd27d9c3-cd9f-4302-8f1a-915548e231f2">
+  <name>ТехАрхив</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технический архив</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Архив2</picture>
+  </picture>
+  <content>Catalog.ВнутренниеДокументы</content>
+  <content>Report.мРеестрДелТехАрхива</content>
+  <content>CommonPicture.Архив</content>
+  <content>CommonPicture.Архив2</content>
+  <content>Report.мСтоимостьОтправкиБрест</content>
+  <content>Constant.М_СтоимостьОтправки</content>
+  <content>Role.мТехАрхив</content>
+  <content>Report.мРеестрДелТехАрхиваНаРуках</content>
+  <content>Report.мПечатьРаспискиВПолученииТехАрхив</content>
+  <content>Report.мДелаПоОбращениямЗаГосрегистрацией</content>
+  <content>Report.Гр_РеестрДелНаАктирование</content>
+  <content>DataProcessor.мРаботаСоСканеромШтрихкода</content>
+</mdclass:Subsystem>

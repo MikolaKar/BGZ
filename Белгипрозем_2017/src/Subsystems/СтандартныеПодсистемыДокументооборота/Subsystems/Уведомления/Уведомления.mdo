@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b43d903f-3eb3-4021-8f89-3623b850ec24">
+  <name>Уведомления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ПодпискиНаУведомления</content>
+  <content>InformationRegister.ОчередьУведомлений</content>
+  <content>InformationRegister.СпособыУведомленияПользователей</content>
+  <content>InformationRegister.НастройкиУведомленияОЗадачах</content>
+  <content>InformationRegister.ОбработанныеУведомления</content>
+  <content>Enum.СпособыУведомления</content>
+  <content>Constant.ИспользоватьУведомления</content>
+  <content>FunctionalOption.ИспользоватьУведомленияПользователя</content>
+  <content>ScheduledJob.УведомлениеПользователейОСобытиях</content>
+  <content>ScheduledJob.КонтрольСрокаЗадач</content>
+  <content>CommonModule.РаботаСУведомлениями</content>
+  <content>ScheduledJob.КонтрольОкончанияСрокаДействия</content>
+  <content>InformationRegister.НастройкиУведомленияОкончанияСрокаДействия</content>
+  <content>Enum.СобытияУведомлений</content>
+  <content>InformationRegister.НастройкиУведомленийПоУмолчанию</content>
+  <content>Enum.НастройкиУведомлений</content>
+  <content>Constant.РазрешитьИзменятьНастройкиУведомлений</content>
+  <content>CommonForm.НастройкаУведомлений</content>
+  <content>CommonForm.ПодпискаНаУведомленияПоОбъекту</content>
+  <content>CommonForm.ПодпискиПользователя</content>
+  <content>Constant.АдресПубликацииНаВебСервере</content>
+  <content>ScheduledJob.КонтрольСрокаКонтроля</content>
+  <content>InformationRegister.НастройкиУведомлений</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемыДокументооборота</parentSubsystem>
+</mdclass:Subsystem>

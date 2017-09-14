@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc8311a9-6fa3-42db-aea0-ef2a65515945">
+  <producedTypes>
+    <selectionType typeId="3f9ac3df-df92-462d-9031-ebb37705b3b8" valueTypeId="39e9434d-d83e-4889-b77b-001df013708c"/>
+    <listType typeId="8fee2f88-314b-4f4d-b501-071947e048fd" valueTypeId="8b3a994d-9d51-4c51-b7ca-c16e2d97c0aa"/>
+    <managerType typeId="7c1af11a-eb01-45e6-ac0c-b9c7f47343dd" valueTypeId="2939b612-1258-47dd-a434-735457b3a1d7"/>
+    <recordSetType typeId="8db61793-e94a-4386-8003-313cd4de291b" valueTypeId="d72a6635-3455-48eb-9a65-457bc2189161"/>
+    <recordKeyType typeId="e4167055-f068-4a34-89ec-81480c7f7f03" valueTypeId="5175da1c-149b-42b8-bb03-e1640f871594"/>
+    <recordType typeId="48081bde-d087-4764-8f1b-fc4a2421081d" valueTypeId="c14aff4c-3309-45fb-9488-5ebfbc328df1"/>
+    <recordManagerType typeId="fef9a72a-511d-4906-af2f-630855b9ca51" valueTypeId="93c4c8d9-59f0-45f1-bf09-b8cee16d69b6"/>
+  </producedTypes>
+  <name>ДействиеПримечаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Действие примечаний</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ee8cbb78-342a-4f65-8536-12d97457b9dd">
+    <name>СборникРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборник работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="df66263b-487e-4320-978f-84c52450a56e">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

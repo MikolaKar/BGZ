@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="70a5dc75-cd2c-4d04-8e5b-8355e5d6e2c5">
+  <name>М_ДопГродно</name>
+  <synonym>
+    <key>ru</key>
+    <value>М доп Гродно</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Для дополнительных функций Бреста</value>
+  </explanation>
+  <content>ExternalDataSource.Гродно.Table.SPR_BANK</content>
+  <content>ExternalDataSource.Гродно.Table.DOGOVOR</content>
+  <content>ExternalDataSource.Гродно.Table.ETAP</content>
+  <content>ExternalDataSource.Гродно.Table.SPR_ETAP</content>
+  <content>ExternalDataSource.Гродно.Table.SPR_ISP</content>
+  <content>ExternalDataSource.Гродно.Table.SPR_ZAK</content>
+  <content>ExternalDataSource.Гродно.Table.ZAJAVKI</content>
+  <content>DataProcessor.М_ШлюзГродно</content>
+  <content>ExternalDataSource.Гродно.Table.REESTR</content>
+  <parentSubsystem>Subsystem.ДокументыИФайлы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7d5ce20-66e5-49b4-bd0b-540f72154089">
+  <producedTypes>
+    <selectionType typeId="e55e6607-d786-413c-a42d-5febd5443dea" valueTypeId="546378f9-9d58-416c-9ac8-79d5a01c1269"/>
+    <listType typeId="0e338569-67bf-4fe7-b78d-8a8593ac13e3" valueTypeId="796d8511-bc63-4d93-9e75-20da4c12c27a"/>
+    <managerType typeId="fc21e0f1-e9b4-4eb7-a6cc-57cd6c6538e9" valueTypeId="4737c5dd-1497-4241-8d46-9300f175257b"/>
+    <recordSetType typeId="4d968a00-1964-476e-88d2-8d5f81afd5bc" valueTypeId="5fd41148-a512-4835-87aa-d8a93e2b786d"/>
+    <recordKeyType typeId="4d07d049-9f01-4df6-9936-b21eb23a5de6" valueTypeId="b3d8b2d0-c148-4f98-bb28-27af85a3e8c0"/>
+    <recordType typeId="ae06caed-c82c-425b-a286-819e5e079445" valueTypeId="587d8f8f-315b-4fb0-a74b-1038ad5ca12d"/>
+    <recordManagerType typeId="79fffe8b-7ff0-4189-b02d-3ce118643984" valueTypeId="2210b45a-6c17-4b84-be65-91bdd8bfe5c4"/>
+  </producedTypes>
+  <name>мНормыВремениЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы времени ЗИС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Норма времени ЗИС</value>
+  </recordPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Нормы времени ЗИС используются при расчете стоимости актов выполненных работ</value>
+  </explanation>
+  <resources uuid="e03afda9-cd31-4cb6-b80b-fa515e413c43">
+    <name>НормаВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма времени</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>5</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6c65fcc1-e7ce-49c0-844c-3fc856597a84">
+    <name>ЮрФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид лица Контрагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ЮрФизЛицо</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="295cd7ba-a3d0-4c96-aa10-eb56d353b070">
+    <name>ИспользуетГеопортал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использует геопортал</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

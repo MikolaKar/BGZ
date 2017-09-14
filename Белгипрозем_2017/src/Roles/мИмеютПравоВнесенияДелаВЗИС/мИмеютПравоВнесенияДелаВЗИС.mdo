@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b558dd6-47a9-4930-8011-1bfb70ecfd47">
+  <name>мИмеютПравоВнесенияДелаВЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Имеют право внесения дела в ЗИС</value>
+  </synonym>
+  <comment>Для редактирования полей в деле: Внесено в ЗИС и Комментарий ЗИС</comment>
+</mdclass:Role>

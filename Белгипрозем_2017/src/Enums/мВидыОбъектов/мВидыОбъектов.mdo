@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e751625e-bb67-4360-976e-95625073cf8e">
+  <producedTypes>
+    <refType typeId="a6bd478c-e888-4244-bee8-baf992e74cab" valueTypeId="ed765cb0-1ab9-4d34-a3b9-ac0da9879dce"/>
+    <listType typeId="ca252425-346d-4b9f-88d4-60cc18ece207" valueTypeId="43afe987-62b8-43fb-be48-6a6c2bb3a66a"/>
+    <managerType typeId="96ac63ed-9b52-40c9-9c1a-547dd02f80d3" valueTypeId="08bc67b3-af4e-437c-b2b8-19ff2efcf34e"/>
+  </producedTypes>
+  <name>мВидыОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды объектов</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fae8e4fa-d436-49a9-8c5d-bea0d000107b">
+    <name>Площадной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Площадной</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="19a2dea7-4911-480d-979d-8926d2c0294d">
+    <name>Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линейный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="071d6586-3478-4bf5-a58e-00a595f034e6">
+    <name>ПлощадноЛинейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Площадно-линейный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="691fedb1-05ac-4aae-92e2-330b75fdc964">
+    <name>ЛинейноПлощадной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линейно-площадной</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

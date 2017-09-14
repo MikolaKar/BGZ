@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c12f8ee-3ae6-4fe1-8318-280d463bb50f">
+  <producedTypes>
+    <selectionType typeId="905067b6-d52f-493f-a915-4fa92df30907" valueTypeId="501163af-5da1-4ba8-98f8-55f6b2b190c0"/>
+    <listType typeId="6664af9c-4cd1-4d31-9e0a-6f8c9a39a56f" valueTypeId="75687a12-27a8-41d9-9783-616794b91282"/>
+    <managerType typeId="e6868aab-9a99-4340-b734-f331f7fe95ad" valueTypeId="8cb03380-554e-4cdb-aca8-3909a1671384"/>
+    <recordSetType typeId="8baaae67-ae1d-4a80-be09-94c41354873c" valueTypeId="2621644c-958d-461c-be0b-7bdcdb7b39a5"/>
+    <recordKeyType typeId="9dba9a3a-a864-4b50-837b-d5e779308417" valueTypeId="3a42c3e2-0dd8-4274-aa2c-e493464ba4b7"/>
+    <recordType typeId="f6826081-6c46-46e2-ae0e-a356c0514c50" valueTypeId="6b1cd76b-bef3-414f-b807-587c2ee57c56"/>
+    <recordManagerType typeId="0df398ec-50ff-4053-a635-03d3610b6b9a" valueTypeId="3204da47-06b6-4fb8-8253-8c6457ef61ad"/>
+  </producedTypes>
+  <name>мСвязиУровнейПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связи уровней проверки</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Связь уровня проверки</value>
+  </recordPresentation>
+  <dimensions uuid="f90e9bd8-4d93-467c-8fec-dca91047f367">
+    <name>ТекущийУровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий уровень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мУровниПроверки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c043684e-03a8-44f2-b87c-360973b2209b">
+    <name>СледующийУровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующий уровень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мУровниПроверки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cfc088ff-420a-444d-b7a8-cdd6763f5ef4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="70bb1296-1565-459d-8c47-0ca9c8da750c">
+    <name>ЮрФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юр физ лицо</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ЮрФизЛицо</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f6ca1a2a-be3f-4518-9e3e-3bf5e2d5099a">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment>Подразделение Исполнителя</comment>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение Исполнителя для определения след уровня Отряд/Отдел</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1f0791ac-325e-4055-931a-749683118747">
+    <name>ВидРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыРаботЮрЛица</types>
+      <types>CatalogRef.мВидыРаботФизЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

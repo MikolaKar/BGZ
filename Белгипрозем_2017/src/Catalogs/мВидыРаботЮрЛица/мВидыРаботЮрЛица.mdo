@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e86c588-19fa-41cb-82ec-301d0159cf7b">
+  <producedTypes>
+    <objectType typeId="3bfaf71d-4309-4d5b-a929-bceb3f11871e" valueTypeId="8a9e2cd4-7c8a-4016-a11a-8d141dd09644"/>
+    <refType typeId="620961d2-68d6-4eb3-8547-6bcfad6eccc2" valueTypeId="56c8b547-2307-40f5-b05d-ec5d6fdba826"/>
+    <selectionType typeId="cbe7d1e5-f0ae-41ef-8fca-5152407aa496" valueTypeId="bdd3421b-237d-4e2c-8e4b-7ba89c25eb12"/>
+    <listType typeId="dbeffe7c-3222-4da0-8215-820a63c57a17" valueTypeId="20817ad7-7b14-4961-912f-85dadb15a08c"/>
+    <managerType typeId="e2403e30-3a61-4031-a4e3-973e1c611a83" valueTypeId="89107e71-f212-4097-83c5-b4eeaa1adfb7"/>
+  </producedTypes>
+  <name>мВидыРаботЮрЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды работ для юр лиц</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мВидыРаботЮрЛица.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мВидыРаботЮрЛица.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид работы для юр лиц</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4021b153-837d-464f-9dab-a7424d57a67e">
+      <name>КадастроваяОценкаГКИ</name>
+      <description>Кадастровая оценка для ГКИ</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000155</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+    <items id="cd44ba0d-9254-4a69-aa0d-1fc9c09e9f73">
+      <name>ИзготовлениеИПоставкаТКП</name>
+      <description>Изготовление и поставка ТКП</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000115</value>
+      </code>
+    </items>
+    <items id="e9cf56dc-9ab7-4644-ba8f-61bb3ec6a474">
+      <name>ОбновлениеЗИС</name>
+      <description>Обновление ЗИС*</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000152</value>
+      </code>
+    </items>
+    <items id="63a20c41-bee8-4e60-8bc4-4c022140aabb">
+      <name>РазработкаГрадостроительногоПаспорта</name>
+      <description>Разработка градостроительного паспорта земельного участка</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000156</value>
+      </code>
+    </items>
+    <items id="665cf72e-ff45-4ce1-8614-cc787c61ec1a">
+      <name>РазработкаПроектаОтвода</name>
+      <description>Разработка проекта отвода****</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000151</value>
+      </code>
+    </items>
+    <items id="be5e38b7-ff6b-4131-89f3-2f00ad5b615d">
+      <name>УслугиПоКонтролюЗаКачеством</name>
+      <description>Услуги по контролю за качеством</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000116</value>
+      </code>
+    </items>
+    <items id="e24d08f9-daea-4619-9446-6f861a3daa46">
+      <name>УстановлениеНефиксированныхГраницЛЭП</name>
+      <description>Установление нефиксированных границ ЛЭП</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000157</value>
+      </code>
+    </items>
+    <items id="6dd90871-356b-48b0-87bd-0e81119e9e9a">
+      <name>ЭксплуатацияЗИС</name>
+      <description>Эксплуатация ЗИС*</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000153</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.мВидыРаботЮрЛица.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="5ddc0a0a-738f-4767-a4fb-4984f1a40350">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>600</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="3cfe4563-4243-4935-b643-88cc7493e5fb">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="348b16f4-2241-417b-a11f-3bdcc31aaa1f">
+    <name>ВидРаботПоДоговорам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ по договорам</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыРаботПоДоговорам</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d97bbbe8-aa13-41c2-bb3b-293ab55f4515">
+    <name>ВспомогательныйКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вспомогательный код</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для загрузки из других систем</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="e20c10e6-c529-493c-808c-1f338cbcab25">
+    <name>ПредметДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет договора</value>
+    </synonym>
+    <comment>Для печати в договоре</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для печати в договоре</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="43151b69-5ddf-496a-8dc7-d0e3396a7e7a">
+    <name>РезультатРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат работы</value>
+    </synonym>
+    <comment>Для печати в договоре</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для печати в договоре</value>
+    </toolTip>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="81c465b4-a211-49f9-86cf-88522907bff8">
+    <name>МоментОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Момент оплаты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="6dbd35a2-b2c8-4f76-b9e2-60d998815c7f">
+    <name>СрокОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок оплаты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="769a1162-a53b-43e0-995f-bb833df6bc73">
+    <name>УчетПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет производства</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Требует учета остатков номенклатуры производства</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="59cae686-dc37-44a5-afcf-758e2f63c9d6">
+    <name>НеРассчитыватьПлановыйСрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не рассчитывать плановый срок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bb8ca3fb-d3fc-4ef3-99f5-75ce3ce18258">
+    <name>ДелоНеНадо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дело не надо</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="61a1d696-feea-41c4-9474-9f944ebd8b7b">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="e6435e43-2a25-47a2-bbea-347c8b936d8f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

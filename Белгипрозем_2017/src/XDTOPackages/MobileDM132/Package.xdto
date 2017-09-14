@@ -1,0 +1,313 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/mobileDM132">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<valueType name="TaskExecutionMark" base="xs:string">
+		<enumeration xsi:type="xs:string">ExecutedNeutral</enumeration>
+		<enumeration xsi:type="xs:string">ExecutedPositive</enumeration>
+		<enumeration xsi:type="xs:string">ExecutedAlmostPositive</enumeration>
+		<enumeration xsi:type="xs:string">ExecutedNegative</enumeration>
+		<enumeration xsi:type="xs:string">NotExecuted</enumeration>
+	</valueType>
+	<valueType name="TaskImportance" base="xs:string">
+		<enumeration xsi:type="xs:string">low</enumeration>
+		<enumeration xsi:type="xs:string">normal</enumeration>
+		<enumeration xsi:type="xs:string">high</enumeration>
+	</valueType>
+	<valueType name="CalendarEventStatus" base="xs:string">
+		<enumeration xsi:type="xs:string">confirmed</enumeration>
+		<enumeration xsi:type="xs:string">tentative</enumeration>
+		<enumeration xsi:type="xs:string">cancelled</enumeration>
+	</valueType>
+	<valueType name="CalendarEventType" base="xs:string">
+		<enumeration xsi:type="xs:string">event</enumeration>
+		<enumeration xsi:type="xs:string">recurrence</enumeration>
+		<enumeration xsi:type="xs:string">recurrenceException</enumeration>
+	</valueType>
+	<valueType name="CalendarEventFrequency" base="xs:string">
+		<enumeration xsi:type="xs:string">daily</enumeration>
+		<enumeration xsi:type="xs:string">weekly</enumeration>
+		<enumeration xsi:type="xs:string">monthly</enumeration>
+		<enumeration xsi:type="xs:string">yearly</enumeration>
+	</valueType>
+	<valueType name="CalendarEventEndRule" base="xs:string">
+		<enumeration xsi:type="xs:string">never</enumeration>
+		<enumeration xsi:type="xs:string">byCount</enumeration>
+		<enumeration xsi:type="xs:string">byDate</enumeration>
+	</valueType>
+	<valueType name="CalendarEventColor" base="xs:string">
+		<enumeration xsi:type="xs:string">red</enumeration>
+		<enumeration xsi:type="xs:string">blue</enumeration>
+		<enumeration xsi:type="xs:string">yellow</enumeration>
+		<enumeration xsi:type="xs:string">green</enumeration>
+		<enumeration xsi:type="xs:string">orange</enumeration>
+		<enumeration xsi:type="xs:string">none</enumeration>
+	</valueType>
+	<valueType name="JournalRecordType" base="xs:string">
+		<enumeration xsi:type="xs:string">Information</enumeration>
+		<enumeration xsi:type="xs:string">Warning</enumeration>
+		<enumeration xsi:type="xs:string">Error</enumeration>
+	</valueType>
+	<valueType name="ProcessTargetDetailsFileType" base="xs:string">
+		<enumeration xsi:type="xs:string">pdf</enumeration>
+		<enumeration xsi:type="xs:string">html</enumeration>
+		<enumeration xsi:type="xs:string">txt</enumeration>
+	</valueType>
+	<valueType name="ProcessState" base="xs:string">
+		<enumeration xsi:type="xs:string">Active</enumeration>
+		<enumeration xsi:type="xs:string">Stopped</enumeration>
+		<enumeration xsi:type="xs:string">Terminated</enumeration>
+	</valueType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="AddNewDevice" base="d2p1:Request">
+		<property name="mobileClientCode" type="xs:string"/>
+		<property name="deviceInfo" type="xs:string"/>
+		<property name="dataExpirationSettings" type="d2p1:DataExpirationSettings"/>
+		<property name="maxFileSizeToDownloadSetting" type="d2p1:MaxFileSizeToDownloadSetting"/>
+	</objectType>
+	<objectType name="Addressee">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="presentation" type="xs:anyType"/>
+		<property name="phoneNumbers" type="xs:anyType"/>
+		<property name="address" type="xs:string"/>
+	</objectType>
+	<objectType name="DataExpirationSettings">
+		<property name="dataExpirationPeriod" type="xs:integer"/>
+	</objectType>
+	<objectType name="LogRecord">
+		<property name="description" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1c.ru/mobileDM132" name="recordType" type="d3p1:JournalRecordType"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="ExchangeRequest" base="d2p1:Request">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="exchangeData" type="d3p1:ValueStorage" nillable="true"/>
+		<property name="needToReturnData" type="xs:boolean"/>
+		<property name="mobileClientCode" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="lastMessageId" type="d3p1:UUID"/>
+		<property name="lastMessagePartNumber" type="xs:integer"/>
+		<property name="mobileClientInfo"/>
+		<property name="startProcessing" type="xs:boolean"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="ExchangeResponse" base="d2p1:Response">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="messageId" type="d3p1:UUID"/>
+		<property name="messagePartNumber" type="xs:integer"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="messagePartData" type="d3p1:ValueStorage" nillable="true"/>
+		<property name="morePartsAvailable" type="xs:boolean"/>
+		<property name="messagesQueueLength" type="xs:integer"/>
+		<property name="currentMessageCompletionPercentage" type="xs:byte"/>
+	</objectType>
+	<objectType name="File">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="fileData" type="d3p1:ValueStorage"/>
+		<property name="extension" type="xs:string" lowerBound="0"/>
+		<property name="size" type="xs:string" lowerBound="0"/>
+		<property name="headerOnly" type="xs:boolean"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="name" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ownerId" type="d3p1:UUID"/>
+		<property name="ownerType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="baseFileId" type="d3p1:UUID" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="IncomingMail" base="d2p1:Mail">
+		<property name="from" type="d2p1:Addressee"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="Mail" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="importance" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="folderId" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="body" type="d3p1:ValueStorage" nillable="true"/>
+		<property name="subject" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="accountId" type="d3p1:UUID"/>
+		<property name="to" type="d2p1:Addressee" lowerBound="0" upperBound="-1"/>
+		<property name="cc" type="d2p1:Addressee" lowerBound="0" upperBound="-1"/>
+		<property name="files" type="d2p1:File" lowerBound="0" upperBound="-1"/>
+		<property name="creationDate" type="xs:dateTime"/>
+		<property name="hasAttachment" type="xs:boolean"/>
+		<property name="wasAnswered" type="xs:boolean"/>
+		<property name="wasForwarded" type="xs:boolean"/>
+		<property name="markedForDeletion" type="xs:boolean"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="shortText" type="d3p1:ValueStorage"/>
+		<property name="wasRead" type="xs:boolean"/>
+		<property name="threadId" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="MailAccount">
+		<property name="address" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="canBeUsedForSending" type="xs:boolean"/>
+		<property name="isDefaultAccount" type="xs:boolean"/>
+	</objectType>
+	<objectType name="MailFolder">
+		<property name="folderType" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="parentFolderId" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="mailAccountId" type="d3p1:UUID" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="caption" type="xs:string"/>
+	</objectType>
+	<objectType name="MailFolderSynchronizationSettings">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="folderIds" type="d3p1:UUID" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="MessageRequest" base="d2p1:Request">
+		<property name="mobileClientCode" type="xs:string"/>
+		<property name="lastMessagePartNumber" type="xs:integer"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="lastMessageId" type="d3p1:UUID"/>
+	</objectType>
+	<objectType name="ObjectDeletion">
+		<property name="objectType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+	</objectType>
+	<objectType name="ObjectInFolder">
+		<property name="objectType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="objectId" type="d3p1:UUID"/>
+		<property name="folderType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="folderId" type="d3p1:UUID"/>
+	</objectType>
+	<objectType name="ObjectReadState">
+		<property name="wasRead" type="xs:boolean"/>
+		<property name="objectType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="OkResponse" base="d2p1:Response"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="OutgoingMail" base="d2p1:Mail">
+		<property name="readyToBeSent" type="xs:dateTime" nillable="true"/>
+		<property name="hasAnswer" type="xs:boolean"/>
+		<property name="baseMailType" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="baseMailId" type="d3p1:UUID"/>
+		<property name="answerType" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="bcc" type="d2p1:Addressee" lowerBound="0" upperBound="-1"/>
+		<property name="wasSent" type="xs:boolean"/>
+	</objectType>
+	<objectType name="Request" abstract="true"/>
+	<objectType name="Response" abstract="true"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="Role" base="d2p1:TaskExecutor"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="Task" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="presentation" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="authorId" type="d3p1:UUID"/>
+		<property name="shortDescription" type="xs:string"/>
+		<property name="deadline" type="xs:dateTime"/>
+		<property name="importance" type="xs:string"/>
+		<property name="creationDate" type="xs:dateTime"/>
+		<property name="targets" type="d2p1:AttachedProcessTarget" lowerBound="0" upperBound="-1"/>
+		<property name="executionDate" type="xs:dateTime"/>
+		<property name="executionMark" type="d2p1:TaskExecutionMark"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="formPresentation" type="d3p1:ValueStorage"/>
+		<property name="executionResultVariants" lowerBound="1" upperBound="-1"/>
+		<property name="executionResult" type="xs:string"/>
+		<property name="processState" type="d2p1:ProcessState"/>
+	</objectType>
+	<objectType name="AttachedProcessTarget">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="type" type="xs:string"/>
+	</objectType>
+	<objectType name="UnplugDevice">
+		<property name="mobileClientCode" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="User" base="d2p1:TaskExecutor"/>
+	<objectType name="TaskExecutor">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="presentation" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="TaskExecution" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="result" type="xs:byte"/>
+		<property name="comment" type="xs:string"/>
+		<property name="date" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="MaxFileSizeToDownloadSetting">
+		<property name="fileSize" type="xs:long"/>
+	</objectType>
+	<objectType name="GetFile">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="ExecutionProcess" base="d2p1:Process">
+		<property name="performers" type="d2p1:TaskExecutor" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ObjectWithDataVersions">
+		<property name="dataVersion" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="TaskRedirection" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="taskId" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="newPerformerId" type="d3p1:UUID"/>
+		<property name="newPerformerType" type="xs:string"/>
+		<property name="comment" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="CalendarEvent" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="description" type="xs:string"/>
+		<property name="daylong" type="xs:boolean"/>
+		<property name="startDate" type="xs:dateTime"/>
+		<property name="endDate" type="xs:dateTime"/>
+		<property name="status" type="d2p1:CalendarEventStatus"/>
+		<property name="type" type="d2p1:CalendarEventType"/>
+		<property name="recurrenceStartDate" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="recurrenceEndDate" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="frequency" type="d2p1:CalendarEventFrequency" lowerBound="0" nillable="true"/>
+		<property name="interval" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="byMonthDay" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="byMonth" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="byDay" type="d2p1:RecurrenceDay" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="endRule" type="d2p1:CalendarEventEndRule" lowerBound="0" nillable="true"/>
+		<property name="count" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="recurrenceException" type="d2p1:RecurrenceException" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="color" type="d2p1:CalendarEventColor" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="RecurrenceDay">
+		<property name="day" type="xs:integer"/>
+		<property name="occurrence" type="xs:integer"/>
+	</objectType>
+	<objectType name="RecurrenceException">
+		<property name="date" type="xs:date"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+	</objectType>
+	<objectType name="ObjectColor">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1c.ru/mobileDM132" name="color" type="d3p1:CalendarEventColor"/>
+	</objectType>
+	<objectType name="ProblemReportFromUser">
+		<property name="description" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1c.ru/mobileDM132" name="journalRecords" type="d3p1:JournalRecord" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="JournalRecord" base="d2p1:LogRecord">
+		<property name="objectType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="objectId" type="d3p1:UUID"/>
+		<property name="recordDate" type="xs:dateTime"/>
+		<property name="recordMSecs" type="xs:string"/>
+	</objectType>
+	<objectType name="TaskExecutionResultVariant">
+		<property name="executionResult" type="xs:byte"/>
+		<property name="presentationBigScreen" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1c.ru/mobileDM132" name="resultMark" type="d3p1:TaskExecutionMark"/>
+		<property name="presentationSmallScreen" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="Process" base="d2p1:ObjectWithDataVersions" abstract="true">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="description" type="xs:string"/>
+		<property name="name" type="xs:string"/>
+		<property name="deadline" type="xs:dateTime"/>
+		<property name="importance" type="xs:string"/>
+		<property name="creationDate" type="xs:dateTime"/>
+		<property name="startDate" type="xs:dateTime"/>
+		<property name="endDate" type="xs:dateTime"/>
+		<property name="executionHistory" type="xs:string"/>
+		<property name="targets" type="d2p1:AttachedProcessTarget" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="mainTaskId" type="d3p1:UUID"/>
+		<property name="state" type="d2p1:ProcessState"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="ProcessStateChange" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="processId" type="d3p1:UUID"/>
+		<property name="newState" type="d2p1:ProcessState"/>
+		<property name="comment" type="xs:string"/>
+		<property name="type" type="xs:string"/>
+	</objectType>
+	<objectType name="MailFooterSettings">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="newMailFooterId" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="responseMailFooterId" type="d3p1:UUID"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/mobileDM132" name="MailTextTemplate" base="d2p1:ObjectWithDataVersions">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="text" type="xs:string"/>
+		<property name="name" type="xs:string"/>
+	</objectType>
+	<objectType name="ActionTarget">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="id" type="d3p1:UUID"/>
+		<property name="typePresentation" type="xs:string"/>
+		<property name="presentation" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="details" type="d3p1:ValueStorage"/>
+		<property xmlns:d3p1="http://www.1c.ru/mobileDM132" name="detailsFormat" type="d3p1:ProcessTargetDetailsFileType"/>
+	</objectType>
+</package>

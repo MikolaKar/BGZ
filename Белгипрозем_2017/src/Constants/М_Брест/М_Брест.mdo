@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc8aba02-da62-41a6-9edf-9cbf1a0a2d60">
+  <producedTypes>
+    <managerType typeId="4d14b61f-13a8-44c2-b5fe-157b94960761" valueTypeId="b6926467-f70d-4258-9859-5598564b48dd"/>
+    <valueManagerType typeId="874880c0-e068-4d1e-aa2a-ab923e1424f9" valueTypeId="a0e9f286-5ba2-4ce3-bdfc-013839be4bb3"/>
+  </producedTypes>
+  <name>М_Брест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Брест</value>
+  </synonym>
+  <comment>Это база Брест</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

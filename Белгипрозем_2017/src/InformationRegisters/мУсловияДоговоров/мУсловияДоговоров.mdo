@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8d99132-d275-48f8-b3a3-db70c29af625">
+  <producedTypes>
+    <selectionType typeId="c322dabd-2ab8-498b-bd11-d924f584e5f9" valueTypeId="12822792-aec2-4689-b32c-52474611ea90"/>
+    <listType typeId="bbf6ad14-08bd-48d1-b6ef-c24ed0493c3a" valueTypeId="12ae92c7-a4d5-4fae-ac35-f6ac893dbb37"/>
+    <managerType typeId="2a47535c-5217-4459-a252-5e45f40b6f61" valueTypeId="5e89317d-82a9-4167-9a0a-a8e0dd6d5e7b"/>
+    <recordSetType typeId="9374a770-fcf7-45de-952e-10aa4749f037" valueTypeId="64b11356-d78f-4a4f-8fdc-c49da95e5ca6"/>
+    <recordKeyType typeId="c2f4f15d-3aa5-4a68-b7ff-ff8d0d6ab5aa" valueTypeId="c03f5168-aa59-468c-9c0f-931c07331341"/>
+    <recordType typeId="d2408b22-6ee2-473f-89ce-2092d59edc7f" valueTypeId="f4bd51dd-1329-44b4-92f9-7ac6da4d9988"/>
+    <recordManagerType typeId="ed603b70-153f-4572-929b-6df9c3639b70" valueTypeId="b5b5ed31-103a-4ba4-97c9-d198aba5e7e6"/>
+  </producedTypes>
+  <name>мУсловияДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Условия договора</value>
+  </recordPresentation>
+  <resources uuid="c6b9d7a4-f2e5-4dc9-97cf-e061dff29464">
+    <name>ПроцентПредоплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент предоплаты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eb667eaf-ae29-4cca-9e7f-3e19ba860f1b">
+    <name>УчетДатыПодписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет даты подписания</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="12ae68a0-5340-4299-a385-c242747a08f5">
+    <name>УчетДатыПредоставленияДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет даты предоставления документов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a5f3fa97-8e34-43e3-b2f3-e740834bca46">
+    <name>УчетДатыВозвратаДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет даты возврата договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e6f8c39-221d-4c21-9b75-2a15f1fe1f0a">
+    <name>УчетДатыПредоплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет даты предоплаты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="ebf720cf-e1f0-42f4-a1e8-4f5cf8c82c6f">
+    <name>УчетДатыВыполненияПредыдущегоЭтапа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет даты выполнения предыдущего этапа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="43a1cb13-e698-4d45-88d1-abf5ded6b6ee">
+    <name>УчетДатыПредоставленияРешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет даты предоставления решения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="55bf3f2f-df69-4397-a4bf-9886ed047a3e">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="74c26473-13d8-49be-a57a-f707f0006686">
+    <name>ЭтапДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.мУсловияДоговоров.Dimension.Договор</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="659841be-e4d4-4ff9-8dfc-a24a7d53654e">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

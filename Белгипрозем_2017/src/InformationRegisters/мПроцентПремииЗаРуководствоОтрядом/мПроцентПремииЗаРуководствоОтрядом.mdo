@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="125cb35a-c64c-4c5c-a40e-714d35efed9f">
+  <producedTypes>
+    <selectionType typeId="e62adde5-ea02-45b8-9fde-d6577b0ddf09" valueTypeId="14194561-5922-4bc3-8c4b-21260c99c887"/>
+    <listType typeId="1163998e-5150-42e9-ab8d-9001ecc464b2" valueTypeId="4c44517e-0625-4ace-823a-1bdb42e1576d"/>
+    <managerType typeId="ba2bafc8-a319-41f2-9ae7-eeb2b490636c" valueTypeId="6ac325cb-35d1-4859-a80f-c1f30dab2648"/>
+    <recordSetType typeId="abbc0164-b36e-4996-82c0-8bf9838cae6c" valueTypeId="a51c9a9e-4934-46be-b584-641e54aa9b70"/>
+    <recordKeyType typeId="e60114c3-6ff1-40f3-b992-baa389ac7c12" valueTypeId="303368f5-8655-41b0-bb6c-a8a20db555de"/>
+    <recordType typeId="9c01ff6b-7050-4115-b54f-751118a63cdc" valueTypeId="e35834ba-99ad-4850-99eb-1cf016d696bc"/>
+    <recordManagerType typeId="7e850bc0-13ea-4f96-aced-f73a51336025" valueTypeId="2d9e77d9-76f1-4549-b9c6-c0b078a7162d"/>
+  </producedTypes>
+  <name>мПроцентПремииЗаРуководствоОтрядом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент премии за руководство отрядом</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Процент премии за руководство отрядом</value>
+  </explanation>
+  <resources uuid="ce7108f4-7111-482a-908d-b3ef42028b7d">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="93f4321c-7728-43c2-90fb-412c98cc7d8a">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

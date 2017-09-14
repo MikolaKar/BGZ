@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="078a9544-e476-40b0-a0b7-826559804daa">
+  <name>СтартВнешнегоПорученияПередЗаписьюЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Старт внешнего поручения перед записью задач</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>BusinessProcessObject.Согласование</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.ВнешниеПорученияВызовСервера.СтартВнешнегоПорученияПередЗаписьюЗадач</handler>
+</mdclass:EventSubscription>

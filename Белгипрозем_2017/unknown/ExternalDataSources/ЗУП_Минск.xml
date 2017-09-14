@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<ExternalDataSource uuid="b96cbcce-bc19-4ad1-ba97-a85186af6171">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.ЗУП_Минск" category="Manager">
+				<xr:TypeId>6266da07-cd72-45bd-bbd2-1e392ff21e2f</xr:TypeId>
+				<xr:ValueId>3ac73fc1-d47e-4b41-9d19-ca85d8969746</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.ЗУП_Минск" category="TablesManager">
+				<xr:TypeId>577fc95b-877b-4713-9311-9a67f0e4f16f</xr:TypeId>
+				<xr:ValueId>56d74c91-fd9f-4c53-847f-58cf2a9adc45</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.ЗУП_Минск" category="CubesManager">
+				<xr:TypeId>4dbb7f60-815e-454b-8b79-3a6e507ddf4c</xr:TypeId>
+				<xr:ValueId>5a5c96c5-d89f-4039-813a-dbbed03a02a6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЗУП_Минск</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗУП минск</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>ВидСобытия</Table>
+			<Table>КадроваяИсторияСотрудников</Table>
+			<Table>Подразделения</Table>
+			<Table>Сотрудники</Table>
+			<Table>ФизическиеЛица</Table>
+			<Table>Должности</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>

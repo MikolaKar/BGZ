@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60ebe1ff-4d45-490f-b46b-b8267435c4d3">
+  <producedTypes>
+    <objectType typeId="6c28aa8f-cf84-427b-8dc7-fdf4560f2424" valueTypeId="bcf90774-c9b4-4cde-adf9-46ed7ee38a19"/>
+    <refType typeId="d3252ccf-f537-4d9a-b8e1-58f764f8a489" valueTypeId="d8ec6dde-43e1-4e68-aac6-d3092037f642"/>
+    <selectionType typeId="f0917a8a-0e05-486f-a979-c135e480598e" valueTypeId="fec5faee-ad0b-4b03-8d0f-3632d6f3aff2"/>
+    <listType typeId="c8f521c8-7aea-455a-8482-6f81dee33a2b" valueTypeId="ae9467a1-fc02-471d-a7fc-9531ba3c2195"/>
+    <managerType typeId="b83afcd1-345b-4da9-9e31-e5e56c97d6b8" valueTypeId="a238a81a-ab66-44d3-96a1-066c15e6521e"/>
+  </producedTypes>
+  <name>мПродлениеСроков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продление сроков договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.мПродлениеСроков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.мПродлениеСроков.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="057db3cb-7ff1-4c2c-ba62-a3b88fd34276">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b92187fe-abf3-449c-add1-50046ee07c75">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="377c7faf-fd1d-4c39-aeed-b1238c568276">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="d746d0c3-6d39-4e5d-a9b4-0aa94295a157">
+    <producedTypes>
+      <objectType typeId="1955c1a7-735c-4210-9f8a-7ad66e341ed4" valueTypeId="cc4b0877-b4a2-4e56-bb97-5f61caf6881a"/>
+      <rowType typeId="ef27450a-c8ff-4963-acc8-b04a4db664e5" valueTypeId="bd78f297-7721-4ac2-a2ed-726d79f7b1f3"/>
+    </producedTypes>
+    <name>Сроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сроки</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="4b85c264-6af6-4e67-9c13-63ab32fdff8f">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВнутренниеДокументы</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="29b50b4a-0c90-4677-9b08-95c103414a29">
+      <name>ЭтапДоговора</name>
+      <synonym>
+        <key>ru</key>
+        <value>Этап договора</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.мЭтапыДоговоров</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.мПродлениеСроков.TabularSection.Сроки.Attribute.Договор</field>
+      </choiceParameterLinks>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b209372f-5c2b-4640-acf0-abdfada258f3">
+      <name>НомерДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ДС</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0a19cd92-910a-45e1-959b-e611dfa75d89">
+      <name>ДатаДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата ДС</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7a254812-0940-4d1a-99c3-5f7ac0a3b249">
+      <name>ПродлитьДо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продлить до</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="04d87780-e927-4f4d-9d52-c5287a5cae7d">
+      <name>ВидДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид документа</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

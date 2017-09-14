@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd078e6c-c76a-498a-9309-86a2a6cf378c">
+  <producedTypes>
+    <objectType typeId="86cc4433-b2fb-4473-a938-ad553ce8389a" valueTypeId="db346dc0-f4b4-46b6-82dd-7829efcaa2ba"/>
+    <refType typeId="dd35e0bd-5f41-4bfd-b7d0-d5afa5d2cf95" valueTypeId="d7ce9804-64a2-43cc-a350-4f3528149085"/>
+    <selectionType typeId="6c13ea0e-0865-433a-89b8-bc7862c21e11" valueTypeId="0bb8b588-e7d1-49bc-97c5-c020f3ac29a7"/>
+    <listType typeId="90d4b797-883d-4c03-9bbe-bdb5563d5653" valueTypeId="201d3122-f3fb-4b11-b525-0ed25646ead5"/>
+    <managerType typeId="75905b40-c8e1-438d-b3b8-d8da5e731048" valueTypeId="82786fd2-2d49-4f68-8fde-4c34b6ec33c5"/>
+  </producedTypes>
+  <name>мВидыПлатежейГосРегистрации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды платежей гос. регистрации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мВидыПлатежейГосРегистрации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мВидыПлатежейГосРегистрации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>Виды платежей гос. регистрации, связанных с договором</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4b8ed681-8f59-4e8d-acff-284438a09f13">
+      <name>ГруппаГосПошлина</name>
+      <description>Госпошлина</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="fe03b2ef-caee-4182-b8b7-b164386b252c">
+        <name>Госпошлина</name>
+        <description>Госпошлина</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+      <content id="d4a56649-86a4-424e-b2ab-bac88f6751e2">
+        <name>ГоспошлинаЮрЛица</name>
+        <description>Госпошлина для юрлиц</description>
+        <code xsi:type="core:StringValue">
+          <value>000000014</value>
+        </code>
+      </content>
+    </items>
+    <items id="e329223d-5b01-4564-8bb5-abea6e7612e7">
+      <name>ГруппаГосРегистрация</name>
+      <description>Госрегистрация</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="455fd2b4-1747-4249-91fd-1e1bde072368">
+        <name>РегистрацияОдногоОбъектаЮрЛица</name>
+        <description>Регистрация 1 объекта юрлица</description>
+        <code xsi:type="core:StringValue">
+          <value>000000017</value>
+        </code>
+      </content>
+      <content id="5a62fe31-f439-4ed5-921f-ed9ddcbcfba2">
+        <name>РегистрацияИныхПрав</name>
+        <description>Регистрация иных прав</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="940ac32a-9ec0-45af-8041-74facd872e54">
+        <name>РегистрацияКаждогоПоследующегоОбъектаЮрЛица</name>
+        <description>Регистрация кажд. послед. объекта юрлица</description>
+        <code xsi:type="core:StringValue">
+          <value>000000018</value>
+        </code>
+      </content>
+      <content id="9b18228b-b27e-4917-95e5-0defeb5bfbec">
+        <name>РегистрацияПраваНаЗемУчасток</name>
+        <description>Регистрация права на земельный участок</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="8f0261e9-105f-4255-a521-1dd202615544">
+        <name>РегистрацияЗемУчастка</name>
+        <description>Регистрация создания земельного участка</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+      <content id="b63ab781-7f25-4c20-8a8e-c217ab41bb40">
+        <name>СоставлениеВыдачаПланаЗемельногоУчастка</name>
+        <description>Составление выдача плана участка юрлица</description>
+        <code xsi:type="core:StringValue">
+          <value>000000019</value>
+        </code>
+      </content>
+    </items>
+    <items id="5a899b65-271a-4b9f-ac74-4660cad87f92">
+      <name>ГруппаОграничения</name>
+      <description>Ограничения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="ee68bb5d-762a-448e-9702-e1f270bb8056">
+        <name>РегистрацияОграничений</name>
+        <description>Регистрация ограничений</description>
+        <code xsi:type="core:StringValue">
+          <value>000000013</value>
+        </code>
+      </content>
+      <content id="0279de25-8185-4fa2-bd82-69a8d0494ffe">
+        <name>РегистрацияОграниченийБолее5</name>
+        <description>Регистрация ограничений больше 5</description>
+        <code xsi:type="core:StringValue">
+          <value>000000016</value>
+        </code>
+      </content>
+      <content id="68328e49-a0f1-402e-88a2-9c674337ce6a">
+        <name>РегистрацияОграниченийДо6</name>
+        <description>Регистрация ограничений не более 5</description>
+        <code xsi:type="core:StringValue">
+          <value>000000015</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.мВидыПлатежейГосРегистрации.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="8e0874b2-6f81-4f41-8c63-cc29ca5a8070">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>360</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="4609bd03-55c5-48c5-a0c9-542313104418">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

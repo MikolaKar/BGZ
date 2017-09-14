@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cdb1c5a-a97e-44d5-8783-1247df7b6732">
+  <producedTypes>
+    <refType typeId="bf805580-506b-423c-8711-be9c7dc1555a" valueTypeId="7268833b-a6db-4058-b453-b98d8b12d304"/>
+    <listType typeId="cd2f155f-931c-42a9-b065-1a8a9790e53e" valueTypeId="7feadf20-e369-4e19-ac79-8ffa89a92820"/>
+    <managerType typeId="4a74b350-b0ef-4287-a44e-fcfb7b0548e8" valueTypeId="46676c14-d972-4f18-9bcf-12fb65655290"/>
+  </producedTypes>
+  <name>мСостояниеОбменЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>М состояние обмен ЕРИП</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="314cf90d-b271-49dd-9582-b62330ceaad2">
+    <name>ДляОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для отправки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f2819b83-6262-4c41-b6c9-396496de9030">
+    <name>Отправлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e26e51c4-a58b-4a05-9161-b7c79e2dcdac">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f3c1561c-f182-47a7-86b3-169d45c8a9f5">
+    <name>ОжиданиеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание оплаты</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5c95c07b-1661-4565-ac89-c026c6a27df7">
+    <name>Оплачен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

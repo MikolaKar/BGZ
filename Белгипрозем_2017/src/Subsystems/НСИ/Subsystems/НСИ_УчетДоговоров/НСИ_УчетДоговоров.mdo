@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67f008f3-8caa-4e99-be4d-030b29b9a3c8">
+  <name>НСИ_УчетДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет договоров</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.мВидыДатДоговоров</content>
+  <content>Catalog.мВидыРаботПоДоговорам</content>
+  <content>Catalog.мВидыСтоимостиНормоЧаса</content>
+  <content>Catalog.мКлассификаторЕдиницИзмерения</content>
+  <content>Catalog.мОсвобождениеОтНДС</content>
+  <content>Catalog.мСтавкиНДС</content>
+  <content>Catalog.мШаблоныСмет</content>
+  <content>Catalog.мНаборыПараметровОбъектовРабот</content>
+  <content>Catalog.мВидыРаботФизЛица</content>
+  <content>Catalog.мВидыРаботЮрЛица</content>
+  <content>Catalog.мУровниКвалификации</content>
+  <content>Catalog.мИсточникиФинансирования</content>
+  <content>Catalog.мШаблоныУсловийДоговоров</content>
+  <content>InformationRegister.мПравилаВыбораРасчетногоСчета</content>
+  <content>InformationRegister.мРасчетныеСчетаДокументов</content>
+  <content>CommonForm.мОсновныеДанные</content>
+  <parentSubsystem>Subsystem.НСИ</parentSubsystem>
+</mdclass:Subsystem>

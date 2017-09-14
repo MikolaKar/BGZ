@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="966d563c-3acf-4d80-8fba-6e7a2d21de92">
+  <name>ВременныйСервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>Временный сервис</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Временная подсистема для отладки</value>
+  </explanation>
+  <content>InformationRegister.СписаниеКонвертов</content>
+  <content>750162e8-8d4f-4d26-8d48-6d658f0c471a</content>
+  <content>0d4ec306-cd2b-4394-aee7-36e329f78925</content>
+  <content>Document.ОплатаРабот</content>
+  <content>Document.ВозвратОплаты</content>
+  <content>AccumulationRegister.РасчетыСПокупателями</content>
+  <content>AccumulationRegister.УчетДоговоров</content>
+  <content>Report.Ведомость6</content>
+  <content>Report.Заактировано</content>
+  <content>Report.мПоказателиВыполненияРабот</content>
+  <content>Report.мСправкаПоВидамЗаактированныхРабот</content>
+  <content>InformationRegister.мДатыДоговоров</content>
+</mdclass:Subsystem>

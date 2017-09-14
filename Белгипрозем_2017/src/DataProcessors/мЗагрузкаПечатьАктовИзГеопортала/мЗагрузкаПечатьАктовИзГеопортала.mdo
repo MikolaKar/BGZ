@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dfd342b-30cc-41ee-b999-db0340cfc82d">
+  <producedTypes>
+    <objectType typeId="66f2173d-a286-4fca-8baf-a63f4d98615c" valueTypeId="626312c5-87e5-4865-8afb-e6ea1dce4f1e"/>
+    <managerType typeId="5f5ad8d4-50a0-4a7e-a57c-e9cbf46ecd7c" valueTypeId="c16b9b0f-f2f1-4133-843e-bc22a2987308"/>
+  </producedTypes>
+  <name>мЗагрузкаПечатьАктовИзГеопортала</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка печать актов из геопортала</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мЗагрузкаПечатьАктовИзГеопортала.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="17db2224-d806-4a32-83b6-48c9461a01d9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9e3309b7-334d-436a-ba7f-fac71b5f7579">
+    <name>ПФ_DOCX_АктГеопортал</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктГеопортал</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

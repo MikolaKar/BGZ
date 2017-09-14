@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d439b8b1-fba7-4a58-80ec-a73746e60650">
+  <producedTypes>
+    <objectType typeId="6b244ff4-0fa3-409b-96d9-c50f564a4f10" valueTypeId="ecd191aa-b42c-42c3-8dc0-002522d9c81f"/>
+    <managerType typeId="c2fb15bf-b9b8-4cc7-add7-86280a39204f" valueTypeId="26e31f7e-3100-4446-a4ac-ae35c8d90336"/>
+  </producedTypes>
+  <name>мПечатьВедомостьКомиссиииПоПодразделениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать ведомость комиссиии по подразделениям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПечатьВедомостьКомиссиииПоПодразделениям.Form.Форма</defaultForm>
+  <forms uuid="f0831032-65ff-43ce-822b-d5481b26d84c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1ec99bd7-fe04-4546-afd7-d5b0c5b762c3">
+    <name>ПФ_MXL_ВедомостьКомиссииСОшибкамиПоПодразделениям</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL ведомость комиссии с ошибками по подразделениям</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="a11c0205-cc49-47d6-9a61-749ef84896ed">
+    <name>ПФ_MXL_ВедомостьКомиссииБезОшибокПоПодразделениям</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL ведомость комиссии без ошибок по подразделениям</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

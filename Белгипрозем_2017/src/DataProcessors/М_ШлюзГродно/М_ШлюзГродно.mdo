@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d7e9777-6ae2-4be2-8fe6-47389de31c0e">
+  <producedTypes>
+    <objectType typeId="9e5a8861-fc00-4a9e-8725-761ac15c6983" valueTypeId="3be07d8a-cbc9-4e8e-b99c-af3d37d9df85"/>
+    <managerType typeId="f382c7c1-9e86-4bb0-b8f1-28ae531fb368" valueTypeId="ae65d73b-d9d3-47a7-b8a2-41173548919b"/>
+  </producedTypes>
+  <name>М_ШлюзГродно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шлюз Гродно</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.М_ШлюзГродно.Form.Форма</defaultForm>
+  <attributes uuid="81100e47-f04b-4e04-ba4f-d1a711216c3a">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9bc7d428-8ee8-4107-9477-15bcd7c9eef8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e72972b3-1e91-4c2f-a3be-d9da3a20ce4c">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="b391fb10-0597-48e3-a562-2782058afa4c">
+    <name>КодыПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коды подразделений</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="c768605c-f210-4ab3-b84a-db53fef889e0">
+    <name>СоответствиеВидовРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие видов работ</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

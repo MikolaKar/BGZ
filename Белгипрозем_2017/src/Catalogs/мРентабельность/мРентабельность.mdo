@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8072954b-e50c-4bff-a701-0cb946fc7177">
+  <producedTypes>
+    <objectType typeId="5ada5aab-a0c0-4b5e-91ab-1dbc76f649f2" valueTypeId="294c00ae-5e61-467b-8f5b-f92cd97c619f"/>
+    <refType typeId="2f784f62-7208-49fe-9d26-220d1cbde6f0" valueTypeId="c75834e8-cfdb-43e0-9d9d-8e0a4e788206"/>
+    <selectionType typeId="abb4cdea-16da-4942-a48b-f2c783e34dab" valueTypeId="7c563108-66be-4fac-a04a-7c5e7532024b"/>
+    <listType typeId="88b3327e-4790-4ae6-87ab-4c55ea2586ec" valueTypeId="aa8f406f-0f88-4a61-bed0-58a93df27a89"/>
+    <managerType typeId="ee55bd0c-72b1-4e87-88b8-15c17b295f21" valueTypeId="d6b48cd0-01f3-4dac-8a6d-493c987b9cf9"/>
+  </producedTypes>
+  <name>мРентабельность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рентабельность</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мРентабельность.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мРентабельность.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e0ba745-3fda-4889-90d1-161b2b2b4c7e">
+  <producedTypes>
+    <refType typeId="4e4ffcc5-355b-4b63-97d6-694c7b32b244" valueTypeId="91d17b4c-2250-47c9-aba7-2faa05137ce5"/>
+    <listType typeId="f74d3f8c-3460-4d4b-8853-e9489e3c054d" valueTypeId="affa4e43-8a52-41e9-8044-95c04b6f30a0"/>
+    <managerType typeId="832a04bc-b8e2-486f-995b-a2999113f63a" valueTypeId="cd126241-bfba-43bf-b2a3-c42e062c754e"/>
+  </producedTypes>
+  <name>мСостоянияСмет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния смет</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="91562de4-1eb7-4ed3-a13f-2c4c6d772db9">
+    <name>Черновик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="57f206eb-1340-4d00-af7f-5dfa0c1b8033">
+    <name>ВДоговор</name>
+    <synonym>
+      <key>ru</key>
+      <value>В договор</value>
+    </synonym>
+    <comment>Смета составлена</comment>
+  </enumValues>
+</mdclass:Enum>

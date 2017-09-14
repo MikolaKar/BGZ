@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4ed9e7e-a804-4c68-a6f6-68dd0765752f">
+  <name>ОбменСМобильнымиОбработкаXDTO_132</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с мобильными обработка XDTO 132</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

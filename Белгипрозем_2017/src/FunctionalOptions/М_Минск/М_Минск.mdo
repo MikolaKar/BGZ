@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8286c69f-9f7c-476b-8f04-eaced3c6ce67">
+  <name>М_Минск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минск</value>
+  </synonym>
+  <comment>Это база Минск</comment>
+  <location>Constant.М_Минск</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Report.мЖурналРегистрацииВходящихДокументов</content>
+</mdclass:FunctionalOption>

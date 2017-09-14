@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9b8144a-6cb3-44d5-8143-095a69e4c090">
+  <name>Платежи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Платежи</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Document.ОплатаРабот</content>
+  <content>Document.ВозвратОплаты</content>
+  <content>Document.РеестрТекущихПлатежей</content>
+  <content>Report.мОтчетПоПлатежам</content>
+  <content>Catalog.мСпособыПлатежей</content>
+  <content>Document.мВзаимозачет</content>
+  <content>Enum.мВидыВзаимозачета</content>
+  <content>Report.мОтчетДляСтатОтчета4УН</content>
+  <content>FunctionalOption.М_ИспользоватьОбменЕРИП</content>
+  <content>Constant.М_ИспользоватьОбменЕРИП</content>
+  <content>DataProcessor.мОбменДаннымиЕРИП</content>
+  <content>Constant.М_КаталогОбменЕРИП</content>
+  <parentSubsystem>Subsystem.Договоры</parentSubsystem>
+</mdclass:Subsystem>

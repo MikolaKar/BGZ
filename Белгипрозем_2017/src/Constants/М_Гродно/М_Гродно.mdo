@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9be78cc2-ac5c-467d-bea6-58e8e3a70bc4">
+  <producedTypes>
+    <managerType typeId="3d9ede08-e7ac-4ba2-aaa3-83d228add7e6" valueTypeId="3c3d549b-b844-4ee5-9f84-02899f7c65d5"/>
+    <valueManagerType typeId="b5828afe-8a09-45c1-9bdd-1718adb88b0a" valueTypeId="65e4d3ff-c1ce-455b-8841-9ff237cc6b4f"/>
+  </producedTypes>
+  <name>М_Гродно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гродно</value>
+  </synonym>
+  <comment>Это база Гродно</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a65e47d-85e9-4fc7-a94e-9d218e8077c4">
+  <name>ОчисткаУстаревшихHTMLПредставленийСодержанияПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка устаревших HTML представлений содержания писем</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.ВстроеннаяПочтаСервер.ОчисткаУстаревшихHTMLПредставленийСодержанияПисем</methodName>
+  <description>Очистка устаревших HTML представлений содержания писем</description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

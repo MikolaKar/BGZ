@@ -1,0 +1,1976 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.4">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Resource.Возвращен</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.Документ</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.StandardAttribute.Posted</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.StandardAttribute.Date</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.StandardAttribute.Number</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Resource.Пользователь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Резолюции</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УничтожениеДел.Command.ПечатьАкта</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Dimension.Документ</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВходящиеДокументы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВходящиеДокументы.Command.СписокВходящихДокументов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВводРезолюции</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.мПричиныВозвратаПоручений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.СоставДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.КорреспондентОтправитель</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ДелаХраненияДокументов.Command.ОткрытьДелаТомаПоВопросуДеятельности</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ПервоеСообщениеТемы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ДатаФормирования</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ДелаХраненияДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ТекстОшибки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ФорматСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ТекстСообщенияСписок</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияСостоянийДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ИсторияПереписки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.мСостоянияПоручений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.СохранитьВсе</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ДобавленоГолосование</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныВходящихДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыВходящихДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВнутренниеДокументы.Attribute.ДатаРегистрации</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Attribute.ДатаВозврата</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.Корреспонденты</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиЭтаповОбработкиДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "ВидДокумента", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Нумераторы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВопросыДеятельности</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.УдалитьСвязанныеДокументы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.TabularSection.ВариантыГолосования.Attribute.ТекстВарианта</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЭлектронныеПодписи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+ЭлектронныеПодписи ИЗ РегистрСведений.ЭлектронныеПодписи КАК ЭлектронныеПодписи 
+//{{MRG[ &lt;-&gt; ]
+ГДЕ 
+	ЭлектронныеПодписи.Объект Ссылка Справочник.ВерсииФайлов
+	И ИСТИНА В
+	(
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//ЭлектронныеПодписи ИЗ РегистрСведений.ЭлектронныеПодписи КАК ЭлектронныеПодписи 
+//ГДЕ 
+//	ЭлектронныеПодписи.Объект Ссылка Справочник.ВерсииФайлов
+//	И ИСТИНА В
+//	(
+//		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//		ИЗ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//		ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+        ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+        ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+        И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+        И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//        ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//        ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//        И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//        И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+		ГДЕ ДескрипторыДоступаДляФайлов.ВладелецФайла = ЭлектронныеПодписи.Объект.Владелец.ВладелецФайла
+//{{MRG[ &lt;-&gt; ]
+	)
+	ИЛИ НЕ ЭлектронныеПодписи.Объект Ссылка Справочник.ВерсииФайлов
+	И ИСТИНА В
+	(
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ГДЕ ДескрипторыДоступаДляФайлов.ВладелецФайла = ЭлектронныеПодписи.Объект.Владелец.ВладелецФайла
+//	)
+//	ИЛИ НЕ ЭлектронныеПодписи.Объект Ссылка Справочник.ВерсииФайлов
+//	И ИСТИНА В
+//	(
+//		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//		ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//		ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+        ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+        ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+        И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+        И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//        ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//        ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//        И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//        И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+		ГДЕ ДескрипторыДоступаДляОбъектов.Объект = ЭлектронныеПодписи.Объект
+//{{MRG[ &lt;-&gt; ]
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ГДЕ ДескрипторыДоступаДляОбъектов.Объект = ЭлектронныеПодписи.Объект
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыгрузкаВсехФайловДокументаНаДиск</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВнутренниеДокументы.Attribute.РегистрационныйНомер</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоИсполнениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ДелаХраненияДокументов.Command.ОткрытьДелаТомаПоКорреспонденту</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ЖурналПередачи</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ТекущиеСостоянияДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.СтатистикаРаботНадДокументами</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ОрганизацияПолучатель</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ИдентификаторСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаДелВАрхив</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЭтапыОбработкиДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ОбщиеРеквизитыДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.НапечататьВсеФайлыДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ТекстСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ВходящиеДокументы</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СвязиДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда 
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда 
+//}}MRG[ &lt;-&gt; ]
+СвязиДокументов ИЗ РегистрСведений.СвязиДокументов КАК СвязиДокументов 
+//{{MRG[ &lt;-&gt; ]
+//СвязиДокументов ИЗ РегистрСведений.СвязиДокументов КАК СвязиДокументов 
+//}}MRG[ &lt;-&gt; ]
+ГДЕ
+//{{MRG[ &lt;-&gt; ]
+	(
+	СвязиДокументов.Документ Ссылка Справочник.Файлы
+	И ИСТИНА В
+		(
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ	РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов 
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//ГДЕ
+//	(
+//	СвязиДокументов.Документ Ссылка Справочник.Файлы
+//	И ИСТИНА В
+//		(
+//		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//		ИЗ	РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов 
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//		ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+		ГДЕ ДескрипторыДоступаДляФайлов.ВладелецФайла = СвязиДокументов.Документ.ВладелецФайла
+//{{MRG[ &lt;-&gt; ]
+		)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ГДЕ ДескрипторыДоступаДляФайлов.ВладелецФайла = СвязиДокументов.Документ.ВладелецФайла
+//		)
+//}}MRG[ &lt;-&gt; ]
+	ИЛИ НЕ СвязиДокументов.Документ Ссылка Справочник.Файлы
+//{{MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+		(
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ИЛИ НЕ СвязиДокументов.Документ Ссылка Справочник.Файлы
+//	И ИСТИНА В
+//		(
+//		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//		ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//		ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+		ГДЕ ДескрипторыДоступаДляОбъектов.Объект = СвязиДокументов.Документ
+//{{MRG[ &lt;-&gt; ]
+		)
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ГДЕ ДескрипторыДоступаДляОбъектов.Объект = СвязиДокументов.Документ
+//		)
+//	)
+//}}MRG[ &lt;-&gt; ]
+	И
+//{{MRG[ &lt;-&gt; ]
+//	И
+//}}MRG[ &lt;-&gt; ]
+	(
+//{{MRG[ &lt;-&gt; ]
+	СвязиДокументов.СвязанныйДокумент = НЕОПРЕДЕЛЕНО
+//{{MRG[ &lt;-&gt; ]
+	ИЛИ СвязиДокументов.Документ Ссылка Справочник.Файлы
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ИЛИ СвязиДокументов.СвязанныйДокумент Ссылка Справочник.Файлы
+//}}MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+		(
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	(
+//	СвязиДокументов.СвязанныйДокумент = НЕОПРЕДЕЛЕНО
+////{{MRG[ &lt;-&gt; ]
+//	ИЛИ СвязиДокументов.Документ Ссылка Справочник.Файлы
+////}}MRG[ &lt;-&gt; ]
+////{{MRG[ &lt;-&gt; ]
+////	ИЛИ СвязиДокументов.СвязанныйДокумент Ссылка Справочник.Файлы
+////}}MRG[ &lt;-&gt; ]
+//	И ИСТИНА В
+//		(
+//		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//		ИЗ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//		ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+		ГДЕ ДескрипторыДоступаДляФайлов.ВладелецФайла = СвязиДокументов.СвязанныйДокумент.ВладелецФайла
+//{{MRG[ &lt;-&gt; ]
+		)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ГДЕ ДескрипторыДоступаДляФайлов.ВладелецФайла = СвязиДокументов.СвязанныйДокумент.ВладелецФайла
+//		)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+	ИЛИ НЕ СвязиДокументов.Документ Ссылка Справочник.Файлы
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ИЛИ НЕ СвязиДокументов.СвязанныйДокумент Ссылка Справочник.Файлы
+//}}MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+		(
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+////{{MRG[ &lt;-&gt; ]
+//	ИЛИ НЕ СвязиДокументов.Документ Ссылка Справочник.Файлы
+////}}MRG[ &lt;-&gt; ]
+////{{MRG[ &lt;-&gt; ]
+////	ИЛИ НЕ СвязиДокументов.СвязанныйДокумент Ссылка Справочник.Файлы
+////}}MRG[ &lt;-&gt; ]
+//	И ИСТИНА В
+//		(
+//		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//		ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//		ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//		ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//		И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+		ГДЕ	ДескрипторыДоступаДляОбъектов.Объект = СвязиДокументов.СвязанныйДокумент
+//{{MRG[ &lt;-&gt; ]
+		)
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//		ГДЕ	ДескрипторыДоступаДляОбъектов.Объект = СвязиДокументов.СвязанныйДокумент
+//		)
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ТранспортПолучения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ИсторияВизСогласования</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.НеотработанныеДокументы</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаСвязей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Attribute.Комментарий</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ИсторияПереписки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыВДелеТоме</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыПоПроекту.Command.ДокументыПоПроекту</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Dimension.НомерЭкземпляра</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Dimension.ТипЭкземпляра</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СведенияОФайлах</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("", "Файл")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.НеобходимостьПосылкиУведомлений</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ИдентификаторСессии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ВладелецСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РазделыНоменклатурыДел</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ТипыСвязей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыПоВопросуДеятельности.Command.ДокументыПоВопросуДеятельности</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ФайлыСозданныеПоШаблону</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("", "Файл")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ДатаСоздания</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.Автор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ГрифыДоступа</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыВДелеТоме.Command.ДокументыВДелеТоме</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ПерепискаПоПредмету</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Predefined</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.IsFolder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Owner</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Parent</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Description</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Code</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыПоПроекту</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.НомерСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ИсходящиеДокументы.Attribute.РегистрационныйНомер</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.НоменклатураДел</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.НапечататьВсе</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыПоВопросуДеятельности</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ДатаИзменения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ДелаХраненияДокументов.Command.ОткрытьДелаТомаПоВидуДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОбращенияГраждан</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СпособыДоставки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СвязиДокументов.Command.ОткрытьФормуСвязиОбъекта</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаДелВАрхив.Command.ПечатьОписи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Файлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("Изменение", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееСообщениеСВД.Attribute.ВидСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УничтожениеДел</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВерсииФайлов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("", "Владелец")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("Изменение", "Владелец")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуФайла("Изменение", "Владелец")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.СтруктураСвязейДокумента</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияСостоянийДокументов.Command.ОткрытьФормуСпискаДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ВопросГолосования</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ИсходящиеДокументы.Attribute.ДатаРегистрации</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СостоянияДелХраненияДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "ДелоХраненияДокументов", "ДокументыИФайлы", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.TabularSection.ВариантыГолосования</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Command.ОткрытьФормуСпискаДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<restrictionTemplate>
+		<name>ПоДескрипторуОбъекта</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - отбор по полям Изменение, Добавление:
+//	по умолчанию нет условий, проверяется право чтения
+//  "Изменение" - условие Изменение = ИСТИНА
+//	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+//
+// Параметр(2) - имя поля, указывающее на объект, чьи права будут проанализированы
+//	по умолчанию "Ссылка"
+// 
+// Параметр(3) - имена предопределенных областей делегирования, которые дают права на объект
+//	по умолчанию пустая строка - права на таблицу дает только полное делегирование
+// 
+// Параметр(4) - признак того, что права на таблицу дает любая область делегирования
+//	по умолчанию Ложь
+// 
+// Примеры использования шаблона: 
+//	#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")
+//	#ПоДескрипторуОбъекта("Изменение", "", "", "Истина")
+//	#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")
+//	#ПоДескрипторуОбъекта("ИзменениеИлиДобавление", "Мероприятие", "ДокументыИФайлы"",""Мероприятия", "")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - отбор по полям Изменение, Добавление:
+////	по умолчанию нет условий, проверяется право чтения
+////  "Изменение" - условие Изменение = ИСТИНА
+////	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+////
+//// Параметр(2) - имя поля, указывающее на объект, чьи права будут проанализированы
+////	по умолчанию "Ссылка"
+//// 
+//// Параметр(3) - имена предопределенных областей делегирования, которые дают права на объект
+////	по умолчанию пустая строка - права на таблицу дает только полное делегирование
+//// 
+//// Параметр(4) - признак того, что права на таблицу дает любая область делегирования
+////	по умолчанию Ложь
+//// 
+//// Примеры использования шаблона: 
+////	#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")
+////	#ПоДескрипторуОбъекта("Изменение", "", "", "Истина")
+////	#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")
+////	#ПоДескрипторуОбъекта("ИзменениеИлиДобавление", "Мероприятие", "ДокументыИФайлы"",""Мероприятия", "")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//{{MRG[ &lt;-&gt; ]
+//	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(2)" = "" #Тогда
+		ПО ТекущаяТаблица.Ссылка = ДескрипторыДоступаДляОбъектов.Объект
+	#Иначе
+		ПО ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаДляОбъектов.Объект
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//	#Если "#Параметр(2)" = "" #Тогда
+//		ПО ТекущаяТаблица.Ссылка = ДескрипторыДоступаДляОбъектов.Объект
+//	#Иначе
+//		ПО ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаДляОбъектов.Объект
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ИСТИНА В
+//{{MRG[ &lt;-&gt; ]
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	#Если "#Параметр(4)" &lt;&gt; "Истина" #Тогда
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(3)")
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	#Если "#Параметр(4)" &lt;&gt; "Истина" #Тогда
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(3)")
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "Изменение" #Тогда
+		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+	#КонецЕсли
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//	#Если "#Параметр(1)" = "Изменение" #Тогда
+//		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+//	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+//		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+//	#КонецЕсли
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ПоДескрипторуРегистра</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - отбор по полям Изменение, Добавление:
+//	по умолчанию нет условий, проверяется право чтения
+//  "Изменение" - условие Изменение = ИСТИНА
+//	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+//
+// Параметр(2) - имя поля - объекта доступа №1
+// Параметр(3) - имя поля - объекта доступа №2
+// Параметр(4) - имя поля - объекта доступа №3
+//
+// Параметр(5) - области делегирования, передающие права на регистр
+// Параметр(6) - признак того, что на права таблицу делегируются при любом наборе областей делегирования
+// 
+// Примеры использования шаблона:
+//	#ПоДескрипторуРегистра("Изменение", "Пользователь", "", "", "ДокументыИФайлы")
+//	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Мероприятия")
+//	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Проекты "","" Мероприятия")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - отбор по полям Изменение, Добавление:
+////	по умолчанию нет условий, проверяется право чтения
+////  "Изменение" - условие Изменение = ИСТИНА
+////	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+////
+//// Параметр(2) - имя поля - объекта доступа №1
+//// Параметр(3) - имя поля - объекта доступа №2
+//// Параметр(4) - имя поля - объекта доступа №3
+////
+//// Параметр(5) - области делегирования, передающие права на регистр
+//// Параметр(6) - признак того, что на права таблицу делегируются при любом наборе областей делегирования
+//// 
+//// Примеры использования шаблона:
+////	#ПоДескрипторуРегистра("Изменение", "Пользователь", "", "", "ДокументыИФайлы")
+////	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Мероприятия")
+////	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Проекты "","" Мероприятия")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//{{MRG[ &lt;-&gt; ]
+//	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ДескрипторыДоступаРегистров КАК ДескрипторыДоступаРегистров
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаРегистров.Регистр = #ИмяТекущейТаблицы
+	И ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаРегистров.ОбъектДоступа1
+	#Если "#Параметр(3)" &lt;&gt; "" #Тогда
+		И ТекущаяТаблица.#Параметр(3) = ДескрипторыДоступаРегистров.ОбъектДоступа2
+	#КонецЕсли
+	#Если "#Параметр(4)" &lt;&gt; "" #Тогда
+		И ТекущаяТаблица.#Параметр(4) = ДескрипторыДоступаРегистров.ОбъектДоступа3
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ДескрипторыДоступаРегистров КАК ДескрипторыДоступаРегистров
+//	ПО ДескрипторыДоступаРегистров.Регистр = #ИмяТекущейТаблицы
+//	И ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаРегистров.ОбъектДоступа1
+//	#Если "#Параметр(3)" &lt;&gt; "" #Тогда
+//		И ТекущаяТаблица.#Параметр(3) = ДескрипторыДоступаРегистров.ОбъектДоступа2
+//	#КонецЕсли
+//	#Если "#Параметр(4)" &lt;&gt; "" #Тогда
+//		И ТекущаяТаблица.#Параметр(4) = ДескрипторыДоступаРегистров.ОбъектДоступа3
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ИСТИНА В
+//{{MRG[ &lt;-&gt; ]
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	#Если "#Параметр(6)" &lt;&gt; "Истина" #Тогда
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(5)")
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	#Если "#Параметр(6)" &lt;&gt; "Истина" #Тогда
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(5)")
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаРегистров.Ссылка = ПраваПоДескрипторамДоступа.Дескриптор
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "Изменение" #Тогда
+		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+	#КонецЕсли
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаРегистров.Ссылка = ПраваПоДескрипторамДоступа.Дескриптор
+//	#Если "#Параметр(1)" = "Изменение" #Тогда
+//		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+//	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+//		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+//	#КонецЕсли
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ПоДескрипторуФайла</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - отбор по полям Изменение, Добавление:
+//	по умолчанию нет условий, проверяется право чтения
+//  "Изменение" - условие Изменение = ИСТИНА
+//	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+//
+// Параметр(2) - имя поля, содержащее файл, права которого будут проанализированы
+//	по умолчанию ""
+// 
+// Примеры использования шаблона: 
+//	#ПоДескрипторуФайла("", "")
+//	#ПоДескрипторуФайла("Изменение", "")
+//	#ПоДескрипторуФайла("", "Владелец")
+//	#ПоДескрипторуФайла("ИзменениеИлиДобавление", "Владелец")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - отбор по полям Изменение, Добавление:
+////	по умолчанию нет условий, проверяется право чтения
+////  "Изменение" - условие Изменение = ИСТИНА
+////	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+////
+//// Параметр(2) - имя поля, содержащее файл, права которого будут проанализированы
+////	по умолчанию ""
+//// 
+//// Примеры использования шаблона: 
+////	#ПоДескрипторуФайла("", "")
+////	#ПоДескрипторуФайла("Изменение", "")
+////	#ПоДескрипторуФайла("", "Владелец")
+////	#ПоДескрипторуФайла("ИзменениеИлиДобавление", "Владелец")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//{{MRG[ &lt;-&gt; ]
+//	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(2)" = "" #Тогда
+		ПО ТекущаяТаблица.ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+	#Иначе
+		ПО ТекущаяТаблица.#Параметр(2).ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//	#Если "#Параметр(2)" = "" #Тогда
+//		ПО ТекущаяТаблица.ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+//	#Иначе
+//		ПО ТекущаяТаблица.#Параметр(2).ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//	ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	И СоставСубъектовПравДоступа.ОбъектМетаданных В 
+		(Значение(Справочник.ИдентификаторыОбъектовМетаданных.ПустаяСсылка),
+		ДескрипторыДоступаДляФайлов.ОбъектМетаданных)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектовПравДоступа.ОбъектМетаданных В 
+//		(Значение(Справочник.ИдентификаторыОбъектовМетаданных.ПустаяСсылка),
+//		ДескрипторыДоступаДляФайлов.ОбъектМетаданных)
+//}}MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "Изменение" #Тогда
+//{{MRG[ &lt;-&gt; ]
+		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	#Если "#Параметр(1)" = "Изменение" #Тогда
+//		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+//	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+//		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+</Rights>

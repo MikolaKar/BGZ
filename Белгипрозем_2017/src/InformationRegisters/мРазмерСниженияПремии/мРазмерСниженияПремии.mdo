@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5441d13d-d1c5-4f75-b217-355cea67e1a8">
+  <producedTypes>
+    <selectionType typeId="62aa2216-556f-48d1-8586-3ba7a4fccd07" valueTypeId="d6e4cbb8-2f92-4a06-aa64-70280ccedd87"/>
+    <listType typeId="b952bb1a-cb1b-42ae-b83e-6904c44dbaad" valueTypeId="75f1b024-71eb-468e-9a7d-ff1451fcb10b"/>
+    <managerType typeId="c5749414-9b8b-484c-9cc3-6c96d6ee9f14" valueTypeId="fb0ea3d7-3d79-497e-a758-1c58d39e6e97"/>
+    <recordSetType typeId="509585a7-9bae-4998-8ba0-fb6bdc1e5856" valueTypeId="1bf7b734-3476-46b9-9f9e-cea7ba3461c6"/>
+    <recordKeyType typeId="a3fadbf2-0d49-47f9-bfd9-692ebebf7ad3" valueTypeId="234609ef-acfe-451b-b3dc-ab6e69f5fe84"/>
+    <recordType typeId="6424ef09-f4d2-4b57-8deb-d8bcebafe4ca" valueTypeId="3f6c327f-f005-4800-9ecf-d20d9e07c3d1"/>
+    <recordManagerType typeId="9a15e27b-e150-496c-8bc4-9c30217fb731" valueTypeId="81e1ae33-984e-44ec-9672-6a58617050df"/>
+  </producedTypes>
+  <name>мРазмерСниженияПремии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размер снижения премии</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e4d21f63-b950-4957-9025-991b578dec0e">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Процент снижения</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9cf3b1e7-75fc-476f-aa5c-6c21801edba9">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мРольВПроверкеКачества</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02c6befd-7eaa-4ac7-9b59-5d403a8ff809">
+    <name>ФизЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ лица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="700f5e52-48d5-475b-ab54-98e383107162">
+    <name>Оценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

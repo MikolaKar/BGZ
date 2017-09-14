@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed0fe031-fe00-4c55-ab9b-666f45dbe009">
+  <producedTypes>
+    <refType typeId="ef59bb72-a70d-4c9b-a10a-d7303ee70de1" valueTypeId="9e9336d3-26cd-4445-8320-644383b47e4a"/>
+    <listType typeId="fd7b271b-bb7a-4ac7-88a9-58107b388273" valueTypeId="8cf567d9-d815-4ac8-8d67-309b26c3c165"/>
+    <managerType typeId="f0de7dbe-4a15-44c9-b9e5-7908a09beb30" valueTypeId="bf141df5-f755-400c-adc3-f3a8fa4cb60e"/>
+  </producedTypes>
+  <name>мТипСЧ</name>
+  <synonym>
+    <key>ru</key>
+    <value>М тип СЧ</value>
+  </synonym>
+  <comment>Тип счет-фактуры</comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6afacd3b-2637-4a52-961a-8dcecdcf23d2">
+    <name>Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1e9d5002-2833-4360-aaec-fa32c91b0fdc">
+    <name>Дополнительный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2c31a2e5-3948-4b92-bd03-af70dd4cc1f7">
+    <name>Исправленный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправленный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7c3c6a91-e754-46b9-bdf2-932fe83142b2">
+    <name>ДополнительныйБезСсылкиНаИсходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный без ссылки на исходный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

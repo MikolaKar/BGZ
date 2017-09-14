@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cb9b4cd-e87a-4494-a997-238c954ca0e8">
+  <name>М_ДопМинск</name>
+  <synonym>
+    <key>ru</key>
+    <value>М доп минск</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Для дополнительных функций Минска</value>
+  </explanation>
+  <content>ExternalDataSource.ЗУП_Минск.Table.ВидСобытия</content>
+  <content>ExternalDataSource.ЗУП_Минск.Table.КадроваяИсторияСотрудников</content>
+  <content>ExternalDataSource.ЗУП_Минск.Table.Подразделения</content>
+  <content>ExternalDataSource.ЗУП_Минск.Table.Сотрудники</content>
+  <content>ExternalDataSource.ЗУП_Минск.Table.ФизическиеЛица</content>
+  <content>ExternalDataSource.ЗУП_Минск.Table.Должности</content>
+  <parentSubsystem>Subsystem.ДокументыИФайлы</parentSubsystem>
+</mdclass:Subsystem>

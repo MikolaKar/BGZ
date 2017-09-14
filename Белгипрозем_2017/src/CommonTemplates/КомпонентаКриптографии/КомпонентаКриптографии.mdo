@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58c3baf8-8d63-4977-84f0-b10c65efaab9">
+  <name>КомпонентаКриптографии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компонента криптографии</value>
+  </synonym>
+  <comment></comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

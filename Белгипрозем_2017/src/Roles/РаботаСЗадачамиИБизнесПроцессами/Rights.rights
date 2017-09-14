@@ -1,0 +1,3404 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.4">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<object>
+		<name>CommonForm.ПрерываниеПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ПереносыСроковИсполненияЗадач</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.КомплексныйПроцесс.Command.СхемаПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПереносыСроковВыполненияПроцессовИЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//{{MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//	И ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+	ИЗ Задача.ЗадачаИсполнителя КАК ЗадачаИсполнителя
+//{{MRG[ &lt;-&gt; ]
+//	ИЗ Задача.ЗадачаИсполнителя КАК ЗадачаИсполнителя
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//{{MRG[ &lt;-&gt; ]
+	ПО ЗадачаИсполнителя.БизнесПроцесс = УчастникиПроцессов.Процесс
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//	ПО ЗадачаИсполнителя.БизнесПроцесс = УчастникиПроцессов.Процесс
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+	    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+	    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+//	    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+//	    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+    ГДЕ
+//{{MRG[ &lt;-&gt; ]
+    ЗадачаИсполнителя.Ссылка = ТекущаяТаблица.Предмет
+    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ГДЕ
+//    ЗадачаИсполнителя.Ссылка = ТекущаяТаблица.Предмет
+//    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//	)
+//}}MRG[ &lt;-&gt; ]
+	ИЛИ
+//{{MRG[ &lt;-&gt; ]
+//	ИЛИ
+//}}MRG[ &lt;-&gt; ]
+	НЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//{{MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	НЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//	И ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+	ИЗ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//{{MRG[ &lt;-&gt; ]
+//	ИЗ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+	    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+	    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+//	    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+//	    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+    ГДЕ
+//{{MRG[ &lt;-&gt; ]
+    УчастникиПроцессов.Процесс = ТекущаяТаблица.Предмет
+    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ГДЕ
+//    УчастникиПроцессов.Процесс = ТекущаяТаблица.Предмет
+//    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//{{MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//	И ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+	ИЗ Задача.ЗадачаИсполнителя КАК ЗадачаИсполнителя
+//{{MRG[ &lt;-&gt; ]
+//	ИЗ Задача.ЗадачаИсполнителя КАК ЗадачаИсполнителя
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//{{MRG[ &lt;-&gt; ]
+	ПО ЗадачаИсполнителя.БизнесПроцесс = ДанныеБизнесПроцессов.БизнесПроцесс
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//	ПО ЗадачаИсполнителя.БизнесПроцесс = ДанныеБизнесПроцессов.БизнесПроцесс
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+    ГДЕ
+//{{MRG[ &lt;-&gt; ]
+    ЗадачаИсполнителя.Ссылка = ТекущаяТаблица.Предмет
+    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ГДЕ
+//    ЗадачаИсполнителя.Ссылка = ТекущаяТаблица.Предмет
+//    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//	)
+//}}MRG[ &lt;-&gt; ]
+	ИЛИ
+//{{MRG[ &lt;-&gt; ]
+//	ИЛИ
+//}}MRG[ &lt;-&gt; ]
+	НЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//{{MRG[ &lt;-&gt; ]
+	И ИСТИНА В
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	НЕ ТекущаяТаблица.Предмет Ссылка Задача.ЗадачаИсполнителя
+//	И ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//}}MRG[ &lt;-&gt; ]
+	ИЗ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//{{MRG[ &lt;-&gt; ]
+//	ИЗ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+    ГДЕ
+//{{MRG[ &lt;-&gt; ]
+    ДанныеБизнесПроцессов.БизнесПроцесс = ТекущаяТаблица.Предмет
+    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ГДЕ
+//    ДанныеБизнесПроцессов.БизнесПроцесс = ТекущаяТаблица.Предмет
+//    И СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ИзменениеРолиПредмета</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.Resource.ЧастотаПросроченныеЗадачи</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияСобытийЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоОтложеннымПроцессам</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.КалендарныеГрафики</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.СоздатьБизнесПроцесс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.СправкаОбИсполнительскойДисциплине</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ПервоеСообщениеТемы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ОткрытьСписокПроцессов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияСобытийЗадач.Command.ОткрытьФормуСпискаСобытийВсехЗадач</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПредметаБизнесПроцессаФайла</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаИсходящегоДокумента</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныИсполнения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Приглашение</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РолиИсполнителей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ПричинаПрерыванияПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ТекстСообщенияСписок</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ВложенныеБизнесПроцессы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Регистрация</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ПодборИсполнителей</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПредметаБизнесПроцессаФайлаСоСканера</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ДобавленоГолосование</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("БизнесПроцесс")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+Задача ИЗ Задача.ЗадачаИсполнителя КАК Задача
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//Задача ИЗ Задача.ЗадачаИсполнителя КАК Задача
+//}}MRG[ &lt;-&gt; ]
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО Задача.ТекущийИсполнитель = СоставСубъектов.Субъект
+       И Задача.ТекущийОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+       И Задача.ТекущийДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО Задача.ТекущийИсполнитель = СоставСубъектов.Субъект
+//       И Задача.ТекущийОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+//       И Задача.ТекущийДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+		И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Ознакомление</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.РедактированиеПредмета</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов.Resource.Условие</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсполнителиЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоПоручениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВнутренниеДокументы.Attribute.ДатаРегистрации</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Проекты.Command.ПроцессыПоПроекту</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.БизнесПроцессыПоШаблону.Command.БизнесПроцессыПоШаблону</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ИменаПредметов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныСогласования</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.МоиПроцессы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныСоставныхБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СведенияОТочкахМаршрута</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Рассмотрение</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ТекущийПользователь</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СведенияОбИсполнителяхЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВходящегоДокумента</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Поручение</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.УсловияМаршрутизации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ПланФактныйАнализСогласования</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.TabularSection.ВариантыГолосования.Attribute.ТекстВарианта</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.БизнесПроцессыПоШаблону</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаШаблоновБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда 
+НастройкаШаблоновБизнесПроцессов ИЗ РегистрСведений.НастройкаШаблоновБизнесПроцессов КАК НастройкаШаблоновБизнесПроцессов 
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда 
+//НастройкаШаблоновБизнесПроцессов ИЗ РегистрСведений.НастройкаШаблоновБизнесПроцессов КАК НастройкаШаблоновБизнесПроцессов 
+//}}MRG[ &lt;-&gt; ]
+ГДЕ
+//{{MRG[ &lt;-&gt; ]
+    ИСТИНА В (
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//ГДЕ
+//    ИСТИНА В (
+//}}MRG[ &lt;-&gt; ]
+    ВЫБРАТЬ ИСТИНА ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//{{MRG[ &lt;-&gt; ]
+//    ВЫБРАТЬ ИСТИНА ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//	ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаДляОбъектов.Объект = НастройкаШаблоновБизнесПроцессов.ШаблонБизнесПроцесса)
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаДляОбъектов.Объект = НастройкаШаблоновБизнесПроцессов.ШаблонБизнесПроцесса)
+//}}MRG[ &lt;-&gt; ]
+И ИСТИНА В (
+//{{MRG[ &lt;-&gt; ]
+//И ИСТИНА В (
+//}}MRG[ &lt;-&gt; ]
+	ВЫБРАТЬ ИСТИНА ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//{{MRG[ &lt;-&gt; ]
+//	ВЫБРАТЬ ИСТИНА ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//	ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаДляОбъектов.Объект = НастройкаШаблоновБизнесПроцессов.ВидДокумента)
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаДляОбъектов.Объект = НастройкаШаблоновБизнесПроцессов.ВидДокумента)
+//}}MRG[ &lt;-&gt; ]
+И   (НастройкаШаблоновБизнесПроцессов.Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+//{{MRG[ &lt;-&gt; ]
+	ИЛИ ИСТИНА В (
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//И   (НастройкаШаблоновБизнесПроцессов.Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+//	ИЛИ ИСТИНА В (
+//}}MRG[ &lt;-&gt; ]
+	ВЫБРАТЬ ИСТИНА ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//{{MRG[ &lt;-&gt; ]
+//	ВЫБРАТЬ ИСТИНА ИЗ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов 
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//	ПО ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "ДокументыИФайлы")
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаДляОбъектов.Объект = НастройкаШаблоновБизнесПроцессов.Организация))
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаДляОбъектов.Объект = НастройкаШаблоновБизнесПроцессов.Организация))
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ПечатьСхемыКомплексногоПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПредметаБизнесПроцессаРасширенный</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Поручение.Command.ПечатьКарточки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоСогласованиям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВнутренниеДокументы.Attribute.РегистрационныйНомер</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоИсполнениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Исполнение</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборРолиИсполнителя</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.БизнесПроцессыИЗадачиПоПредмету</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя.Command.ВсеЗадачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.Подзадачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныРегистрации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоУтверждениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя.Command.ВсеЗадачиПоБизнесПроцессу</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ТекстСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ПроектныеЗадачи.Command.ПроцессыПоПроектнойЗадаче</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаШаблоновБизнесПроцессов.Command.ОткрытьФормуДляШаблона</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Проекты.Command.СоздатьВспомогательныйПроцесс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.РедактированиеПредметаЗаполнения</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ШаблоныБизнесПроцессов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаОтложенногоСтартаБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//{{MRG[ &lt;-&gt; ]
+    ПО ТекущаяТаблица.БизнесПроцесс = УчастникиПроцессов.Процесс
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//    ПО ТекущаяТаблица.БизнесПроцесс = УчастникиПроцессов.Процесс
+//}}MRG[ &lt;-&gt; ]
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+//    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+//    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+    ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//{{MRG[ &lt;-&gt; ]
+	ПО ТекущаяТаблица.БизнесПроцесс = ДанныеБизнесПроцессов.БизнесПроцесс
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//	ПО ТекущаяТаблица.БизнесПроцесс = ДанныеБизнесПроцессов.БизнесПроцесс
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+	ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//	ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+	И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПредметаБизнесПроцессаБыстрый</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ДанныеБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("БизнесПроцесс")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныРассмотрения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияСобытийЗадач.Command.ОткрытьФормуСпискаСобытийЗадачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.КартаМаршрутаБизнесПроцесса</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВложенныеБизнесПроцессы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныУтверждения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборИсполнителя</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.МоиПроцессы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ВладелецСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ПечатьКарточкиКомплексногоПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.СозданиеБизнесПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.Resource.СрокУведомления</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныКомплексныхБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Согласование.Command.ЛистСогласования</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.БизнесПроцессыИЗадачиПоПредмету</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.КартаМаршрутаБизнесПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя.Command.СогласоватьПереносСрока</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ЗадачиПоБизнесПроцессу</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ДатаСоздания</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.Автор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.Dimension.Пользователь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.РешениеВопросовВыполненияЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Проекты.Command.СоздатьОсновнойПроцесс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоБизнесПроцессам</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаПовторенияБизнесПроцессов.Command.ОткрытьСписок</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Predefined</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.IsFolder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Owner</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Parent</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Description</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.StandardAttribute.Code</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.СовместнаяРабота.Subsystem.Процессы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаПовторенияБизнесПроцессов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//{{MRG[ &lt;-&gt; ]
+    ПО ТекущаяТаблица.БизнесПроцесс = УчастникиПроцессов.Процесс
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//    ПО ТекущаяТаблица.БизнесПроцесс = УчастникиПроцессов.Процесс
+//}}MRG[ &lt;-&gt; ]
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//    ПО УчастникиПроцессов.Участник = СоставСубъектов.Субъект
+//    И УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации
+//    И УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации
+//}}MRG[ &lt;-&gt; ]
+    ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//    ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//    И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//{{MRG[ &lt;-&gt; ]
+	ПО ТекущаяТаблица.БизнесПроцесс = ДанныеБизнесПроцессов.БизнесПроцесс
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
+//	ПО ТекущаяТаблица.БизнесПроцесс = ДанныеБизнесПроцессов.БизнесПроцесс
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+	ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//	ПО ДанныеБизнесПроцессов.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+	И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.НомерСообщения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ИсходящиеДокументы.Attribute.РегистрационныйНомер</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя.Command.ЗадатьВопросАвтору</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.НастройкаПредшественниковЭтапаКомплексногоПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОбработкаВнутреннегоДокумента</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя.Command.СоздатьБизнесПроцесс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ДатаИзменения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкаШаблоновБизнесПроцессов.Command.ОткрытьФормуДляВидаДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.СовместнаяРабота</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныПоручения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Утверждение</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.КомплексныйПроцесс</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.КомплексныйПроцесс.Command.Задачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоЗадачам</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ЗадачиПоБизнесПроцессу</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ВыборПредметаЗадачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.РедактированиеУсловия</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныПриглашения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.СоздатьБизнесПроцессГлобальная</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.Согласование</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ЧтениеПроцесса("")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеПроцесса()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.РедактированиеПредметаЗаполненияКомплексногоПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.СписокПроцессов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.Attribute.ВопросГолосования</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ИсходящиеДокументы.Attribute.ДатаРегистрации</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ШаблоныБизнесПроцессов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ШаблоныОзнакомления</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоДескрипторуОбъекта("Изменение", "", "ПроцессыИЗадачи", "")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ПроектныеЗадачи.Command.СоздатьОсновнойПроцесс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.РолиИИсполнителиЗадач</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиУведомленияОЗадачах.Resource.ЧастотаПриближениеСрока</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ПроектныеЗадачи.Command.СоздатьВспомогательныйПроцесс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.СообщенияОбсуждений.TabularSection.ВариантыГолосования</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<restrictionTemplate>
+		<name>ИзменениеПроцесса</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+ТаблицаПроцесса ИЗ #ТекущаяТаблица КАК ТаблицаПроцесса
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТаблицаПроцесса ИЗ #ТекущаяТаблица КАК ТаблицаПроцесса
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+	ПО ТаблицаПроцесса.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//	ПО ТаблицаПроцесса.Автор = СоставСубъектов.Субъект
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+		И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ПоДескрипторуОбъекта</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - отбор по полям Изменение, Добавление:
+//	по умолчанию нет условий, проверяется право чтения
+//  "Изменение" - условие Изменение = ИСТИНА
+//	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+//
+// Параметр(2) - имя поля, указывающее на объект, чьи права будут проанализированы
+//	по умолчанию "Ссылка"
+// 
+// Параметр(3) - имена предопределенных областей делегирования, которые дают права на объект
+//	по умолчанию пустая строка - права на таблицу дает только полное делегирование
+// 
+// Параметр(4) - признак того, что права на таблицу дает любая область делегирования
+//	по умолчанию Ложь
+// 
+// Примеры использования шаблона: 
+//	#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")
+//	#ПоДескрипторуОбъекта("Изменение", "", "", "Истина")
+//	#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")
+//	#ПоДескрипторуОбъекта("ИзменениеИлиДобавление", "Мероприятие", "ДокументыИФайлы"",""Мероприятия", "")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - отбор по полям Изменение, Добавление:
+////	по умолчанию нет условий, проверяется право чтения
+////  "Изменение" - условие Изменение = ИСТИНА
+////	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+////
+//// Параметр(2) - имя поля, указывающее на объект, чьи права будут проанализированы
+////	по умолчанию "Ссылка"
+//// 
+//// Параметр(3) - имена предопределенных областей делегирования, которые дают права на объект
+////	по умолчанию пустая строка - права на таблицу дает только полное делегирование
+//// 
+//// Параметр(4) - признак того, что права на таблицу дает любая область делегирования
+////	по умолчанию Ложь
+//// 
+//// Примеры использования шаблона: 
+////	#ПоДескрипторуОбъекта("", "", "ДокументыИФайлы", "")
+////	#ПоДескрипторуОбъекта("Изменение", "", "", "Истина")
+////	#ПоДескрипторуОбъекта("", "Документ", "ДокументыИФайлы", "")
+////	#ПоДескрипторуОбъекта("ИзменениеИлиДобавление", "Мероприятие", "ДокументыИФайлы"",""Мероприятия", "")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//{{MRG[ &lt;-&gt; ]
+//	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(2)" = "" #Тогда
+		ПО ТекущаяТаблица.Ссылка = ДескрипторыДоступаДляОбъектов.Объект
+	#Иначе
+		ПО ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаДляОбъектов.Объект
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляОбъектов КАК ДескрипторыДоступаДляОбъектов
+//	#Если "#Параметр(2)" = "" #Тогда
+//		ПО ТекущаяТаблица.Ссылка = ДескрипторыДоступаДляОбъектов.Объект
+//	#Иначе
+//		ПО ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаДляОбъектов.Объект
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ИСТИНА В
+//{{MRG[ &lt;-&gt; ]
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	#Если "#Параметр(4)" &lt;&gt; "Истина" #Тогда
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(3)")
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	#Если "#Параметр(4)" &lt;&gt; "Истина" #Тогда
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(3)")
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "Изменение" #Тогда
+		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+	#КонецЕсли
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаДляОбъектов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//	#Если "#Параметр(1)" = "Изменение" #Тогда
+//		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+//	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+//		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+//	#КонецЕсли
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ПоДескрипторуРегистра</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - отбор по полям Изменение, Добавление:
+//	по умолчанию нет условий, проверяется право чтения
+//  "Изменение" - условие Изменение = ИСТИНА
+//	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+//
+// Параметр(2) - имя поля - объекта доступа №1
+// Параметр(3) - имя поля - объекта доступа №2
+// Параметр(4) - имя поля - объекта доступа №3
+//
+// Параметр(5) - области делегирования, передающие права на регистр
+// Параметр(6) - признак того, что на права таблицу делегируются при любом наборе областей делегирования
+// 
+// Примеры использования шаблона:
+//	#ПоДескрипторуРегистра("Изменение", "Пользователь", "", "", "ДокументыИФайлы")
+//	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Мероприятия")
+//	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Проекты "","" Мероприятия")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - отбор по полям Изменение, Добавление:
+////	по умолчанию нет условий, проверяется право чтения
+////  "Изменение" - условие Изменение = ИСТИНА
+////	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+////
+//// Параметр(2) - имя поля - объекта доступа №1
+//// Параметр(3) - имя поля - объекта доступа №2
+//// Параметр(4) - имя поля - объекта доступа №3
+////
+//// Параметр(5) - области делегирования, передающие права на регистр
+//// Параметр(6) - признак того, что на права таблицу делегируются при любом наборе областей делегирования
+//// 
+//// Примеры использования шаблона:
+////	#ПоДескрипторуРегистра("Изменение", "Пользователь", "", "", "ДокументыИФайлы")
+////	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Мероприятия")
+////	#ПоДескрипторуРегистра("", "Пользователь", "Подразделение", "Организация", "Проекты "","" Мероприятия")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//{{MRG[ &lt;-&gt; ]
+//	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ДескрипторыДоступаРегистров КАК ДескрипторыДоступаРегистров
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаРегистров.Регистр = #ИмяТекущейТаблицы
+	И ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаРегистров.ОбъектДоступа1
+	#Если "#Параметр(3)" &lt;&gt; "" #Тогда
+		И ТекущаяТаблица.#Параметр(3) = ДескрипторыДоступаРегистров.ОбъектДоступа2
+	#КонецЕсли
+	#Если "#Параметр(4)" &lt;&gt; "" #Тогда
+		И ТекущаяТаблица.#Параметр(4) = ДескрипторыДоступаРегистров.ОбъектДоступа3
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ДескрипторыДоступаРегистров КАК ДескрипторыДоступаРегистров
+//	ПО ДескрипторыДоступаРегистров.Регистр = #ИмяТекущейТаблицы
+//	И ТекущаяТаблица.#Параметр(2) = ДескрипторыДоступаРегистров.ОбъектДоступа1
+//	#Если "#Параметр(3)" &lt;&gt; "" #Тогда
+//		И ТекущаяТаблица.#Параметр(3) = ДескрипторыДоступаРегистров.ОбъектДоступа2
+//	#КонецЕсли
+//	#Если "#Параметр(4)" &lt;&gt; "" #Тогда
+//		И ТекущаяТаблица.#Параметр(4) = ДескрипторыДоступаРегистров.ОбъектДоступа3
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ИСТИНА В
+//{{MRG[ &lt;-&gt; ]
+	(
+	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ИСТИНА В
+//	(
+//	ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+//	ИЗ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	#Если "#Параметр(6)" &lt;&gt; "Истина" #Тогда
+		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(5)")
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	#Если "#Параметр(6)" &lt;&gt; "Истина" #Тогда
+//		И СоставСубъектовПравДоступа.ИмяОбластиДелегирования В ("", "#Параметр(5)")
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ ДескрипторыДоступаРегистров.Ссылка = ПраваПоДескрипторамДоступа.Дескриптор
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "Изменение" #Тогда
+		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+	#КонецЕсли
+	)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ ДескрипторыДоступаРегистров.Ссылка = ПраваПоДескрипторамДоступа.Дескриптор
+//	#Если "#Параметр(1)" = "Изменение" #Тогда
+//		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+//	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+//		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+//	#КонецЕсли
+//	)
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ПоДескрипторуФайла</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - отбор по полям Изменение, Добавление:
+//	по умолчанию нет условий, проверяется право чтения
+//  "Изменение" - условие Изменение = ИСТИНА
+//	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+//
+// Параметр(2) - имя поля, содержащее файл, права которого будут проанализированы
+//	по умолчанию ""
+// 
+// Примеры использования шаблона: 
+//	#ПоДескрипторуФайла("", "")
+//	#ПоДескрипторуФайла("Изменение", "")
+//	#ПоДескрипторуФайла("", "Владелец")
+//	#ПоДескрипторуФайла("ИзменениеИлиДобавление", "Владелец")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - отбор по полям Изменение, Добавление:
+////	по умолчанию нет условий, проверяется право чтения
+////  "Изменение" - условие Изменение = ИСТИНА
+////	"ИзменениеИлиДобавление" - условие (Изменение = ИСТИНА ИЛИ Добавление = ИСТИНА)
+////
+//// Параметр(2) - имя поля, содержащее файл, права которого будут проанализированы
+////	по умолчанию ""
+//// 
+//// Примеры использования шаблона: 
+////	#ПоДескрипторуФайла("", "")
+////	#ПоДескрипторуФайла("Изменение", "")
+////	#ПоДескрипторуФайла("", "Владелец")
+////	#ПоДескрипторуФайла("ИзменениеИлиДобавление", "Владелец")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//}}MRG[ &lt;-&gt; ]
+	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//{{MRG[ &lt;-&gt; ]
+//	ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(2)" = "" #Тогда
+		ПО ТекущаяТаблица.ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+	#Иначе
+		ПО ТекущаяТаблица.#Параметр(2).ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДескрипторыДоступаДляФайлов КАК ДескрипторыДоступаДляФайлов
+//	#Если "#Параметр(2)" = "" #Тогда
+//		ПО ТекущаяТаблица.ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+//	#Иначе
+//		ПО ТекущаяТаблица.#Параметр(2).ВладелецФайла = ДескрипторыДоступаДляФайлов.ВладелецФайла
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПраваПоДескрипторамДоступа КАК ПраваПоДескрипторамДоступа
+//	ПО ДескрипторыДоступаДляФайлов.Дескриптор = ПраваПоДескрипторамДоступа.Дескриптор
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//{{MRG[ &lt;-&gt; ]
+	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+	И СоставСубъектовПравДоступа.ОбъектМетаданных В 
+		(Значение(Справочник.ИдентификаторыОбъектовМетаданных.ПустаяСсылка),
+		ДескрипторыДоступаДляФайлов.ОбъектМетаданных)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектовПравДоступа
+//	ПО СоставСубъектовПравДоступа.Субъект = ПраваПоДескрипторамДоступа.Пользователь
+//	И СоставСубъектовПравДоступа.Пользователь = &amp;ТекущийПользователь
+//	И СоставСубъектовПравДоступа.ОбъектМетаданных В 
+//		(Значение(Справочник.ИдентификаторыОбъектовМетаданных.ПустаяСсылка),
+//		ДескрипторыДоступаДляФайлов.ОбъектМетаданных)
+//}}MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "Изменение" #Тогда
+//{{MRG[ &lt;-&gt; ]
+		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	#Если "#Параметр(1)" = "Изменение" #Тогда
+//		И ПраваПоДескрипторамДоступа.Изменение = ИСТИНА
+//	#ИначеЕсли "#Параметр(1)" = "ИзменениеИлиДобавление" #Тогда
+//		И (ПраваПоДескрипторамДоступа.Изменение = ИСТИНА ИЛИ ПраваПоДескрипторамДоступа.Добавление = ИСТИНА)
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ЧтениеПроцесса</name>
+		<condition>//{{MRG[ &lt;-&gt; ]
+// Параметр(1) - имя поля, содержащего процесс
+//	по умолчанию "Ссылка"
+// 
+// Примеры использования шаблона: 
+//	#ЧтениеПроцесса("")
+//	#ЧтениеПроцесса("БизнесПроцесс")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//// Параметр(1) - имя поля, содержащего процесс
+////	по умолчанию "Ссылка"
+//// 
+//// Примеры использования шаблона: 
+////	#ЧтениеПроцесса("")
+////	#ЧтениеПроцесса("БизнесПроцесс")
+//}}MRG[ &lt;-&gt; ]
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//{{MRG[ &lt;-&gt; ]
+ТаблицаПроцесса ИЗ #ТекущаяТаблица КАК ТаблицаПроцесса
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда
+//ТаблицаПроцесса ИЗ #ТекущаяТаблица КАК ТаблицаПроцесса
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//{{MRG[ &lt;-&gt; ]
+	#Если "#Параметр(1)" = "" #Тогда
+		ПО ТаблицаПроцесса.Ссылка = УчастникиПроцессов.Процесс
+	#Иначе
+		ПО ТаблицаПроцесса.#Параметр(1) = УчастникиПроцессов.Процесс
+	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.УчастникиПроцессов КАК УчастникиПроцессов
+//	#Если "#Параметр(1)" = "" #Тогда
+//		ПО ТаблицаПроцесса.Ссылка = УчастникиПроцессов.Процесс
+//	#Иначе
+//		ПО ТаблицаПроцесса.#Параметр(1) = УчастникиПроцессов.Процесс
+//	#КонецЕсли
+//}}MRG[ &lt;-&gt; ]
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//{{MRG[ &lt;-&gt; ]
+	ПО (УчастникиПроцессов.Участник = СоставСубъектов.Субъект)
+		И (УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации)
+		И (УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации)
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СоставСубъектовПравДоступа КАК СоставСубъектов
+//	ПО (УчастникиПроцессов.Участник = СоставСубъектов.Субъект)
+//		И (УчастникиПроцессов.ОсновнойОбъектАдресации = СоставСубъектов.ОсновнойОбъектАдресации)
+//		И (УчастникиПроцессов.ДополнительныйОбъектАдресации = СоставСубъектов.ДополнительныйОбъектАдресации)
+//}}MRG[ &lt;-&gt; ]
+	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//{{MRG[ &lt;-&gt; ]
+		И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+//{{MRG[ &lt;-&gt; ]
+//	ГДЕ СоставСубъектов.Пользователь = &amp;ТекущийПользователь
+//		И СоставСубъектов.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи")
+//}}MRG[ &lt;-&gt; ]
+#КонецЕсли</condition>
+	</restrictionTemplate>
+</Rights>

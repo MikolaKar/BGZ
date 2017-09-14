@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="181e4aee-cf25-4e4d-8e17-fa4802a82cdd">
+  <producedTypes>
+    <managerType typeId="acacc71e-9510-46dc-a1be-6e2b606d55cc" valueTypeId="94b973b5-642b-492a-9cbc-d5696c92cde7"/>
+    <valueManagerType typeId="8ff2300c-73f7-4768-8ec4-e03153b2325d" valueTypeId="46cf3530-7d60-43a6-a006-0afa5c0b747c"/>
+  </producedTypes>
+  <name>мСвидетельствоОГосРегистрации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свидетельство о гос. регистрации</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>80</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

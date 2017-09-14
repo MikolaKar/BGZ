@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe50fe3e-a878-49a4-8d5c-021869c77449">
+  <name>мОбработкаЗаполненияИсходящегоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка заполнения исходящего документа</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ИсходящиеДокументы</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.М_ОбработкаЗаполненияИсходящегоДокументаОбработкаЗаполнения</handler>
+</mdclass:EventSubscription>

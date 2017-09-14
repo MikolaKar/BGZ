@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88097818-5816-4a61-9478-51a0ca1867f9">
+  <producedTypes>
+    <objectType typeId="2d25614f-9986-4f8e-8ac6-7b498ffcb202" valueTypeId="32d995f8-bc6a-421a-aad4-67a9dd346a05"/>
+    <managerType typeId="ffe92191-e4a7-4f05-ab18-2dbbb53d87d5" valueTypeId="92751de4-c256-4088-a263-efe036f34833"/>
+  </producedTypes>
+  <name>Гр_ПечатьДоговоровИДопСоглашений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать договоров и доп. соглашений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="4f89b0e9-6993-4272-920e-17e3e278e5e8">
+    <name>ФормаДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма договора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6a9feed-c5f7-4877-8a68-c3244888b964">
+    <name>ФормаДопСоглашения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма доп соглашения</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="02f12432-f910-460a-9d50-a4ae6c8dc5c3">
+    <name>Доп_соглашения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. соглашения</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="1322963c-9366-4fe9-952d-bfb72a4f9dea">
+    <name>ПечатьДоговоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать договоров</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

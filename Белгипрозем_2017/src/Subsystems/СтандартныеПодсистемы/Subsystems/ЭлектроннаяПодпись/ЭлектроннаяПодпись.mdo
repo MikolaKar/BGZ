@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad7c6165-2e44-4808-a77a-526882cf5dea">
+  <name>ЭлектроннаяПодпись</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронная подпись</value>
+  </synonym>
+  <comment></comment>
+  <content>CommonModule.ЭлектроннаяПодпись</content>
+  <content>CommonModule.ЭлектроннаяПодписьКлиент</content>
+  <content>CommonForm.УстановкаПодписиЭП</content>
+  <content>6c34eef9-9405-4de0-9177-1bae85251ae4</content>
+  <content>CommonForm.СертификатЭП</content>
+  <content>CommonPicture.ПодписанЭП</content>
+  <content>Constant.АлгоритмПодписи</content>
+  <content>Constant.АлгоритмХеширования</content>
+  <content>Constant.АлгоритмШифрования</content>
+  <content>Constant.ВыполнятьПроверкуЭПНаСервере</content>
+  <content>Constant.ИспользоватьЭлектронныеПодписи</content>
+  <content>Constant.ТипПровайдераЭП</content>
+  <content>Constant.ПровайдерЭП</content>
+  <content>Catalog.НазначенияСертификатовЭП</content>
+  <content>3c429fe8-e663-4a58-817f-8f8382697dbb</content>
+  <content>CommonModule.ЭлектроннаяПодписьПовтИсп</content>
+  <content>CommonForm.ПерсональныеНастройкиЭП</content>
+  <content>CommonModule.ЭлектроннаяПодписьКлиентСервер</content>
+  <content>CommonForm.ПерсональныеСертификатыДляШифрования</content>
+  <content>Enum.ДействияПриСохраненииСЭП</content>
+  <content>CommonForm.ПодписьЭП</content>
+  <content>FunctionalOption.ИспользоватьЭлектронныеПодписи</content>
+  <content>Role.ИспользованиеЭП</content>
+  <content>CommonForm.ОтчетОСохраненииФайлов</content>
+  <content>492fbe71-dc7b-4b1d-82e5-4df8aef3a49b</content>
+  <content>InformationRegister.ЭлектронныеПодписи</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

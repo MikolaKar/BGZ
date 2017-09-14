@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d18992d6-4ff6-4cf0-bafa-806d95f8ff2f">
+  <name>НазначитьНовуюВерсиюЭДПриЗаписиДокументаВладельца</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначить новую версию ЭД при записи документа-владельца</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ИсходящиеДокументы</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ЭлектронныеДокументыСлужебный.НазначитьНовуюВерсиюЭДПриЗаписиДокументаВладельцаПриЗаписи</handler>
+</mdclass:EventSubscription>

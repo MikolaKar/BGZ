@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66f88d03-b74a-48d5-bef1-7f78aa58ed4e">
+  <name>ЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЗИС</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.мПрейскурантЗИС</content>
+  <content>InformationRegister.мПрейскурантЗИС</content>
+  <content>InformationRegister.мДоговорыЗИС</content>
+  <content>DataProcessor.мЗагрузкаПечатьАктовИзЗИС</content>
+  <content>DataProcessor.мВыгрузкаСкановДоговоровНаДиск</content>
+  <content>InformationRegister.мНормыВремениЗИС</content>
+  <parentSubsystem>Subsystem.РаботыУслугиПроизводство</parentSubsystem>
+</mdclass:Subsystem>

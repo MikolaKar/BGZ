@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<ExternalDataSource uuid="bf22f92d-693e-4caa-b580-e80f93da2121">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.MS_Access" category="Manager">
+				<xr:TypeId>e64d6169-4aae-40da-952e-994e2ab7f432</xr:TypeId>
+				<xr:ValueId>29741e0b-0241-4583-9473-d2c1020a8979</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.MS_Access" category="TablesManager">
+				<xr:TypeId>19202cc6-59d2-4e24-adf4-32e157f8e47f</xr:TypeId>
+				<xr:ValueId>fc0f8724-c427-4fd0-ba20-91db71fd34c9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.MS_Access" category="CubesManager">
+				<xr:TypeId>0e95d1b8-36e7-43df-a69a-efd0a459242e</xr:TypeId>
+				<xr:ValueId>d6c1e70c-0fcd-4f2e-8866-38a46941cacd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>MS_Access</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>MS Access</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>DogEtap</Table>
+			<Table>Dogovor</Table>
+			<Table>SBank</Table>
+			<Table>SEtap</Table>
+			<Table>SGruppa</Table>
+			<Table>SKlient</Table>
+			<Table>SObject</Table>
+			<Table>DogVypolneno</Table>
+			<Table>SWorker</Table>
+			<Table>SOtdel</Table>
+			<Table>DogOplata</Table>
+			<Table>SWork</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>

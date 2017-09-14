@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6885873-01a6-4c45-92fb-90f67cda2e86">
+  <name>мЗадачаПроверкиДелаПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задача проверки дела при записи</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>TaskObject</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.мПроверкаДела.мЗадачаПроверкиДелаПриЗаписиПриЗаписи</handler>
+</mdclass:EventSubscription>

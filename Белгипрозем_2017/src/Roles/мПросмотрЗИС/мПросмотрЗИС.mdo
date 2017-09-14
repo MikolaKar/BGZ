@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be2f106c-5029-411b-853d-f56aae811d0b">
+  <name>мПросмотрЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр ЗИС</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

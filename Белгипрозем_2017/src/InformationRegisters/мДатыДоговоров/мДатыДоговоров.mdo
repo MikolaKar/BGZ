@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9aef04b5-fe65-4d89-8095-58c0ffdcee91">
+  <producedTypes>
+    <selectionType typeId="d0880a5b-bf5f-4f35-9570-7b60bdc351d6" valueTypeId="12a03649-0b89-4467-880d-d7395b7a3555"/>
+    <listType typeId="95ad1c67-e804-41e3-a19f-37ce8c055961" valueTypeId="7b3ca8d4-a612-406a-9a46-73851c0bb37d"/>
+    <managerType typeId="5ee8552a-b0ca-4d09-91ab-0cd4a9202fcc" valueTypeId="693a80d0-76b7-4803-a974-491cb0c5ce5a"/>
+    <recordSetType typeId="e40da7ba-31e8-4ed7-9a25-54b3cab4ea1a" valueTypeId="207ad4ba-7a99-4775-9235-0a48656ddb0d"/>
+    <recordKeyType typeId="21e2d604-7620-412c-9f1e-ae7a3a9a44ee" valueTypeId="79b6143c-ead6-45c0-8108-f8527779d1db"/>
+    <recordType typeId="dc5e8c79-7973-4e80-901b-5a72fa0f8c2b" valueTypeId="b45c8b95-9a8d-40e1-b024-0526a244bb83"/>
+    <recordManagerType typeId="9a0dc97a-1328-47c9-96fe-6216fd1b2e99" valueTypeId="7254df72-d636-4989-9ecf-f101a517fb3f"/>
+  </producedTypes>
+  <name>мДатыДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.мДатыДоговоров.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.мДатыДоговоров.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="591f1a4e-8325-4536-a401-ecf01377c4dc">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="7045371e-7536-491c-8952-314c713c72dc">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="9421534c-2a61-4db4-81da-b701a8e49ce9">
+    <name>ИзмОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изм основание</value>
+    </synonym>
+    <comment>Промежуточный</comment>
+    <type>
+      <types>DocumentRef.ИзменениеДатДоговоров</types>
+      <types>DocumentRef.ВедомостьАктирования</types>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+      <types>DocumentRef.ОплатаРабот</types>
+      <types>DocumentRef.РеестрТекущихПлатежей</types>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="31b498a0-db1c-4831-b05d-affde79983eb">
+    <name>Установил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="927bb186-6e91-4c34-bff4-cc3f50b474d9">
+    <name>ЭтапДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ce36a9db-cfc2-4de3-ab47-ae60bfe1d9a6">
+    <name>ВидДатыДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид даты договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыДатДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c355246b-acef-476f-a1dc-fbdb24a7b59c">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.мВнесениеДатыРешения</types>
+      <types>DocumentRef.ИзменениеДатДоговоров</types>
+      <types>DocumentRef.мАктирование</types>
+      <types>DocumentRef.ВедомостьАктирования</types>
+      <types>CatalogRef.ВходящиеДокументы</types>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+      <types>DocumentRef.ОплатаРабот</types>
+      <types>DocumentRef.мВзаимозачет</types>
+      <types>DocumentRef.мПродлениеСроков</types>
+      <types>DocumentRef.РеестрТекущихПлатежей</types>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a54c5e5f-7705-4606-b308-6616ea0c4aa2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19d06d0e-c44e-4e98-a133-3e4e00901ca0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="0cd925e2-1130-4235-a851-bb7cd03be339">
+    <name>ДатыДоговоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты договоров</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.мВнесениеДатыРешения</types>
+      <types>DocumentRef.мАктирование</types>
+      <types>DocumentRef.ВозвратОплаты</types>
+      <types>DocumentRef.ОплатаРабот</types>
+      <types>DocumentRef.мВзаимозачет</types>
+      <types>DocumentRef.мПродлениеСроков</types>
+      <types>DocumentRef.РеестрТекущихПлатежей</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

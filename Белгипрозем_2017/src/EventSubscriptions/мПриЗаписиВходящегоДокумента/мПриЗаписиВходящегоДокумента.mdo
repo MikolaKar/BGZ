@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c5e25fb-8169-4ddf-8508-c13fdbdf5b01">
+  <name>мПриЗаписиВходящегоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи входящего документа</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ВходящиеДокументы</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.мПриЗаписиВходящегоДокументаПриЗаписи</handler>
+</mdclass:EventSubscription>

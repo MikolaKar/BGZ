@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfa90848-930f-433d-8f6f-c11ac2c5eba2">
+  <name>ОтчетыОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты...</value>
+  </synonym>
+  <comment></comment>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType>
+    <types>CatalogRef.Корреспонденты</types>
+    <types>BusinessProcessRef.РешениеВопросовВыполненияЗадач</types>
+    <types>BusinessProcessRef.Исполнение</types>
+    <types>BusinessProcessRef.Приглашение</types>
+    <types>CatalogRef.ВходящиеДокументы</types>
+    <types>BusinessProcessRef.ОбработкаИсходящегоДокумента</types>
+    <types>BusinessProcessRef.ОбработкаВнутреннегоДокумента</types>
+    <types>BusinessProcessRef.Поручение</types>
+    <types>BusinessProcessRef.Утверждение</types>
+    <types>CatalogRef.ВнутренниеДокументы</types>
+    <types>BusinessProcessRef.КомплексныйПроцесс</types>
+    <types>CatalogRef.ДелаХраненияДокументов</types>
+    <types>BusinessProcessRef.ОбработкаВходящегоДокумента</types>
+    <types>CatalogRef.ИсходящиеДокументы</types>
+    <types>BusinessProcessRef.Рассмотрение</types>
+    <types>CatalogRef.Мероприятия</types>
+    <types>BusinessProcessRef.Согласование</types>
+    <types>BusinessProcessRef.Ознакомление</types>
+    <types>BusinessProcessRef.Регистрация</types>
+  </commandParameterType>
+  <parameterUseMode>Multiple</parameterUseMode>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Перейти к списку дополнительных отчетов</value>
+  </toolTip>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

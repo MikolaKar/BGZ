@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b935864-6e86-47b3-8375-8a66f767054d">
+  <producedTypes>
+    <refType typeId="72936ba9-30a3-4b83-9d35-df71f153d4de" valueTypeId="7b9fd5a8-6dec-4c70-8bc0-4416f3b3a301"/>
+    <listType typeId="4adb190f-037d-4e99-a486-3fdde5e88719" valueTypeId="65bd1e01-f7af-4c47-aa23-4dcd9c8af037"/>
+    <managerType typeId="a9682d12-2f57-460c-a315-0fd8b5064973" valueTypeId="bfa96ef0-b0e4-40ff-bfb8-1893e0e35ff8"/>
+  </producedTypes>
+  <name>мСостоянияДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>М состояния договоров</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e886bea5-016d-4038-9bb8-21e297cbdd05">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0c28c266-bd61-4b73-acb9-6b82dc771508">
+    <name>НаПодписании</name>
+    <synonym>
+      <key>ru</key>
+      <value>На подписании</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="cafe3f2f-923b-47c1-a21f-bd4feb74cec2">
+    <name>Подписан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписан</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="79a8fb90-e962-42ad-bff3-fb063a24e249">
+    <name>НеПодписан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не подписан</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fbbb9a85-f4a7-400e-b76e-16a82bc53137">
+    <name>Расторгнут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расторгнут</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

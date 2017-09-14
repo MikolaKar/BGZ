@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e864385-202a-44af-8f52-1ded8d0ade0f">
+  <producedTypes>
+    <objectType typeId="d5fbcb9a-ebc5-4d0f-a6e0-549258a4ffaa" valueTypeId="50973d07-3c38-4b57-86d9-2f9e76bd3a68"/>
+    <managerType typeId="99ffed60-d37d-48b5-9d5d-d5ea462c4cbe" valueTypeId="ac407540-d74e-4a38-bb97-2d9f5e914e6b"/>
+  </producedTypes>
+  <name>мВыполненоСПросрочкойПоАктированию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнено с просрочкой по актированию</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мВыполненоСПросрочкойПоАктированию.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="15da95b2-c20c-424b-a052-ea1277b987f5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

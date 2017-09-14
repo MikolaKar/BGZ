@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d7cf5d6-701d-4e62-8ea0-4b0b29e42e74">
+  <producedTypes>
+    <managerType typeId="b708770d-0ce6-45e9-ac70-70beaae836b4" valueTypeId="18ea4f4d-f4cb-47f8-a1b4-6f83617b614e"/>
+    <valueManagerType typeId="b1e19bc1-bf68-44c2-a37f-80a0c07b61a6" valueTypeId="0fc08bf8-77b2-49b0-a07f-fc36f99d0a83"/>
+  </producedTypes>
+  <name>Гр_ВидРаботУстановлениеГраницы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид работ установление границы</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.мВидыРаботПоДоговорам</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

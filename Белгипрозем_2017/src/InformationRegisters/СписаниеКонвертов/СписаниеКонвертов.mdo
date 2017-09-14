@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74e1ac12-bd75-4fdf-880c-bcf7845d7ffc">
+  <producedTypes>
+    <selectionType typeId="9324c0e5-6fc6-48a9-87f1-68b0db5b68c9" valueTypeId="9ec76f36-d11c-4d5a-87aa-8233cea0edad"/>
+    <listType typeId="11d0d227-45d6-41dd-9fd1-e392030557fb" valueTypeId="f1992b00-a5d3-4401-adff-94b442851978"/>
+    <managerType typeId="11d35f7b-9bec-4a36-8eab-85601ef33bfc" valueTypeId="3a67a7ca-a26c-4d58-9168-8b2b87293694"/>
+    <recordSetType typeId="e03f90cf-5fb1-4170-802f-f8af26df22a8" valueTypeId="8e391a36-c4e5-402f-a36b-51fe70331105"/>
+    <recordKeyType typeId="43bb3605-daf4-4f07-ab20-4ed166cd78a9" valueTypeId="5af25540-32ce-4b7c-8de8-28ef7fde6f16"/>
+    <recordType typeId="63068cf7-70c1-4ebd-bd6d-2400e7514e56" valueTypeId="88b16757-e707-47fa-98e9-ca3425f7044d"/>
+    <recordManagerType typeId="d2f9af79-aa42-47ce-812a-fb08e49b0a6c" valueTypeId="9860f77a-b002-41dd-b3f9-5a81a1699f76"/>
+  </producedTypes>
+  <name>СписаниеКонвертов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списание конвертов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="828d6187-5dfd-49e4-883b-b2697ca0040a">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="82d6c660-e63f-46e0-bfe1-99307494e398">
+    <name>СтоимостьМарок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость марок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2a97e78c-799d-4072-8683-c72fedf68613">
+    <name>Конверт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конверт</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="51de0301-b887-4bc5-9260-43e11732e556">
+    <name>ИсходящийДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящий документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

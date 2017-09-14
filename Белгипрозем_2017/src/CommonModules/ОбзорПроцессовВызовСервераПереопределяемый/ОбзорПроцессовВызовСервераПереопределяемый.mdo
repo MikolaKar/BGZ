@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba0dd51f-702d-49e5-ac4e-be74db936653">
+  <name>ОбзорПроцессовВызовСервераПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обзор процессов вызов сервера переопределяемый</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

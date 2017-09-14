@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38666d14-3f1f-4a9e-bbdb-5a92d15a9642">
+  <producedTypes>
+    <objectType typeId="60c96fb9-caf3-4b8a-95c6-c12b5352f67b" valueTypeId="14b7dbb1-8aff-4cc4-8e4a-f799f66b75fe"/>
+    <managerType typeId="db2655a7-93ff-41e5-9fc0-1a6a1b1a74ca" valueTypeId="a70e1251-ca29-4c4e-b584-fd60aa0d70d6"/>
+  </producedTypes>
+  <name>мЭтапыОказанияУслугБезАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы оказания услуг без актов</value>
+  </synonym>
+  <comment> </comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мЭтапыОказанияУслугБезАктов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4a1368df-5888-4683-a65c-8d4dffe483c5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

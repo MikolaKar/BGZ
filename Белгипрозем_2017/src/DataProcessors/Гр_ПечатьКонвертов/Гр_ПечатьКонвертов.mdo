@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2ec4044-36a6-4ef5-a658-a1e5318ff434">
+  <producedTypes>
+    <objectType typeId="abb3afa8-d548-4003-8f80-81cda379d587" valueTypeId="37dcf79d-9edb-4125-bde3-0367f15304c5"/>
+    <managerType typeId="88efab72-daee-4320-ab61-5b739fd7415a" valueTypeId="ce857f76-273e-4d9b-92c8-4a7917686004"/>
+  </producedTypes>
+  <name>Гр_ПечатьКонвертов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать конвертов</value>
+  </synonym>
+  <comment>Печать конвертов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Гр_ПечатьКонвертов.Form.Форма</defaultForm>
+  <forms uuid="3c85445d-ab7b-410b-ac94-24a8dad2ad4d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="16245de1-ebbf-4775-9a30-944d36ac9f89">
+    <name>С5</name>
+    <synonym>
+      <key>ru</key>
+      <value>С5</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="6f9d884b-f033-4454-955f-0ed4f1f81f6b">
+    <name>С6</name>
+    <synonym>
+      <key>ru</key>
+      <value>С6</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="f31eb546-6af8-4941-b6ad-289b5723fdd1">
+    <name>ПечатьКонвертов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать конвертов</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.НепрочтенноеПисьмо</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

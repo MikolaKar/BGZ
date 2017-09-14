@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4154a82-d44b-4e89-8c4f-1a92ca579b97">
+  <producedTypes>
+    <managerType typeId="c2c84558-bc29-4758-9a95-9c54ef1ee272" valueTypeId="928d6915-e93b-48c1-bb77-5be1fc34725b"/>
+    <valueManagerType typeId="9c145747-4951-48f1-8f60-ea4127784091" valueTypeId="ae1c4230-8953-4b83-b6b5-b57cab54ecf1"/>
+  </producedTypes>
+  <name>Гр_ВидРаботРазработкаПроектаОтвода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид работ разработка проекта отвода</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.мВидыРаботПоДоговорам</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

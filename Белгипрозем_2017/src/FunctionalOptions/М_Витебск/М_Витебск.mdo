@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c67ee50-b6bf-41b8-aa01-0498ab3ded43">
+  <name>М_Витебск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Витебск</value>
+  </synonym>
+  <comment>Это база Витебск</comment>
+  <location>Constant.М_Витебск</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Report.мЖурналРегистрацииВходящихДокументов</content>
+</mdclass:FunctionalOption>

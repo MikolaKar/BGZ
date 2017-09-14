@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75aeccfd-81d0-40e6-a0ee-e14c49c44ca3">
+  <producedTypes>
+    <refType typeId="73d8f173-a13a-45b8-8381-c671bb0170c5" valueTypeId="3403b54f-5632-4fef-a265-72f2292707ce"/>
+    <listType typeId="62c79f03-85e3-4442-85ec-27b72d76bbe1" valueTypeId="d479f5c4-685e-4b97-8ef7-350b73e9553a"/>
+    <managerType typeId="e949b4f3-80db-4ab3-ae27-957393f4ca35" valueTypeId="0378eca8-4c9d-4b48-94eb-ddc04a31302e"/>
+  </producedTypes>
+  <name>М_СостоянияАктовПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния актов проверки</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Характеризует текущее состояние Акта проверки качества</value>
+  </explanation>
+  <enumValues uuid="60f62c6d-3084-4278-8424-0569580d2647">
+    <name>НаПроверке</name>
+    <synonym>
+      <key>ru</key>
+      <value>На проверке</value>
+    </synonym>
+    <comment>Находится на проверке</comment>
+  </enumValues>
+  <enumValues uuid="01fd3698-5995-4079-b723-6e298ecf5e6b">
+    <name>НаИсправлении</name>
+    <synonym>
+      <key>ru</key>
+      <value>На исправлении</value>
+    </synonym>
+    <comment>По акту исправляются ошибки и замечания</comment>
+  </enumValues>
+  <enumValues uuid="61ee7efe-ef8c-4fb5-93f8-aa0f21ed39c5">
+    <name>НаКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>На комиссии</value>
+    </synonym>
+    <comment>Должен рассматриваться (рассматривается) комиссией по проверке качества</comment>
+  </enumValues>
+  <enumValues uuid="77fa7835-9f6c-40df-aac1-0730cb562438">
+    <name>Проверен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверен</value>
+    </synonym>
+    <comment>Работа с актом завершена</comment>
+  </enumValues>
+  <enumValues uuid="f5228f50-7830-45ab-bf16-d56d7aa63b1c">
+    <name>НеДействителен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не действителен</value>
+    </synonym>
+    <comment>По каким-то причинам акт не должен использоваться в учете</comment>
+  </enumValues>
+</mdclass:Enum>

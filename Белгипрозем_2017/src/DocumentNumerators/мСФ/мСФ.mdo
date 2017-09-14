@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentNumerator xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="161d2524-d5d0-480c-9eed-8fe3ab431ef8">
+  <name>мСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>М СФ</value>
+  </synonym>
+  <comment>Нумератор счетов-фактур</comment>
+  <numberType>String</numberType>
+  <numberLength>10</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+</mdclass:DocumentNumerator>

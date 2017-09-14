@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea4a8edd-1219-495a-a51f-d222ce7c02ea">
+  <name>МобильныйДокументооборот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мобильный документооборот</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ПротоколРаботыСМобильнымиКлиентами</content>
+  <content>DataProcessor.НастройкаСинхронизацииСМобильнымКлиентом</content>
+  <content>ExchangePlan.Мобильный</content>
+  <content>Catalog.СообщенияИнтегрированныхСистем</content>
+  <content>InformationRegister.РазрешенныеМобильныеПользователи</content>
+  <parentSubsystem>Subsystem.НастройкаИАдминистрирование</parentSubsystem>
+</mdclass:Subsystem>

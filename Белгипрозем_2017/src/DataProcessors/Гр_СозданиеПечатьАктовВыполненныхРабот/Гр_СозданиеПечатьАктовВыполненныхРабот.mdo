@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce342ecd-5523-4eaa-88f0-a29066c7d530">
+  <producedTypes>
+    <objectType typeId="7e9805b4-877f-4067-b08a-90ccaed6d705" valueTypeId="c5f373bf-174f-4f95-85ed-6fcb1838a2e8"/>
+    <managerType typeId="f15e5bd5-7f49-41da-987c-4d039c2071f6" valueTypeId="de31c574-904a-4e62-8055-e1d744352b44"/>
+  </producedTypes>
+  <name>Гр_СозданиеПечатьАктовВыполненныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание и печать актов выполненных работ(Гродно)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Гр_СозданиеПечатьАктовВыполненныхРабот.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="90c736b7-6cfa-494f-b3ae-270894c58dd2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="eb334407-eca9-4f38-845a-a328f000ecee">
+    <name>Гродно_DOCX_АктФизЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гродно DOCX акт физ лиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f6eff60b-7e67-4bb9-a8a7-2ccc9b78ef12">
+    <name>Гродно_DOCX_АктЮрЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гродно DOCX акт юр лиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="09b45463-9c85-4a31-896b-9f7cb44de6c8">
+    <name>Гродно_DOCX_АктФизЛиц1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гродно DOCX акт физ лиц1</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

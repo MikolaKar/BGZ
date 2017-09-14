@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73aabb98-300b-4b07-b3da-cbf923ad2d89">
+  <producedTypes>
+    <objectType typeId="9057f620-6c4d-4cdb-864f-dd9dabf3b4e9" valueTypeId="857bd39f-94d1-4404-a55a-e8e2b9419b6d"/>
+    <managerType typeId="a787107c-e59c-4803-b8ca-f27b2e75135d" valueTypeId="47816aa8-9947-47e4-9f3e-c88209791550"/>
+  </producedTypes>
+  <name>ЗамерыПроизводительности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замеры производительности</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <templates uuid="36505900-9ed5-4bcf-b5ee-ed51fe25fd2e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="442bb833-56f7-4203-b370-fad268b51bd2">
+  <name>М_Гродно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гродно</value>
+  </synonym>
+  <comment>Это база Гродно</comment>
+  <location>Constant.М_Гродно</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Report.мЖурналРегистрацииВходящихДокументов</content>
+  <content>Subsystem.ДокументыИФайлы.Subsystem.М_ДопГродно</content>
+  <content>DataProcessor.Гр_ПечатьКонвертов.Command.ПечатьКонвертов</content>
+  <content>DataProcessor.Гр_ПечатьКонвертов</content>
+  <content>Report.Гр_РеестрДелНаАктирование</content>
+  <content>DataProcessor.Гр_ПечатьЗаявленияНаВозврат</content>
+  <content>DataProcessor.Гр_ПечатьДоговоровИДопСоглашений</content>
+  <content>DataProcessor.Гр_СозданиеПечатьАктовВыполненныхРабот</content>
+</mdclass:FunctionalOption>

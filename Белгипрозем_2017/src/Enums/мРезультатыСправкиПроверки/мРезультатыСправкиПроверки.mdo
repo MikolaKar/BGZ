@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9cdeb5e-460d-4ecf-8050-7933f868614d">
+  <producedTypes>
+    <refType typeId="4a1436ea-140f-451b-ad71-b6739c94edd8" valueTypeId="90831dfa-8e2a-4e50-b80c-47b543036864"/>
+    <listType typeId="abe7a44d-ae68-4f46-91d8-619ee34f0fe1" valueTypeId="494954c5-54c6-4ed6-a175-0ab66b9c1bcf"/>
+    <managerType typeId="398e3908-f66c-47fe-97b3-7326c1fd9503" valueTypeId="72d45546-212f-4376-af3b-c9467b5072e0"/>
+  </producedTypes>
+  <name>мРезультатыСправкиПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты справки проверки</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b4792c7a-e0a9-424e-91a1-5e58a384afd7">
+    <name>Соответствует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствует</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="00a11d7a-e122-43ed-87b4-cbe7cf1d28c0">
+    <name>СоответствуетСЗамечаниями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствует с замечаниями</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d1b67bf8-83a7-46c5-880b-d194894755e4">
+    <name>НеСоответствует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не соответствует</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

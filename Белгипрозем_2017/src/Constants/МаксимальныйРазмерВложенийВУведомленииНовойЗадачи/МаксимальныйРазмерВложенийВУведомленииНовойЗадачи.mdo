@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5743837-3f0a-4888-92e9-1f6a2abf6db6">
+  <producedTypes>
+    <managerType typeId="3745797c-e5e6-42c6-9167-76c5436bca01" valueTypeId="06e71a2f-8565-4ae1-9f3e-006efb659162"/>
+    <valueManagerType typeId="7502cef0-e5aa-4055-8b22-1589c6296316" valueTypeId="07039875-bdde-421b-9556-20a78585a1cc"/>
+  </producedTypes>
+  <name>МаксимальныйРазмерВложенийВУведомленииНовойЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальный размер вложений в уведомлении новой задачи</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

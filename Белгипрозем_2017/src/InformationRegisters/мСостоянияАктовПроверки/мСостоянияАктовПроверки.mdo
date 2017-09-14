@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e7730a9-caf3-4ded-8813-3ebce0ee3c6d">
+  <producedTypes>
+    <selectionType typeId="7eef161f-e79e-41a8-a7be-d5f448974290" valueTypeId="067e7543-5339-40c1-b834-22d1b10dd7e9"/>
+    <listType typeId="f06350a4-e6c7-4607-b674-ead7b0f4029d" valueTypeId="8fa34a9f-0623-4aad-9764-3f05e35a6234"/>
+    <managerType typeId="2fd4b68d-1915-4374-beb1-d1d436fb87ee" valueTypeId="ea1e229f-745c-47d1-86c3-71484b41232e"/>
+    <recordSetType typeId="6b6a8cf1-bcf7-4c8f-a3af-0834d28b68d6" valueTypeId="01f2f767-b092-40d8-ad70-0f009c255d12"/>
+    <recordKeyType typeId="76afd409-e6ae-426a-8fe6-520bc6aa6d8a" valueTypeId="76ca5bba-a6ea-4397-8978-4e8a0d6ef32c"/>
+    <recordType typeId="72aa588e-df2c-409e-954c-a9e21ae4286f" valueTypeId="110c3867-7c52-405f-b2eb-c4b843b52880"/>
+    <recordManagerType typeId="f593e22d-f7cc-48fe-abbd-47ca6411adf1" valueTypeId="c37cccc8-2b66-4f41-9d35-d8a4845cb6e7"/>
+  </producedTypes>
+  <name>мСостоянияАктовПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния дел и актов проверки</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.мСостоянияАктовПроверки.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <explanation>
+    <key>ru</key>
+    <value>Состояния дел и актов проверки</value>
+  </explanation>
+  <resources uuid="7ed8e1b3-d6c8-407d-bb89-7e175f6c9127">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мУровниПроверки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0d1851c5-1a59-420a-939e-5a7f3b1b089c">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.М_СостоянияАктовПроверки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cc312b24-b793-4d7d-897a-13a8ada8ba03">
+    <name>АктПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт проверки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мАктыПроверки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.мСостоянияАктовПроверки.Dimension.Дело</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7750b656-2c04-4db6-bea2-d6a0675c8172">
+    <name>Дело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дело</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1f90289f-08ca-4508-a4bc-ef81b258c0a9">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

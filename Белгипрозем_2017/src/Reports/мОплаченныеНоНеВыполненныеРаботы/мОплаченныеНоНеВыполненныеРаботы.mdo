@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="492c574b-c746-4f29-b958-21673329c94f">
+  <producedTypes>
+    <objectType typeId="8c35db56-3734-4cd3-9ec1-e50a3600e244" valueTypeId="ba47d27d-8475-4caa-aca3-650cfd0d509d"/>
+    <managerType typeId="111ff4a0-b720-4053-9c60-cf42292f2da0" valueTypeId="546c5ba4-0c43-4978-ab60-caee88a31be6"/>
+  </producedTypes>
+  <name>мОплаченныеНоНеВыполненныеРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплаченные, но не выполненные работы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мОплаченныеНоНеВыполненныеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="b8b9d6b2-99fd-4fab-9e29-ea5a1fe177a2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

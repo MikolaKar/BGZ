@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25db3304-3d21-4171-8791-cddc58b9aa73">
+  <producedTypes>
+    <managerType typeId="fd3ea8c8-7ae7-4336-be7e-3c1e9729f286" valueTypeId="d5bffe38-03f7-4d3f-86d6-ad2909ea5edd"/>
+    <valueManagerType typeId="a69e835c-280e-42aa-9a61-d4ab51d255fc" valueTypeId="584e97d1-f3b0-44b5-a2f4-3133f2624674"/>
+  </producedTypes>
+  <name>Гр_ВидРаботФормированиеЗемУч</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид работ формирование земельных участков</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.мВидыРаботПоДоговорам</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

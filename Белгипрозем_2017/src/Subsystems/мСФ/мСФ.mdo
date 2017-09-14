@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c696fbe4-2ed9-4983-a1e1-0aad05d21ea8">
+  <name>мСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета-фактуры</value>
+  </synonym>
+  <comment>Электронные счета-фактуры</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаУчетНалогиОтчетность</picture>
+  </picture>
+  <content>Document.мЭСЧФ</content>
+  <content>Enum.мТипСЧ</content>
+  <content>Enum.мСтатусыПоставщика</content>
+  <content>Enum.мСтатусыПолучателя</content>
+  <content>CommonPicture.ПодсистемаУчетНалогиОтчетность</content>
+  <content>Catalog.мКодыТНВЭД</content>
+  <content>Enum.мСтатусыСФ</content>
+  <content>InformationRegister.мСвязиЭСЧФ</content>
+  <content>Enum.мВидыДокументовЭСЧФ</content>
+  <content>Enum.мДополнительныеДанныеЭСЧФ</content>
+  <content>DataProcessor.мРаботаСЭСЧФ</content>
+  <content>Constant.М_КаталогСхемПроверкиЭСЧФ</content>
+  <content>Constant.М_КаталогВыгрузкиЭСЧФ</content>
+</mdclass:Subsystem>

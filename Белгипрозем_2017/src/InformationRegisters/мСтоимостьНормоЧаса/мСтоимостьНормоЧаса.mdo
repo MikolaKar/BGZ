@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b651892-242b-4f40-8de3-fa0247067b87">
+  <producedTypes>
+    <selectionType typeId="d657fb7b-470d-445d-bb4c-88e45f0acf53" valueTypeId="702ff41d-dc94-4dbc-8fc6-0ac6547f38a0"/>
+    <listType typeId="2d180dc7-ceee-4605-a673-3d19bdad57d6" valueTypeId="821a0689-00f8-4312-9460-7ad61859d212"/>
+    <managerType typeId="28f1e0d8-5425-4fd2-92ff-d78ed0e7464b" valueTypeId="790acbd7-5cd2-4434-af62-b977b6be7208"/>
+    <recordSetType typeId="2b794a3e-d486-4c15-b018-7f9701b9116b" valueTypeId="121a9ceb-882b-4e14-867c-c4540b296ac4"/>
+    <recordKeyType typeId="a8858c4b-4ab2-464e-b69c-cbf68049c285" valueTypeId="1b9070b8-50d0-4c4e-92aa-088ac37cbc01"/>
+    <recordType typeId="8a129774-27c3-4e98-86bf-8fa3a5d3f6c4" valueTypeId="1bccd013-166c-463b-bca5-99d2c95d73c4"/>
+    <recordManagerType typeId="6d6e82fa-e931-4be8-acca-deb4bee79f76" valueTypeId="a9b71b1a-c7f0-4bab-a210-5fbdb8aa68e2"/>
+  </producedTypes>
+  <name>мСтоимостьНормоЧаса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость нормо-часа</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Стоимость нормо-часа</value>
+  </recordPresentation>
+  <resources uuid="3b38f07f-8a0c-40b5-826a-81e831e8b0d0">
+    <name>СтоимостьНормоЧаса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость нормо-часа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1e2e9a65-923f-4012-8775-25d36415e184">
+    <name>Рентабельность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рентабельность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мРентабельность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0e234a93-76ee-4f77-aa93-2535bf36d2c9">
+    <name>УсловияРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мУсловияРабот</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a4e0e2c1-eb16-4dc3-a6d4-7e9312f4fc14">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

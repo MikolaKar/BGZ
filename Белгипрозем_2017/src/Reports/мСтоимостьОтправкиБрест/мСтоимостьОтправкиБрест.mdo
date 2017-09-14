@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7dcaed5-b3f9-41c5-a5b9-f50950db731b">
+  <producedTypes>
+    <objectType typeId="35454733-74b9-4de5-b33f-ed641d5e9ad9" valueTypeId="69c028d5-24e6-4d3b-8c8b-0c5add4bcd71"/>
+    <managerType typeId="a7462198-8abf-496e-8fa7-85811b9800e9" valueTypeId="588fad0f-2ee0-4472-8155-29ee3bdbcb2f"/>
+  </producedTypes>
+  <name>мСтоимостьОтправкиБрест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость отправки</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мСтоимостьОтправкиБрест.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="6acd05c0-6c06-44c5-a423-04e44055edf8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

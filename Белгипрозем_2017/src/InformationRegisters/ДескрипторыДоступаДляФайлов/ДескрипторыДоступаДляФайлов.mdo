@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39890d47-bb13-47d7-9984-36ff2009d1a0">
+  <producedTypes>
+    <selectionType typeId="192946b7-5279-4a23-b41e-1791be1c836c" valueTypeId="f2ed2b58-c635-4e30-8ef9-e6eb0b4ec6a2"/>
+    <listType typeId="1e6a9db6-7ac9-46b0-9aa8-85ee34e14dec" valueTypeId="3c81237c-57b7-49ad-8b4d-3b04d8f4e43b"/>
+    <managerType typeId="b9988185-9fb8-49da-852b-f283d614e38b" valueTypeId="df6591b3-c053-4b8a-8ee8-2db0676d918b"/>
+    <recordSetType typeId="61dda8fa-8511-4eaa-aeb0-b02773ccdcfb" valueTypeId="3fa2b374-8c0a-436d-8d9b-d617adea1895"/>
+    <recordKeyType typeId="1592ff49-a387-44d2-a42f-fcc2338a965e" valueTypeId="9ba23d33-6c56-4178-9ec0-c91f0b9a8be5"/>
+    <recordType typeId="ee1163fc-a3aa-444e-8990-9ae9b8ea4c25" valueTypeId="7cc90814-aea3-49ba-a199-3f36184ab811"/>
+    <recordManagerType typeId="32966694-48f9-4a8f-a774-054ddb2379e3" valueTypeId="769db58a-5e43-47e9-894c-3c18a1a4a753"/>
+  </producedTypes>
+  <name>ДескрипторыДоступаДляФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дескрипторы доступа для файлов</value>
+  </synonym>
+  <comment></comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3474ec21-5c56-4918-a0c7-16bf00478b0c">
+    <name>Дескриптор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дескриптор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДескрипторыДоступаФайлов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="77a08d43-4011-4254-9c48-0d4ab40aacf7">
+    <name>ВладелецФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец файла</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Корреспонденты</types>
+      <types>DocumentRef.ВходящееСообщениеСВД</types>
+      <types>CatalogRef.ПапкиФайлов</types>
+      <types>DocumentRef.ИсходящееСообщениеСВД</types>
+      <types>DocumentRef.ВходящееПисьмо</types>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+      <types>DocumentRef.ИсходящееПисьмо</types>
+      <types>CatalogRef.ВходящиеДокументы</types>
+      <types>CatalogRef.Должности</types>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+      <types>CatalogRef.СообщенияОбсуждений</types>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+      <types>CatalogRef.СообщенияЭДО</types>
+      <types>CatalogRef.Мероприятия</types>
+      <types>BusinessProcessRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1ed0f643-70e2-4725-be21-e4565fe47bc0">
+    <name>ОбъектМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект метаданных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

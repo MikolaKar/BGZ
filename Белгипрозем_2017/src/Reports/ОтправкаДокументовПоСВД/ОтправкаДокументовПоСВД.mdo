@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d5d976b-6cef-44a8-a761-4501c3b2b444">
+  <producedTypes>
+    <objectType typeId="bd06f6b5-a686-4a1c-8f70-ada27e0173b9" valueTypeId="f0c12603-d597-4f87-bf74-2e183c0046aa"/>
+    <managerType typeId="28cff812-a1e5-4660-ac56-b3bee708b236" valueTypeId="07a99a39-4438-425c-96f0-0338a7714f68"/>
+  </producedTypes>
+  <name>ОтправкаДокументовПоСВД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка документов по СВД</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтправкаДокументовПоСВД.Template.Макет</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="970dffaa-aa34-4540-9c72-0038e2cd054e">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

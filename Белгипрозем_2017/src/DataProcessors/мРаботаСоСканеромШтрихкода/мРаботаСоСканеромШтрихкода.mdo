@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00e69b79-e732-41f7-957f-38df5e2e59c5">
+  <producedTypes>
+    <objectType typeId="51bea323-acf9-445e-a49c-0e29722d1fce" valueTypeId="2ed66696-b40c-492e-9700-5cbaf55ea3e7"/>
+    <managerType typeId="3dc78bdc-3dfe-434d-86bc-40625ba97959" valueTypeId="fb1bef27-7e8a-4cfc-a524-e3b6dfda4065"/>
+  </producedTypes>
+  <name>мРаботаСоСканеромШтрихкода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа со сканером штрихкода</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мРаботаСоСканеромШтрихкода.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="047a89a5-8538-4947-af7d-98e74c20fba0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c709b4c4-b640-4d1c-8b6c-2b9de29216f1">
+  <name>Геопортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Геопортал</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.мУслугиГеопортала</content>
+  <content>Document.мПрейскурантГеопортала</content>
+  <content>InformationRegister.мПрейскурантГеопортала</content>
+  <content>DataProcessor.мЗагрузкаПечатьАктовИзГеопортала</content>
+  <parentSubsystem>Subsystem.РаботыУслугиПроизводство</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a1155b5-948b-488a-99f3-8ff59011be27">
+  <producedTypes>
+    <objectType typeId="b99667fa-9f83-4c76-baaf-581dd395da6b" valueTypeId="de67774b-39a7-4a38-8e1d-d2071ca23d6f"/>
+    <managerType typeId="2fba76fa-9128-4eee-a47f-692bbe5de04d" valueTypeId="2f805e7f-bd1a-4b98-a003-0aa3ad076e89"/>
+  </producedTypes>
+  <name>мСписокЗарегистрированныхДел</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список зарегистрированных дел</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.мСписокЗарегистрированныхДел.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.мСписокЗарегистрированныхДел.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="cbf3f6c1-7926-4d7f-9bfe-0ec6a563258b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5ab2652c-d8c6-4d12-95cb-bae68e3584d1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

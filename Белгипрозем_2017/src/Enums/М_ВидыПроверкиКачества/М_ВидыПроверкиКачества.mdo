@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d105ecee-9adc-4e87-bc5d-b1e0920167dd">
+  <producedTypes>
+    <refType typeId="7e1d1e80-5c44-43e4-a126-0bad8ae77d22" valueTypeId="fc950b11-43a9-4411-8209-2b7cd0a2a07c"/>
+    <listType typeId="c781aa6a-cb26-475b-a667-c4375e073f71" valueTypeId="86f2aedd-40c7-44d4-aeb6-61efbdc9ec6a"/>
+    <managerType typeId="578f1896-a29e-4ef4-a184-c98442177ae7" valueTypeId="8e4749df-bf80-49f7-bde8-7ea10f5ca282"/>
+  </producedTypes>
+  <name>М_ВидыПроверкиКачества</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды проверки качества</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Виды проверки качества</value>
+  </explanation>
+  <enumValues uuid="85721c50-c3a7-4af4-b239-d44fb0c73ea9">
+    <name>Камеральная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камеральная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fc575be5-7ec3-445a-8396-72de51467ee7">
+    <name>Полевая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полевая</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

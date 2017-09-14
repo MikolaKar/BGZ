@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4fb2cbe-1f75-476e-968b-9b0e55e1304a">
+  <producedTypes>
+    <refType typeId="6ba68f4d-3e0e-4e62-9217-30ef4afa3785" valueTypeId="6c6c4b7b-e46c-4b26-a733-fc6f6da22517"/>
+    <listType typeId="d975c874-fe22-43dd-a884-8236326f7ab8" valueTypeId="041709ff-0264-4417-83a3-6b2f3702c4e4"/>
+    <managerType typeId="ec4dd9fe-e5de-48a9-ba92-a4cbff44b657" valueTypeId="5af666ef-0be8-420a-9663-6840dc06773c"/>
+  </producedTypes>
+  <name>ФорматыКонвертов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форматы конвертов</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <enumValues uuid="04d938d4-b51f-4a9c-b0d9-8bb3b1338c25">
+    <name>С5</name>
+    <synonym>
+      <key>ru</key>
+      <value>С5 (162 × 229 мм)</value>
+    </synonym>
+    <comment>С5 (162 × 229 мм)</comment>
+  </enumValues>
+  <enumValues uuid="2c55d95e-f7ae-42e8-aa63-b4508e42a1cc">
+    <name>С6</name>
+    <synonym>
+      <key>ru</key>
+      <value>С6 (114 × 162 мм)</value>
+    </synonym>
+    <comment>С6 (114 × 162 мм)</comment>
+  </enumValues>
+</mdclass:Enum>

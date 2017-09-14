@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32fdf5bd-368d-4c7f-9596-c18e2053aeb0">
+  <name>мБухгалтер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бухгалтер (базовые права)</value>
+  </synonym>
+  <comment>Права на справочники</comment>
+</mdclass:Role>

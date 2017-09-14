@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6408c93-5329-4990-b403-96bd94a00301">
+  <name>М_ДопПрилуки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прилуки</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Constant.М_Прилуки</content>
+  <content>CommonPicture.ЛоготипБелПСХАГИ</content>
+  <parentSubsystem>Subsystem.ДокументыИФайлы</parentSubsystem>
+</mdclass:Subsystem>

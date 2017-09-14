@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1f0f3a2-9b1b-44c9-bc8f-fc7132f6683d">
+  <producedTypes>
+    <refType typeId="1b02b3db-3ed9-4f36-86ef-d7f26932b2c8" valueTypeId="ea886731-ce44-4b63-8471-486470ceca90"/>
+    <listType typeId="fb7c1d51-8148-4913-b0b5-2a80ee49992c" valueTypeId="33c579d8-78cb-4229-b544-10ff5e5443b8"/>
+    <managerType typeId="bb82ec9a-e402-4301-b3cc-8c2815f3288e" valueTypeId="4dc5f1a5-4ce0-4520-b340-99056b705a55"/>
+  </producedTypes>
+  <name>мСостоянияЭтаповДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния этапов договоров</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="55bd508d-9182-4720-9adf-28d1c354e235">
+    <name>ОжиданиеПодписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание подписания</value>
+    </synonym>
+    <comment>Ожидание подписания договора</comment>
+  </enumValues>
+  <enumValues uuid="7bca431c-6aeb-428f-b03e-c3ef5933e74d">
+    <name>ОжиданиеОплатыИРешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание оплаты и решения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="4091c651-0a19-466f-b608-c04932abafe1">
+    <name>ОжиданиеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание оплаты</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d7c03666-2039-45ba-a675-88b989355e1f">
+    <name>ОжиданиеРешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание решения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="14ec9aa7-b243-44e6-b087-86ce817c68c7">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f1bc2ab7-d102-4236-9e14-9ad60d490acc">
+    <name>Приостановлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приостановлен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a13220aa-8577-45de-a16c-c4caf423db67">
+    <name>Выполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e3216dad-b109-4ae5-a981-0c1bee701980">
+    <name>НеБудетВыполняться</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не будет выполняться</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

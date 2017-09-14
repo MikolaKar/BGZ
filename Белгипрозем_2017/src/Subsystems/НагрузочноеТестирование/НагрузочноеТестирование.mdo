@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85ddf435-d8b1-42e5-bd7c-5797eeecac71">
+  <name>НагрузочноеТестирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нагрузочное тестирование</value>
+  </synonym>
+  <comment></comment>
+  <content>CommonModule.ТестированиеКлиентСервер</content>
+  <content>DataProcessor.ТЦРольВыполнениеЗадачиИсполнение</content>
+  <content>DataProcessor.ТЦРольВыполнениеЗадачиРассмотрение</content>
+  <content>DataProcessor.ТЦРольОткрытиеФормСписков</content>
+  <content>DataProcessor.ТЦРольПолнотекстовыйПоиск</content>
+  <content>DataProcessor.ТЦРольСозданиеВходящегоДокумента</content>
+  <content>DataProcessor.ТЦРольСозданиеФайлов</content>
+  <content>d1a6bbbf-6bd1-4c0a-8b12-28daaaec457d</content>
+</mdclass:Subsystem>

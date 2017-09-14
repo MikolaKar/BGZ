@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2342e45c-f90f-4a0e-a84f-b8840e45c786">
+  <name>Смета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Смета</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Белгипрозем</picture>
+  </picture>
+  <content>Catalog.Корреспонденты</content>
+  <content>Catalog.мЭтапыДоговоров</content>
+  <content>DataProcessor.ВводДействияПримечаний</content>
+  <content>Catalog.мПакетыДокументов</content>
+  <content>Enum.УсловияРасчетаСроковИсполненияРабот</content>
+  <content>Enum.мВидыОбъектов</content>
+  <content>AccumulationRegister.УчетДоговоров</content>
+  <content>Report.Заактировано</content>
+  <content>Report.мПоказателиВыполненияРабот</content>
+  <content>Report.мСправкаПоВидамЗаактированныхРабот</content>
+  <content>InformationRegister.мДатыДоговоров</content>
+  <content>CommonPicture.Белгипрозем</content>
+  <content>Catalog.мВидыТарифов</content>
+  <content>InformationRegister.мНормыВремени</content>
+  <content>Catalog.мШаблоныСмет</content>
+  <content>Catalog.мСметы</content>
+  <content>Enum.мСостоянияСмет</content>
+  <content>Catalog.мКарточкиОбъектовРабот</content>
+  <content>Enum.мСостоянияКарточекОбъектовРабот</content>
+  <content>Catalog.мОбъектыРабот</content>
+  <content>ChartOfCharacteristicTypes.ПараметрыОбъектов</content>
+  <content>InformationRegister.мСтоимостьНормоЧаса</content>
+  <content>Catalog.мСборникиНормВремени</content>
+  <content>InformationRegister.мИндексЦен</content>
+  <content>Catalog.мПримечанияНормВремени</content>
+  <content>Catalog.мСтадииРабот</content>
+  <content>InformationRegister.мЦеныДляСмет</content>
+  <content>Report.мВходимостьСтадииРаботШаблоныСмет</content>
+  <content>Report.мДействиеПримечаний</content>
+  <content>Report.мВходимостьСтадииРаботТаблицыНормВремени</content>
+  <content>Constant.мНастройкиКолонтитулов</content>
+  <content>InformationRegister.мСборникУтвержден</content>
+  <content>Constant.мЧеловекоЧасУтвержден</content>
+  <content>AccumulationRegister.Сметы</content>
+  <content>Document.мСмета</content>
+  <content>Catalog.мРентабельность</content>
+  <content>Constant.мРентабельностьПоУмолчанию</content>
+  <content>DataProcessor.мСводнаяСмета</content>
+  <subsystems>СборникиНормВремени</subsystems>
+  <subsystems>КУдалению</subsystems>
+  <subsystems>СборникЦен</subsystems>
+</mdclass:Subsystem>

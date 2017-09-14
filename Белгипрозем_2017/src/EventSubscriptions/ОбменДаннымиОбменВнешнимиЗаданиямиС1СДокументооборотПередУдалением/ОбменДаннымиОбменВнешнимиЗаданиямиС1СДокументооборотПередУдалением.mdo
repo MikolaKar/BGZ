@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56c74143-49c5-40a3-8f53-531626107ab4">
+  <name>ОбменДаннымиОбменВнешнимиЗаданиямиС1СДокументооборотПередУдалением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен внешними заданиями с 1с документооборот перед удалением</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.РолиИсполнителей</types>
+    <types>CatalogObject.ВерсииФайлов</types>
+    <types>BusinessProcessObject.Поручение</types>
+    <types>CatalogObject.Файлы</types>
+    <types>TaskObject.ЗадачаИсполнителя</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбменВнешнимиЗаданиямиСобытия.ОбменВнешнимиЗаданиямиБСПДокументооборотУдалениемПередУдалением</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acfa9f7c-e019-4efe-b4a1-e5a31228244c">
+  <producedTypes>
+    <selectionType typeId="8190d9f2-9b6f-478b-b271-ad1bcbf9e808" valueTypeId="9581add1-c6a5-4981-8303-6469f57b415e"/>
+    <listType typeId="7f86950f-d369-4205-adc1-a48c03d8961c" valueTypeId="a19b523b-f700-4941-8b23-633f465e5bb1"/>
+    <managerType typeId="97060d35-f3e2-4368-9cd1-b3e2d58b1619" valueTypeId="b954e61c-6299-4174-a4d7-3d5c56923728"/>
+    <recordSetType typeId="8de8c779-992e-45bd-8de2-32c706d03855" valueTypeId="589dfdd7-e377-4619-94e3-57338d54866d"/>
+    <recordKeyType typeId="82af9dba-796b-488b-a2af-6a8a98a4b5ab" valueTypeId="5fbb8d5b-2d72-463c-a8af-bb4248df8c3e"/>
+    <recordType typeId="957a08db-81e9-4d46-bac4-6c98b1cded17" valueTypeId="5b9f5d2c-5d07-4055-9897-19d27a965353"/>
+    <recordManagerType typeId="1ddd3713-7efb-4f4d-b5e7-41ec0b4a97d9" valueTypeId="d332c1de-0ea1-46a9-be1c-463d6f828239"/>
+  </producedTypes>
+  <name>ПолевыеРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полевые работы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="80bbedde-b996-4f39-9e44-dd9c46b642a7">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="58a2f4fd-dc3d-4c1f-826c-9f7e351ff949">
+    <name>МесяцПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц по</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="caa37c17-ad33-4dad-8b84-3ff0bbb69410">
+    <name>МесяцС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц С</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7bb06401-9f88-44ef-b3aa-713e1df520b2">
+    <name>СсылкаНаСборник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на сборник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+</mdclass:InformationRegister>

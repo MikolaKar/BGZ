@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a476c34f-ed9a-4561-84b5-8a6f09d9535e">
+  <producedTypes>
+    <selectionType typeId="02a434b5-902d-4a4e-a2a5-37eeab047024" valueTypeId="f10cefac-9773-4cfa-b434-d18cb7495837"/>
+    <listType typeId="d2f5d6e0-caff-4153-a2bf-a3aa715d967d" valueTypeId="22ba6d2a-d584-4516-8844-672ba1eae6d1"/>
+    <managerType typeId="36159698-1918-444f-a740-ef5be05d6500" valueTypeId="476c0ebd-0ac4-448c-ba15-d59e2c84917b"/>
+    <recordSetType typeId="f513f472-6e96-4cc2-b4cf-6513560cc56d" valueTypeId="e2b42926-a1e0-4ccd-a116-63e46f1c661b"/>
+    <recordKeyType typeId="c1334ab3-423e-42b6-9df1-1b234b975f03" valueTypeId="a3fdba85-2b58-4e5c-a06a-696bf37afe81"/>
+    <recordType typeId="e630457f-d095-4caa-af14-d65cb6260d0f" valueTypeId="ea000dd7-de69-4144-91a0-a6dd61c46183"/>
+    <recordManagerType typeId="42fb2c66-6820-4fea-baf1-07db4305c036" valueTypeId="e677dd57-d2fa-4651-9fd4-1909d72f1834"/>
+  </producedTypes>
+  <name>СостоянияПоручений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния поручений</value>
+  </synonym>
+  <comment></comment>
+  <defaultRecordForm>InformationRegister.СостоянияПоручений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СостоянияПоручений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Состояние поручения</value>
+  </recordPresentation>
+  <resources uuid="1a758334-ffff-4b61-a937-0623c99fa1fa">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СостоянияПоручений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="ad041222-5b3c-40e1-aac8-5029bee742d3">
+    <name>Установил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>BusinessProcessRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="68e5fcb9-d380-49c6-8e27-3c721769eeff">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="04655d14-51bf-483d-bf4a-df6fbe4145bc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="edeb9a6c-e63f-4f90-87bb-5b5a5c7391cf">
+    <name>ФормаСпискаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="70f486d1-d119-44d3-9de4-66fdc4ea2dbf">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="16cf4ae8-4b7a-4771-8af9-5855ac869f5b">
+    <name>ОткрытьФормуСпискаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение состояния поручения</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

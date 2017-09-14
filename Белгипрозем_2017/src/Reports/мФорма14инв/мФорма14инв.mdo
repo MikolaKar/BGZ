@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae7b4941-9d45-4b68-80de-80d88e601d3f">
+  <producedTypes>
+    <objectType typeId="a4407be1-82d4-4c8f-ad4c-8dd1f9ee95b0" valueTypeId="a0f0c3e0-de50-449b-93d0-46dae415219e"/>
+    <managerType typeId="2e97f804-4af6-4141-88df-3cf876aca611" valueTypeId="e8673c30-f54d-4ed8-951f-8cecfb230757"/>
+  </producedTypes>
+  <name>мФорма14инв</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма 14-инв</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мФорма14инв.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Акт инвентаризации расчетов с поставщиками и подрядчиками, покупателями и заказчиками, прочими дебиторами и кредиторами. Приложение 19 к Инструкции по инвентаризации активов и обязательств</value>
+  </explanation>
+  <templates uuid="afc50722-487a-4b58-b6de-9fb6c5e44f10">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

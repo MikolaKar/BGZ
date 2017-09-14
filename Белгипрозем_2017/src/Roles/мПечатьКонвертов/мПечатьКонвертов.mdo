@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49a7752f-0e8b-429e-a733-1b8f8c2ddadb">
+  <name>мПечатьКонвертов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать конвертов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db32887c-64e5-4072-81f2-a030ad3d3e9c">
+  <producedTypes>
+    <refType typeId="da56086c-c28e-4a36-a560-2ab0c348b2f8" valueTypeId="f9798adc-55e4-4434-a0c4-ec9ec91137a4"/>
+    <listType typeId="dac57d34-8603-44ec-a911-01a745bdedfb" valueTypeId="e622ef3c-8b88-4b25-8b3a-2eff8280afe6"/>
+    <managerType typeId="7d7af42a-6b4d-4af8-ae37-c601c35fee10" valueTypeId="10b76786-b04d-4252-91fc-29da6157d432"/>
+  </producedTypes>
+  <name>мВидыЗанятости</name>
+  <synonym>
+    <key>ru</key>
+    <value>М виды занятости</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a94e5f68-3e02-45af-8fbc-bb43af5c3309">
+    <name>ОсновноеМестоРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное место работы</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="db687eb6-fbbe-4645-933c-bdeefc21278f">
+    <name>Совместительство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешнее совместительство</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c8501fcc-7262-4c96-8f0f-62e24a70c721">
+    <name>ВнутреннееСовместительство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее совместительство</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

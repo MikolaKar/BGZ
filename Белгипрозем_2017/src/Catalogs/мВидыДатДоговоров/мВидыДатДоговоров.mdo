@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e15c9d0c-661e-4226-aa9f-ec374d60f17d">
+  <producedTypes>
+    <objectType typeId="429ac585-0567-4802-9586-dfcee79eb2f0" valueTypeId="adb25a3b-92fd-4f1e-b142-fe2cc900aad7"/>
+    <refType typeId="1abb62be-b396-41b7-8a7e-fcf263e2c65a" valueTypeId="16181651-3a9d-4fee-b835-7d9264182edd"/>
+    <selectionType typeId="2cb24c32-b714-4c7e-b00e-9786e3aca521" valueTypeId="05bf7e91-7b60-4a35-879f-18ad7298aea6"/>
+    <listType typeId="9ce7f8ce-8777-4b24-bc74-84372a51b28b" valueTypeId="973320a4-70e7-4282-ac9a-33a4c7c30a61"/>
+    <managerType typeId="b3735343-5e1c-4e39-9982-c905aefe9634" valueTypeId="6016efef-08bb-4de9-8d0e-ff5cf3f2dab0"/>
+  </producedTypes>
+  <name>мВидыДатДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дат договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мВидыДатДоговоров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мВидыДатДоговоров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d90e5c9d-b5e0-4418-bc9e-7f2f4ec60bdb">
+      <name>ДатаВозвратаДоговора</name>
+      <description>Дата возврата договора</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="4e1ea529-7d4c-4fac-a556-2cdd1286d44a">
+      <name>ДатаВозобновленияРабот</name>
+      <description>Дата возобновления работ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="6afdd653-7bb3-4ca9-85a9-a6552f029b39">
+      <name>ДатаВыполнения</name>
+      <description>Дата выполнения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="f0f2e851-f9f9-46e4-8812-f66b036cd27c">
+      <name>ДатаЗакрытия</name>
+      <description>Дата закрытия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="dc043ed6-ee0e-4b5d-99d2-2dc5cc620f8e">
+      <name>ДатаОплаты</name>
+      <description>Дата оплаты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="39d02e48-460e-43f1-9e55-4b2e433c0443">
+      <name>ДатаПодписанияЗаказчиком</name>
+      <description>Дата подписания заказчиком</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="f5f34f29-446f-4eee-b980-d9bea7ed6094">
+      <name>ДатаПредоставленияДокументов</name>
+      <description>Дата предоставления документов</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="5acb82e9-be5f-43e9-bebc-4782afda3f9b">
+      <name>ДатаПриостановленияРабот</name>
+      <description>Дата приостановления работ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="4a55936f-5e39-429a-bf0b-d11066ba8712">
+      <name>ДатаПродления</name>
+      <description>Дата продления</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="41696957-b2ac-4ab9-91c9-696780539be1">
+      <name>ДатаРегистрации</name>
+      <description>Дата регистрации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="2c7cbf5b-8a6e-46ad-b2c6-b61d32cf00ec">
+      <name>ПлановыйСрок</name>
+      <description>Плановый срок</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.мВидыДатДоговоров.Form.ФормаСписка</defaultListForm>
+  <forms uuid="fa049b6a-ab4b-4751-a6f0-55578a11c703">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

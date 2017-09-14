@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2d37475-63a6-44e7-baea-7ba21a5e16b3">
+  <name>мИсполнителиРаботПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>М исполнители работ при записи</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.мИсполнителиРабот</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.мИсполнителиРаботПриЗаписиПриЗаписи</handler>
+</mdclass:EventSubscription>

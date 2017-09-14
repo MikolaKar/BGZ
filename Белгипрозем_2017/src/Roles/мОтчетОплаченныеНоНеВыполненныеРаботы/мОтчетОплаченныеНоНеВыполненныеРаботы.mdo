@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba1df758-060d-42b5-9e56-21d9d3d91ac8">
+  <name>мОтчетОплаченныеНоНеВыполненныеРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет Оплаченные но не выполненные работы</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73d1cc2a-eea4-4582-941a-18d452b10356">
+  <name>мПриКопированииМсходящегоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>При копировании мсходящего документа</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ИсходящиеДокументы</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.М_ПриКопированииМсходящегоДокументаПриКопировании</handler>
+</mdclass:EventSubscription>

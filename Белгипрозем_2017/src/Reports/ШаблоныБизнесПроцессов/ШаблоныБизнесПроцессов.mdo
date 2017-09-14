@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f4ecebe-bfb7-4b55-b55a-f4ea4edb1a42">
+  <producedTypes>
+    <objectType typeId="90287f34-4584-4a8a-9a1e-91cae199c504" valueTypeId="dc9d9022-aedb-4a77-bc4c-a418b7b0271d"/>
+    <managerType typeId="364c6814-a0f0-4a46-814b-53c05132cdbb" valueTypeId="8d500576-b1a3-46fa-895b-5c7211a559ab"/>
+  </producedTypes>
+  <name>ШаблоныБизнесПроцессов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны процессов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ШаблоныБизнесПроцессов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="0f77405a-09a3-465f-9805-e4b54abdab3a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19007964-c03e-4a3c-bc9b-f7e86c21a7ea">
+  <name>мРаботаСЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа со счетами-фактурами</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

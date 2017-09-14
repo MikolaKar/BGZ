@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="148369f4-2b08-4f1a-92e6-36c58e9f5cfb">
+  <producedTypes>
+    <selectionType typeId="ccb8f974-0e8e-4c93-bd7d-10b216196545" valueTypeId="54ecf80d-c1e9-4b6d-a023-0a87aff7693c"/>
+    <listType typeId="dd47ecad-aa7e-4321-b4f6-fe597e64c90f" valueTypeId="4325be3e-0c48-4bc2-bf3e-e08824ae93c4"/>
+    <managerType typeId="f8608b6a-6478-482b-a82b-29b3ccc5912b" valueTypeId="cff2c346-6e2c-48ba-9e46-c90254b315a0"/>
+    <recordSetType typeId="9f5708fc-fb02-4a5a-b35e-c73e25a7897e" valueTypeId="a732d21e-0838-4e9a-8d94-0cf04694ecd1"/>
+    <recordKeyType typeId="6eb9aac4-e45a-490e-ae0f-b74a45078f43" valueTypeId="12221f73-7d68-47a3-8dd8-e4a974edf442"/>
+    <recordType typeId="516d3a50-57c5-4b5d-a113-9952ed8530ae" valueTypeId="b433b27d-d16b-44bf-ba71-cc78b06ae0fc"/>
+    <recordManagerType typeId="591a13ad-e095-4ad1-b9fb-8d7d3f7ab1c8" valueTypeId="2d9bcc1f-a9e9-464a-84db-b9ae5fb09adf"/>
+  </producedTypes>
+  <name>мПричиныВозвратаПоручений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины возврата поручений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Причина возврата</value>
+  </recordPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Содержит причины возврата поручений</value>
+  </explanation>
+  <dimensions uuid="d903675d-4520-4621-9620-0179ba5e8c29">
+    <name>Поручение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поручение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eb83607f-1735-402e-8ac6-c6639dc0eb72">
+    <name>Причина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мПричиныВозвратаПоручений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

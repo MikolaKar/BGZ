@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проверяющий</dataPath>
+			<field>Проверяющий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оценка1</dataPath>
+			<field>Оценка1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаПроверке</dataPath>
+			<field>НаПроверке</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На проверке</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оценка05</dataPath>
+			<field>Оценка05</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка05</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оценка07</dataPath>
+			<field>Оценка07</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка07</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оценка08</dataPath>
+			<field>Оценка08</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка08</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оценка09</dataPath>
+			<field>Оценка09</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка09</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АктПроверки</dataPath>
+			<field>АктПроверки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт проверки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БезОшибок</dataPath>
+			<field>БезОшибок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без ошибок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЮрФизЛицо</dataPath>
+			<field>ЮрФизЛицо</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юр физ лицо</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проблемные</dataPath>
+			<field>Проблемные</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проблемные</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СОшибками</dataPath>
+			<field>СОшибками</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>С ошибками</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	мАктыПроверки.Ссылка КАК АктПроверки
+ПОМЕСТИТЬ АктыЗаПериод
+ИЗ
+	Справочник.мАктыПроверки КАК мАктыПроверки
+ГДЕ
+	мАктыПроверки.ДатаАктаПроверки МЕЖДУ &amp;Дата1 И &amp;Дата2
+	И НЕ мАктыПроверки.ПометкаУдаления
+	И мАктыПроверки.Состояние &lt;&gt; ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.НеДействителен)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	мАктыПроверкиПроверкиКачества.Ссылка КАК АктПроверки,
+	МАКСИМУМ(мАктыПроверкиПроверкиКачества.НомерСтроки) КАК МаксНомерСтроки
+ПОМЕСТИТЬ КолвоПроверок
+ИЗ
+	Справочник.мАктыПроверки.ПроверкиКачества КАК мАктыПроверкиПроверкиКачества
+ГДЕ
+	мАктыПроверкиПроверкиКачества.Ссылка В
+			(ВЫБРАТЬ
+				АктыЗаПериод.АктПроверки
+			ИЗ
+				АктыЗаПериод КАК АктыЗаПериод)
+
+СГРУППИРОВАТЬ ПО
+	мАктыПроверкиПроверкиКачества.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	мАктыПроверкиПроверкиКачества.Проверяющий,
+	мАктыПроверкиПроверкиКачества.Ссылка КАК АктПроверки
+ПОМЕСТИТЬ Проверяющие
+ИЗ
+	КолвоПроверок КАК КолвоПроверок
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.мАктыПроверки.ПроверкиКачества КАК мАктыПроверкиПроверкиКачества
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПользователях КАК СведенияОПользователях
+			ПО мАктыПроверкиПроверкиКачества.Ссылка.Проверяемый = СведенияОПользователях.Пользователь
+		ПО КолвоПроверок.АктПроверки = мАктыПроверкиПроверкиКачества.Ссылка
+			И КолвоПроверок.МаксНомерСтроки = мАктыПроверкиПроверкиКачества.НомерСтроки
+{ГДЕ
+	(СведенияОПользователях.Подразделение В ИЕРАРХИИ (&amp;Подразделение)),
+	(мАктыПроверкиПроверкиКачества.Проверяющий = &amp;Проверяющий)}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	мАктыПроверкиЗамечания.Ссылка КАК АктПроверки,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 1
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Оценка1,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.9
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Оценка09,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.8
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Оценка08,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.7
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Оценка07,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.5
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Оценка05
+ПОМЕСТИТЬ АктыСОшибками
+ИЗ
+	Справочник.мАктыПроверки.Замечания КАК мАктыПроверкиЗамечания
+ГДЕ
+	мАктыПроверкиЗамечания.Ссылка В
+			(ВЫБРАТЬ
+				АктыЗаПериод.АктПроверки
+			ИЗ
+				АктыЗаПериод КАК АктыЗаПериод)
+	И (мАктыПроверкиЗамечания.Ссылка.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.Проверен)
+			ИЛИ мАктыПроверкиЗамечания.Ссылка.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.НаКомиссии))
+	И мАктыПроверкиЗамечания.Ссылка.Оценка &gt; 0
+
+СГРУППИРОВАТЬ ПО
+	мАктыПроверкиЗамечания.Ссылка,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 1
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.9
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.8
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.7
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА мАктыПроверкиЗамечания.Ссылка.Оценка = 0.5
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	АктыЗаПериод.АктПроверки
+ПОМЕСТИТЬ АктыБезОшибок
+ИЗ
+	АктыЗаПериод КАК АктыЗаПериод
+ГДЕ
+	НЕ АктыЗаПериод.АктПроверки В
+				(ВЫБРАТЬ
+					АктыСОшибками.АктПроверки
+				ИЗ
+					АктыСОшибками КАК АктыСОшибками)
+	И АктыЗаПериод.АктПроверки.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.Проверен)
+	И АктыЗаПериод.АктПроверки.ОценкаИтоговая = 1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	АктыЗаПериод.АктПроверки
+ПОМЕСТИТЬ АктыНаПроверке
+ИЗ
+	АктыЗаПериод КАК АктыЗаПериод
+ГДЕ
+	(АктыЗаПериод.АктПроверки.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.НаПроверке)
+			ИЛИ АктыЗаПериод.АктПроверки.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.НаИсправлении))
+	И АктыЗаПериод.АктПроверки.Оценка &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	АктыЗаПериод.АктПроверки
+ПОМЕСТИТЬ АктыПроблемные
+ИЗ
+	АктыЗаПериод КАК АктыЗаПериод
+ГДЕ
+	НЕ АктыЗаПериод.АктПроверки В
+				(ВЫБРАТЬ
+					АктыСОшибками.АктПроверки
+				ИЗ
+					АктыСОшибками КАК АктыСОшибками)
+	И НЕ АктыЗаПериод.АктПроверки В
+				(ВЫБРАТЬ
+					АктыБезОшибок.АктПроверки
+				ИЗ
+					АктыБезОшибок КАК АктыБезОшибок)
+	И НЕ АктыЗаПериод.АктПроверки В
+				(ВЫБРАТЬ
+					АктыНаПроверке.АктПроверки
+				ИЗ
+					АктыНаПроверке КАК АктыНаПроверке)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Проверяющие.Проверяющий КАК Проверяющий,
+	СведенияОПользователях.Должность,
+	Проверяющие.АктПроверки.Владелец.Корреспондент.ЮрФизЛицо КАК ЮрФизЛицо,
+	Проверяющие.АктПроверки,
+	СУММА(ВЫБОР
+			КОГДА ЕСТЬNULL(АктыБезОшибок.АктПроверки, 0) = 0
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ) КАК БезОшибок,
+	СУММА(ВЫБОР
+			КОГДА ЕСТЬNULL(АктыНаПроверке.АктПроверки, 0) = 0
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ) КАК НаПроверке,
+	СУММА(ВЫБОР
+			КОГДА ЕСТЬNULL(АктыПроблемные.АктПроверки, 0) = 0
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ) КАК Проблемные,
+	СУММА(ВЫБОР
+			КОГДА ЕСТЬNULL(АктыСОшибками.АктПроверки, 0) = 0
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ) КАК СОшибками,
+	АктыСОшибками.Оценка1 КАК Оценка1,
+	АктыСОшибками.Оценка09 КАК Оценка09,
+	АктыСОшибками.Оценка08 КАК Оценка08,
+	АктыСОшибками.Оценка07 КАК Оценка07,
+	АктыСОшибками.Оценка05 КАК Оценка05
+ИЗ
+	Проверяющие КАК Проверяющие
+		ЛЕВОЕ СОЕДИНЕНИЕ АктыБезОшибок КАК АктыБезОшибок
+		ПО Проверяющие.АктПроверки = АктыБезОшибок.АктПроверки
+		ЛЕВОЕ СОЕДИНЕНИЕ АктыСОшибками КАК АктыСОшибками
+		ПО Проверяющие.АктПроверки = АктыСОшибками.АктПроверки
+		ЛЕВОЕ СОЕДИНЕНИЕ АктыНаПроверке КАК АктыНаПроверке
+		ПО Проверяющие.АктПроверки = АктыНаПроверке.АктПроверки
+		ЛЕВОЕ СОЕДИНЕНИЕ АктыПроблемные КАК АктыПроблемные
+		ПО Проверяющие.АктПроверки = АктыПроблемные.АктПроверки
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПользователях КАК СведенияОПользователях
+		ПО Проверяющие.Проверяющий = СведенияОПользователях.Пользователь
+
+СГРУППИРОВАТЬ ПО
+	Проверяющие.Проверяющий,
+	АктыСОшибками.Оценка1,
+	АктыСОшибками.Оценка09,
+	АктыСОшибками.Оценка08,
+	АктыСОшибками.Оценка07,
+	АктыСОшибками.Оценка05,
+	Проверяющие.АктПроверки,
+	Проверяющие.АктПроверки.Владелец.Корреспондент.ЮрФизЛицо,
+	СведенияОПользователях.Должность</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ВсегоСОшибками</dataPath>
+		<expression>Оценка1+Оценка09+Оценка08+Оценка07+Оценка05</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Всего с ошибками</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Всего</dataPath>
+		<expression>СОшибками + НаПроверке+Проблемные+БезОшибок</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Всего</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Оценка05</dataPath>
+		<expression>Сумма(Оценка05)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Оценка07</dataPath>
+		<expression>Сумма(Оценка07)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Оценка08</dataPath>
+		<expression>Сумма(Оценка08)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Оценка09</dataPath>
+		<expression>Сумма(Оценка09)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Оценка1</dataPath>
+		<expression>Сумма(Оценка1)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НаПроверке</dataPath>
+		<expression>Сумма(НаПроверке)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>БезОшибок</dataPath>
+		<expression>Сумма(БезОшибок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Всего</dataPath>
+		<expression>Сумма(Всего)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВсегоСОшибками</dataPath>
+		<expression>Сумма(ВсегоСОшибками)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Проблемные</dataPath>
+		<expression>Сумма(Проблемные)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СОшибками</dataPath>
+		<expression>Сумма(СОшибками)</expression>
+	</totalField>
+	<parameter>
+		<name>Дата1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата1</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Дата2</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата2</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Проверяющий</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проверяющий</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Пользователи.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Подразделение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подразделение</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтруктураПредприятия</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проверяющий</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Должность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЮрФизЛицо</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физ. / Юр. лица</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АктПроверки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Всего</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БезОшибок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во проверенных дел с ошибками</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВсегоСОшибками</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Всего</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Оценка1</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>1.0</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Оценка09</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>0.9</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Оценка08</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>0.8</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Оценка07</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>0.7</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Оценка05</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>0.5</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаПроверке</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проблемные</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>40789baa-ab73-4ebc-b1af-c47e76e892a5</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Проверяющий</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">00000000-0000-0000-0000-000000000000</dcscor:value>
+					<dcsset:userSettingID>6f93fe50-c51a-4728-a868-33c8822f4ccd</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Подразделение</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>575b1018-7d47-4915-87ea-a5c4e8ad3764</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>АктПроверки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Должность</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Проверяющий</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЮрФизЛицо</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>БезОшибок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Всего</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВсегоСОшибками</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>НаПроверке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка05</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка07</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка08</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка09</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка1</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Проблемные</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СОшибками</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>БезОшибок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Всего</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВсегоСОшибками</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>НаПроверке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка05</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка07</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка08</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка09</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Оценка1</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Проблемные</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СОшибками</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет по актам проверки</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Проверяющий</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Должность</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЮрФизЛицо</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

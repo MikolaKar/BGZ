@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb534ef6-f1c2-4055-b444-b4d40b6b1bf8">
+  <producedTypes>
+    <selectionType typeId="a0c48553-31ab-4251-b4d3-c3de180c2426" valueTypeId="85c2c6b8-9268-4894-96ec-81a1e6fe38c3"/>
+    <listType typeId="02ad5fb8-d614-4271-8d71-9d96abaf45d7" valueTypeId="35991967-b0ec-4843-a006-17990052ccb8"/>
+    <managerType typeId="0d376e3d-af9f-4146-88c0-51bb3076a27f" valueTypeId="beeb3e77-ed2c-4465-bc91-63288ca627d7"/>
+    <recordSetType typeId="1175e9c8-166e-4831-a04d-96b0b6b422c9" valueTypeId="e8b9080f-f0dd-4d60-9824-8a993b60903a"/>
+    <recordKeyType typeId="f36c52bf-b078-402d-8d14-f8a5fda9ab16" valueTypeId="693be9dd-32bd-432e-9f62-86fe7cef3c0c"/>
+    <recordType typeId="b93b504a-cbf3-4070-8d1c-bf342b509918" valueTypeId="f8b514e7-9633-4fc0-b9ea-e86ca5fed902"/>
+    <recordManagerType typeId="94587117-7762-4a33-ba72-c13dfdc12648" valueTypeId="0fcd950e-5bac-437e-a636-145ca09b30fd"/>
+  </producedTypes>
+  <name>БазоваяВеличина</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базовая величина</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d41a78d1-3a86-4d5a-9b94-72903182196b">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧГ=3,0</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧГ=3,0</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

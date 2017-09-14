@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7d13364-8075-45ee-aa61-e94913eae6e7">
+  <producedTypes>
+    <objectType typeId="3e9885c2-4090-4922-82dc-54d94b9d68c9" valueTypeId="9604b40d-b792-4e66-9d07-0d45bc7a23a4"/>
+    <managerType typeId="01c4b40c-c96d-471b-991b-a96e0a8d8d43" valueTypeId="2bf50bed-4eca-4854-90f2-635394a4bf39"/>
+  </producedTypes>
+  <name>мПечатьРаспискиВПолученииТехАрхив</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать расписки в получении (техархив)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.мПечатьРаспискиВПолученииТехАрхив.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.мПечатьРаспискиВПолученииТехАрхив.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="59bec637-8159-4ee8-81c5-30650e50557f">
+    <name>ДокументДляПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ для печати</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="586efc62-3e3c-4b3e-9b89-9967e4552495">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d034a199-3379-40c0-b2f2-3e87c1298294">
+    <name>РаспискаМинск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписка Минск</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="67f73bd7-7b6b-449f-9b65-d49b3bef286b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

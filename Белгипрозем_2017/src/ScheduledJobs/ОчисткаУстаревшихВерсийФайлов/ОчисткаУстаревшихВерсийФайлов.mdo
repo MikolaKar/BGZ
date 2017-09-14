@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="537cd97c-26fe-493e-941a-8cd115a727d3">
+  <name>ОчисткаУстаревшихВерсийФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка устаревших версий файлов</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РаботаСФайламиВызовСервера.УдалениеНеактивныхВерсийФайлов</methodName>
+  <description>Очистка устаревших версий файлов</description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

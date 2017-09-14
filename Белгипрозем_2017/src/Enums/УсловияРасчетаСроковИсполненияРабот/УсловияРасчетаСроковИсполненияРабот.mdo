@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d8f5500-0fea-4931-90d3-e45fd634c642">
+  <producedTypes>
+    <refType typeId="862cce20-177b-4994-ba9d-5e6374f00ec7" valueTypeId="fe891c37-de6d-49e6-90b9-0b3c337e4c72"/>
+    <listType typeId="afb4b58c-0c19-4fda-8d89-e04ee55bf5c9" valueTypeId="539d6a32-c009-4501-85eb-df73fe88b17b"/>
+    <managerType typeId="1be14f66-f36a-4b2b-a7ed-d0efe0e2213c" valueTypeId="cd9c9758-9bdc-409f-9c72-69e58d440eb9"/>
+  </producedTypes>
+  <name>УсловияРасчетаСроковИсполненияРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия расчета сроков исполнения работ</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d6ef859f-a727-4c2d-a490-ad3dd694115b">
+    <name>УдаленностьДо100</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаленность до100</value>
+    </synonym>
+    <comment>Удаленность объекта до 100км</comment>
+  </enumValues>
+  <enumValues uuid="35d6ec5d-76fc-4d37-8fd1-038b85208b6b">
+    <name>УдаленностьОт100</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаленность от 100</value>
+    </synonym>
+    <comment>Удаленность объекта от 100 км и более</comment>
+  </enumValues>
+  <enumValues uuid="29425ce9-f6c4-412d-9a04-f2b55944f60b">
+    <name>КоличествоЗемлепользователейДо5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество землепользователей до 5</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="781ed5eb-517e-42fd-ae6d-c09512fff658">
+    <name>КоличествоЗемлепользователейОт5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество землепользователей от 5 </value>
+    </synonym>
+    <comment>Количество землепользователей от 5 и более</comment>
+  </enumValues>
+  <enumValues uuid="00c1d51e-9911-4275-91d9-9f82fb6ebf1d">
+    <name>ДатаПодписанияЗаказчиком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписания заказчиком</value>
+    </synonym>
+    <comment>Дата подписания договора или доп. соглашения на выполнение работ</comment>
+  </enumValues>
+  <enumValues uuid="b000b663-cfb6-425d-875a-d97098a1af9e">
+    <name>ДатаПредоставленияПакетаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата предоставления пакета документов</value>
+    </synonym>
+    <comment>Дата предоставления необходимых для выполнения работ документов Заказчиком</comment>
+  </enumValues>
+  <enumValues uuid="3ad834be-e06a-4439-a6e1-b798c5087875">
+    <name>ДатаПредоплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата предоплаты</value>
+    </synonym>
+    <comment>Дата поступления предоплаты на выполнение работ</comment>
+  </enumValues>
+  <enumValues uuid="176dab18-775c-41eb-b620-e71136754c09">
+    <name>ДатаОплатыПотерь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата оплаты потерь</value>
+    </synonym>
+    <comment>Дата оплаты потерь с/х и лесох.</comment>
+  </enumValues>
+</mdclass:Enum>

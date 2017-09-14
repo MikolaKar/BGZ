@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3efe5b4-af6e-43a9-92a3-0ed8c62e458f">
+  <producedTypes>
+    <objectType typeId="ce9fbce3-5124-47c4-8e33-dc9297b3051e" valueTypeId="3431bc59-f63e-46da-94c9-b2517a1dd6e8"/>
+    <managerType typeId="6c8cc689-ef4d-49ce-83cb-349c4af3409d" valueTypeId="95a207bd-bffb-4280-af0a-b3910bf81708"/>
+  </producedTypes>
+  <name>мОтчетПоЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по ЭСЧФ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мОтчетПоЭСЧФ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="96c80673-52e7-493e-b3e1-26318d2ed71c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f79929d-654f-4658-9c81-fa007c134c54">
+  <producedTypes>
+    <objectType typeId="c72cf38d-3b82-4b55-a930-373ebc9e0ba5" valueTypeId="b72d4c9c-e902-4e22-aaa3-069c878c81aa"/>
+    <managerType typeId="4692c1e8-bb42-4ad7-b666-71bb4c1b9f48" valueTypeId="210f99ef-16b4-4909-9cf8-4d9af60cd13a"/>
+  </producedTypes>
+  <name>мОтчетПоНомерамБланковИсхПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по номерам бланков исходящих писем</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мОтчетПоНомерамБланковИсхПисем.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="c0443c00-525d-44b9-b6d1-30c9fea9ce95">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

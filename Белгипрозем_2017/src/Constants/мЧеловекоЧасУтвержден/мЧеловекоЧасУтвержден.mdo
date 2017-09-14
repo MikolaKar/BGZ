@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4c19caa-77de-426b-93ea-b256f47b3b0c">
+  <producedTypes>
+    <managerType typeId="8d241c44-0afd-41bd-8abf-d513c66d303e" valueTypeId="a758ff43-2696-4429-acee-57c77f39c269"/>
+    <valueManagerType typeId="b34794ae-294d-480f-abe3-be03910365e6" valueTypeId="56b3a6f9-8f6e-45d5-88cd-8a7a5617e8d8"/>
+  </producedTypes>
+  <name>мЧеловекоЧасУтвержден</name>
+  <synonym>
+    <key>ru</key>
+    <value>Человеко-час утвержден</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

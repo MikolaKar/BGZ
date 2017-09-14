@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0337a374-6d94-403c-b76e-376f29cffb85">
+  <producedTypes>
+    <selectionType typeId="37f54026-2406-4edd-8c61-62cf58494f30" valueTypeId="05605045-c175-4850-9a5a-57a7cb889e11"/>
+    <listType typeId="08709125-68ef-4fba-94d7-2aa38bc1ea1d" valueTypeId="67e8d8a8-c621-4497-aae0-7af906fa7940"/>
+    <managerType typeId="e4a7d584-1b8b-463f-9454-f75e745b146c" valueTypeId="839168f5-13ba-4a3e-9fb4-77dad59d99f8"/>
+    <recordSetType typeId="ab9bddf2-5163-486c-9c1f-a7d732acd6f2" valueTypeId="20ac1d4d-2442-45b3-95ff-82ffc015f02b"/>
+    <recordKeyType typeId="23156b00-87ea-4ae3-af30-c446c446ae4b" valueTypeId="4a1d2d3f-6767-4293-baee-0731374d64db"/>
+    <recordType typeId="e95acd23-6a31-444b-9d6b-e840cbaf5426" valueTypeId="1d13aaf5-c671-4dc7-8bd9-5967fff91dc5"/>
+    <recordManagerType typeId="b0ddce85-2a6d-48c5-b0dd-22e9a3e91b58" valueTypeId="52d1af40-c0d7-4617-9839-9c355bbb4329"/>
+  </producedTypes>
+  <name>мРайоныПоСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Районы по сотрудникам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.мРайоныПоСотрудникам.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="99172fca-e2a7-40d2-b91d-9ed32a067632">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3cb72893-f094-4a4b-85a2-3a800dccd2c9">
+    <name>Месторасположение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месторасположение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Район или город по классификатору</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="726d856b-413f-4394-81de-4f436a77e5c8">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

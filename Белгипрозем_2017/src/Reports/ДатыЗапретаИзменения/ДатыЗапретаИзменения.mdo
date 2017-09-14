@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce425759-ae44-4774-ae0d-dcfce90b73cb">
+  <producedTypes>
+    <objectType typeId="8567028b-4484-4b9e-baf0-3dc4866daad6" valueTypeId="bd958551-5b14-4f07-9e1a-7af036b0405a"/>
+    <managerType typeId="23008679-fb3a-4d28-b3f6-7a6ee2ab4f3e" valueTypeId="31a9bd0f-80b8-4e24-a835-d9a50f27066e"/>
+  </producedTypes>
+  <name>ДатыЗапретаИзменения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты запрета изменения</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>Report.ДатыЗапретаИзменения.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДатыЗапретаИзменения.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <forms uuid="80367f8b-a4d7-4623-b274-8e6f7547b381">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4368bc37-a183-4e5a-9811-b0343763778f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

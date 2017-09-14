@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81444f90-e1fe-4f94-b717-32ec6f9d0cc7">
+  <name>мУстановитьПометкуУдаленияСтрокИКолонокНормВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить пометку удаления строк и колонок норм времени</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.мТаблицыНормВремени</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.мУстановитьПометкуУдаленияСтрокИКолонокНормВремени</handler>
+</mdclass:EventSubscription>

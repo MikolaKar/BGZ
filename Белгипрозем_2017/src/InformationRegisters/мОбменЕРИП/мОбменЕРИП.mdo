@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17b48527-b451-4d45-acd6-2a8292457cb4">
+  <producedTypes>
+    <selectionType typeId="6587785b-7443-48c8-ae5a-ddf906e699ba" valueTypeId="9d72e779-1e47-406f-9a1b-c3a386205fc4"/>
+    <listType typeId="969ab0b1-a42b-49b7-bda0-a33c176c8a21" valueTypeId="754a3512-3fef-4479-b71f-cc18752f81de"/>
+    <managerType typeId="9a557154-5bae-49e9-a9e6-440139b03c8c" valueTypeId="e42a81a0-404d-478c-b84d-c2841315c131"/>
+    <recordSetType typeId="47486967-c5bf-4e40-949c-083b796cf422" valueTypeId="8d0157d8-a324-4436-8ca9-039b31c62bfb"/>
+    <recordKeyType typeId="1d9199ae-01fc-43ca-b531-e9bba7481b3c" valueTypeId="9f2bc21f-9826-44df-b685-1eb88646649c"/>
+    <recordType typeId="47af2cfa-d49b-48d8-9080-f691a31ac088" valueTypeId="4c3bebb9-0f62-4a70-ba16-8c1bab3abb7c"/>
+    <recordManagerType typeId="f3b77574-32cf-458d-a934-78bb67437cb8" valueTypeId="2e83797a-c591-4392-af39-43b3dbc2aacc"/>
+  </producedTypes>
+  <name>мОбменЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ЕРИП</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Обмен ЕРИП (Состояние договора)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Обмен ЕРИП (Состояние договоров)</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Хранит состояния договоров для выполнения обменов с ЕРИП</value>
+  </explanation>
+  <resources uuid="785092a4-a64e-4b87-9704-b29f991c2aba">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мСостояниеОбменЕРИП</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="61f7840f-9835-4af3-b60c-7891505426f8">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="caf7cc6f-1e7a-4f61-9179-bd5c8e67d41d">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a7c0cac-2d52-4442-8579-3b77af27c4e5">
+    <name>ОплатитьДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплатить до</value>
+    </synonym>
+    <comment>Крайний срок оплаты требования</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="47554933-35f9-4cb9-ba06-82fce3acdc80">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="3831b2aa-5cd5-4f80-bf5d-c354b366f31a">
+    <name>ЗарегистрироватьДляОтправкиЕРИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕРИП</value>
+    </synonym>
+    <comment></comment>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Зарегистрировать договор(ы) для отправки в ЕРИП</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ОпубликоватьФайл</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

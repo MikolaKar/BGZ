@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61922d1b-dbc3-4a7c-a085-b9e3c2620ea7">
+  <name>мУправлениеКолонтитулами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление колонтитулами</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

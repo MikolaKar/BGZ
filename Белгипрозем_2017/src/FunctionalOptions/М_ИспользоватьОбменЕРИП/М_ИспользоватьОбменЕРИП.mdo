@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49c5c322-84db-4eaf-b432-697d4ec3788f">
+  <name>М_ИспользоватьОбменЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать обмен ЕРИП</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.М_ИспользоватьОбменЕРИП</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>DataProcessor.мОбменДаннымиЕРИП</content>
+  <content>Constant.М_КаталогОбменЕРИП</content>
+  <content>InformationRegister.мОбменЕРИП</content>
+  <content>Enum.мСостояниеОбменЕРИП</content>
+  <content>Constant.М_КодАбонентаДляЕРИП</content>
+  <content>Constant.М_НомерУслугиДляЕРИП</content>
+  <content>Subsystem.ЕРИП</content>
+  <content>InformationRegister.мОбменЕРИП.Command.ЗарегистрироватьДляОтправкиЕРИП</content>
+</mdclass:FunctionalOption>

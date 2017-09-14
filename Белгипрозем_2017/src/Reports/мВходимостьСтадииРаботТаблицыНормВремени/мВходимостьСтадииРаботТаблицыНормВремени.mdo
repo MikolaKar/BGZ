@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c867bf7-764e-4f08-9e39-7aa6aa4cdce3">
+  <producedTypes>
+    <objectType typeId="13f2ebee-8782-421c-a910-05a6c7f43749" valueTypeId="b22d198c-9697-4402-9511-d09d2204645e"/>
+    <managerType typeId="c45e713b-6291-46ef-9f1e-d353cf30d8aa" valueTypeId="7f536776-1c3a-412b-a293-65614855c421"/>
+  </producedTypes>
+  <name>мВходимостьСтадииРаботТаблицыНормВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Входимость стадий работ в таблицы норм времени</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мВходимостьСтадииРаботТаблицыНормВремени.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="2ec5babb-3592-45bd-af53-56f5a95d4d5c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

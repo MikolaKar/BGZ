@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a31a395f-5722-4e4c-a85b-1ba38bac4d1a">
+  <producedTypes>
+    <objectType typeId="cb6e8104-31f4-42b5-b434-f2c25636796e" valueTypeId="14bce8a9-7c6b-4325-96ec-41eb7b370ba8"/>
+    <managerType typeId="a54cbec5-5c2a-4536-bb12-35f779fa54cc" valueTypeId="250233ce-fe44-4a69-a6dd-d250ed2763d4"/>
+  </producedTypes>
+  <name>КоличествоДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество документов, созданных сотрудниками</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.КоличествоДокументов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="6c06f4c5-ad8a-4d8a-ae81-9933d51d4306">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

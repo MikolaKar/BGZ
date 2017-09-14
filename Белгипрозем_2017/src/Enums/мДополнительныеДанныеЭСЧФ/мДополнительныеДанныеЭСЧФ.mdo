@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="899df593-1651-4d04-8eac-505f4735a142">
+  <producedTypes>
+    <refType typeId="5d912efe-d5f2-4801-8cb7-dd4b3bf35077" valueTypeId="2db2f3a2-1a29-4953-a152-938e5011ba46"/>
+    <listType typeId="e8ebcf6d-fc3c-445f-8169-bff233165380" valueTypeId="0f591437-9e97-462c-8834-b09c6ae72ded"/>
+    <managerType typeId="8d605077-279f-4f98-84d9-d2f0a88b6316" valueTypeId="cfb6753d-909b-427b-af3a-3f220dd783c1"/>
+  </producedTypes>
+  <name>мДополнительныеДанныеЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>М дополнительные данные ЭСЧФ</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="49b12652-2b65-496e-abaf-0531f5cfe42c">
+    <name>ВычетВПолномОбъеме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вычет в полном объеме</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f098429f-36c6-4799-b5d0-ec404aea34b8">
+    <name>ОсвобождениеОтНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Освобождение от НДС</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="446b4f51-b71a-453e-8ed6-f81e48cf80e8">
+    <name>РеализацияЗаПределамиРБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация за пределами РБ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="161034d5-e50b-469d-bbdf-cb990eb5fd6b">
+    <name>ВвознойНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввозной НДС</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

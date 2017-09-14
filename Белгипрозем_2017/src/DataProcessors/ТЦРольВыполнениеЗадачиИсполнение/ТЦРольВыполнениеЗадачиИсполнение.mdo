@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c87bcbb1-4e52-4a47-9e5a-563349ce00a0">
+  <producedTypes>
+    <objectType typeId="cedf7025-78d4-480f-bd11-7f2aa3847b22" valueTypeId="5163c6c6-2d61-43e7-a439-b90a3498198e"/>
+    <managerType typeId="02ba4d34-c89a-4d19-8f01-43a0b95b724d" valueTypeId="16dd6095-5754-445c-84fc-e21238755e71"/>
+  </producedTypes>
+  <name>ТЦРольВыполнениеЗадачиИсполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦРольВыполнениеЗадачиИсполнение</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЦРольВыполнениеЗадачиИсполнение.Form.ТЦФорма</defaultForm>
+  <forms uuid="b92082be-e6fe-4635-be21-c8a0affd2b27">
+    <name>ТЦФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

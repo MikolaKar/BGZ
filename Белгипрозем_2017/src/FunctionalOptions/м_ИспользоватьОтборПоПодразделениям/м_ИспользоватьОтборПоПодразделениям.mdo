@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a84abf96-a768-41a0-9045-500f54077031">
+  <name>м_ИспользоватьОтборПоПодразделениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать отбор по подразделениям</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.м_ИспользоватьОтборПоПодразделениям</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

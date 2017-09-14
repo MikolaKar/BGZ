@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1764360b-97c3-4342-b1fb-a1ea33a82e89">
+  <name>мМногопоточнаяОбработка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Многопоточная обработка</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+</mdclass:CommonModule>

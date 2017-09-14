@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="487df666-4640-413c-a506-74efda95a80a">
+  <producedTypes>
+    <objectType typeId="e4461c85-25df-4b24-9e8c-e0e0119b4958" valueTypeId="2958117b-04df-496b-ada1-018e643519ac"/>
+    <managerType typeId="fd9bd3cb-52ff-4abf-825f-60a5d0f0807a" valueTypeId="d004fbae-2a62-4436-9e68-4d0f44c26dea"/>
+  </producedTypes>
+  <name>мВедомостьНачисленияЗПСвод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость начисления ЗП Свод</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мВедомостьНачисленияЗПСвод.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="93a3759e-cd0f-4bb9-a627-29c0ba4ba8f8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

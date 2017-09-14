@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bac42ee6-dee3-4ce3-a318-249d66813475">
+  <producedTypes>
+    <objectType typeId="4cccb00b-e015-42f6-b11b-921405fc2e00" valueTypeId="66a94bac-9ef5-4ef8-b223-b2483ca92e4b"/>
+    <managerType typeId="ecf0fb52-cec0-4f0b-973e-5f5dc367aa88" valueTypeId="236d8fc8-1fc5-48d2-8b14-b9d08c8b27de"/>
+  </producedTypes>
+  <name>ПоискИЗаменаЗначений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск и замена значений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПоискИЗаменаЗначений.Form.Форма</defaultForm>
+  <auxiliaryForm>DataProcessor.ПоискИЗаменаЗначений.Form.Форма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="91cf53a7-9bde-43f7-9a4f-b7971bac002c">
+    <name>РежимЗагрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим &quot;Загрузка&quot;</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9667b5d0-2706-4cf8-8a36-a3589a8ecf61">
+    <name>ОтключитьИспользованиеИтогов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключить использование итогов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e8674919-972f-4486-91e1-31b09d7d2a49">
+    <name>ПометитьНаУдалениеЗаменяемыеСсылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометить на удаление заменяемые ссылки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c0fbc557-093a-4fd5-a37d-1c980ec9cbfc">
+    <name>МетаданныеПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метаданные поиска</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0dbee67c-98e0-4677-95de-fa06166594de">
+    <name>ДатаНачалаОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала отбора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5dd7099e-9155-4071-b92f-f294a46f047a">
+    <name>ДатаКонцаОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца отбора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="62ceb0e5-3834-404f-a997-f7b338c5bc26">
+    <producedTypes>
+      <objectType typeId="52da2233-7822-4fef-84bf-0424f1cacdd2" valueTypeId="69f49122-6abf-4f1f-ae18-45a6ce109443"/>
+      <rowType typeId="e9d2cb0f-ce45-4d10-98db-a8ccfc43d423" valueTypeId="57a72e9c-2760-4dac-8bbb-5234fd7303b0"/>
+    </producedTypes>
+    <name>ЗаменяемыеЗначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заменяемые значения</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5e92ab20-d2d7-4cf0-9ee1-76f1398a6e3e">
+      <name>Выбран</name>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="98445ce4-e328-46f7-b046-d4f50eb09a15">
+      <name>ЧтоЗаменять</name>
+      <synonym>
+        <key>ru</key>
+        <value>Что заменять</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>AnyRef</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9ac1ffd7-ed6d-40dc-9718-6bc0ad5ca499">
+      <name>НаЧтоЗаменять</name>
+      <synonym>
+        <key>ru</key>
+        <value>На что заменять</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>AnyRef</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="13f0a1d9-8be0-4d04-9f6c-cd89ce3d0d15">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

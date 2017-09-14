@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49880f4a-1155-4129-9d59-bf95b7e8020e">
+  <producedTypes>
+    <selectionType typeId="6ec7cd49-c75f-4dc9-8166-73bfa7040119" valueTypeId="777b4f69-011e-4be3-ae5d-ea4ff6485eeb"/>
+    <listType typeId="c14684e9-331a-4c9b-bc38-499bf1e4a07a" valueTypeId="66148563-c489-41f9-9dc7-ef42bcccfde5"/>
+    <managerType typeId="53308f1e-d55e-4372-8ebc-3dfaf51b2408" valueTypeId="f0be62e0-f732-4d90-9c5f-0b4d68d780bf"/>
+  </producedTypes>
+  <name>ЭлектроннаяПочта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Почта</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DocumentJournal.ЭлектроннаяПочта.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВходящееПисьмо</registeredDocuments>
+  <registeredDocuments>Document.ИсходящееПисьмо</registeredDocuments>
+  <standardAttributes>
+    <name>Type</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ, включенный в журнал</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Date</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ='ddd dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='ddd dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Posted</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Number</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="21a7473a-1e21-49b3-8299-ed05afbcdaef">
+    <name>Адресаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресаты</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ИсходящееПисьмо.Attribute.ПолучателиПисьмаСтрокой</references>
+  </columns>
+  <columns uuid="6f684a3f-4021-4ccd-93af-e3011339e8fe">
+    <name>Важность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Важность</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.Важность</references>
+    <references>Document.ИсходящееПисьмо.Attribute.Важность</references>
+  </columns>
+  <columns uuid="0e51cccf-8156-42bd-8e36-1737d8f16d7f">
+    <name>ДатаОтправкиПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отправки / получения</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.ДатаПолучения</references>
+    <references>Document.ИсходящееПисьмо.Attribute.ДатаОтправки</references>
+  </columns>
+  <columns uuid="975b56e0-62b0-413f-9483-4d2ab80451ad">
+    <name>ЕстьВложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть вложения</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.ЕстьВложения</references>
+    <references>Document.ИсходящееПисьмо.Attribute.ЕстьВложения</references>
+  </columns>
+  <columns uuid="54006332-754a-4954-8c93-7be8845eae7a">
+    <name>Отправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправитель</value>
+    </synonym>
+    <comment></comment>
+    <indexing>Index</indexing>
+    <references>Document.ИсходящееПисьмо.Attribute.ОтправительКонтакт</references>
+    <references>Document.ВходящееПисьмо.Attribute.ОтправительАдресат</references>
+  </columns>
+  <columns uuid="3b865739-422a-4f30-b948-3c65be45d46a">
+    <name>УдалитьОтправительАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить отправитель адрес</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.УдалитьОтправительАдрес</references>
+    <references>Document.ИсходящееПисьмо.Attribute.УдалитьОтправительАдрес</references>
+  </columns>
+  <columns uuid="4da91f16-2c3a-4598-b696-5140edf4ae9f">
+    <name>УдалитьОтправительКонтакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить отправитель контакт</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.УдалитьОтправительКонтакт</references>
+  </columns>
+  <columns uuid="d03910a6-afe3-4831-ab0a-3e52b71dfa89">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ИсходящееПисьмо.Attribute.ДатаОтправки</references>
+    <references>Document.ВходящееПисьмо.Attribute.ДатаОтправки</references>
+  </columns>
+  <columns uuid="4c3cb5c9-9b81-4c20-b9bc-b4754e5a4bec">
+    <name>Папка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Папка</value>
+    </synonym>
+    <comment></comment>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ВходящееПисьмо.Attribute.Папка</references>
+    <references>Document.ИсходящееПисьмо.Attribute.Папка</references>
+  </columns>
+  <columns uuid="dd45cfbc-0711-4c93-8c8b-c32135654502">
+    <name>Получатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ИсходящееПисьмо.Attribute.ПолучателиПисьмаСтрокой</references>
+  </columns>
+  <columns uuid="da808e32-81c7-4101-8b6a-38b57b84bccf">
+    <name>Получено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получено</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.ДатаПолучения</references>
+  </columns>
+  <columns uuid="3f2e4f2e-4bd4-4c25-a1ca-5e6d5db5e3ce">
+    <name>Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <comment></comment>
+    <indexing>Index</indexing>
+    <references>Document.ВходящееПисьмо.Attribute.Предмет</references>
+    <references>Document.ИсходящееПисьмо.Attribute.Предмет</references>
+  </columns>
+  <columns uuid="9bb5cf79-6298-499a-a956-9652356fe894">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.Размер</references>
+    <references>Document.ИсходящееПисьмо.Attribute.Размер</references>
+  </columns>
+  <columns uuid="c75a885b-3b7e-49c2-8d79-1d537c32af98">
+    <name>Тема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.Тема</references>
+    <references>Document.ИсходящееПисьмо.Attribute.Тема</references>
+  </columns>
+  <columns uuid="8891cf98-cbe5-4101-a4eb-2b2fe82e6017">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <comment></comment>
+    <indexing>Index</indexing>
+    <references>Document.ВходящееПисьмо.Attribute.УчетнаяЗапись</references>
+    <references>Document.ИсходящееПисьмо.Attribute.УчетнаяЗапись</references>
+  </columns>
+  <columns uuid="a115fed9-e8ee-4967-b5ed-3151d8f5df31">
+    <name>ОтправкаОтменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка отменена</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ИсходящееПисьмо.Attribute.ОтправкаОтменена</references>
+  </columns>
+  <columns uuid="5cc13e0d-0ed2-4c5d-ad46-665c2bab6800">
+    <name>ВидМаршрутизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид маршрутизации</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВходящееПисьмо.Attribute.ВидМаршрутизации</references>
+    <references>Document.ИсходящееПисьмо.Attribute.ВидМаршрутизации</references>
+  </columns>
+  <forms uuid="ffcb446e-6814-4f62-9e20-217599155b0f">
+    <name>ИсторияПереписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>История переписки</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1013e4f0-d52b-4506-a118-268c6e85dbc3">
+    <name>НастройкаПроверкиНовыхПисем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка новых писем</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e772284a-1ba4-4c2a-9f39-1424dcd33af5">
+    <name>ПараметрыПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры письма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="95011194-0472-479d-aa24-d74df6016bdd">
+    <name>ПечатьПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать письма</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="79755f3a-b9b3-428e-bc7c-97952cb87007">
+    <name>ПросмотрОшибкиСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр ошибки соединения</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4b2990f-bdec-4fe6-9250-d8293de916cb">
+    <name>СохранениеПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохранение письма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ec556992-a57b-43cf-a14f-da3f2d6843ff">
+    <name>ФормаИмпортаИзMicrosoftOutlook</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма импорта из Microsoft Outlook</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5927df40-2d70-4452-a1fe-398e06cede98">
+    <name>ФормаОтчетаОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета об ошибках</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="08bb676b-e25b-453d-b39b-14bd8fb5b104">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Встроенная почта</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="0f151992-f77c-48f9-aa02-b267149d9096">
+    <name>ПечатьПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Напечатать</value>
+    </synonym>
+    <comment></comment>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ВходящееПисьмо</types>
+      <types>DocumentRef.ИсходящееПисьмо</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+    <shortcut>Alt+P</shortcut>
+  </commands>
+  <commands uuid="e8a6f170-b7c5-4c24-94a5-508deb5e82e1">
+    <name>ОткрытьПечатнуюФорму</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть печатную форму</value>
+    </synonym>
+    <comment></comment>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ВходящееПисьмо</types>
+      <types>DocumentRef.ИсходящееПисьмо</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DocumentJournal>

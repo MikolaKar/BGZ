@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="625cb210-358b-4886-8ea8-c0e25dd8b91e">
+  <producedTypes>
+    <selectionType typeId="ea17b72d-e574-458f-ba70-f2f34a513bd6" valueTypeId="bf015c35-6696-4fc4-b3b6-767fa26d88a3"/>
+    <listType typeId="2794a98f-e91e-4dad-a71d-2ee6cff1c37b" valueTypeId="97fafab3-f258-4e60-bbbf-a9c32da9c6c5"/>
+    <managerType typeId="3569ab64-fa39-4c8c-9260-32346230bcc9" valueTypeId="90dd302d-14f7-4062-816f-9201b2bdc1e6"/>
+    <recordSetType typeId="70ed15d0-8e52-41ca-97c0-05e1b87d6f47" valueTypeId="7ab2a8c9-5c82-4bbb-9ab2-c46683c452ae"/>
+    <recordKeyType typeId="8a5518c2-698f-42db-81de-a8577564516a" valueTypeId="6c2618a8-4cc0-4ca3-9f6a-59a6e65cf00a"/>
+    <recordType typeId="eafab8d3-22c2-4bf6-8ffe-f3ab533680b5" valueTypeId="2b43c7df-26b2-4cb0-bfab-44ce8849d723"/>
+    <recordManagerType typeId="d712a6c5-ccc7-43ce-b0be-f685e8039618" valueTypeId="6128cdb9-490d-44fd-8964-909b6e165aa5"/>
+  </producedTypes>
+  <name>мСвязиЭтаповДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связи этапов договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="fca150fc-dcdf-4d1d-872a-ca78861e680e">
+    <name>ОсновнойЭтапДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной этап договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Этап договора, в состав которого входит другой этап договора</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ecc84914-ccc6-4ce0-8a9a-c0474f5c5afb">
+    <name>ЭтапДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

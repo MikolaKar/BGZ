@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa4c2f86-69e3-4d87-a00e-b4a2566033a8">
+  <producedTypes>
+    <refType typeId="d049024a-3811-456c-b18e-6500fbd43e54" valueTypeId="d95f1564-1f56-44e7-940e-b49c70a12786"/>
+    <listType typeId="2eb43092-9d48-4d52-b68c-0296f8f3df70" valueTypeId="8e833857-7b30-4ba0-89c7-1443da118e9f"/>
+    <managerType typeId="5f2611d1-9c31-40a3-9196-ba2d6e87dd50" valueTypeId="84e112c2-cde7-4b78-a63b-e34e9e058870"/>
+  </producedTypes>
+  <name>мСостоянияДела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния дела</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0f95029b-3973-47d8-bcde-3db38c750e73">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment>Создано исполнителем работ</comment>
+  </enumValues>
+  <enumValues uuid="3fda417d-ee9e-4573-b413-575753771bd7">
+    <name>НаправленоНаПроверку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направлено на проверку</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="43cd6a72-5976-4823-b7f2-8f3deac589c3">
+    <name>ПолученоНаПроверку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получено на проверку</value>
+    </synonym>
+    <comment>Находится в подразделении проверяющего</comment>
+  </enumValues>
+  <enumValues uuid="c548f4a6-9361-4258-aed3-d7b43ef1f162">
+    <name>НаПроверке</name>
+    <synonym>
+      <key>ru</key>
+      <value>На проверке</value>
+    </synonym>
+    <comment>У проверяющего на проверке</comment>
+  </enumValues>
+  <enumValues uuid="d9f01e3a-18c2-45dc-a918-0b2176611775">
+    <name>ВозвратНаИсправление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат на исправление</value>
+    </synonym>
+    <comment>Проверка у проверяющего завершена</comment>
+  </enumValues>
+  <enumValues uuid="83e5101d-aaea-410d-8239-9ae311d46254">
+    <name>НаИсправлении</name>
+    <synonym>
+      <key>ru</key>
+      <value>На исправлении</value>
+    </synonym>
+    <comment>На исправлении у исполнителя работ</comment>
+  </enumValues>
+  <enumValues uuid="f9f97233-bd72-4e40-a787-0486b387f628">
+    <name>Проверено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено</value>
+    </synonym>
+    <comment>В Акте проверки состояние Проверен или На комиссии</comment>
+  </enumValues>
+  <enumValues uuid="c74bbc29-b6bb-4d37-bcfc-c3febb90b3ab">
+    <name>ПровереноПереданоНаРегистрацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено передано на регистрацию</value>
+    </synonym>
+    <comment>Передано на подпись и регистрацию</comment>
+  </enumValues>
+  <enumValues uuid="2b558c2e-2abc-48e8-93ed-7093f1f2831d">
+    <name>ПровереноОтправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено отправлено</value>
+    </synonym>
+    <comment>Отправлено заказчику</comment>
+  </enumValues>
+</mdclass:Enum>

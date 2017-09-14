@@ -1,0 +1,969 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеОтправленоСум</dataPath>
+			<field>НеОтправленоСум</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не отправлено сум</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СТККСум</dataPath>
+			<field>СТККСум</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СТККСум</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтделКол</dataPath>
+			<field>ОтделКол</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отдел кол</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтделСум</dataPath>
+			<field>ОтделСум</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отдел сум</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтрядСум</dataPath>
+			<field>ОтрядСум</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отряд сум</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтправленоКол</dataPath>
+			<field>ОтправленоКол</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправлено кол</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СТКККол</dataPath>
+			<field>СТКККол</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СТКККол</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтправленоСум</dataPath>
+			<field>ОтправленоСум</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправлено сум</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеОтправленоКол</dataPath>
+			<field>НеОтправленоКол</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не отправлено кол</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапДоговора</dataPath>
+			<field>ЭтапДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дело</dataPath>
+			<field>Дело</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дело</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтрядКол</dataPath>
+			<field>ОтрядКол</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отряд кол</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заактировано</dataPath>
+			<field>Заактировано</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заактировано</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Текст</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">"Заактировано "+Параметры.НачалоАктирования</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсвобождениеОтНДС</dataPath>
+			<field>ОсвобождениеОтНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВнутренниеДокументы.Ссылка КАК Дело,
+	ВнутренниеДокументы.ЭтапДоговора,
+	ВнутренниеДокументы.ЭтапДоговора.Подразделение,
+	ВнутренниеДокументы.ЭтапДоговора.СтоимостьСНДС КАК СметнаяСтоимость
+ПОМЕСТИТЬ ДелаЭтапы
+ИЗ
+	Справочник.ВнутренниеДокументы КАК ВнутренниеДокументы
+ГДЕ
+	НЕ ВнутренниеДокументы.ПометкаУдаления
+	И ВнутренниеДокументы.ДатаРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ВнутренниеДокументы.ВидДокумента = ЗНАЧЕНИЕ(Справочник.ВидыВнутреннихДокументов.Дело)
+{ГДЕ
+	(ВнутренниеДокументы.ЭтапДоговора.Подразделение В ИЕРАРХИИ (&amp;Подразделение))}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	мАктыПроверки.Ссылка КАК АктПроверки,
+	мАктыПроверки.Состояние
+ПОМЕСТИТЬ АктыПроверки
+ИЗ
+	Справочник.мАктыПроверки КАК мАктыПроверки
+ГДЕ
+	мАктыПроверки.Владелец В
+			(ВЫБРАТЬ
+				ДелаЭтапы.Дело
+			ИЗ
+				ДелаЭтапы КАК ДелаЭтапы)
+	И НЕ мАктыПроверки.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	мАктыПроверкиПроверкиКачества.Ссылка КАК АктПроверки,
+	МАКСИМУМ(мАктыПроверкиПроверкиКачества.НомерСтроки) КАК НомерСтроки
+ПОМЕСТИТЬ МаксСтроки
+ИЗ
+	Справочник.мАктыПроверки.ПроверкиКачества КАК мАктыПроверкиПроверкиКачества
+ГДЕ
+	(мАктыПроверкиПроверкиКачества.Ссылка В
+					(ВЫБРАТЬ
+						АктыПроверки.АктПроверки
+					ИЗ
+						АктыПроверки КАК АктыПроверки)
+				И мАктыПроверкиПроверкиКачества.Ссылка.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.НаПроверке)
+			ИЛИ мАктыПроверкиПроверкиКачества.Ссылка.Состояние = ЗНАЧЕНИЕ(Перечисление.М_СостоянияАктовПроверки.НаИсправлении))
+
+СГРУППИРОВАТЬ ПО
+	мАктыПроверкиПроверкиКачества.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА СведенияОПользователях.Подразделение.Родитель &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтрядКол,
+	ВЫБОР
+		КОГДА СведенияОПользователях.Подразделение.Родитель = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+				И НЕ СведенияОПользователях.Подразделение.Наименование ПОДОБНО "%Сектор%"
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтделКол,
+	ВЫБОР
+		КОГДА СведенияОПользователях.Подразделение.Родитель = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+				И СведенияОПользователях.Подразделение.Наименование ПОДОБНО "%Сектор%"
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК СТКККол,
+	ВЫБОР
+		КОГДА СведенияОПользователях.Подразделение.Родитель &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+			ТОГДА МаксСтроки.АктПроверки.Владелец.ЭтапДоговора.СтоимостьСНДС
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтрядСум,
+	ВЫБОР
+		КОГДА СведенияОПользователях.Подразделение.Родитель = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+				И НЕ СведенияОПользователях.Подразделение.Наименование ПОДОБНО "%Сектор%"
+			ТОГДА МаксСтроки.АктПроверки.Владелец.ЭтапДоговора.СтоимостьСНДС
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтделСум,
+	ВЫБОР
+		КОГДА СведенияОПользователях.Подразделение.Родитель = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+				И СведенияОПользователях.Подразделение.Наименование ПОДОБНО "%Сектор%"
+			ТОГДА МаксСтроки.АктПроверки.Владелец.ЭтапДоговора.СтоимостьСНДС
+		ИНАЧЕ 0
+	КОНЕЦ КАК СТККСум,
+	МаксСтроки.АктПроверки.Владелец.ЭтапДоговора КАК ЭтапДоговора
+ПОМЕСТИТЬ МестаПроверки
+ИЗ
+	МаксСтроки КАК МаксСтроки
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.мАктыПроверки.ПроверкиКачества КАК мАктыПроверкиПроверкиКачества
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПользователях КАК СведенияОПользователях
+			ПО мАктыПроверкиПроверкиКачества.Проверяющий = СведенияОПользователях.Пользователь
+		ПО МаксСтроки.АктПроверки = мАктыПроверкиПроверкиКачества.Ссылка
+			И МаксСтроки.НомерСтроки = мАктыПроверкиПроверкиКачества.НомерСтроки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УчетДоговоровОбороты.СуммаРасход КАК Заактировано,
+	УчетДоговоровОбороты.ЭтапДоговора
+ПОМЕСТИТЬ АктыРабот
+ИЗ
+	РегистрНакопления.УчетДоговоров.Обороты(
+			{(&amp;НачалоАктирования)},
+			{(&amp;КонецАктирования)},
+			Период,
+			ЭтапДоговора В
+				(ВЫБРАТЬ
+					ДелаЭтапы.ЭтапДоговора
+				ИЗ
+					ДелаЭтапы КАК ДелаЭтапы)) КАК УчетДоговоровОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвязиДокументов.Документ КАК Дело,
+	СвязиДокументов.СвязанныйДокумент КАК Комплект,
+	СвязиДокументов.ТипСвязи
+ПОМЕСТИТЬ Комплекты
+ИЗ
+	РегистрСведений.СвязиДокументов КАК СвязиДокументов
+ГДЕ
+	СвязиДокументов.Документ В
+			(ВЫБРАТЬ
+				ДелаЭтапы.Дело
+			ИЗ
+				ДелаЭтапы КАК ДелаЭтапы)
+	И ВЫРАЗИТЬ(СвязиДокументов.СвязанныйДокумент КАК Справочник.ВнутренниеДокументы).ВидДокумента.ЯвляетсяКомплектомДокументов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвязиДокументов.СвязанныйДокумент КАК Расписка,
+	СвязиДокументов.Документ КАК Комплект,
+	СвязиДокументов.СвязанныйДокументОтправлен,
+	МАКСИМУМ(СвязиДокументов.СвязанныйДокумент.ДатаРегистрации) КАК СвязанныйДокументДатаРегистрации
+ПОМЕСТИТЬ РаспискиКомплектов
+ИЗ
+	РегистрСведений.СвязиДокументов КАК СвязиДокументов
+ГДЕ
+	СвязиДокументов.Документ В
+			(ВЫБРАТЬ
+				Комплекты.Комплект
+			ИЗ
+				Комплекты КАК Комплекты)
+	И ВЫРАЗИТЬ(СвязиДокументов.СвязанныйДокумент КАК Справочник.ИсходящиеДокументы).ВидДокумента.Наименование ПОДОБНО "%Расписка%"
+
+СГРУППИРОВАТЬ ПО
+	СвязиДокументов.СвязанныйДокумент,
+	СвязиДокументов.Документ,
+	СвязиДокументов.СвязанныйДокументОтправлен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвязиДокументов.Документ КАК Дело,
+	СвязиДокументов.СвязанныйДокумент КАК Расписка,
+	СвязиДокументов.СвязанныйДокументОтправлен,
+	МАКСИМУМ(СвязиДокументов.СвязанныйДокумент.ДатаРегистрации) КАК СвязанныйДокументДатаРегистрации
+ПОМЕСТИТЬ РаспискиВсе
+ИЗ
+	РегистрСведений.СвязиДокументов КАК СвязиДокументов
+ГДЕ
+	ВЫРАЗИТЬ(СвязиДокументов.Документ КАК Справочник.ВнутренниеДокументы) В
+			(ВЫБРАТЬ
+				ДелаЭтапы.Дело
+			ИЗ
+				ДелаЭтапы КАК ДелаЭтапы)
+	И ВЫРАЗИТЬ(СвязиДокументов.СвязанныйДокумент КАК Справочник.ИсходящиеДокументы).ВидДокумента.Наименование ПОДОБНО "%Расписка%"
+
+СГРУППИРОВАТЬ ПО
+	СвязиДокументов.СвязанныйДокумент,
+	СвязиДокументов.Документ,
+	СвязиДокументов.СвязанныйДокументОтправлен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Комплекты.Дело,
+	РаспискиКомплектов.Расписка,
+	РаспискиКомплектов.СвязанныйДокументОтправлен,
+	МАКСИМУМ(РаспискиКомплектов.СвязанныйДокументДатаРегистрации)
+ИЗ
+	РаспискиКомплектов КАК РаспискиКомплектов
+		ЛЕВОЕ СОЕДИНЕНИЕ Комплекты КАК Комплекты
+		ПО РаспискиКомплектов.Комплект = Комплекты.Комплект
+
+СГРУППИРОВАТЬ ПО
+	РаспискиКомплектов.Расписка,
+	Комплекты.Дело,
+	РаспискиКомплектов.СвязанныйДокументОтправлен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Расписки.Дело,
+	МАКСИМУМ(Расписки.СвязанныйДокументДатаРегистрации) КАК СвязанныйДокументДатаРегистрации
+ПОМЕСТИТЬ МаксДатыРасписокДел
+ИЗ
+	РаспискиВсе КАК Расписки
+
+СГРУППИРОВАТЬ ПО
+	Расписки.Дело
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РаспискиВсе.Дело,
+	РаспискиВсе.Расписка,
+	РаспискиВсе.СвязанныйДокументОтправлен,
+	РаспискиВсе.СвязанныйДокументДатаРегистрации
+ПОМЕСТИТЬ Расписки
+ИЗ
+	МаксДатыРасписокДел КАК МаксДатыРасписокДел
+		ЛЕВОЕ СОЕДИНЕНИЕ РаспискиВсе КАК РаспискиВсе
+		ПО (РаспискиВсе.Дело = МаксДатыРасписокДел.Дело)
+			И (РаспискиВсе.СвязанныйДокументДатаРегистрации = МаксДатыРасписокДел.СвязанныйДокументДатаРегистрации)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДелаЭтапы.ЭтапДоговораПодразделение КАК Подразделение,
+	ДелаЭтапы.ЭтапДоговора,
+	ДелаЭтапы.Дело,
+	ЕСТЬNULL(МестаПроверки.ОтрядКол, 0) КАК ОтрядКол,
+	ЕСТЬNULL(МестаПроверки.ОтрядСум, 0) КАК ОтрядСум,
+	ЕСТЬNULL(МестаПроверки.ОтделКол, 0) КАК ОтделКол,
+	ЕСТЬNULL(МестаПроверки.ОтделСум, 0) КАК ОтделСум,
+	ЕСТЬNULL(МестаПроверки.СТКККол, 0) КАК СТКККол,
+	ЕСТЬNULL(МестаПроверки.СТККСум, 0) КАК СТККСум,
+	ВЫБОР
+		КОГДА Расписки.СвязанныйДокументОтправлен
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтправленоКол,
+	ВЫБОР
+		КОГДА Расписки.СвязанныйДокументОтправлен
+			ТОГДА ДелаЭтапы.СметнаяСтоимость
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОтправленоСум,
+	ВЫБОР
+		КОГДА НЕ ДелаЭтапы.Дело В
+					(ВЫБРАТЬ
+						Расписки.Дело
+					ИЗ
+						Расписки КАК Расписки)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК НеОтправленоКол,
+	ВЫБОР
+		КОГДА НЕ ДелаЭтапы.Дело В
+					(ВЫБРАТЬ
+						Расписки.Дело
+					ИЗ
+						Расписки КАК Расписки)
+			ТОГДА ДелаЭтапы.СметнаяСтоимость
+		ИНАЧЕ 0
+	КОНЕЦ КАК НеОтправленоСум,
+	ЕСТЬNULL(АктыРабот.Заактировано, 0) КАК Заактировано
+ИЗ
+	ДелаЭтапы КАК ДелаЭтапы
+		ЛЕВОЕ СОЕДИНЕНИЕ МестаПроверки КАК МестаПроверки
+		ПО ДелаЭтапы.ЭтапДоговора = МестаПроверки.ЭтапДоговора
+		ЛЕВОЕ СОЕДИНЕНИЕ Расписки КАК Расписки
+		ПО ДелаЭтапы.Дело = Расписки.Дело
+		ЛЕВОЕ СОЕДИНЕНИЕ АктыРабот КАК АктыРабот
+		ПО ДелаЭтапы.ЭтапДоговора = АктыРабот.ЭтапДоговора</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ВсегоКол</dataPath>
+		<expression>ОтправленоКол+НеотправленоКол</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Всего кол</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВсегоСум</dataPath>
+		<expression>ОтправленоСум+НеотправленоСум</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Всего сум</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ВсегоКол</dataPath>
+		<expression>Сумма(ВсегоКол)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВсегоСум</dataPath>
+		<expression>Сумма(ВсегоСум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеОтправленоКол</dataPath>
+		<expression>Сумма(НеОтправленоКол)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеОтправленоСум</dataPath>
+		<expression>Сумма(НеОтправленоСум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтделКол</dataPath>
+		<expression>Сумма(ОтделКол)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтделСум</dataPath>
+		<expression>Сумма(ОтделСум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтправленоКол</dataPath>
+		<expression>Сумма(ОтправленоКол)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтправленоСум</dataPath>
+		<expression>Сумма(ОтправленоСум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтрядСум</dataPath>
+		<expression>Сумма(ОтрядСум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СТКККол</dataPath>
+		<expression>Сумма(СТКККол)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СТККСум</dataPath>
+		<expression>Сумма(СТККСум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Заактировано</dataPath>
+		<expression>Сумма(Заактировано)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтрядКол</dataPath>
+		<expression>Сумма(ОтрядКол)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Подразделение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подразделение</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтруктураПредприятия</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецАктирования</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец актирования</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодАктирования.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоАктирования</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало актирования</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодАктирования.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодАктирования</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Даты актирования в периоде</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дело</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>          Всего</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВсегоКол</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВсегоСум</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>                        Дела на проверке</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>          Отряд</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОтрядКол</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОтрядСум</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>          Отдел</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОтделКол</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОтделСум</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>          СТКК</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СТКККол</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол-во</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СТККСум</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>          Не отправлено</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеОтправленоКол</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НеОтправленоСум</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>             Отправлено</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтправленоКол</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтправленоСум</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заактировано</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>e01d4b20-2e15-4e06-a062-87605f095e23</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период регистрации дел</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Подразделение</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>551033dd-0769-4cd9-829d-29cc4093ccf0</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодАктирования</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>5afe3926-2cbc-47d7-a5df-0479a7d58ccd</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Дело.Заголовок</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Дело</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Подразделение</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВсегоКол</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВсегоСум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтрядКол</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтрядСум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтделКол</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтделСум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СТКККол</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СТККСум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтправленоКол</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОтправленоСум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>НеОтправленоКол</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>НеОтправленоСум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Заактировано</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ориентировочный объем выполнения работ</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Подразделение</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

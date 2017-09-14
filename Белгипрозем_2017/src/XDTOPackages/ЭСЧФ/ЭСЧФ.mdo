@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6da76bb-8785-42c7-9d64-d4bc880a508c">
+  <name>ЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЭСЧФ</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.w3schools.com</namespace>
+</mdclass:XDTOPackage>

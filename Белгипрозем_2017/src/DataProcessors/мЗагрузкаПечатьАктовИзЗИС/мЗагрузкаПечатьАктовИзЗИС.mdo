@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d02bc127-3e72-4c5f-b01b-5df7520ceeea">
+  <producedTypes>
+    <objectType typeId="d84e60fc-1acc-4fc2-af16-dec508351825" valueTypeId="60dde823-dabb-43ae-acb4-d95f6fc8cd77"/>
+    <managerType typeId="80066f52-aded-4acc-a2f3-22aa33e72997" valueTypeId="d768c648-062f-4110-829b-8aea34035695"/>
+  </producedTypes>
+  <name>мЗагрузкаПечатьАктовИзЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка печать актов из ЗИС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мЗагрузкаПечатьАктовИзЗИС.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="669e5e39-58af-4952-a546-4711ebad3a09">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="48f62522-3d8e-4be7-bac2-72e69260b685">
+    <name>ПФ_DOCX_АктЗИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктЗИС</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

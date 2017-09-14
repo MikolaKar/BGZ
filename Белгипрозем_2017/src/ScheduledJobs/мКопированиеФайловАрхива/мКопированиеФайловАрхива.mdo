@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="648072ae-cc59-4bd7-a0fe-1673b960a877">
+  <name>мКопированиеФайловАрхива</name>
+  <synonym>
+    <key>ru</key>
+    <value>Копирование файлов архива</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.мОбработчикиРегламентныхЗаданий.мКопированиеФайловАрхива</methodName>
+  <description>Копирование файлов архива</description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58eabb11-b728-49a9-82b3-f63d53a9d1f2">
+  <producedTypes>
+    <managerType typeId="4a5f8f8a-170c-4e0e-b4aa-c14578bc16cf" valueTypeId="6ad6ef22-8bbb-41a8-b0d7-06d044524e7a"/>
+    <valueManagerType typeId="7ff4f6c2-55ce-4c43-bd10-0fb4ef38d44b" valueTypeId="416124c7-c368-4352-a3f9-8a75b1e08e84"/>
+  </producedTypes>
+  <name>ОсновнойГород</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основной город</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <defaultForm>CommonForm.ОсновнойГород</defaultForm>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

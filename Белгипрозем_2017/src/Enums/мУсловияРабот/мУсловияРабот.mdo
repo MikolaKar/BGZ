@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d76d751b-15d5-40fa-bd42-4b362c28e224">
+  <producedTypes>
+    <refType typeId="bc2d0819-84e3-4bee-8187-788656fd0dd2" valueTypeId="78da1a69-ddff-49b6-bff0-8f4d5c7a6b51"/>
+    <listType typeId="7effc702-ff00-4715-ae3e-3720139521b5" valueTypeId="ae04a401-8139-4ecc-b2b7-3aa508f465e6"/>
+    <managerType typeId="a7fe5e06-1993-4a41-ae76-c6b339282d36" valueTypeId="fbbfd562-dcfe-4154-818a-1c49ab6f2a2b"/>
+  </producedTypes>
+  <name>мУсловияРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия работ</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="be54b874-a3a9-44fd-b9c5-96e3ea9fb8f0">
+    <name>Камеральные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Камеральные</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e9532941-5e4e-4c9c-b00b-5e12c5618324">
+    <name>Полевые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полевые</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

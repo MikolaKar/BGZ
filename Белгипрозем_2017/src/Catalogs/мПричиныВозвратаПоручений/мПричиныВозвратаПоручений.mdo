@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e172632-ce8b-4b61-8c32-570c8843e240">
+  <producedTypes>
+    <objectType typeId="c06414b2-387c-4985-9daf-e2b11ff2245b" valueTypeId="b82ecfac-911f-4f46-b19a-77228da3b8fd"/>
+    <refType typeId="905f3fa9-3546-49fa-8189-b37e8f66d0f5" valueTypeId="7ddcbda1-6093-4ba9-ba3e-0de613334262"/>
+    <selectionType typeId="34faf437-b1d5-4806-8031-7346e8bcb9f2" valueTypeId="2ff16b1b-8f41-40b4-8260-2389263f27ea"/>
+    <listType typeId="150d7f4e-e8f7-412d-b907-e3db86494b17" valueTypeId="f71d5b88-dbd3-4ce6-9b97-ebd67412b75f"/>
+    <managerType typeId="b8c57633-972b-4513-a694-b2cbcc8b5244" valueTypeId="83001e78-5568-4aff-8f79-a677858e5b91"/>
+  </producedTypes>
+  <name>мПричиныВозвратаПоручений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины возврата поручений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мПричиныВозвратаПоручений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мПричиныВозвратаПоручений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Причина возврата поручения</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Причины возврата поручений</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

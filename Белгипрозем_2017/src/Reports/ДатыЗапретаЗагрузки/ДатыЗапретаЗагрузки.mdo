@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1495d30-0386-4985-9e55-e956f127ee80">
+  <producedTypes>
+    <objectType typeId="9f0cfc41-aae7-4d83-a5dd-399547294723" valueTypeId="05a984e8-d4be-4c4e-818a-346cccee01ff"/>
+    <managerType typeId="f60459ed-ae4e-4457-8878-3d08954bb227" valueTypeId="801309c2-4b99-4498-b831-5079082ef16c"/>
+  </producedTypes>
+  <name>ДатыЗапретаЗагрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты запрета загрузки</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>Report.ДатыЗапретаЗагрузки.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДатыЗапретаЗагрузки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <forms uuid="4a42f04e-5b7c-4640-a725-96db4604bbe7">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7ae84851-1a86-49e8-88a6-f0f59e45e308">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

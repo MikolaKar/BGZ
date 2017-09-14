@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16296958-196e-4600-9103-3ed4a75f470c">
+  <producedTypes>
+    <managerType typeId="7eccde61-dcea-46e1-a755-e340842ab82c" valueTypeId="864e3361-b6cd-4600-ad86-85c5782c341a"/>
+    <valueManagerType typeId="1865986c-9117-483a-b43d-3b1621694ee6" valueTypeId="e2f1cc72-1094-4ad3-ac0f-9b95014494bd"/>
+  </producedTypes>
+  <name>М_КодАбонентаДляЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Код абонента для ЕРИП</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Код абонента производителя услуг</value>
+  </explanation>
+  <toolTip>
+    <key>ru</key>
+    <value>Код абонента производителя услуг</value>
+  </toolTip>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

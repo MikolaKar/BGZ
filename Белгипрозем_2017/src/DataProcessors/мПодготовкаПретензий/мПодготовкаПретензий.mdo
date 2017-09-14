@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fabc6a21-9de2-4188-88c7-b7b874038bfe">
+  <producedTypes>
+    <objectType typeId="8e391e93-3ccb-416f-ba84-3c902940ce02" valueTypeId="57b64488-0e57-4217-a5cf-517ec3696480"/>
+    <managerType typeId="2ba7bd60-f4ef-44ac-976e-b674e67d1334" valueTypeId="79535ec1-0715-4324-a51c-8ff4281d45ab"/>
+  </producedTypes>
+  <name>мПодготовкаПретензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подготовка претензий</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПодготовкаПретензий.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="9e8e8bb8-6db6-4459-b82d-e33a523055c9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d8e4220e-802a-473c-9043-853ccf77c6bf">
+    <name>ПФ_DOCX_Претензия_Прилуки</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_Претензия_Прилуки</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e91a7cec-9f83-46f9-9dbf-b5cf75d45ecd">
+    <name>ПФ_DOCX_Претензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_Претензия</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

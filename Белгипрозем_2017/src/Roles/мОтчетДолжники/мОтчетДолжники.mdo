@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="062f1598-6042-4a4a-8f9c-65c1b2974963">
+  <name>мОтчетДолжники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет Должники</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

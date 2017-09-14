@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6db01c21-4614-450f-a7e6-93fc9010d41c">
+  <name>БелгипроземЛоготип</name>
+  <synonym>
+    <key>ru</key>
+    <value>Белгипрозем логотип</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

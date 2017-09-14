@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16556c2f-b1f5-4cc0-b020-30b045708460">
+  <name>М_Брест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Брест</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.М_Брест</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Report.М_ЖурналРегистрацииВходящихДокументов_Брест</content>
+  <content>Constant.М_СтоимостьОтправки</content>
+  <content>Report.мСтоимостьОтправкиБрест</content>
+  <content>Report.М_ЖурналРегистрацииИсходящихДокументов_Брест</content>
+  <content>Subsystem.ДокументыИФайлы.Subsystem.М_ДопБрест</content>
+  <content>Constant.мПутьКАрхивуФайлов</content>
+</mdclass:FunctionalOption>

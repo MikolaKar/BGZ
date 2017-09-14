@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b65159dd-9234-4150-819d-87f96d7bdb60">
+  <name>ОчисткаПротоколаДоставкиПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка протокола доставки почты</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.ВстроеннаяПочтаСервер.ОчисткаПротоколаДоставкиПочты</methodName>
+  <description>Очистка протокола доставки почты</description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

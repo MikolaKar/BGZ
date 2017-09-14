@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa0ed696-2a10-4c57-b4d0-670f1c955be2">
+  <producedTypes>
+    <selectionType typeId="94d321d4-d7cd-424d-96c5-68463851241a" valueTypeId="fbfff3e6-fcbd-46d7-a9cb-37e7a228e630"/>
+    <listType typeId="d02b27cb-8814-4f13-9729-f8ed1750e9f9" valueTypeId="442cbfde-b7c1-4169-a44b-faf2905f91c2"/>
+    <managerType typeId="b9f09965-a587-4e53-93f7-99f80a8b78a5" valueTypeId="f3ac7e2e-48e5-4e4c-bd43-5324f122bfaf"/>
+    <recordSetType typeId="f9eef589-f244-4fe0-b039-37c6c5bc7527" valueTypeId="95dc441f-a679-4140-9f5b-86ef27a63fb3"/>
+    <recordKeyType typeId="37b9270b-55cb-4516-a28c-da7d549fb05d" valueTypeId="2dc70a82-273c-4e29-b3ac-fdb9802020bd"/>
+    <recordType typeId="fab5bc99-91d1-4454-a850-00028f268101" valueTypeId="2cb14787-dbf7-41e0-a09d-8abb60b90a47"/>
+    <recordManagerType typeId="4c8637d1-6819-40f4-8e35-b491de7c8af5" valueTypeId="9c7b3475-8e7c-4010-bb37-c73df96fc64b"/>
+  </producedTypes>
+  <name>мАктуальныеВидыРаботЮрЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуальные виды работ юр лиц</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="89bbb954-a123-41fd-aa33-0f158f7410e4">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="56be7ce1-5e53-4b49-be55-cf72114e6f9b">
+    <name>ВидРаботЮрЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ юр лиц</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыРаботЮрЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8abf30a0-cb64-4ee2-929b-5f7bba8eb05b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ac35b30d-0d2f-45cd-8fa5-f08ec54cf039">
+    <name>ФормаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор актуальных видов работ</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

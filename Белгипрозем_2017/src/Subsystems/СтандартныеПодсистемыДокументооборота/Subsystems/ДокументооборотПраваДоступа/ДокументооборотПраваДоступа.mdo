@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47cdd185-4875-4c0c-aa19-c8b3eb815ad6">
+  <name>ДокументооборотПраваДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документооборот права доступа</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ДескрипторыДоступаОбъектов</content>
+  <content>InformationRegister.ДескрипторыДоступаДляОбъектов</content>
+  <content>InformationRegister.ПраваПоДескрипторамДоступа</content>
+  <content>CommonModule.ДокументооборотПраваДоступа</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПриЗаписиОбъектаДоступа</content>
+  <content>FunctionalOption.ДокументооборотИспользоватьОграничениеПравДоступа</content>
+  <content>FunctionalOption.ДокументооборотИспользоватьОтложенноеОбновлениеПравДоступа</content>
+  <content>Constant.ДокументооборотИспользоватьОграничениеПравДоступа</content>
+  <content>Constant.ДокументооборотИспользоватьОтложенноеОбновлениеПравДоступа</content>
+  <content>Catalog.ДескрипторыДоступаФайлов</content>
+  <content>InformationRegister.ДескрипторыДоступаДляФайлов</content>
+  <content>CommonCommand.ДокументооборотПраваДоступаФайла</content>
+  <content>CommonForm.ДокументооборотПраваДоступаПоФайлу</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПриЗаписиФайла</content>
+  <content>EventSubscription.ДокументооборотПередЗаписьюПравообразующихОбъектов</content>
+  <content>Catalog.ДескрипторыДоступаРегистров</content>
+  <content>EventSubscription.ДокументооборотПриЗаписиПравообразующихОбъектов</content>
+  <content>EventSubscription.ДокументооборотПриЗаписиПравообразующихРегистров</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПередЗаписьюНабораЗаписей</content>
+  <content>CommonCommand.ДокументооборотПраваДоступаОбъекта</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПередЗаписьюПравообразующихКонстант</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПриЗаписиПравообразующихКонстант</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПередЗаписьюОбъектаДоступа</content>
+  <content>EventSubscription.ДокументооборотПраваДоступаПередЗаписьюДокумента</content>
+  <content>ScheduledJob.ДокументооборотОбновлениеПравДоступаОперативное</content>
+  <content>InformationRegister.ОчередьОбновленияПравДоступа</content>
+  <content>EventSubscription.ДокументооборотПередЗаписьюПравообразующихРегистров</content>
+  <content>ScheduledJob.ДокументооборотУдалениеУстаревшихПравДоступа</content>
+  <content>CommonModule.ДокументооборотПраваДоступаПереопределяемый</content>
+  <content>CommonModule.ДокументооборотПраваДоступаПовтИсп</content>
+  <content>InformationRegister.ДокументооборотПользователиГруппДоступа</content>
+  <content>EventSubscription.ОбновлениеРолейПередЗаписьюОбъектов</content>
+  <content>EventSubscription.ОбновлениеРолейПриЗаписиОбъектов</content>
+  <content>DataProcessor.ДокументооборотУправлениеПравамиДоступа</content>
+  <content>Catalog.ОбластиДелегированияПрав</content>
+  <content>Catalog.ДелегированиеПрав</content>
+  <content>Enum.ВариантыДелегированияПрав</content>
+  <content>Constant.ДокументооборотВключитьПраваДоступа</content>
+  <content>DataProcessor.АнализВремениОбработкиОчереди</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемыДокументооборота</parentSubsystem>
+</mdclass:Subsystem>

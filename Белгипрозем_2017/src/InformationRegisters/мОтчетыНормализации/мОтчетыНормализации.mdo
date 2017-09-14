@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15c7acac-f40a-4491-aa26-698912a040d8">
+  <producedTypes>
+    <selectionType typeId="84b6fdae-16c0-4212-8449-bc03594b0e97" valueTypeId="196b9f2c-de30-4d84-ab35-2349057d791d"/>
+    <listType typeId="d4a3721d-370c-4da9-ad3d-ecbdda690511" valueTypeId="7d835a33-2b32-4820-90e0-e801e00e59d4"/>
+    <managerType typeId="84211381-9265-47c8-a109-668dff7f6286" valueTypeId="9461ce6b-6f88-4ce3-be84-a65f12384c03"/>
+    <recordSetType typeId="ade3be53-fb25-4940-b9fa-3e15fdde4b13" valueTypeId="b36b1cff-e47f-4b3e-9e58-4bd4363dd1ce"/>
+    <recordKeyType typeId="9bc3cb3c-b05c-4bab-bc15-b6f0eb6f6686" valueTypeId="7db7e797-7d39-4e00-a732-48ac4fd7c939"/>
+    <recordType typeId="16b5323f-c752-495d-9326-bc38ec8e4ff1" valueTypeId="8d9d76e1-cf1f-4dd6-b027-7c133d176477"/>
+    <recordManagerType typeId="45de57cf-8937-41bf-9d45-9ba730b4d4ce" valueTypeId="39378746-dc4b-403d-ad8e-61c1920a7aa6"/>
+  </producedTypes>
+  <name>мОтчетыНормализации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты нормализации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Для хранения данных из отчетов по нормализации границ</value>
+  </explanation>
+  <dimensions uuid="6a3dbe5b-e45d-460f-bf53-a6143a615c06">
+    <name>ОтчетНормализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет нормализации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d8f05c74-6663-4afb-975c-7b75e5534fed">
+    <name>Причина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мПричиныНормализации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="24f46278-8b4c-4c8e-9516-4eacb3cb46f1">
+    <name>ВидГраницы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид границы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мВидыГраниц</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a4333563-711e-4169-9ea9-957283ef456d">
+    <name>НомерДела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер дела</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="04e33ea9-8e5a-4b97-b339-e678c63ac9ef">
+    <name>КадастровыйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кадастровый номер</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>18</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

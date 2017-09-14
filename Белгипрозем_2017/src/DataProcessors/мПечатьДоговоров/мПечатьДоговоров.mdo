@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5218f529-00fa-4202-a168-1fefd259415d">
+  <producedTypes>
+    <objectType typeId="988f1f2f-45e6-4ebb-9db3-9c59f9ea48a2" valueTypeId="886d03fe-8d5d-4d35-abaf-b37ae0139135"/>
+    <managerType typeId="dd1ec112-4711-446b-b544-323eab99c9bf" valueTypeId="e41a3cb0-51f2-4d0a-93e3-42961f9c7fec"/>
+  </producedTypes>
+  <name>мПечатьДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПечатьДоговоров.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="932abceb-c10d-4518-99cf-6dccc4fc2198">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2eab4fdb-75b3-457f-8034-0d04a9507bab">
+    <name>ПФ_DOCX_ДоговорТКП</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф DOCX договор ТКП</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="9cec2bf4-978a-4078-9d1a-ba5415794834">
+    <name>мПечатьДоговоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать договоров</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ФорматWord</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="22d4cfe0-7d88-4cbd-a178-09e8da9f5c59">
+    <name>НастройкиПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки печати</value>
+    </synonym>
+    <comment></comment>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType/>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ПрочиеПользовательскиеНастройки</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

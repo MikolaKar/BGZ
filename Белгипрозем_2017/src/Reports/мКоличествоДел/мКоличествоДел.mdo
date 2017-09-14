@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a70031d1-95c7-48d3-8f6e-83d1e3d65668">
+  <producedTypes>
+    <objectType typeId="cea5d06a-b05a-4c9b-a95a-ce6c6301819a" valueTypeId="6a9d78f1-1c65-4cb0-807e-d9cc1298d13e"/>
+    <managerType typeId="269e55f7-6ff1-400d-95fa-97221ceeb6fb" valueTypeId="f7fdea31-91f5-4d55-8c04-aa93b91ff9ac"/>
+  </producedTypes>
+  <name>мКоличествоДел</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество дел</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мКоличествоДел.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ba089056-1997-4e69-a051-f647646e8ced">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

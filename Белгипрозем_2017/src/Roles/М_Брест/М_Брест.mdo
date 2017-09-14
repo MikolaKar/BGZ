@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60ea4cc7-651e-4a1e-b6f6-b9719886a6f9">
+  <name>М_Брест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Брест</value>
+  </synonym>
+  <comment>Для объектов Бреста</comment>
+</mdclass:Role>

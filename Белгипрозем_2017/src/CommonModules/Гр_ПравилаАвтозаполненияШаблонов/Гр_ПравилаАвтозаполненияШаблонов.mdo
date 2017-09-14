@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53ef2cb5-5c96-47d9-bd15-42c62ca366c1">
+  <name>Гр_ПравилаАвтозаполненияШаблонов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гр правила автозаполнения шаблонов</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="185d03e0-1b41-4b84-a9c0-6aee14a235c4">
+  <name>мТехАрхив</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тех архив</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

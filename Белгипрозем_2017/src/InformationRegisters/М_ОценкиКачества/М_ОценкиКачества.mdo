@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eda5329e-d969-46f6-b12f-bc8167a94bef">
+  <producedTypes>
+    <selectionType typeId="ec947b87-c930-426f-bd78-f4e98e69d7a8" valueTypeId="7c1b14f1-8a35-477f-a527-48ccb70afc33"/>
+    <listType typeId="01dc5882-b894-4f61-bd70-48ab31758d1b" valueTypeId="152061f9-b359-4be5-a08a-e0d650827e21"/>
+    <managerType typeId="bc7741e3-fffa-4dea-a613-f5f13baf2dab" valueTypeId="5fd71387-167b-4940-ad48-03acb24c37be"/>
+    <recordSetType typeId="57f28cde-7107-4e7f-bda0-19c84299ca31" valueTypeId="802b592e-d5dc-4146-9548-93e8949e0c9c"/>
+    <recordKeyType typeId="81498f6e-8cee-4b88-b27d-9a08c6fad7cc" valueTypeId="72402eae-7698-4ed5-86a2-43a27c051d5f"/>
+    <recordType typeId="4c3936f9-043d-4b14-9bfe-0369e6e1c103" valueTypeId="9f76b832-6e12-4688-bf28-62ecb6f100b9"/>
+    <recordManagerType typeId="01181ac9-f1c7-4feb-a6ce-d807a201be09" valueTypeId="8a918986-a9b3-4c0f-8ab0-919676f2dde6"/>
+  </producedTypes>
+  <name>М_ОценкиКачества</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки качества</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Оценка качества</value>
+  </recordPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Служит для регистрации выставляемой оценки качества работ при проверке дела. Используется для маршрутизации и начислении ЗП.</value>
+  </explanation>
+  <resources uuid="52d2e5ef-2ab4-426d-b2b9-f65e39f4c48e">
+    <name>Оценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Оценка качества работ</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>1.0</value>
+    </maxValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6a4a0b02-eeb6-431e-adf1-04cd80a71308">
+    <name>Дело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дело</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cc998820-c575-4da0-a5d0-18a430d458db">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a3c9aff8-ab4d-4c9e-865f-543ed1e0c50a">
+    <name>Цикл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цикл</value>
+    </synonym>
+    <comment>Цикл согласования</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f61879f-9342-48f0-ace2-b32d2d2b7875">
+    <name>ВидПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид проверки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.М_ВидыПроверкиКачества</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

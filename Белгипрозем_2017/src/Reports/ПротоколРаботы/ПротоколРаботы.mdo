@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f31b369-eb04-46db-9509-e034e1cc6230">
+  <producedTypes>
+    <objectType typeId="bef54011-606c-41e7-9cb4-abf0862bc1c8" valueTypeId="7054718d-57a2-4d21-82c5-a1758f36d747"/>
+    <managerType typeId="01e29965-42d4-4f32-bcf6-093a885b59d6" valueTypeId="fc78b472-7fb6-4c6d-b78c-18a47f7d4be8"/>
+  </producedTypes>
+  <name>ПротоколРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протокол работы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПротоколРаботы.Template.Макет</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="efde3c35-b4e5-456e-b545-fa8c80e46bae">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

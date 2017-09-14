@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ff3ec4c-ae39-4f67-8e61-f5405c67c3bd">
+  <name>ИнтернетПоддержкаПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интернет поддержка пользователей</value>
+  </synonym>
+  <comment></comment>
+  <content>InformationRegister.ПараметрыИнтернетПоддержкиПользователей</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователей</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователейВызовСервера</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователейКлиент</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователейКлиентПереопределяемый</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователейКлиентСервер</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователейСерверПереопределяемый</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейПредупреждение</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейВнимание</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейИнформация</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейНаКоробке</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейНаКомпактДиске</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейНаДокументации</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейОтправкаПисьма</content>
+  <content>CommonPicture.ИнтернетПоддержкаПользователейПинКод</content>
+  <content>CommonCommand.ЗапускИнтернетПоддержкиПользователей</content>
+  <content>CommonForm.ИнтернетПоддержкаПользователейОшибкаДоступаКИнтернету</content>
+  <content>Role.ИспользованиеИПП</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователейКлиентСерверПереопределяемый</content>
+  <content>Constant.ПодключениеКСервисуИППССервера</content>
+  <content>Constant.ТаймаутПодключенияКСервисуИнтернетПоддержки</content>
+  <content>CommonForm.ПараметрыПодключенияКИнтернетПоддержке</content>
+  <content>CommonModule.ИнтернетПоддержкаПользователей</content>
+  <content>DataProcessor.ИнтернетПоддержкаПользователей</content>
+  <content>Role.БазовыеПраваИПП</content>
+  <content>80a96897-e0c1-4c3e-8951-3318a8fd0177</content>
+</mdclass:Subsystem>

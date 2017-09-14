@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56485e8b-be56-4ce6-ab97-65ae22fdef0e">
+  <producedTypes>
+    <objectType typeId="9f77e9c4-febb-411d-9bef-56786d4e9132" valueTypeId="095a304b-9ca3-4cfc-b96d-05f5d20ad095"/>
+    <managerType typeId="3c3f81bf-c127-45ef-9d5e-8278fbf92861" valueTypeId="e98665f8-de8a-4c84-8907-574ea182eeb2"/>
+  </producedTypes>
+  <name>ТЦРольСозданиеВходящегоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦРольСозданиеВходящегоДокумента</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЦРольСозданиеВходящегоДокумента.Form.ТЦФорма</defaultForm>
+  <attributes uuid="09be40ad-c71e-43c4-8e94-111260e0a973">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыВходящихДокументов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="923f04d8-1bb7-44a9-a9fb-8541100f39a3">
+    <name>Корреспондент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корреспондент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Корреспонденты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6e61eda5-417e-4317-a782-8886ca91cb62">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="694b128a-f934-459a-9606-a1ebc692928b">
+    <name>ГрифДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гриф доступа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ГрифыДоступа</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bc3fa9be-b72b-4eaa-b1e0-4bbffbf22e3f">
+    <name>Зарегистрировал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрировал</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b344beff-7710-437c-90b2-476adf718004">
+    <name>СпособДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ доставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СпособыДоставки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="69dc6fa2-4b7f-42d4-80d6-322b2605c60c">
+    <name>ВопросыДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопросы деятельности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВопросыДеятельности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7fb4f9e9-175d-422f-82f3-3932b933c845">
+    <name>ТЦФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

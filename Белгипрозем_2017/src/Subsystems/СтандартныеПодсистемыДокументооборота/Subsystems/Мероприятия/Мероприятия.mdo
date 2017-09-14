@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcd1d998-3d1e-447f-b5fb-ea913f875b5e">
+  <name>Мероприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мероприятия</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ВидыМероприятий</content>
+  <content>Catalog.Мероприятия</content>
+  <content>InformationRegister.УчастникиМероприятия</content>
+  <content>Enum.СостоянияМероприятий</content>
+  <content>Enum.СостоянияПриглашения</content>
+  <content>BusinessProcess.Приглашение</content>
+  <content>InformationRegister.СостоянияМероприятий</content>
+  <content>Constant.ИспользоватьУправлениеМероприятиями</content>
+  <content>FunctionalOption.ИспользоватьУправлениеМероприятиями</content>
+  <content>FunctionalOption.УчитыватьКакПротокольноеМероприятие</content>
+  <content>Enum.ТипыПрограммыПротокола</content>
+  <content>Enum.ТипыРешенийПротокола</content>
+  <content>InformationRegister.ИсторияСостоянийМероприятий</content>
+  <content>Catalog.ПапкиМероприятий</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемыДокументооборота</parentSubsystem>
+</mdclass:Subsystem>

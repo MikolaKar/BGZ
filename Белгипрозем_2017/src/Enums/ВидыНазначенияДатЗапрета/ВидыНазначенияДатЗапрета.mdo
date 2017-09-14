@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24899f80-2746-40c1-a4fb-1556e756862d">
+  <producedTypes>
+    <refType typeId="5eac4dd1-99f6-4b99-a1bb-11c26635efa5" valueTypeId="10cd07da-5aa5-4b40-b970-a71bbc00cc57"/>
+    <listType typeId="bd9f41d3-1cca-43a1-aab7-860505fa2952" valueTypeId="cf38729e-33e4-4a8b-b5d9-1c718628d6cc"/>
+    <managerType typeId="9f739fd9-b003-4e4f-9511-b4a0f3ded355" valueTypeId="05fae8cf-2307-4a5f-8115-956534d8ee0f"/>
+  </producedTypes>
+  <name>ВидыНазначенияДатЗапрета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды назначения дат запрета</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f89d4158-5dcc-4b92-a829-44d2a8899dfa">
+    <name>ДляВсехПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для всех пользователей</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a9160a2b-adae-4828-b022-41835d19a2a2">
+    <name>ДляВсехИнформационныхБаз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для всех информационных баз</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

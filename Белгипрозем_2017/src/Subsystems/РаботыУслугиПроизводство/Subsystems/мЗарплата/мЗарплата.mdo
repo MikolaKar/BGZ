@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea8095ca-c933-4bd2-88d2-e3f88f312b6e">
+  <name>мЗарплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.мСведенияОСотрудниках</content>
+  <content>CommonForm.мВводСведенийОСотруднике</content>
+  <content>Document.мИзменениеСведенийОСотрудниках</content>
+  <content>Document.мРасчетЗарплаты</content>
+  <content>InformationRegister.мПроцентПремииЗаРуководство</content>
+  <content>InformationRegister.мПроцентПремииЗаРуководствоОтрядом</content>
+  <content>DataProcessor.мКоррекцияНачислений</content>
+  <content>Role.мИсполнителиРаботУдалить</content>
+  <content>Enum.мТипыНачислений</content>
+  <content>Catalog.мВидыНачислений</content>
+  <content>AccumulationRegister.НачисленаЗП</content>
+  <content>DataProcessor.мВыгрузкаЗП</content>
+  <content>InformationRegister.мСоответствиеПодразделений</content>
+  <content>InformationRegister.мСоответствиеДолжностей</content>
+  <content>InformationRegister.мФактическиОтработанноеВремя</content>
+  <content>Report.мВедомостьСниженияПроцентаПремии</content>
+  <parentSubsystem>Subsystem.РаботыУслугиПроизводство</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4df2f90a-cfb3-472d-96a3-97221d64881a">
+  <producedTypes>
+    <managerType typeId="4e22cdf8-cc42-412a-a847-345c01343088" valueTypeId="f0fbe8d2-2e1e-4726-9055-272113d86751"/>
+    <valueManagerType typeId="5fbd7dc3-e4b9-4003-9bed-b7921da5f576" valueTypeId="80a40693-6a83-4f47-9538-4a3c6762c878"/>
+  </producedTypes>
+  <name>М_ИспользоватьОбменЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать обмен ЕРИП</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

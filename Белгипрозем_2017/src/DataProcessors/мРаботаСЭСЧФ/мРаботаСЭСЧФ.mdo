@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d39e5429-f2ed-4b16-942b-2d393eeefa8e">
+  <producedTypes>
+    <objectType typeId="ac0986d4-9026-4a21-bdbc-71be8fdccd99" valueTypeId="8c5407ba-656f-4c35-b9c8-b3076016d2d6"/>
+    <managerType typeId="c2861ba1-b825-4ba6-aaac-8a5cf68762fa" valueTypeId="541b3f4c-c37d-44fc-a816-e70707f6b994"/>
+  </producedTypes>
+  <name>мРаботаСЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с ЭСЧФ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мРаботаСЭСЧФ.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="640a9c39-4765-43a7-965e-4e62d6e0d507">
+    <name>ФормаПутей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталоги для работы с ЭСЧФ</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="21a762c2-4d0a-4712-9309-8ce9d05ca604">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="7c1953cf-cd11-45a1-93d2-ac3db0063204">
+    <name>КаталогиДляРаботыСЭСЧФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталоги для работы с ЭСЧФ</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

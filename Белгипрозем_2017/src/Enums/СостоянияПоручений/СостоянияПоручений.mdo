@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90219f7f-068c-4fcc-ad9b-9021d7c6b165">
+  <producedTypes>
+    <refType typeId="394e4905-221a-47b8-adcc-107b1d23effb" valueTypeId="5968d5cf-f6c3-4b50-88c0-b30ae3d9ae9d"/>
+    <listType typeId="171147a9-0042-46f7-a217-df73af0c21a2" valueTypeId="bb90ad90-d458-4c9a-8bc8-042cdf809470"/>
+    <managerType typeId="9c0d6ba3-8226-47c0-a9ff-6273e553cd4e" valueTypeId="f1a8d2eb-810f-4e9a-909c-e198c8fef444"/>
+  </producedTypes>
+  <name>СостоянияПоручений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния поручений</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="615137a3-a95d-4396-b236-9d4c3dfca19c">
+    <name>СоставлениеКарточки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составление карточки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="38818ddb-dbad-4a38-9c06-2f46568fefdf">
+    <name>ЗапросДополнительнойИнформации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос дополнительной информации</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b6483713-9550-45b1-95c4-b96c8ad5aa58">
+    <name>ВозвратПоручения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат поручения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3a9476c0-945f-4b13-8609-3edd511ef423">
+    <name>СоставлениеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составление договора</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="4c05a04b-9764-4a4b-bd74-497694a8ad67">
+    <name>Вработе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e058effe-a819-45b7-97c2-bf1bfcc3eddc">
+    <name>ОжиданиеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание оплаты</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c2aa4201-922d-401e-a5bf-c144cc6d9eb9">
+    <name>Приостановлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приостановлен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a2ba0620-7190-4c6d-9057-ecd8bd0796e1">
+    <name>НаПроверке</name>
+    <synonym>
+      <key>ru</key>
+      <value>На проверке</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5455969e-d4c4-4f64-8e2b-b6c4f6d98549">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="575c5337-d411-4001-9a43-b40a9de0bddd">
+    <name>ПереданоЗаказчику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передано заказчику</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

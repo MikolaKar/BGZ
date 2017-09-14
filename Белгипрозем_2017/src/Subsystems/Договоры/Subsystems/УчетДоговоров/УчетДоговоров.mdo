@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="273ba32f-197c-413d-b2e1-000a18422929">
+  <name>УчетДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет договоров</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Корреспонденты</content>
+  <content>Document.УчетДоговоров</content>
+  <content>Document.ИзменениеДатДоговоров</content>
+  <content>Document.ВедомостьАктирования</content>
+  <content>Report.Договоры</content>
+  <content>Report.ДоговораКИсполнению</content>
+  <content>Report.мПоискЗаявок</content>
+  <content>Report.Ведомость6</content>
+  <content>Report.Заактировано</content>
+  <content>Report.мПоказателиВыполненияРабот</content>
+  <content>Report.мСправкаПоВидамЗаактированныхРабот</content>
+  <content>Catalog.ВнутренниеДокументы</content>
+  <content>InformationRegister.СтавкиГосРегистрации</content>
+  <content>Enum.М_ВидыПроверкиКачества</content>
+  <content>Document.мВзаимозачет</content>
+  <content>Enum.мВидыВзаимозачета</content>
+  <parentSubsystem>Subsystem.Договоры</parentSubsystem>
+</mdclass:Subsystem>

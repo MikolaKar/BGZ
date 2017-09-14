@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4773fb8-278a-413b-bf18-9cd2f3f709de">
+  <producedTypes>
+    <refType typeId="c763684d-40fe-4be4-9fd7-77532da759a8" valueTypeId="689e8e79-6a2e-4b71-8d1a-291c41f6535f"/>
+    <listType typeId="5439db86-bfee-41ab-aa86-27559e5ee8d2" valueTypeId="251845dd-88b3-4ba2-91a1-df80de61fcdf"/>
+    <managerType typeId="b890de1e-9646-4430-9666-7ee371608bdf" valueTypeId="f7c1ab44-4eb6-444f-a293-53cf10cb39a9"/>
+  </producedTypes>
+  <name>ХарактеристикаОбращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Характеристика обращения</value>
+  </synonym>
+  <comment>МиСофт</comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4910da6a-1bfa-4098-b009-3e504d87ef4d">
+    <name>Жалоба</name>
+    <synonym>
+      <key>ru</key>
+      <value>Жалоба</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6813b544-7d55-4b60-9786-4759fbb76c2d">
+    <name>Заявление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e72a32fe-c706-4464-b38e-c139365a5cf2">
+    <name>Предложение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предложение</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

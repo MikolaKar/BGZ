@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="717a81b6-7061-4413-a3a4-8dc1fc42f6e6">
+  <producedTypes>
+    <selectionType typeId="91377c68-76d4-4344-b519-dcd21933bc90" valueTypeId="a347e593-f61d-4373-82d8-a47cbe6f30cb"/>
+    <listType typeId="f6b1f912-6368-492d-a9f7-941d1b944125" valueTypeId="0fc802fb-6fd3-47e7-ba7a-c6f6dce527c1"/>
+    <managerType typeId="bf907e67-6b1a-41d6-9bd5-9fb51e80579a" valueTypeId="52165b01-0c71-46a6-9579-bca5b7eea1ad"/>
+    <recordSetType typeId="16e6cb88-e5ba-44ba-bddc-9e56c559cd8b" valueTypeId="d396d2bd-24ae-4ae4-b143-e8697c10896a"/>
+    <recordKeyType typeId="a3cdb0dd-a441-4723-ba29-4f8f525be132" valueTypeId="2e3ee28d-1a9a-4dff-8dab-e88376d8e0da"/>
+    <recordType typeId="d8bf0e88-1103-43dd-b669-9db5bd215de8" valueTypeId="b51e4d01-8127-427e-a77c-0a35d6c015d0"/>
+    <recordManagerType typeId="12212292-a255-4725-8092-136858c5ecdf" valueTypeId="c4d562c5-9570-450a-8f3e-4107e734c58a"/>
+  </producedTypes>
+  <name>мНормыВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы времени</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e43f3d28-f79e-4dc5-9c04-ffb2dd0938b3">
+    <name>НормаВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма времени</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>5</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2327f7cb-f87e-44dc-ad99-8bcec6fe8507">
+    <name>НормаВремениНачальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма времени начальная</value>
+    </synonym>
+    <comment>Для расчета норм времени для последующих</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>5</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1f30e9b3-0362-42b3-9fb1-b7130a5e4f57">
+    <name>ТаблицаНормВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица норм времени</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мТаблицыНормВремени</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c36396ba-ae5d-41c1-9d92-b01535833053">
+    <name>СтрокаТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка таблицы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мСтрокиТаблиц</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.мНормыВремени.Dimension.ТаблицаНормВремени</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f88eba18-5c88-4d51-9688-9f6dbbb032c7">
+    <name>КолонкаТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонка таблицы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мКолонкиТаблиц</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.мНормыВремени.Dimension.ТаблицаНормВремени</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

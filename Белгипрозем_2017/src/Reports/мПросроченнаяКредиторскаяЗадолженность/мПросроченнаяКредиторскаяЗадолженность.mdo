@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1d8c5c1-744a-4017-9f78-d85311e8efdf">
+  <producedTypes>
+    <objectType typeId="c2fef489-6902-4617-bed4-57f61fae11bd" valueTypeId="00982fa3-b90f-4948-bcb4-e8d830974918"/>
+    <managerType typeId="f83f6c62-02ca-4660-b600-02efb2192c6f" valueTypeId="3198d900-8f4a-4308-b63a-87378eced866"/>
+  </producedTypes>
+  <name>мПросроченнаяКредиторскаяЗадолженность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просроченная кредиторская задолженность</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мПросроченнаяКредиторскаяЗадолженность.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="f9cc29ee-c200-469a-9b92-2a2d930b7fe6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

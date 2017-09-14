@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0817311c-aafd-4395-925f-97f0f1e52c36">
+  <producedTypes>
+    <objectType typeId="1ccd194f-4053-4933-a8dd-d11a727a4454" valueTypeId="b2d8e885-a55b-4492-a40e-24276141e958"/>
+    <managerType typeId="08a5dd16-2b7a-4f11-a1c1-cd0a3d69e568" valueTypeId="82ad1bc6-fb75-46e8-a98d-b4e660ca7cac"/>
+  </producedTypes>
+  <name>мРегистрацияДоговоровДляЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация договоров для ЕРИП</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мРегистрацияДоговоровДляЕРИП.Form.Форма</defaultForm>
+  <forms uuid="c1844380-8b58-4ba9-afd6-fb016142bd1e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="97be2e75-1f27-424f-9ba4-ab1605bb0615">
+    <name>ЗарегистрироватьДоговорыДляЕРИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрировать договоры для ЕРИП</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

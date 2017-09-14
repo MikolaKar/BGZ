@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84c5b8b5-8263-4dbe-b9d6-cea3dfbabe8f">
+  <producedTypes>
+    <refType typeId="00144718-21e7-4ddf-87f2-43583b907c1c" valueTypeId="a58df542-208e-4d78-ac4e-72c9c6f59ace"/>
+    <listType typeId="ab8251eb-4c02-4c67-a5f9-71de64015e08" valueTypeId="d474443c-9b18-429f-839f-2a44c95c874d"/>
+    <managerType typeId="c5e2ecb0-a37c-4d7b-a873-53f6234bb8b4" valueTypeId="7fb45206-a20f-4459-a77b-1c57f4de31b8"/>
+  </producedTypes>
+  <name>мПорядкиОкругления</name>
+  <synonym>
+    <key>ru</key>
+    <value>М порядки округления</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ce888e18-5798-4188-9428-bd3ae0d53554">
+    <name>Окр0_01</name>
+    <synonym>
+      <key>ru</key>
+      <value>0.01</value>
+    </synonym>
+    <comment>Округление до 1 младшей единицы валюты</comment>
+  </enumValues>
+  <enumValues uuid="2204fd58-f99a-439b-acd3-481997b4e351">
+    <name>Окр0_05</name>
+    <synonym>
+      <key>ru</key>
+      <value>0.05</value>
+    </synonym>
+    <comment>Округление до 5 младших единицы валюты</comment>
+  </enumValues>
+  <enumValues uuid="281092df-aa79-4e80-96ee-071634019996">
+    <name>Окр0_10</name>
+    <synonym>
+      <key>ru</key>
+      <value>0.10</value>
+    </synonym>
+    <comment>Округление до 10 младших единицы валюты</comment>
+  </enumValues>
+  <enumValues uuid="0e312e47-d299-43f7-ba53-0e03409b214b">
+    <name>Окр0_50</name>
+    <synonym>
+      <key>ru</key>
+      <value>0.50</value>
+    </synonym>
+    <comment>Округление до 50 младших единицы валюты</comment>
+  </enumValues>
+  <enumValues uuid="6fecd2f0-a146-458c-aedb-be333c9ec7ce">
+    <name>Окр1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1</value>
+    </synonym>
+    <comment>Округление до 1 старшей единицы валюты</comment>
+  </enumValues>
+  <enumValues uuid="5dd3da65-5e46-44bc-af6a-4eecbc1b0e6d">
+    <name>Окр5</name>
+    <synonym>
+      <key>ru</key>
+      <value>5</value>
+    </synonym>
+    <comment>Округление до 5 старших единиц валюты</comment>
+  </enumValues>
+  <enumValues uuid="7d50b697-d262-491f-9f36-f87d2717083a">
+    <name>Окр10</name>
+    <synonym>
+      <key>ru</key>
+      <value>10</value>
+    </synonym>
+    <comment>Округление до 10 старших единиц валюты</comment>
+  </enumValues>
+  <enumValues uuid="09166a01-4657-4f44-9483-f51368fa95fc">
+    <name>Окр50</name>
+    <synonym>
+      <key>ru</key>
+      <value>50</value>
+    </synonym>
+    <comment>Округление до 50 старших единиц валюты</comment>
+  </enumValues>
+  <enumValues uuid="f87bdfa0-8a30-4f9b-8589-d3506470da8b">
+    <name>Окр100</name>
+    <synonym>
+      <key>ru</key>
+      <value>100</value>
+    </synonym>
+    <comment>Округление до 100 старших единиц валюты</comment>
+  </enumValues>
+  <enumValues uuid="1e996087-afad-4900-b866-11f214471ab6">
+    <name>Окр1000</name>
+    <synonym>
+      <key>ru</key>
+      <value>1000</value>
+    </synonym>
+    <comment>Округление до 1000 старших единиц валюты</comment>
+  </enumValues>
+</mdclass:Enum>

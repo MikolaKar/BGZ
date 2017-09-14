@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f63a0f1-a95a-4e6e-8f34-cc73207d0a45">
+  <producedTypes>
+    <selectionType typeId="0266d2c0-d2e4-458c-ae26-16c416fa0ce7" valueTypeId="d2c02807-173d-45f5-bea7-264ee910d6cd"/>
+    <listType typeId="595a1d02-db00-4e4d-ac34-b1cd4c31e030" valueTypeId="d8732bbd-725a-4e50-ad89-0b808b5300ce"/>
+    <managerType typeId="e3426cfb-d3d2-474b-949a-d12eda544a15" valueTypeId="acd52c6a-d73c-4061-a7cd-4da8896a6a81"/>
+    <recordSetType typeId="56baf98a-c579-4f75-a096-dcc4f4b154fc" valueTypeId="022d3b4a-91c8-46e3-bebd-81a4bf3359ea"/>
+    <recordKeyType typeId="24291ba2-3431-4db2-be90-c9d9a91fcae8" valueTypeId="5bcef660-f853-470e-97e2-da4c638e2b44"/>
+    <recordType typeId="0ce4786b-d7fd-44b4-9234-456fc07f437e" valueTypeId="20dab5b2-6154-4786-8cb3-0f7c09423875"/>
+    <recordManagerType typeId="e76150b7-1076-4cf1-a88b-439203f0b734" valueTypeId="fc1e1fe4-10c0-4702-9ab9-3627b20690ac"/>
+  </producedTypes>
+  <name>мДоговорыЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры ЗИС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.мДоговорыЗИС.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Соответствие кодов организаций в ЗИС договорам в 1С</value>
+  </explanation>
+  <resources uuid="09d6d326-7198-4164-9362-1e5f253ae998">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Договор</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e34a76df-3ee7-468c-997f-5eaa9e9d1759">
+    <name>ИспользуетГеопортал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использует геопортал</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8d398005-04de-4d2b-be5e-9134b51680b7">
+    <name>КодЗИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ЗИС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ba498f7d-3ab7-48d4-a5a4-6224d6808985">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4e93444-cbe9-4b23-85be-a9f104ece1a5">
+  <producedTypes>
+    <refType typeId="5beb4709-6fcb-40fa-9d80-234c54d366b1" valueTypeId="c6a11268-42c4-4d3e-9f79-3edbe291498c"/>
+    <listType typeId="9687a952-bde1-4698-a5e8-4ec0c5d2cf65" valueTypeId="817b6882-b6bf-4d91-98c5-0782f70a40f6"/>
+    <managerType typeId="b0cf8018-ad15-41e2-a906-1b0eb893b349" valueTypeId="e01049e3-58ad-45f3-87fe-b16316fdeb44"/>
+  </producedTypes>
+  <name>мВидыСписанияЗадолженности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид списания задолженности</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Списание задолженности</value>
+  </listPresentation>
+  <enumValues uuid="8639b903-5298-4ee1-bd43-efa0a1d6f19d">
+    <name>НаУбытки</name>
+    <synonym>
+      <key>ru</key>
+      <value>На убытки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a2c8e185-0800-45a8-b56d-29b0cad40aa6">
+    <name>НаДоходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>На доходы</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

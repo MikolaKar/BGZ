@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86df1ec7-2930-47a8-8cf3-3e4a3df3095e">
+  <producedTypes>
+    <managerType typeId="36b21766-bb83-4c1b-9fc5-56242a7e8c88" valueTypeId="5a9fda66-76d7-4422-a321-cfc1df1ae414"/>
+    <valueManagerType typeId="bee1f952-b6d8-43dc-864d-7ff786d77412" valueTypeId="690f69b1-9312-4b28-bb00-618dd1be6014"/>
+  </producedTypes>
+  <name>Гр_ВидРаботВосстановлениеГраниц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид работ восстановление границ</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.мВидыРаботПоДоговорам</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

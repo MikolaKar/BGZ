@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a2a90b4-723e-4156-bad7-a4a3cb8318d2">
+  <producedTypes>
+    <managerType typeId="f971734b-a2aa-450f-97fe-cb0bff038ebc" valueTypeId="8049fdf1-e6c1-49a7-b60f-d953b74d2b2e"/>
+    <valueManagerType typeId="05961738-af85-42a6-a565-629374badd59" valueTypeId="e8764a61-2960-4fd9-b15e-e780c0dbda0f"/>
+  </producedTypes>
+  <name>мПериодОплатыЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Период оплаты ЕРИП</value>
+  </synonym>
+  <comment>Кол-во календарных дней для оплаты требования в ЕРИП</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

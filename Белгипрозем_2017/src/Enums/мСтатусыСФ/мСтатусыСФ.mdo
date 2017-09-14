@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fe23b19-3679-47fc-b606-58f9fe2fa0f5">
+  <producedTypes>
+    <refType typeId="be2b0849-9fa5-49fb-bf45-95fe77207011" valueTypeId="a33c46fc-0fe5-48bd-b418-70b950604156"/>
+    <listType typeId="93f751c1-89d2-41b5-a31d-b51e98e008b0" valueTypeId="afb7f9c7-6a24-488b-a7da-4023a36db0fe"/>
+    <managerType typeId="bf59484d-920f-41bb-961e-9190b11e0d82" valueTypeId="962d4a2f-9cd6-4c24-8a1f-2341bf2468fe"/>
+  </producedTypes>
+  <name>мСтатусыСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы счетов-фактур</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="44719639-cf80-4070-b880-3b8df69bade1">
+    <name>Черновик1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+    <comment>Не готов к отправке</comment>
+  </enumValues>
+  <enumValues uuid="4f8aedc5-2eab-4508-b2e9-9233078c3e38">
+    <name>Подготовлен1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подготовлен</value>
+    </synonym>
+    <comment>Готов к отправке</comment>
+  </enumValues>
+  <enumValues uuid="66eb5aa6-5c5a-4464-9760-e247ba3e9ed1">
+    <name>ВРазработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В разработке</value>
+    </synonym>
+    <comment>Статус проставляется при создании (ручной ввод) либо загрузке через личный кабинет xml-файла и сохранении ЭСЧФ в БД системы</comment>
+  </enumValues>
+  <enumValues uuid="80d14683-32f6-4214-be62-5de221254ee7">
+    <name>ВРазработкеОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>В разработке. Ошибка</value>
+    </synonym>
+    <comment>Статус выставляется системой для всех типов ЭСЧФ, если пользователь инициировал отправку документа, а при проверке система обнаружила ошибки: ¶• не заполнены обязательные реквизиты; • ошибки в форматах заполнения данных; • ошибки контролей¶</comment>
+  </enumValues>
+  <enumValues uuid="8957e4b3-ef57-4306-a0a9-3840a4ee1087">
+    <name>Выставлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставлен</value>
+    </synonym>
+    <comment>ЭСЧФ считается выставленным, когда он корректно создан, подписан и отправлен второй стороне или просто на портал (без указания получателя)</comment>
+  </enumValues>
+  <enumValues uuid="d02f9943-aa7c-4596-9372-ce1a055de8f6">
+    <name>ВыставленПодписанПолучателем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставлен. Подписан получателем</value>
+    </synonym>
+    <comment>ЭСЧФ приобретает данный статус, когда получатель подписывает выставленный ему ЭСЧФ</comment>
+  </enumValues>
+  <enumValues uuid="bc2806e6-914b-439f-985e-a92b182b47f0">
+    <name>ВыставленАннулированПоставщиком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставлен. Аннулирован поставщиком</value>
+    </synonym>
+    <comment>Когда на исходный(исправленный), подписанный двумя сторонами выставляется исправленный, исходный(исправленный) приобретает статус &quot;Выставлен. Аннулирован поставщиком&quot;</comment>
+  </enumValues>
+  <enumValues uuid="b7e8e613-68b9-4855-a81a-34077fd4131c">
+    <name>НаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>На согласовании</value>
+    </synonym>
+    <comment>Данный статус присваивается для дополнительных (со ссылкой на ЭСЧФ) и исправленных ЭСЧФ в следующих случаях: ¶-	когда на исходный (исправленный) счет-фактуру, который подписан обеими ¶сторонами, выставляется дополнительный ЭСЧФ с отрицательной суммой НДС;</comment>
+  </enumValues>
+  <enumValues uuid="c914ff78-f2ac-40ba-8147-0d4a2ddec8ee">
+    <name>Аннулирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннулирован</value>
+    </synonym>
+    <comment>На любом этапе жизненного цикла, ЭСЧФ может быть аннулирован</comment>
+  </enumValues>
+  <enumValues uuid="38d4ffb1-1469-40c4-8454-fa15ebc41e43">
+    <name>НеОпределен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не определен</value>
+    </synonym>
+    <comment>В случае ошибки при получении статуса от портала</comment>
+  </enumValues>
+</mdclass:Enum>

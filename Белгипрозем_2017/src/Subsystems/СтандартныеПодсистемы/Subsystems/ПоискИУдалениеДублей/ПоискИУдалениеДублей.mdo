@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99c2d29b-4007-44e5-ad7c-9faacfb3c2c1">
+  <name>ПоискИУдалениеДублей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск и удаление дублей</value>
+  </synonym>
+  <comment></comment>
+  <content>DataProcessor.ЗаменаИОбъединениеЭлементов</content>
+  <content>DataProcessor.ПоискИУдалениеДублей</content>
+  <content>CommonModule.ПоискИУдалениеДублей</content>
+  <content>CommonModule.ПоискИУдалениеДублейКлиент</content>
+  <content>CommonModule.ПоискИУдалениеДублейПереопределяемый</content>
+  <content>Report.МестаИспользованияСсылок</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

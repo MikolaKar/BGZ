@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e64a6157-c610-499a-b60a-1103d07f1b34">
+  <name>ИСО9001</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИСО9001</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

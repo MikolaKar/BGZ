@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="119dc45a-aa17-45d2-bcc0-fd5a80d7d8e1">
+  <name>ИспользоватьВнешниеЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать внешние задачи</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ИспользоватьВнешниеЗадачи</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.РолиИсполнителей.Attribute.ВнешняяРоль</content>
+  <content>InformationRegister.ИсточникиВнешнихЗадач</content>
+  <content>Catalog.РолиИсполнителей.Attribute.УзелОбмена</content>
+</mdclass:FunctionalOption>

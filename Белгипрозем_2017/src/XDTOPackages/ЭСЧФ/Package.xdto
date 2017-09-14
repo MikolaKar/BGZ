@@ -1,0 +1,175 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.w3schools.com">
+	<property name="issuance">
+		<typeDef xsi:type="ObjectType">
+			<property name="sender" type="xs:string" lowerBound="1" form="Attribute"/>
+			<property xmlns:d4p1="http://www.w3schools.com" name="general" type="d4p1:general"/>
+			<property xmlns:d4p1="http://www.w3schools.com" name="provider" type="d4p1:provider"/>
+			<property xmlns:d4p1="http://www.w3schools.com" name="recipient" type="d4p1:recipient"/>
+			<property xmlns:d4p1="http://www.w3schools.com" name="senderReceiver" type="d4p1:senderReceiver"/>
+			<property xmlns:d4p1="http://www.w3schools.com" name="deliveryCondition" type="d4p1:deliveryCondition"/>
+			<property xmlns:d4p1="http://www.w3schools.com" name="roster" type="d4p1:rosterList"/>
+		</typeDef>
+	</property>
+	<valueType name="descriptionType" base="xs:string" variety="Atomic">
+		<enumeration>DEDUCTION_IN_FULL</enumeration>
+		<enumeration>VAT_EXEMPTION</enumeration>
+		<enumeration>OUTSIDE_RB</enumeration>
+		<enumeration>IMPORT_VAT</enumeration>
+	</valueType>
+	<valueType name="invoiceDocType" base="xs:string" variety="Atomic">
+		<enumeration>ORIGINAL</enumeration>
+		<enumeration>ADDITIONAL</enumeration>
+		<enumeration>FIXED</enumeration>
+		<enumeration>ADD_NO_REFERENCE</enumeration>
+	</valueType>
+	<valueType name="invoiceFormat" base="xs:string" variety="Atomic">
+		<pattern>\d{9}\-\d{4}\-\d{10}</pattern>
+	</valueType>
+	<valueType name="providerStatusType" base="xs:string" variety="Atomic">
+		<enumeration>SELLER</enumeration>
+		<enumeration>CONSIGNOR</enumeration>
+		<enumeration>COMMISSIONAIRE</enumeration>
+		<enumeration>TAX_DEDUCTION_PAYER</enumeration>
+		<enumeration>TRUSTEE</enumeration>
+		<enumeration>FOREIGN_ORGANIZATION</enumeration>
+		<enumeration>AGENT</enumeration>
+		<enumeration>DEVELOPER</enumeration>
+	</valueType>
+	<valueType name="rateType" base="xs:string" variety="Atomic">
+		<enumeration>DECIMAL</enumeration>
+		<enumeration>ZERO</enumeration>
+		<enumeration>NO_VAT</enumeration>
+		<enumeration>CALCULATED</enumeration>
+	</valueType>
+	<valueType name="recipientStatusType" base="xs:string" variety="Atomic">
+		<enumeration>CUSTOMER</enumeration>
+		<enumeration>CONSUMER</enumeration>
+		<enumeration>CONSIGNOR</enumeration>
+		<enumeration>COMMISSIONAIRE</enumeration>
+		<enumeration>TAX_DEDUCTION_RECIPIENT</enumeration>
+		<enumeration>FOREIGN_ORGANIZATION_BUYER</enumeration>
+	</valueType>
+	<objectType name="consignee">
+		<property name="countryCode" type="xs:integer" lowerBound="0"/>
+		<property name="unp" type="xs:string"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="address" type="xs:string"/>
+	</objectType>
+	<objectType name="consigneeList">
+		<property xmlns:d3p1="http://www.w3schools.com" name="consignee" type="d3p1:consignee" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="consignor">
+		<property name="countryCode" type="xs:integer" lowerBound="0"/>
+		<property name="unp" type="xs:string"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="address" type="xs:string"/>
+	</objectType>
+	<objectType name="consignorList">
+		<property xmlns:d3p1="http://www.w3schools.com" name="consignor" type="d3p1:consignor" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="contract">
+		<property name="number" type="xs:string"/>
+		<property name="date" type="xs:date"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="documents" type="d3p1:documentList" lowerBound="0"/>
+	</objectType>
+	<objectType name="deliveryCondition">
+		<property xmlns:d3p1="http://www.w3schools.com" name="contract" type="d3p1:contract" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="descriptionList">
+		<property xmlns:d3p1="http://www.w3schools.com" name="description" type="d3p1:descriptionType" upperBound="-1"/>
+	</objectType>
+	<objectType name="docType">
+		<property name="code" type="xs:integer"/>
+		<property name="value" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="document">
+		<property xmlns:d3p1="http://www.w3schools.com" name="docType" type="d3p1:docType"/>
+		<property name="date" type="xs:date"/>
+		<property name="blankCode" type="xs:string" lowerBound="0"/>
+		<property name="seria" type="xs:string" lowerBound="0"/>
+		<property name="number" type="xs:string"/>
+	</objectType>
+	<objectType name="documentList">
+		<property xmlns:d3p1="http://www.w3schools.com" name="document" type="d3p1:document" upperBound="-1"/>
+	</objectType>
+	<objectType name="forInvoiceType">
+		<property xmlns:d3p1="http://www.w3schools.com" name="number" type="d3p1:invoiceFormat"/>
+		<property name="date" type="xs:date"/>
+	</objectType>
+	<objectType name="general">
+		<property xmlns:d3p1="http://www.w3schools.com" name="number" type="d3p1:invoiceFormat"/>
+		<property name="dateIssuance" type="xs:date" lowerBound="0"/>
+		<property name="dateTransaction" type="xs:date"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="documentType" type="d3p1:invoiceDocType"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="invoice" type="d3p1:invoiceFormat" lowerBound="0"/>
+		<property name="dateCancelled" type="xs:date" lowerBound="0"/>
+	</objectType>
+	<objectType name="provider">
+		<property xmlns:d3p1="http://www.w3schools.com" name="providerStatus" type="d3p1:providerStatusType" fixed="false" default="SELLER"/>
+		<property name="dependentPerson" type="xs:boolean" fixed="false" default="false"/>
+		<property name="residentsOfOffshore" type="xs:boolean" fixed="false" default="false"/>
+		<property name="specialDealGoods" type="xs:boolean" fixed="false" default="false"/>
+		<property name="bigCompany" type="xs:boolean" fixed="false" default="false"/>
+		<property name="countryCode" type="xs:integer" lowerBound="0"/>
+		<property name="unp" type="xs:string" lowerBound="0"/>
+		<property name="branchCode" type="xs:string" lowerBound="0"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="address" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="principal" type="d3p1:forInvoiceType" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="vendor" type="d3p1:forInvoiceType" lowerBound="0"/>
+		<property name="declaration" type="xs:string" lowerBound="0"/>
+		<property name="dateRelease" type="xs:date" lowerBound="0"/>
+		<property name="dateActualExport" type="xs:date" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="taxes" type="d3p1:taxesType" lowerBound="0"/>
+	</objectType>
+	<objectType name="recipient">
+		<property xmlns:d3p1="http://www.w3schools.com" name="recipientStatus" type="d3p1:recipientStatusType" fixed="false" default="CUSTOMER"/>
+		<property name="dependentPerson" type="xs:boolean" fixed="false" default="false"/>
+		<property name="residentsOfOffshore" type="xs:boolean" fixed="false" default="false"/>
+		<property name="specialDealGoods" type="xs:boolean" fixed="false" default="false"/>
+		<property name="bigCompany" type="xs:boolean" fixed="false" default="false"/>
+		<property name="countryCode" type="xs:integer" lowerBound="0"/>
+		<property name="unp" type="xs:string" lowerBound="0"/>
+		<property name="branchCode" type="xs:string" lowerBound="0"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="address" type="xs:string" lowerBound="0"/>
+		<property name="declaration" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="taxes" type="d3p1:taxesType" lowerBound="0"/>
+		<property name="dateImport" type="xs:date" lowerBound="0"/>
+	</objectType>
+	<objectType name="rosterItem">
+		<property name="number" type="xs:integer" lowerBound="0"/>
+		<property name="name" type="xs:string"/>
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="code_oced" type="xs:integer" lowerBound="0"/>
+		<property name="units" type="xs:integer" lowerBound="0"/>
+		<property name="count" type="xs:decimal" lowerBound="0"/>
+		<property name="price" type="xs:decimal" lowerBound="0"/>
+		<property name="cost" type="xs:decimal"/>
+		<property name="summaExcise" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="vat" type="d3p1:vat"/>
+		<property name="costVat" type="xs:decimal"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="descriptions" type="d3p1:descriptionList" lowerBound="0"/>
+	</objectType>
+	<objectType name="rosterList">
+		<property name="totalCostVat" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property name="totalExcise" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property name="totalVat" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property name="totalCost" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="rosterItem" type="d3p1:rosterItem" upperBound="-1"/>
+	</objectType>
+	<objectType name="senderReceiver">
+		<property xmlns:d3p1="http://www.w3schools.com" name="consignors" type="d3p1:consignorList" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="consignees" type="d3p1:consigneeList" lowerBound="0"/>
+	</objectType>
+	<objectType name="taxesType">
+		<property name="number" type="xs:string"/>
+		<property name="date" type="xs:date"/>
+	</objectType>
+	<objectType name="vat">
+		<property name="rate" type="xs:decimal"/>
+		<property xmlns:d3p1="http://www.w3schools.com" name="rateType" type="d3p1:rateType"/>
+		<property name="summaVat" type="xs:decimal"/>
+	</objectType>
+</package>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="deadb1be-3aae-4c8b-b2ba-09d082d48f23">
+  <producedTypes>
+    <objectType typeId="a403d89c-8794-4d92-82cc-422c29846a62" valueTypeId="5d8c6827-1906-42b7-804b-ac6852d1f69e"/>
+    <managerType typeId="cfbdf41d-7bd4-49df-9023-dacec6f83f3e" valueTypeId="edad2bc9-3e14-4ebb-bd31-9a387651176e"/>
+  </producedTypes>
+  <name>ОтчетПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоЗадачам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоЗадачам.Template.Макет</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="0f3a1d61-5b11-46d4-930a-465f9ec6bbe8">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9d13259e-753e-4877-ab15-b33050281248">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

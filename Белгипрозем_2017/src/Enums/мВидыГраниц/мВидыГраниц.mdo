@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66c64a9a-ed33-407f-b3ec-f3de2271aff4">
+  <producedTypes>
+    <refType typeId="d49139ae-1e66-4236-9543-fbae75d5c409" valueTypeId="146cd482-74a1-430f-92f8-d601153d32b3"/>
+    <listType typeId="1d3a5d50-2668-4d84-a4b8-04d486dc8f53" valueTypeId="a84e63d2-1d2b-4249-af67-a2cd8b0d044a"/>
+    <managerType typeId="8c7133dd-67e1-4577-b471-7e116916d904" valueTypeId="30fcc278-323d-4603-8254-b376d20f94ef"/>
+  </producedTypes>
+  <name>мВидыГраниц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды границ</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c0e0fa77-415d-4b25-8861-ee0dc1007af9">
+    <name>Фиксированная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="bcfc0ed1-569c-4677-8a36-9c19a792fcf4">
+    <name>Нефиксированная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нефиксированная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

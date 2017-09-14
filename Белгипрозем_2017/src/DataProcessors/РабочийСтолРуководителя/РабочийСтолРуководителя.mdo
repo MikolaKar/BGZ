@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88609a63-1bfc-49b8-8894-38d4ece6c653">
+  <producedTypes>
+    <objectType typeId="3bec8a6d-222f-4004-8f45-60346762d3d0" valueTypeId="91437074-b2b5-4385-bce8-d521d8595124"/>
+    <managerType typeId="088c51c9-9793-47be-a2f8-cef1d2bd073f" valueTypeId="b863c2f4-0367-4ba3-b01d-52156510b0b0"/>
+  </producedTypes>
+  <name>РабочийСтолРуководителя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочий стол руководителя</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РабочийСтолРуководителя.Form.РабочийСтолРуководителя</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="87ffd89e-5cb7-458c-a344-a00d1d12c034">
+    <name>РабочийСтолРуководителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий стол руководителя</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eb3c5658-1078-4393-892f-80494a43419d">
+    <name>ФормаСпискаЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка задач</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c1a1c62-3683-4535-99b2-d56f96207a5f">
+    <name>ФормаНовогоИсполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма нового исполнения</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="071cef49-3c6a-4b21-a726-af0860672926">
+    <name>ФормаВыбораВариантаСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора варианта согласования</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f3820126-3c8b-45da-a1c7-2e53b56a2478">
+    <name>ФормаВыбораВариантаРассмотрения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора варианта рассмотрения</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

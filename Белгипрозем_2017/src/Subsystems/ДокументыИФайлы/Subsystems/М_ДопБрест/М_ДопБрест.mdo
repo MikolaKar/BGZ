@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b743480-25ca-4047-b29a-29d14147c3dd">
+  <name>М_ДопБрест</name>
+  <synonym>
+    <key>ru</key>
+    <value>М доп Брест</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Для дополнительных функций Бреста</value>
+  </explanation>
+  <content>ExternalDataSource.MS_Access.Table.DogEtap</content>
+  <content>ExternalDataSource.MS_Access.Table.Dogovor</content>
+  <content>ExternalDataSource.MS_Access.Table.SBank</content>
+  <content>ExternalDataSource.MS_Access.Table.SEtap</content>
+  <content>ExternalDataSource.MS_Access.Table.SGruppa</content>
+  <content>ExternalDataSource.MS_Access.Table.SKlient</content>
+  <content>ExternalDataSource.MS_Access.Table.SObject</content>
+  <content>Report.мСтоимостьОтправкиБрест</content>
+  <content>Report.М_ЖурналРегистрацииИсходящихДокументов_Брест</content>
+  <content>DataProcessor.ПечатьКонвертов</content>
+  <content>Constant.М_СтоимостьОтправки</content>
+  <content>Report.М_ЖурналРегистрацииВходящихДокументов_Брест</content>
+  <content>ScheduledJob.мКопированиеФайловАрхива</content>
+  <content>DataProcessor.М_ШлюзБрест</content>
+  <content>Constant.мПутьКАрхивуФайлов</content>
+  <parentSubsystem>Subsystem.ДокументыИФайлы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df43de68-6686-49e5-9057-7fbc961b5306">
+  <name>ДокументооборотИспользоватьОграничениеПравДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документооборот использовать ограничение прав доступа</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ДокументооборотИспользоватьОграничениеПравДоступа</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>CommonCommand.ДокументооборотПраваДоступаОбъекта</content>
+  <content>Catalog.ДескрипторыДоступаФайлов</content>
+  <content>InformationRegister.ДескрипторыДоступаДляФайлов</content>
+  <content>Catalog.ДескрипторыДоступаРегистров</content>
+  <content>InformationRegister.ПраваПоДескрипторамДоступа</content>
+  <content>DataProcessor.ДокументооборотУправлениеПравамиДоступа</content>
+  <content>Catalog.ОбластиДелегированияПрав</content>
+  <content>Catalog.ДелегированиеПрав</content>
+  <content>CommonForm.ДокументооборотГруппыПользователя</content>
+  <content>CommonCommand.ДокументооборотГруппыПользователя</content>
+</mdclass:FunctionalOption>

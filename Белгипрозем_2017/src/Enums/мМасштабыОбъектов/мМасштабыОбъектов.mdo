@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cb21a95-f425-4622-8187-de99c15f3a9f">
+  <producedTypes>
+    <refType typeId="636ef42f-207f-4bab-936c-07c8f1f69b40" valueTypeId="b564205d-59b6-4894-9294-19fce527341c"/>
+    <listType typeId="cfd94be6-1cfd-4dc0-a82f-09b25e6ee40b" valueTypeId="9b540455-5ad2-452b-b498-734f822cc0d1"/>
+    <managerType typeId="091edcbd-1ece-43b0-89a0-e8411ae6f32e" valueTypeId="a6791431-86fd-4df1-b4e5-1577d23e6c04"/>
+  </producedTypes>
+  <name>мМасштабыОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Масштабы объектов</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для определения тарифов на работы для ГКИ (табл. 87.п.1 Внесение графических изменений)</value>
+  </explanation>
+  <enumValues uuid="9c3f363a-4469-4d78-83b0-b5b259e47c99">
+    <name>М_1_2000</name>
+    <synonym>
+      <key>ru</key>
+      <value>М 1:2000</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0f5dd8c3-0550-4847-95ba-dadde33323c6">
+    <name>М_1_10000</name>
+    <synonym>
+      <key>ru</key>
+      <value>М 1:10000</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

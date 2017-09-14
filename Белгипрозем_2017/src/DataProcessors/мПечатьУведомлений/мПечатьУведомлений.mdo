@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b9d87e0-ca93-4717-b272-ff7c9d7a99bc">
+  <producedTypes>
+    <objectType typeId="10c38755-7acb-4366-a3e8-0473298cba85" valueTypeId="574462cb-4664-48f7-a04e-558f01192676"/>
+    <managerType typeId="1f2e92aa-5618-4f2d-ae51-75a2f2f612e5" valueTypeId="ba03f13e-6c6b-4bdb-85fc-c8e0834a3e14"/>
+  </producedTypes>
+  <name>мПечатьУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать уведомлений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПечатьУведомлений.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="4076b4d6-1c47-4bde-9e52-8beb84294025">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6bcc86d9-cfdb-48fc-af7b-b8b4f8e5aa92">
+    <name>ПечатьУведомлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать уведомлений</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

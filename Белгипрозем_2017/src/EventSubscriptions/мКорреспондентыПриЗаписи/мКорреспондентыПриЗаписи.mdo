@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22365013-a7ce-4c98-882d-e1b0e80f16f7">
+  <name>мКорреспондентыПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи корреспондента</value>
+  </synonym>
+  <comment>СоздатьКонтактноеЛицо</comment>
+  <source>
+    <types>CatalogObject.Корреспонденты</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.СоздатьКонтактноеЛицоПриЗаписи</handler>
+</mdclass:EventSubscription>

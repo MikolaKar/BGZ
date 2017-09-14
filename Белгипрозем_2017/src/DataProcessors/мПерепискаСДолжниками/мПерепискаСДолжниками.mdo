@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bc47adb-ec72-45ec-8256-ad3146603eb4">
+  <producedTypes>
+    <objectType typeId="6c363d30-7ca6-444b-a4c5-58a6139e063c" valueTypeId="f910bd12-2f73-4f5a-85a6-f8ee8b964b57"/>
+    <managerType typeId="fe9ad7b5-e6d0-4218-a887-16d5872a4ee5" valueTypeId="0f974068-5fca-4eb4-821f-23f1aae71c1d"/>
+  </producedTypes>
+  <name>мПерепискаСДолжниками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переписка с должниками</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПерепискаСДолжниками.Form.ПерепискаПоКорреспонденту</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Позволяет просмотреть переписку с должниками</value>
+  </explanation>
+  <forms uuid="23739434-8350-4eaf-b4ff-3c0f5744c126">
+    <name>ПерепискаПоКорреспонденту</name>
+    <synonym>
+      <key>ru</key>
+      <value>История переписки</value>
+    </synonym>
+    <comment></comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

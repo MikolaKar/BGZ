@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1763622-084f-453a-972b-50df54b1e474">
+  <producedTypes>
+    <selectionType typeId="8afb9194-bf63-42a1-b00c-f9858b19aedd" valueTypeId="17464b1e-e262-4929-b2af-6d740dd3fe0c"/>
+    <listType typeId="c59ae87f-f3fb-49ed-ab6e-e8645c9d8991" valueTypeId="ecd9b9ef-6d5b-46eb-83e6-b89082349161"/>
+    <managerType typeId="f48fddf5-a6b9-40ad-987e-7997baca4583" valueTypeId="6c99f46c-d28e-476d-aaf2-afd1f85368fd"/>
+    <recordSetType typeId="25a2fb77-d31d-4157-8d60-477b8de20e3c" valueTypeId="98db179e-1950-4cde-9d7e-3c4becb5fca4"/>
+    <recordKeyType typeId="328d8edd-828d-4a01-9e08-3a7307472325" valueTypeId="a95dfd5b-a72c-4567-8e5a-d873d7df5c01"/>
+    <recordType typeId="50e684b0-b857-42f8-8f1b-9f98909fe5f2" valueTypeId="4e9b906a-4650-4a9a-abc6-cf859c40119e"/>
+    <recordManagerType typeId="5f14da7e-5ed2-40ed-af4e-f2746b807c72" valueTypeId="20106084-d8d4-4279-a80d-e15d807a79ea"/>
+  </producedTypes>
+  <name>мСоответствиеДолжностей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие должностей</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Для обмена с ЗУП</value>
+  </explanation>
+  <resources uuid="007e057f-a351-4d79-b28a-d18afdeb0503">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fd3007a7-ebb3-4128-9d44-6f0e3a1e9ee6">
+    <name>КодЗУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ЗУП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="633cf88c-73a3-4efa-b6fe-9c74669cb274">
+  <name>мМожетСоздатьДелоНеЯвляясьЕгоИсполнителем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Право создать дело не являясь его исполнителем</value>
+  </synonym>
+  <comment>Право создать дело не являясь его исполнителем</comment>
+</mdclass:Role>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="278e6658-7b11-4476-b6f7-b9d09d11f8f8">
+  <producedTypes>
+    <refType typeId="d4803d3a-788e-4b97-916e-589aed82c25e" valueTypeId="da919ca3-f4ab-47b5-b6f1-56fe1abe6762"/>
+    <listType typeId="58006ecd-a5e6-47de-b24c-1a1361edbabb" valueTypeId="f0a13902-537b-459f-b03e-df7437ceb3a9"/>
+    <managerType typeId="3ed5f07b-fd4d-474e-9ba9-fae5fbf75e57" valueTypeId="219f2576-e672-418f-b75f-1d7c8c43cb80"/>
+  </producedTypes>
+  <name>мВариантыКарточекИсходныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты карточек исходных данных</value>
+  </synonym>
+  <comment>Варианты карточек исходных данных для составления договоров</comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Значения = названия макетов справочника &quot;Карточки объектов работ&quot;</value>
+  </explanation>
+  <enumValues uuid="a5885801-fbc1-495b-a906-e38611a12210">
+    <name>КарточкаИзготовлениеПлана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изготовление земельно-кадастрового плана</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b356108d-1c18-4590-a137-585cefac4310">
+    <name>КарточкаОтвода_Площадной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвод площадной</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="68f57db0-98e9-42ba-b058-75917d6b3965">
+    <name>КарточкаОтвода_Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвод линейный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c3650fb8-c535-4563-8f42-9f39aee4d09c">
+    <name>КарточкаОтвода_Площадно_Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвод площадно-линейный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="688c7ab4-f023-4546-a958-e1464d1316b2">
+    <name>КарточкаОтвода_Линейно_Площадный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвод линейно-площадный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="630b6688-303f-4954-abc0-cb0a494be456">
+    <name>КарточкаПИР_Площадной</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПИР площадной</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b54f8fc6-474e-4ad1-babb-07b4cf67e25c">
+    <name>КарточкаПИР_Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПИР линейный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="8f923c59-cc1f-4dbf-896d-55917f07698f">
+    <name>КарточкаПИР_Площадно_Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПИР площадно-линейный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d6ed2ffe-096b-4039-aefa-0fc2357144cb">
+    <name>КарточкаПИР_Линейно_Площадный</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПИР линейно-площадный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="997d79fb-1367-4766-81d0-126b7cc20b17">
+    <name>КарточкаСоставленияОстаточногоКаталога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составление остаточного каталога</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="efccc3cb-4bc4-4e66-aa71-4254f95fdbce">
+    <name>КарточкаУстановленияГраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установление (восстановление) границ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3df4fb32-f6b6-494d-98ae-6632d9864cd6">
+    <name>КарточкаУстановленияНефиксированныхГраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установление нефиксированных границ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="285250c6-2a54-48f7-9f70-25ededd57223">
+    <name>КарточкаФормированияУчастков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование участков</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="45ad7b48-2a2a-4815-afcd-efaf6361afd0">
+    <name>КарточкаУниверсальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Универсальная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6cb977ea-cdd6-4dc6-8beb-a09f62f23c6e">
+    <name>КарточкаОценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3c7b9e55-678a-42c7-a5e5-93229cfa9852">
+    <name>КарточкаУстановленияНефиксированныхГраницМинэнерго</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установление нефиксированных границ Минэнерго</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b83a1db5-489d-45b6-a2b1-d346d4bd5902">
+    <name>КарточкаГрадостроительныйПаспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка градостроительный паспорт</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7ed39cba-7b17-428a-919c-4952319185c2">
+    <name>КарточкаИзготовленияКопийМатериалов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка изготовления копий материалов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="55db7ec6-f584-44f1-83dd-adc5d10f2dd6">
+    <name>КарточкаВедениеЭксплуатацияЗИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведение (эксплуатация) ЗИС</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

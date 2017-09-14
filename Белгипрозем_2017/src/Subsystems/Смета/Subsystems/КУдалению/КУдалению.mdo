@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0ea70b2-1456-44dc-9da7-124b97aa6ff6">
+  <name>КУдалению</name>
+  <synonym>
+    <key>ru</key>
+    <value>К удалению</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Лишние объекты</value>
+  </explanation>
+  <content>4b460ca7-57b7-4085-8a30-2e7c7738f976</content>
+  <content>2e9b539d-e60b-4691-b3e2-9cd3b85502c9</content>
+  <content>778f03f6-d4b6-47ab-9750-83f758f2e65b</content>
+  <content>c782a316-34ce-4f8c-8d91-094e437b7754</content>
+  <content>82a1f512-967f-480e-b09f-5d20293be981</content>
+  <parentSubsystem>Subsystem.Смета</parentSubsystem>
+</mdclass:Subsystem>

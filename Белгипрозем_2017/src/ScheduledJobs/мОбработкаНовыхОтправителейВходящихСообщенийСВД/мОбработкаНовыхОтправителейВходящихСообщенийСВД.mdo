@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c1654a1-a723-4279-8c32-624a37790149">
+  <name>мОбработкаНовыхОтправителейВходящихСообщенийСВД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка новых отправителей входящих сообщений СВД</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.мОбработчикиРегламентныхЗаданий.мОбработкаНовыхОтправителейВходящихСообщенийСВД</methodName>
+  <description></description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

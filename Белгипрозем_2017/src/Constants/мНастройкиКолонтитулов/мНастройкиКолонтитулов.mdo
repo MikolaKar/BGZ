@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16470704-e299-4ea7-90fd-6d4a7423dbcf">
+  <producedTypes>
+    <managerType typeId="fdb3bbdf-1c2f-4e0a-be2c-654f3f39d22c" valueTypeId="b7e22ddb-84f8-41b1-a27d-6503fe29be6e"/>
+    <valueManagerType typeId="7110e029-dc01-4ad7-bd7f-1c0e2cba9893" valueTypeId="73258583-42ac-4ce5-bca0-2d18470a7402"/>
+  </producedTypes>
+  <name>мНастройкиКолонтитулов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки колонтитулов</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

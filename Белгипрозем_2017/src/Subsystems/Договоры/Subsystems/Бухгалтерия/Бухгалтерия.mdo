@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2dc91c06-90fc-4d5f-8952-f7b16aefe2c5">
+  <name>Бухгалтерия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бухгалтерия</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.DebitCredit</picture>
+  </picture>
+  <content>Document.мВзаимозачет</content>
+  <content>Document.ВозвратОплаты</content>
+  <content>Document.ОплатаРабот</content>
+  <content>Document.РеестрТекущихПлатежей</content>
+  <content>Report.мАктСверки</content>
+  <content>Report.мДолжники</content>
+  <content>Report.мОтчетПоПлатежам</content>
+  <content>Report.мПросроченнаяКредиторскаяЗадолженность</content>
+  <content>Report.мРеестрЛьготируемыхРабот</content>
+  <content>Report.мОтчетДляСтатОтчета4УН</content>
+  <content>Report.мСведенияДляФормы4УН</content>
+  <content>Report.мСведенияДляФормы12ВЭС</content>
+  <content>Report.мСведенияДляФормы4У</content>
+  <content>Report.мСведенияОбОбращенияхГраждан</content>
+  <content>Report.мФорма14инв</content>
+  <content>DataProcessor.мОбменДаннымиЕРИП</content>
+  <content>FunctionalOption.М_ИспользоватьОбменЕРИП</content>
+  <content>Constant.М_ИспользоватьОбменЕРИП</content>
+  <content>Constant.М_КаталогОбменЕРИП</content>
+  <content>InformationRegister.мОбменЕРИП</content>
+  <content>Enum.мСостояниеОбменЕРИП</content>
+  <content>Constant.М_КодАбонентаДляЕРИП</content>
+  <content>Constant.М_НомерУслугиДляЕРИП</content>
+  <content>Document.мСписаниеЗадолженности</content>
+  <content>Catalog.мКомиссии</content>
+  <content>Document.мДеноминацияРасчетовСПокупателями</content>
+  <content>Document.мДеноминацияУчетДоговоров</content>
+  <content>Constant.мСвидетельствоОГосРегистрации</content>
+  <content>Enum.мВидыЗанятости</content>
+  <parentSubsystem>Subsystem.Договоры</parentSubsystem>
+</mdclass:Subsystem>

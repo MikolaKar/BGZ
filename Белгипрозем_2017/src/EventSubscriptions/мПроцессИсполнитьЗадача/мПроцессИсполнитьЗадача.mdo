@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="110cdfce-868e-468b-88c5-01b4773ddc79">
+  <name>мПроцессИсполнитьЗадача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процесс исполнить задача</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>TaskObject.ЗадачаИсполнителя</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.мПроцессИсполнитьЗадачаПриЗаписи</handler>
+</mdclass:EventSubscription>

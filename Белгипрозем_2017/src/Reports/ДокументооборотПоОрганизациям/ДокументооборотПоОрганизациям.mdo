@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d4a1406-de24-41f8-890d-2064c753c209">
+  <producedTypes>
+    <objectType typeId="206dbb20-b1c0-4b79-9605-5160b12052e6" valueTypeId="f58fb11c-23fa-40c2-a3c3-f076cab63d96"/>
+    <managerType typeId="9cb95a11-3410-4358-91d5-8a9a8416afae" valueTypeId="83d7ea93-e8c5-404c-b7b1-ef3aab40163f"/>
+  </producedTypes>
+  <name>ДокументооборотПоОрганизациям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документооборот по организациям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДокументооборотПоОрганизациям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="5aa1eac1-781b-4a0c-8de7-a72bcc3f2a7f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

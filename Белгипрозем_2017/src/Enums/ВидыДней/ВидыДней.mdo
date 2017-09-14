@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a47a210d-2419-4809-aa3b-c767c828d8c1">
+  <producedTypes>
+    <refType typeId="16d1d776-96b0-40c0-aca4-f8f3ccc7cc78" valueTypeId="c5deb516-20bb-4ee7-b223-1f56fb5e8f66"/>
+    <listType typeId="4cf14cca-3ca2-45bc-83c6-d1701b8df2ec" valueTypeId="0fbe0178-51a6-4119-855b-621ae6cc883c"/>
+    <managerType typeId="5e2eb29b-ba2f-4e7f-b009-27f4ce3cb71b" valueTypeId="db31734e-fc47-42b2-b50c-c83201f91b82"/>
+  </producedTypes>
+  <name>ВидыДней</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дней</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ef8af238-016d-40f0-acbc-7e8b9e0a4534">
+    <name>Рабочие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочие</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="4a8d35e4-7544-4bd8-8bcd-2fc5c1081296">
+    <name>Календарные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарные</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4eb2618-a8de-496f-9dd4-b5ee12fbd69f">
+  <producedTypes>
+    <objectType typeId="d2ebe00a-31f0-4ac7-bf6e-546466ce96d8" valueTypeId="87178bba-f2b7-464d-a457-fea51db9be33"/>
+    <managerType typeId="5e156d81-831a-4886-8f80-de559b5d1c62" valueTypeId="58cba9e7-6cd5-4556-a96e-40c79b696271"/>
+  </producedTypes>
+  <name>ЗагрузкаАдресногоКлассификатора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка адресного классификатора</value>
+  </synonym>
+  <comment>из файлов кадастрового агентства</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаАдресногоКлассификатора.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="2063fe07-4782-447a-94ee-abd5afc620f2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

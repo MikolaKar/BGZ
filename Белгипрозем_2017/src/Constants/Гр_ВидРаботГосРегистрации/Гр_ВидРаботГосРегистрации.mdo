@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3313eba7-57e0-4211-b8b1-cb35017d4d8a">
+  <producedTypes>
+    <managerType typeId="a8868dea-cd2b-420a-b6af-57765ee9b5f7" valueTypeId="8dc00e95-2c19-4112-a1ba-e625bc691c9c"/>
+    <valueManagerType typeId="2d3f2de5-cd44-4bf9-8eee-c01599b21d81" valueTypeId="0b92f9f0-cf15-438e-85a8-da5b8d92e955"/>
+  </producedTypes>
+  <name>Гр_ВидРаботГосРегистрации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид работ государственной регистрации</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.мВидыРаботПоДоговорам</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

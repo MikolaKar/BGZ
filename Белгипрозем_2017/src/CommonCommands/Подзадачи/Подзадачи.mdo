@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76cea45a-a625-43d6-a4fd-8e4db2491121">
+  <name>Подзадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подзадачи</value>
+  </synonym>
+  <comment></comment>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>BusinessProcessRef.РешениеВопросовВыполненияЗадач</types>
+    <types>BusinessProcessRef.Исполнение</types>
+    <types>BusinessProcessRef.Приглашение</types>
+    <types>BusinessProcessRef.ОбработкаИсходящегоДокумента</types>
+    <types>BusinessProcessRef.ОбработкаВнутреннегоДокумента</types>
+    <types>BusinessProcessRef.Поручение</types>
+    <types>BusinessProcessRef.Утверждение</types>
+    <types>BusinessProcessRef.КомплексныйПроцесс</types>
+    <types>BusinessProcessRef.ОбработкаВходящегоДокумента</types>
+    <types>BusinessProcessRef.Рассмотрение</types>
+    <types>BusinessProcessRef.Согласование</types>
+    <types>BusinessProcessRef.Ознакомление</types>
+    <types>BusinessProcessRef.Регистрация</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Дерево задач и подзадач этого процесса</value>
+  </toolTip>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

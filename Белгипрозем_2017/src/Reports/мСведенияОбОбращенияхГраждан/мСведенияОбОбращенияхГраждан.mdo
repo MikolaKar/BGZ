@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d28dce2-9144-4a3a-bd3c-5bdf814e9d2b">
+  <producedTypes>
+    <objectType typeId="43044f3d-9fd1-4090-bfb1-b9bedfbf456a" valueTypeId="dae56dc5-b98c-470a-8f74-eee40faba797"/>
+    <managerType typeId="78374fac-c5e5-4f32-b3a4-721db236ad08" valueTypeId="d38d1a17-1753-4c7f-ba5c-8549c64c6ae5"/>
+  </producedTypes>
+  <name>мСведенияОбОбращенияхГраждан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения об обращениях граждан и юридических лиц</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мСведенияОбОбращенияхГраждан.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="9ba00330-fb90-4983-8d56-71c79f47d2f8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

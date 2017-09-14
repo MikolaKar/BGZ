@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШаблонУсловийДоговора</dataPath>
+			<field>ШаблонУсловийДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаОстаток</dataPath>
+			<field>СуммаОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЭтапа</dataPath>
+			<field>НомерЭтапа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПредоставленияРешения</dataPath>
+			<field>ДатаПредоставленияРешения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Корреспондент</dataPath>
+			<field>Корреспондент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оплата</dataPath>
+			<field>Оплата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапДоговора</dataPath>
+			<field>ЭтапДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СсылкаДатаРегистрации</dataPath>
+			<field>СсылкаДатаРегистрации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапДоговораСтоимостьСНДС</dataPath>
+			<field>ЭтапДоговораСтоимостьСНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап договора стоимость СНДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГодДоговора</dataPath>
+			<field>ГодДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год договора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорЧисловойНомер</dataPath>
+			<field>ДоговорЧисловойНомер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор числовой номер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	мЭтапыДоговоров.Ссылка КАК ЭтапДоговора,
+	мЭтапыДоговоров.Владелец КАК Договор,
+	мЭтапыДоговоров.ШаблонУсловийДоговора КАК ШаблонУсловийДоговора,
+	мЭтапыДоговоров.ДатаПредоставленияРешения КАК ДатаПредоставленияРешения,
+	мЭтапыДоговоров.НомерЭтапа КАК НомерЭтапа
+ПОМЕСТИТЬ Этапы
+ИЗ
+	Справочник.мЭтапыДоговоров КАК мЭтапыДоговоров
+ГДЕ
+	мЭтапыДоговоров.ШаблонУсловийДоговора.УчетДатыПредоставленияРешения
+	И мЭтапыДоговоров.ВидРабот = &amp;ВидРабот
+	И мЭтапыДоговоров.ДатаПредоставленияРешения &gt; &amp;ДатаПустая
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СУММА(ВЫБОР
+			КОГДА РасчетыСПокупателямиОбороты.Период &lt; &amp;ДатаДеноминации
+				ТОГДА РасчетыСПокупателямиОбороты.СуммаПриход / 10000
+			КОГДА РасчетыСПокупателямиОбороты.Период &lt; &amp;ДатаПослеДеноминации
+				ТОГДА 0
+			ИНАЧЕ РасчетыСПокупателямиОбороты.СуммаПриход
+		КОНЕЦ) КАК Оплата,
+	РасчетыСПокупателямиОбороты.ЭтапДоговора КАК ЭтапДоговора
+ПОМЕСТИТЬ Оплаты
+ИЗ
+	РегистрНакопления.РасчетыСПокупателями.Обороты(
+			,
+			,
+			День,
+			ЭтапДоговора В
+				(ВЫБРАТЬ
+					Этапы.ЭтапДоговора
+				ИЗ
+					Этапы КАК Этапы)) КАК РасчетыСПокупателямиОбороты
+ГДЕ
+	РасчетыСПокупателямиОбороты.СуммаПриход &lt;&gt; 0
+
+СГРУППИРОВАТЬ ПО
+	РасчетыСПокупателямиОбороты.ЭтапДоговора
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РасчетыСПокупателямиОстатки.ЭтапДоговора КАК ЭтапДоговора,
+	РасчетыСПокупателямиОстатки.СуммаОстаток КАК СуммаОстаток
+ПОМЕСТИТЬ ПредОплаты
+ИЗ
+	РегистрНакопления.РасчетыСПокупателями.Остатки(
+			{(&amp;КонецПериода)},
+			ЭтапДоговора В
+				(ВЫБРАТЬ
+					Этапы.ЭтапДоговора
+				ИЗ
+					Этапы КАК Этапы)) КАК РасчетыСПокупателямиОстатки
+ГДЕ
+	РасчетыСПокупателямиОстатки.СуммаОстаток &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВнутренниеДокументы.Ссылка КАК Ссылка,
+	ВнутренниеДокументы.ЭтапДоговора КАК ЭтапДоговора,
+	ВнутренниеДокументы.ЭтапДоговора.НомерЭтапа КАК ЭтапДоговораНомерЭтапа
+ПОМЕСТИТЬ Дела
+ИЗ
+	Справочник.ВнутренниеДокументы КАК ВнутренниеДокументы
+ГДЕ
+	ВнутренниеДокументы.ДатаРегистрации &gt; &amp;ДатаПустая
+	И ВнутренниеДокументы.ЭтапДоговора.Владелец В
+			(ВЫБРАТЬ
+				Этапы.Договор
+			ИЗ
+				Этапы КАК Этапы)
+	И ВнутренниеДокументы.ВидДокумента = &amp;ВидДокумента
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Этапы.ЭтапДоговора КАК ЭтапДоговора,
+	Этапы.Договор КАК Договор,
+	Этапы.ШаблонУсловийДоговора КАК ШаблонУсловийДоговора,
+	Этапы.НомерЭтапа КАК НомерЭтапа,
+	Этапы.ДатаПредоставленияРешения КАК ДатаПредоставленияРешения,
+	Оплаты.Оплата КАК Оплата,
+	ЕСТЬNULL(ПредОплаты.СуммаОстаток, 0) КАК СуммаОстаток,
+	Дела.Ссылка.ДатаРегистрации КАК СсылкаДатаРегистрации,
+	Этапы.ЭтапДоговора.СтоимостьСНДС КАК ЭтапДоговораСтоимостьСНДС,
+	ГОД(Этапы.Договор.ДатаРегистрации) КАК ГодДоговора,
+	Этапы.Договор.ЧисловойНомер КАК ДоговорЧисловойНомер
+ИЗ
+	Этапы КАК Этапы
+		ЛЕВОЕ СОЕДИНЕНИЕ Оплаты КАК Оплаты
+		ПО Этапы.ЭтапДоговора = Оплаты.ЭтапДоговора
+		ЛЕВОЕ СОЕДИНЕНИЕ Дела КАК Дела
+		ПО Этапы.Договор = Дела.ЭтапДоговора.Владелец
+			И (Дела.ЭтапДоговораНомерЭтапа + 1 = Этапы.НомерЭтапа)
+		ЛЕВОЕ СОЕДИНЕНИЕ ПредОплаты КАК ПредОплаты
+		ПО Этапы.ЭтапДоговора = ПредОплаты.ЭтапДоговора
+ГДЕ
+	Оплаты.Оплата &gt;= Этапы.ЭтапДоговора.СтоимостьСНДС
+	И ЕСТЬNULL(ПредОплаты.СуммаОстаток, 0) &gt; 0
+
+УПОРЯДОЧИТЬ ПО
+	ГодДоговора,
+	ДоговорЧисловойНомер</query>
+	</dataSet>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидДокумента</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид документа</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыВнутреннихДокументов</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.ВидыВнутреннихДокументов.Дело</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидРабот</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид работ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.мВидыРаботЮрЛица</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.мВидыРаботЮрЛица.РазработкаПроектаОтвода</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаДеноминации</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата деноминации</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">2016-07-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаПослеДеноминации</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата после деноминации</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">2016-07-02T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаПустая</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата пустая</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Договор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭтапДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭтапДоговораСтоимостьСНДС</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сметная стоимость</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Оплата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПредоставленияРешения</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВидРабот</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.мВидыРаботЮрЛица.РазработкаПроектаОтвода</dcscor:value>
+					<dcsset:userSettingID>88332b85-a795-4bf5-83b0-acb048d5b7ee</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этапы оказания услуг без актов</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

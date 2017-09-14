@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c93e608-3407-4e15-b805-8dcf7988b65e">
+  <producedTypes>
+    <objectType typeId="86d880c1-ecb7-4655-855a-11723910c971" valueTypeId="5d78a3c0-a052-4784-8b77-92ef8343af30"/>
+    <managerType typeId="5c36848e-6fe7-41cd-a172-d80eb6a4bffd" valueTypeId="54453224-b57e-4a29-a653-cf7f461b1024"/>
+  </producedTypes>
+  <name>мСправкаПоВидамЗаактированныхРаботПоИсполнителям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка по видам заактированных работ по исполнителям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.мСправкаПоВидамЗаактированныхРаботПоИсполнителям.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.мСправкаПоВидамЗаактированныхРаботПоИсполнителям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="fb4c6208-fa0e-46fb-ab03-7790b8c416bf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8de32ed3-351a-495c-b173-813ff5c2e6b4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

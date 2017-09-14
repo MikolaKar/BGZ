@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e27d738-a623-4345-bbe2-8e21f7a7ec6c">
+  <producedTypes>
+    <managerType typeId="2e8ca95e-d148-4df9-8ca3-310ccb44b763" valueTypeId="8926b42a-de5d-4b14-ab48-4e5704209e08"/>
+    <valueManagerType typeId="65850d57-56e6-46e3-b1f6-23d88f78e496" valueTypeId="ee9bff5a-7831-4034-8ae4-c9ff25e72595"/>
+  </producedTypes>
+  <name>Гр_ПодписываетВажныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гродно_Подписывает важные документы</value>
+  </synonym>
+  <comment>Гродно_Лицо, на данный момент подписывающее такие важные документы, как Акты вып.работ и Доп.соглашения</comment>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

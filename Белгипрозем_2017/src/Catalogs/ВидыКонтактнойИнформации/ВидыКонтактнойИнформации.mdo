@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="782cb93d-36e6-4923-b2b6-75caa3459cd6">
+  <producedTypes>
+    <objectType typeId="b6307745-ae1b-4b6d-830d-6b06fe7d75f5" valueTypeId="a944313b-8aea-4aab-bcdd-9759ea9da991"/>
+    <refType typeId="fc1d5c1f-385f-493f-a538-f80a12c7cb6f" valueTypeId="e6a9093d-d862-4150-82b8-612a27a8b0f8"/>
+    <selectionType typeId="11a6082e-0380-489c-a5c2-9313b9736327" valueTypeId="39d17cf4-829e-4fc4-8795-c31af643a086"/>
+    <listType typeId="e1fe64ce-ba51-40ea-89bc-02ea5613b98c" valueTypeId="5ff7fb6a-b775-4bf7-8f9f-c5983a7303cf"/>
+    <managerType typeId="335649db-6a3d-4f02-a562-9dd6cf408d98" valueTypeId="de5de393-095f-485a-9fd3-b74284f8ff44"/>
+  </producedTypes>
+  <name>ВидыКонтактнойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды контактной информации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа вида контактной информации</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВидыКонтактнойИнформации.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование вида контактной информации</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид контактной информации</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>3</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="72d9d6da-4bb6-4f7b-8e3d-8445fcc94d50">
+      <name>СправочникВходящиеДокументы</name>
+      <description>Контактная информация справочника &quot;Входящие документы&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="662ac6dc-ed36-4800-9e2a-f7f2716ada09">
+        <name>АдресЗемельногоУчастка</name>
+        <description>Адрес земельного участка</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="f5f30261-39f0-46c9-986f-202cc38f834d">
+      <name>СправочникКонтактныеЛица</name>
+      <description>Контактная информация справочника &quot;Контактные лица&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="4a82f478-9076-4cca-90ba-41cbadd724da">
+        <name>EmailКонтактногоЛица</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="bed374a5-3ed5-495c-b351-5122bc506dd3">
+        <name>ДействуетНаОсновании</name>
+        <description>Действует на основании</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="82b518ed-36cf-4127-8f45-34491af42045">
+        <name>МобильныйТелефонКонтактногоЛица</name>
+        <description>Мобильный телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="24a212b7-51b6-43aa-bb2a-ccb115432960">
+        <name>ТелефонКонтактногоЛица</name>
+        <description>Рабочий телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="6c3f0498-7dd8-4823-af21-c19ee8c98b85">
+      <name>СправочникКорреспонденты</name>
+      <description>Контактная информация справочника &quot;Корреспонденты&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="470fbf77-7d71-42a6-a6ca-1353779d90f7">
+        <name>EmailКорреспондента</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="dd86e8b2-1f62-4bdc-9567-93369dcfa5bc">
+        <name>ПочтовыйАдресКорреспондента</name>
+        <description>Почтовый адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="2e5af3cb-d8ec-41a5-ae88-566104e1d9da">
+        <name>ТелефонКорреспондента</name>
+        <description>Телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="0db1a602-5bdd-44d8-8b32-3eeab0a0d00b">
+        <name>ФаксКорреспондента</name>
+        <description>Факс</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="39304cc7-add4-4aeb-8d7b-25e23e935a2f">
+        <name>ФактическийАдресКорреспондента</name>
+        <description>Фактический адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="83767c28-4fcd-4593-9864-5822e7a47528">
+        <name>ЮридическийАдресКорреспондента</name>
+        <description>Юридический адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="49ee247f-c0a5-4a7b-8992-4d352f6c6e05">
+      <name>СправочникЛичныеАдресаты</name>
+      <description>Контактная информация справочника &quot;Личные адресаты&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="e717f3ee-82b2-4277-b668-12754dcaaf83">
+        <name>EmailАдресата</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="bf03ed3d-9a8d-48dd-a41d-ac43ad3e7292">
+        <name>ПочтовыйАдресАдресата</name>
+        <description>Почтовый адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="41ec4c49-deb2-433a-b0be-b271dcb5f9ec">
+        <name>РабочийТелефонАдресата</name>
+        <description>Рабочий телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="4c94a7b3-c88a-40c1-8ff2-b61372d3e98b">
+        <name>ФаксАдресата</name>
+        <description>Факс</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="c183ba84-b8bc-4f0c-b288-927da3b7c7f2">
+      <name>СправочникмОбъектыРабот</name>
+      <description>Контактная информация справочника &quot;Объекты работ&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="c972f239-263d-45bc-9f9e-44d33bcf6c9d">
+        <name>АдресЗемельногоУчасткаОбъектаРабот</name>
+        <description>Адрес земельного участка</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="61a6d94c-2b0b-4096-8fa7-593552761f42">
+        <name>ПочтовыйАдресОбъектаРабот</name>
+        <description>Почтовый адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="0da33599-b19b-4bb0-a545-372490340f6a">
+      <name>СправочникОрганизации</name>
+      <description>Контактная информация справочника &quot;Организации&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="1b8e42b2-bbe2-4ec1-8866-d372a1117a60">
+        <name>EmailОрганизации</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="881c441b-2cad-4563-b675-e681311e0c1b">
+        <name>ДругаяИнформацияОрганизации</name>
+        <description>Другое</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="082f0a44-8f2f-43e4-9b89-778849c2f401">
+        <name>ПочтовыйАдресОрганизации</name>
+        <description>Почтовый адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="003fe71f-6e5d-4f82-95ec-e7e9668f3378">
+        <name>ТелефонОрганизации</name>
+        <description>Телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="9fba4f02-3b94-47b3-b3e4-ea27cabb18f8">
+        <name>ФаксОрганизации</name>
+        <description>Факс</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="aba04ec4-41ed-49d4-936c-29de4399786b">
+        <name>ФактАдресОрганизации</name>
+        <description>Фактический адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="fcd95257-2aee-4a00-8e1b-92943be2c455">
+        <name>ЮрАдресОрганизации</name>
+        <description>Юридический адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="8cbaa30d-faab-45ad-880e-84f8b421f448">
+      <name>СправочникПользователи</name>
+      <description>Контактная информация справочника &quot;Пользователи&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="b930f2d1-4c2b-4f78-a697-4b87e83c8dd0">
+        <name>EmailПользователя</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="939bd6af-7ecc-4671-b96e-85a2b1a03c1b">
+        <name>ТелефонПользователя</name>
+        <description>Телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="2fc9e9d1-0bb9-4e72-b93b-e6253c27ee7d">
+      <name>СправочникРолиИсполнителей</name>
+      <description>Контактная информация справочника &quot;Роли исполнителей&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="ed5c8ec7-df07-4cdb-a321-3966e85ea7d3">
+        <name>EmailРоли</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+    <items id="8a16ae5a-4993-4ed4-9872-86d936a00ecd">
+      <name>СправочникФизическиеЛица</name>
+      <description>Контактная информация справочника &quot;Физические лица&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="90afeaa3-c283-4c05-981d-eb6206051694">
+        <name>EmailФизическогоЛица</name>
+        <description>Email</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="12fff412-45ba-46fa-bc8a-b4c48055c7d6">
+        <name>ДомашнийАдресФизическогоЛица</name>
+        <description>Домашний адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="8fe088a6-cf79-44ee-82df-fa76a31ee508">
+        <name>ДомашнийТелефонФизическогоЛица</name>
+        <description>Домашний телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="e05299aa-874f-4b5a-a1ef-225e906b9bac">
+        <name>МобильныйТелефонФизическогоЛица</name>
+        <description>Мобильный телефон</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+      <content id="963b8db1-9adf-4cf8-90d7-b5e2cbebf049">
+        <name>ПочтовыйАдресФизическогоЛица</name>
+        <description>Почтовый адрес</description>
+        <code xsi:type="core:StringValue">
+          <value></value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыКонтактнойИнформации.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ВидыКонтактнойИнформации.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ВидыКонтактнойИнформации.Form.ФормаСписка</defaultListForm>
+  <defaultFolderChoiceForm>Catalog.ВидыКонтактнойИнформации.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
+  <attributes uuid="2767473e-79fb-4c7c-a7d1-a83a8f2df71d">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ТипыКонтактнойИнформации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип контактной информации (адрес, телефон и т.д.)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыКонтактнойИнформации.EnumValue.Адрес</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="996c7873-1cc9-44f6-915b-5c6ed7ef2370">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для упорядочивания (служебный)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <indexing>IndexWithAdditionalOrder</indexing>
+  </attributes>
+  <attributes uuid="45a2569e-820c-4d7d-ba74-4a781d26bb2b">
+    <name>РедактированиеТолькоВДиалоге</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование только в диалоге</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Редактировать контактную информацию только в диалоге (ручной ввод информации не возможен)</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ced01234-9417-49ce-adf0-8cdd15e6dd7d">
+    <name>МожноИзменятьСпособРедактирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Можно изменять способ редактирования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Разрешено изменять способ редактирования</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="0eea37cc-47f8-4819-85da-d4991f4e58ed">
+    <name>АдресТолькоРоссийский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес только российский</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Допустимы только российские адреса</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b51eaf45-baa1-4d1c-bcb7-a89bb8bcc26a">
+    <name>ВключатьСтрануВПредставление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включать страну в представление</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>В представление будет включена страна адреса.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c1272bfc-196a-4f99-935f-e2516bc138d2">
+    <name>ОбязательноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обязательное заполнение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид контактной информации обязателен к заполнению</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="313e0688-745a-4385-b040-7ef8317a0eb7">
+    <name>ПроверятьКорректность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять корректность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверять корректность ввода контактной информации</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5f6c6be3-058a-43c8-aa33-3e89af2ea3f1">
+    <name>ЗапрещатьВводНекорректного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрещать ввод некорректного</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Запрещать ввод некорректных данных</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8dc08932-0988-4e82-8a5f-385c0694f9ff">
+    <name>СкрыватьНеактуальныеАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрывать неактуальные адреса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Скрывать неактуальные адреса при выборе из классификатора</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="aa7ceeee-3b3c-49e2-95c2-bfb34e381aa3">
+    <name>Подсказка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсказка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подсказка для вида контактной информации</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="37c37f15-f84b-456b-aab6-729562dc0908">
+    <name>РазрешитьВводНесколькихЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить ввод нескольких значений</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Возможность добавления более одной записи этого вида</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="f5ef3f75-7d12-4284-844f-54d19d1f7e2f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7974e41d-5af3-4636-b405-c9405d89fb53">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="21fad9b6-44df-417c-ba18-de4b8af98a34">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="11c086b0-c646-4701-983d-c38758286354">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab591cb5-e63b-4f15-8e96-8311bd885942">
+  <producedTypes>
+    <objectType typeId="aefa692e-3b3b-4cef-bb8a-da1ecab77244" valueTypeId="88f2691f-d60c-4704-aea9-d4ac5fab1d9b"/>
+    <managerType typeId="f51f2173-0c31-4696-8bab-76ac29dcbce5" valueTypeId="a9229cfe-2074-420e-a815-6fe5adba8dd3"/>
+  </producedTypes>
+  <name>мОплатаИмущественныхПрав</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата имущественных прав</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мОплатаИмущественныхПрав.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="770ccd13-1af2-471d-884e-031b5b6c30ad">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

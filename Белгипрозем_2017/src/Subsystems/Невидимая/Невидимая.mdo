@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00e515fb-749d-4c74-8d31-1f8e7c86fdf0">
+  <name>Невидимая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Невидимая</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.АдресныйКлассификатор</content>
+  <content>FunctionalOption.М_Брест</content>
+  <content>FunctionalOption.М_Витебск</content>
+  <content>FunctionalOption.М_Гомель</content>
+  <content>FunctionalOption.М_Гродно</content>
+  <content>FunctionalOption.М_Минск</content>
+  <content>FunctionalOption.М_Могилев</content>
+  <content>Constant.М_Брест</content>
+  <content>Constant.М_Витебск</content>
+  <content>Constant.М_Гомель</content>
+  <content>Constant.М_Гродно</content>
+  <content>Constant.М_Минск</content>
+  <content>Constant.М_Могилев</content>
+</mdclass:Subsystem>

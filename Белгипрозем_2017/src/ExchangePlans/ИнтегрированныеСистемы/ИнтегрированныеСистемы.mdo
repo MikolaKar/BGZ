@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4becac6-bf5f-4947-a734-c702d399d5fc" thisNode="d17f2d15-ec6b-4b5c-a0b2-63f83a687098">
+  <producedTypes>
+    <objectType typeId="0936af5b-79e9-4e36-96e6-8b27d6f3b467" valueTypeId="3fdb160e-3926-49d5-b035-0ab3b9f6efb8"/>
+    <refType typeId="8400e199-1e16-4c61-ac57-4987acd8db6c" valueTypeId="7f99eae6-64ad-4808-b1c8-4d176f935212"/>
+    <selectionType typeId="5efb3a52-622d-4e25-83f3-61137bf652d3" valueTypeId="3d50254c-87d9-408b-aa3e-ff7948f887e7"/>
+    <listType typeId="111c79a1-c080-4256-a63a-e0ef42f72b08" valueTypeId="e3238736-3358-4a64-a860-c523fa1a9981"/>
+    <managerType typeId="0333b9e7-b500-4b26-adce-97c9a3b09d97" valueTypeId="c47c407b-4151-45c6-b4c2-4649958feee4"/>
+  </producedTypes>
+  <name>ИнтегрированныеСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интегрированные системы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.ИнтегрированныеСистемы.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ИнтегрированныеСистемы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>ThisNode</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>ReceivedNo</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>SentNo</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>3</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <content>
+    <mdObject>Catalog.ВнутренниеДокументы</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.ВходящиеДокументы</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Корреспонденты</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ТекущиеСостоянияДокументов</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ИсходящиеДокументы</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.ИнтегрированныеСистемы.Form.ФормаУзла</defaultObjectForm>
+  <attributes uuid="34ccf388-90e9-4eee-a7a1-422906e975fb">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b957bcb9-98c0-4505-b216-c3dc1fce92ce">
+    <name>УзелДляСинхронизацииДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел для синхронизации данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef.ОбменУправлениеНебольшойФирмойДокументооборот</types>
+      <types>ExchangePlanRef.ОбменУправлениеПредприятиемДокументооборот</types>
+      <types>ExchangePlanRef.ОбменБухгалтерияПредприятияДокументооборот</types>
+      <types>ExchangePlanRef.ОбменУправлениеТорговлейДокументооборот</types>
+      <types>ExchangePlanRef.ОбменУправлениеПроизводственнымПредприятиемДокументооборот</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="eb88b52b-f1e5-4400-9ea6-269bdab6a70d">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>

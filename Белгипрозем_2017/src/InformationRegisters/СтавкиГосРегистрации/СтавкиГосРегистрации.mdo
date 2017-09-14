@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d231840-29cc-41fd-9588-de95b51cd8b2">
+  <producedTypes>
+    <selectionType typeId="9121ce6f-8ac8-4fcd-bf2b-9241baebdd84" valueTypeId="eceab84c-787c-494c-87a3-dbdee2690b19"/>
+    <listType typeId="7fc5411f-3397-41d5-8d10-4c95ce6ce780" valueTypeId="0a3e8fb9-5adb-483c-81f0-c3bde65fc815"/>
+    <managerType typeId="2c9d88dd-f3e5-43a5-af13-95a465bf8d4e" valueTypeId="703c7cc1-f446-468e-b359-16c27bbbe12a"/>
+    <recordSetType typeId="03396460-d63a-425d-9b9a-623d897f12c3" valueTypeId="9fb2d771-b27e-4784-876f-8e752f615129"/>
+    <recordKeyType typeId="c9a65db1-77fc-4610-b6ef-9964493342d2" valueTypeId="755ce37d-f6bd-435b-bc06-827770e3d1dd"/>
+    <recordType typeId="d3941f07-ed79-4865-82ac-b399ad0e85d6" valueTypeId="d2ea0b59-5b51-4296-9457-26a635c1ee2c"/>
+    <recordManagerType typeId="9ad88c6e-9114-40d4-8efe-452017df60c2" valueTypeId="d45315d5-67d8-45c3-af3f-9cbdebd8c8e2"/>
+  </producedTypes>
+  <name>СтавкиГосРегистрации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки государственной регистрации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="49b19057-9b8d-4218-8fb9-7fb73c7e3839">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <comment>В базовых величинах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fcf70565-dc2c-425f-b345-db0be4890938">
+    <name>ВидПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид платежа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыПлатежейГосРегистрации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

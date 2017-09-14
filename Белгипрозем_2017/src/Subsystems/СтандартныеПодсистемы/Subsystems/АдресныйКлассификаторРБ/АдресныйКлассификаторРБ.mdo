@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0772d638-3755-47c8-b109-033eaf803fa2">
+  <name>АдресныйКлассификаторРБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресный классификатор РБ</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.АдресныйКлассификаторКлиентСервер</content>
+  <content>InformationRegister.АдресныеСокращения</content>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

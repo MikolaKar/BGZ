@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3aa8b94-9577-49cd-bf28-7ffd684e2f81">
+  <producedTypes>
+    <objectType typeId="b706b98b-6c1a-4648-b4e3-264b615b59e2" valueTypeId="dca1c28c-aca7-49a5-8b38-9a52131cfb00"/>
+    <managerType typeId="2217665a-2f0e-4286-b88c-bd68736e1272" valueTypeId="3b17edd5-cea3-4e12-b6f2-7cbb7ebc8851"/>
+  </producedTypes>
+  <name>мРаботаСПоручением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с поручением</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мРаботаСПоручением.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="ec9e22e9-5a4f-4fc4-8495-184f13f8a46e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="a771758f-e71c-42df-a514-f34baf97222e">
+    <name>РаботаСПоручением</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа с поручением</value>
+    </synonym>
+    <comment></comment>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.КонсольЗаданий</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

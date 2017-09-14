@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d406133a-9851-46c8-9d23-0d9865ae5644">
+  <producedTypes>
+    <objectType typeId="b40e99d3-20fa-4001-97e8-7a11f6208280" valueTypeId="4c696ca2-bc15-4f39-bc9f-de3a48038c3b"/>
+    <managerType typeId="f949336b-13f7-4969-a431-7bc64e22eff4" valueTypeId="b3c60949-f4c8-4efc-9fc4-fc7224ad7c61"/>
+  </producedTypes>
+  <name>мСведенияДляФормы12ВЭС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения для формы 12-ВЭС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мСведенияДляФормы12ВЭС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="e953d1de-fee3-48b1-99b4-16c0424b991d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

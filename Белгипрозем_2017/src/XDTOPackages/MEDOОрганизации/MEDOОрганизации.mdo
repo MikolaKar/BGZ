@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="962a0f55-7f1e-456e-af18-265ecbc0bc13">
+  <name>MEDOОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>MEDO Организации</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.1c.ru/medoorganizations</namespace>
+</mdclass:XDTOPackage>

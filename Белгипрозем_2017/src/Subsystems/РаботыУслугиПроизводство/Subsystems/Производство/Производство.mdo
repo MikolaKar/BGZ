@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf8c638b-c27d-45cd-b679-e38d0eba7965">
+  <name>Производство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производство</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.мКлассификаторПродукции</content>
+  <content>Catalog.мВидыЭкономическойДеятельности</content>
+  <content>Catalog.мКодыТНВЭД</content>
+  <content>Catalog.мНоменклатураПроизводства</content>
+  <content>Document.мКалькуляция</content>
+  <content>Document.мРеализация</content>
+  <content>AccumulationRegister.УчетПроизводство</content>
+  <content>AccumulationRegister.ОстаткиПроизводство</content>
+  <content>Report.мВедомостьРезервыНоменклатуры</content>
+  <parentSubsystem>Subsystem.РаботыУслугиПроизводство</parentSubsystem>
+</mdclass:Subsystem>

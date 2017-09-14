@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="355b9e1c-f3c8-4f40-a6d5-961b90258317">
+  <producedTypes>
+    <managerType typeId="675e61d3-0b94-43f0-a074-7b25de6be5eb" valueTypeId="7f7fd03c-ffde-45b4-9426-bc09ca793d53"/>
+    <valueManagerType typeId="50db7f5a-097f-4424-9949-d3f8deb0f45a" valueTypeId="f7ce04ed-bcd6-4d56-88a2-003ec8e94901"/>
+  </producedTypes>
+  <name>М_Могилев</name>
+  <synonym>
+    <key>ru</key>
+    <value>Могилев</value>
+  </synonym>
+  <comment>Это база Могилев</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

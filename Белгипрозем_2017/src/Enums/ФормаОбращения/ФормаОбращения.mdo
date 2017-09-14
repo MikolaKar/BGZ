@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f291817f-0738-49b8-b094-e9f7e2c2cb12">
+  <producedTypes>
+    <refType typeId="fda50fd4-246c-4e14-893e-bd917a5ec725" valueTypeId="da59694d-a997-46b4-88b4-c17fcfdcf55f"/>
+    <listType typeId="8e38d330-77d0-4b83-a052-9a0f79f0855a" valueTypeId="d1180c89-e751-49e5-8256-da88bdd73b90"/>
+    <managerType typeId="3c2e419a-ac26-4549-853f-29f74ce198a9" valueTypeId="2e21520b-69c5-42dd-9f91-b403ced78f01"/>
+  </producedTypes>
+  <name>ФормаОбращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма обращения</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="73ca711b-e972-43c1-a256-ac939c3ea6aa">
+    <name>Письменное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письменное</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6aa1acd6-dc5d-42fe-a411-6596485d4cac">
+    <name>Устное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Устное</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b430be81-f5f4-433c-be07-c86eab37336e">
+    <name>Электронное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронное</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

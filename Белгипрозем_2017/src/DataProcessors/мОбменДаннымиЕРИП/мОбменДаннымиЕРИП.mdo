@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4f33f4a-0360-467e-92b5-175feb222357">
+  <producedTypes>
+    <objectType typeId="b2c7f129-c8a6-4e3f-93ce-4359506ca21f" valueTypeId="b245b6f0-5abe-436e-9268-ce0a57219da2"/>
+    <managerType typeId="f93729fc-3212-4d70-8b72-8808174b3042" valueTypeId="c80de9fa-57b2-4a7b-b479-efe4adaf7277"/>
+  </producedTypes>
+  <name>мОбменДаннымиЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными с ЕРИП</value>
+  </synonym>
+  <comment>Обмен данными с ЕРИП</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мОбменДаннымиЕРИП.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="319462e3-12b5-47ec-b2fb-6756248f0ebe">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="af6c12e0-b931-4f1c-bacd-1993dd3e68e7">
+    <name>ОбменДаннымиСЕРИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен данными с ЕРИП</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

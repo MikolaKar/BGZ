@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="931b1637-2c18-4b62-90d3-6e05c22cd218">
+  <producedTypes>
+    <selectionType typeId="784a41bb-e336-4d5e-ab74-5141996d06c9" valueTypeId="36610fa7-a11e-451c-a432-cb13f963c16f"/>
+    <listType typeId="9a0e223b-a0d6-4a4f-a5fb-0fac8d8a9c69" valueTypeId="02f93e8b-6a30-4649-8fc7-dc3c08f2329f"/>
+    <managerType typeId="38af5134-dbb4-4a39-afaa-8bb94c4dc9ca" valueTypeId="f419e82f-d8e6-4127-b414-8801de22d3c6"/>
+    <recordSetType typeId="0a00e87b-6ffc-4c6a-a0a7-11b8fb7b6101" valueTypeId="8a566c32-5ec9-4646-a98b-5d6240e9ad75"/>
+    <recordKeyType typeId="49f94acb-fc11-4dc7-8e78-d4094957a772" valueTypeId="16baefb5-dab1-41bf-9974-ca6b9c21e775"/>
+    <recordType typeId="7e034474-a474-4a68-bf3b-cfdbd04604b2" valueTypeId="e842fbc5-238c-47b4-9d0f-6f312015ab35"/>
+    <recordManagerType typeId="850fc551-a189-456a-899e-c54715b29ba7" valueTypeId="c20740d9-0e1f-4cd5-825d-5eec3cc2e55b"/>
+  </producedTypes>
+  <name>ТекущиеСостоянияПоручений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущие состояния поручений</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Состояние документа</value>
+  </recordPresentation>
+  <resources uuid="3d338d3a-6068-405e-b99f-f4547bce6f4a">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СостоянияПоручений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="e7e861fd-f819-4e13-9ffa-9eae7e5f4e3b">
+    <name>Установил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>BusinessProcessRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="79585962-0475-4cd9-ae6e-8c9b11a715f5">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

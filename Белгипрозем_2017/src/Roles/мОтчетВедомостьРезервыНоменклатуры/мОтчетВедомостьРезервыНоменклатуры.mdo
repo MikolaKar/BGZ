@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46815ab2-7328-44df-af1a-82421a077911">
+  <name>мОтчетВедомостьРезервыНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет Ведомость резервы номенклатуры</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

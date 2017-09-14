@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03241846-9020-4385-8c3c-2fb4da32a1ae">
+  <producedTypes>
+    <objectType typeId="452b4948-6645-4725-a4c8-513f0d275751" valueTypeId="ad5c5727-3eaa-4989-a664-2a9f7b8e875c"/>
+    <managerType typeId="91a0bb66-042e-45ee-94db-d2091c95af87" valueTypeId="e71f0350-cca9-45fb-92d6-3b65859940f7"/>
+  </producedTypes>
+  <name>ЗаменаИОбъединениеЭлементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замена и объединение элементов</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DataProcessor.ЗаменаИОбъединениеЭлементов.Form.ЗаменаЭлементов</defaultForm>
+  <forms uuid="b73f06ba-2346-4a02-bf68-51084394322e">
+    <name>ЗаменаЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замена элементов</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7c9f0481-e3d3-4f65-8452-4b8840e1fe17">
+    <name>ОбъединениеЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объединение элементов</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe1d6b6a-0d49-4cdf-ba3d-50a96ba236a9">
+    <name>МногострочноеПредупреждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Многострочное предупреждение</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fdd87865-7ab1-4e91-8c0e-256c5caf5654">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

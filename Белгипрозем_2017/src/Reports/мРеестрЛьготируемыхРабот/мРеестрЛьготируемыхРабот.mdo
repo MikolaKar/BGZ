@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="795b0d27-7c9c-4428-9311-5b577ce61426">
+  <producedTypes>
+    <objectType typeId="cc1ae657-477b-459a-bb9a-c1d7f5b788b3" valueTypeId="b7dc8818-0957-43a5-ac9c-e4a07736cda8"/>
+    <managerType typeId="ae79dbd7-e944-437c-951e-c3faa621410a" valueTypeId="5f19b3b7-9e2e-40a6-8ee0-b8b717aac8ee"/>
+  </producedTypes>
+  <name>мРеестрЛьготируемыхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр льготируемых работ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мРеестрЛьготируемыхРабот.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="fc7baa5f-e102-4925-8a58-975477d961dd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6b357d1-0532-4db7-9964-ab3132c53d5a">
+  <name>СборникиНормВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сборники норм времени</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.мТаблицыНормВремени</content>
+  <content>Catalog.мПримечанияНормВремени</content>
+  <content>Catalog.мСтрокиТаблиц</content>
+  <content>InformationRegister.мНормыВремени</content>
+  <content>Catalog.мСтадииРабот</content>
+  <content>Catalog.мКолонкиТаблиц</content>
+  <content>Report.мДействиеПримечаний</content>
+  <content>Report.мВходимостьСтадииРаботШаблоныСмет</content>
+  <content>Report.мВходимостьСтадииРаботТаблицыНормВремени</content>
+  <content>InformationRegister.мСборникУтвержден</content>
+  <parentSubsystem>Subsystem.Смета</parentSubsystem>
+</mdclass:Subsystem>

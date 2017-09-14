@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b175d6ae-4bac-42bf-bd3a-09570c483e5c">
+  <producedTypes>
+    <objectType typeId="8af90c2b-0a70-4966-9461-a8fd978180bf" valueTypeId="9518c8e3-5064-4817-bb90-a5781473dee7"/>
+    <managerType typeId="4432b71d-a571-4bed-96da-80f301cb77c5" valueTypeId="db604782-eed4-47e7-8289-18507a24b512"/>
+  </producedTypes>
+  <name>ТЦРольОткрытиеФормСписков</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦРольОткрытиеФормСписков</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЦРольОткрытиеФормСписков.Form.ТЦФорма</defaultForm>
+  <attributes uuid="67b03389-fa2b-4570-b623-8139514472dc">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2442d689-400c-4f33-8ad7-aab9e07c4a24">
+    <name>ТЦФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

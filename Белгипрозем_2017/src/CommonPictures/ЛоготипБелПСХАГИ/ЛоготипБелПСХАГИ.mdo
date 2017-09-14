@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc68580b-2916-47f2-802e-ef66be82971b">
+  <name>ЛоготипБелПСХАГИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логотип бел ПСХАГИ</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

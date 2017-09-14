@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d40f7b5-3aa0-45ea-b05e-426360cd8aed">
+  <name>мОтчетРасходМатериалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет Расход материалов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

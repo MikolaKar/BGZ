@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da589a8f-5468-46f8-9166-de43d3be65ae">
+  <name>ВерсионированиеОбъектовПередУдалениемОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версионирование объектов перед удалением объекта</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.Проекты</types>
+    <types>BusinessProcessObject.Утверждение</types>
+    <types>CatalogObject.ВходящиеДокументы</types>
+    <types>CatalogObject.ВнутренниеДокументы</types>
+    <types>CatalogObject.ИсходящиеДокументы</types>
+    <types>BusinessProcessObject.Поручение</types>
+    <types>CatalogObject.ПроектныеЗадачи</types>
+    <types>BusinessProcessObject.Исполнение</types>
+    <types>BusinessProcessObject.Согласование</types>
+    <types>BusinessProcessObject.Ознакомление</types>
+    <types>BusinessProcessObject.Рассмотрение</types>
+    <types>BusinessProcessObject.КомплексныйПроцесс</types>
+    <types>BusinessProcessObject.Приглашение</types>
+    <types>BusinessProcessObject.Регистрация</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ВерсионированиеОбъектовДокументооборот.УдалитьХранимыеВерсииПоОбъекту</handler>
+</mdclass:EventSubscription>

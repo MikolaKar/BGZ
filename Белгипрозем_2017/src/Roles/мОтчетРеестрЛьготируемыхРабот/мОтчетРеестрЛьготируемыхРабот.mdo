@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d4c6627-6089-4503-91ad-b73f94d16874">
+  <name>мОтчетРеестрЛьготируемыхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет Реестр льготируемых работ</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

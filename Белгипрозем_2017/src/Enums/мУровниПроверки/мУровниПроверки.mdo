@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="555861ca-5f0b-498d-90e0-c76ab25b8f0b">
+  <producedTypes>
+    <refType typeId="258b3481-2aa8-431d-8dc1-cd3ad554a4fe" valueTypeId="8883e8b6-7de5-4f55-b51b-75bfc0e0ec53"/>
+    <listType typeId="f2d85d10-ad5b-4dea-85da-36938c832f7b" valueTypeId="d32c8d13-335a-4bb6-aa5b-b1c4a8a9aacb"/>
+    <managerType typeId="a127436a-4b11-4872-a13c-1bd7d5804901" valueTypeId="27fb5e18-6cde-41b7-9878-b51d5b32f0b6"/>
+  </producedTypes>
+  <name>мУровниПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни проверки</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Уровни проверки</value>
+  </listPresentation>
+  <enumValues uuid="3aa366e8-659b-4161-975c-e5022cbde513">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ea781236-51fd-4210-a659-82b53bbd9f0d">
+    <name>Отряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сектор</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="cb24add0-59be-4285-9485-6b9bf3d4bb95">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3fdba826-7495-4481-a828-fc450dc2b89b">
+    <name>Филиал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиал</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="4e6ab839-23fd-4b40-8500-94cf2c4b553c">
+    <name>СекторКонтроля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сектор контроля</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="86f1e9f1-4da0-4525-ad36-cb1aab9c3d49">
+    <name>ЗамГлИнженера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зам гл инженера</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

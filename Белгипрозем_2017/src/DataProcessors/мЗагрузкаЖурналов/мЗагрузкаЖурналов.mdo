@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3959a59d-b80e-4a1c-a455-b302b0143ee5">
+  <producedTypes>
+    <objectType typeId="57671ae4-67a1-446a-8b47-903bc9336bf9" valueTypeId="addf4585-ea23-4eb1-a657-2106696487e7"/>
+    <managerType typeId="d0aad3a7-8a75-45aa-b449-6035f4aaaddb" valueTypeId="5e9679df-c8e9-4c1e-bbac-fbe356cab65c"/>
+  </producedTypes>
+  <name>мЗагрузкаЖурналов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка реализации журналов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мЗагрузкаЖурналов.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Создание документов реализации журналов на основании файла, полученного из бухгалтерии (1С 7.7)</value>
+  </explanation>
+  <forms uuid="e154af09-b3e6-4a24-9d1f-0c36442a6ebf">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

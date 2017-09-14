@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1f88f77-ab79-4bbd-9b83-27920c5c21cb">
+  <producedTypes>
+    <objectType typeId="a92c7c9d-0fdd-4d04-85b7-d594523bc9b9" valueTypeId="6a2d12aa-7c11-4c4e-87f0-d5b5e448a983"/>
+    <managerType typeId="086f63e0-ec9e-4a14-b8b4-d1a01bc7f647" valueTypeId="411df737-2045-4337-b80d-b3e581571b05"/>
+  </producedTypes>
+  <name>мРаспознаваниеОтправителейСМДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распознавание отправителей СМДО</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мРаспознаваниеОтправителейСМДО.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="f6f5d55e-253a-4fb2-9097-f63231d11fa5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

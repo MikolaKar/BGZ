@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac56dfc9-72d7-4813-9021-f74f37761cc8">
+  <name>ТолькоРФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Только РФ</value>
+  </synonym>
+  <comment>Скрытие ненужных элементов интерфейса</comment>
+  <location>Constant.ТолькоРФ</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a505edef-f3cb-4816-a223-22584cab2498">
+  <producedTypes>
+    <objectType typeId="fd800b3b-1e8c-4369-9e19-d5a3938de213" valueTypeId="6952f375-5f20-4980-b920-7c01f48f65b4"/>
+    <managerType typeId="bccc7de8-4a62-4560-8ef1-d19bb2f42b4e" valueTypeId="1cd36fb7-794a-4ba6-8944-9b20454a58bb"/>
+  </producedTypes>
+  <name>мПечатьРаспискиВПолучении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать расписки в получении</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПечатьРаспискиВПолучении.Form.Форма</defaultForm>
+  <forms uuid="b996b5a3-4f00-4ffa-b8b8-f9d4830b0563">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ac72997a-8138-47fa-a9cf-f0a01f245a80">
+    <name>РаспискаМинск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписка Минск</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="21f4b9da-c643-4230-8e2c-342a98527fd4">
+    <name>РаспискаГродно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписка гродно</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="bfa29de2-4ea7-49ab-aa83-8f58bc8da07f">
+    <name>РаспискаБрест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписка Брест</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="c917bd68-3e84-4efb-9896-60ffcebbc121">
+    <name>РаспискаПрилуки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписка Прилуки</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="9d59eb41-3ec5-47f5-9d85-8e81e0e7bd61">
+    <name>ПечатьРаспискиВПолучении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать расписки в получении</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ФорматTXT</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

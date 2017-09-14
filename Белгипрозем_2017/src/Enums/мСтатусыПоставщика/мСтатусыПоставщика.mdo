@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5edf3abd-b6cd-4838-9220-073d9a05c017">
+  <producedTypes>
+    <refType typeId="09a53190-d885-4860-a826-0fe9fbf2a300" valueTypeId="5b5c96b6-cefe-479b-9fb4-25590544df15"/>
+    <listType typeId="9a8fda81-a61a-4137-9fee-71b08a287e34" valueTypeId="b6e1d16a-0663-47bf-8bdc-f0c77a5a80b4"/>
+    <managerType typeId="6785a10b-5eb7-4499-9c34-8dc76ff5fe2f" valueTypeId="6cb7006a-45ff-4103-a3f4-cedd36457ab7"/>
+  </producedTypes>
+  <name>мСтатусыПоставщика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы поставщика</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d0010220-8265-4964-adb4-062813c67723">
+    <name>Продавец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продавец</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="30d6cb6c-227a-47bd-a718-c357fb8510d8">
+    <name>Комитент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комитент</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2d44c867-4575-4d8b-a682-472f92546648">
+    <name>Комиссионер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссионер</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9c9e7aad-f181-41e5-a956-8a2871a2595b">
+    <name>Посредник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посредник</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a9f1fe81-5d75-4064-b046-84ac628de1a9">
+    <name>ДоверительныйУправляющий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доверительный управляющий</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="187a8130-1cc8-42e2-bdc8-646d8d9fd641">
+    <name>ИностраннаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иностранная организация</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d18d3c52-01af-4914-87d1-7300fef40b7b">
+    <name>ЗаказчикЗастройщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик (застройщик)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c76a9676-a1a3-4ea6-a130-389be14fef84">
+    <name>ПлательщикПередающийНалоговыеОборотыПоРеализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик передающий налоговые обороты по реализации</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2932b6b0-1ee2-489a-8d80-6df309c278ef">
+    <name>ПлательщикПередающийНалоговыеВычеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик передающий налоговые вычеты</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

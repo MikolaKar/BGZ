@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="198674fd-619b-4e5f-bb28-a6153a010324">
+  <name>мРаботаСоСканеромШтрихкода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа со сканером штрихкода</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79be7eeb-c4b5-4f2c-9f40-f33f126c4606">
+  <producedTypes>
+    <objectType typeId="5889c638-9920-42bd-bf52-ee984c6f7908" valueTypeId="681fbf0f-2ecc-48dd-8023-644a109034b0"/>
+    <managerType typeId="501aa97d-a868-4ad8-888c-d5043eaba9c7" valueTypeId="1baf83e4-88f9-453e-b682-bb7126d88526"/>
+  </producedTypes>
+  <name>ТЦРольПолнотекстовыйПоиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦРольПолнотекстовыйПоиск</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЦРольПолнотекстовыйПоиск.Form.ТЦФорма</defaultForm>
+  <tabularSections uuid="38ccb9c7-57e5-4dd2-ad57-0805b4cadac4">
+    <producedTypes>
+      <objectType typeId="7588fe4b-e9f5-458d-b2b2-a77ea58fa8cd" valueTypeId="1c6866d8-11aa-4f9e-bac7-c5f586f25edd"/>
+      <rowType typeId="3b2ee104-1baf-4be2-ab4c-a1ba19d99613" valueTypeId="c54017a6-19c6-4857-bba9-ea60ba12d6bc"/>
+    </producedTypes>
+    <name>СтрокиПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строки поиска</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c557140c-ed8c-4842-9818-056c826ec6f0">
+      <name>СтрокаПоиска</name>
+      <synonym>
+        <key>ru</key>
+        <value>Строка поиска</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>256</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="272f1c54-e45e-4e76-bc1a-ace9360159a3">
+    <name>ТЦФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

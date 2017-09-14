@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55f2bf8a-06ba-444d-b8d5-f03fc825a987">
+  <producedTypes>
+    <managerType typeId="4b8c5799-fe57-46c1-b757-c630ece7f5bb" valueTypeId="7668c092-a20f-4a99-adfc-c90eed8d8d8b"/>
+    <valueManagerType typeId="9896d932-6c15-4e63-8130-7b75a6085e15" valueTypeId="925ccc20-bdb0-4c7d-b9e5-6d705069a615"/>
+  </producedTypes>
+  <name>ТолькоРФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Только РФ</value>
+  </synonym>
+  <comment>Для хранения ФО</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

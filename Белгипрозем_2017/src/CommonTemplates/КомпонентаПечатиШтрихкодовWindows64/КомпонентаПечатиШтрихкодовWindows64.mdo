@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9738789d-56fc-490f-a548-1fbd29005cb9">
+  <name>КомпонентаПечатиШтрихкодовWindows64</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компонента печати штрихкодов windows64</value>
+  </synonym>
+  <comment></comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

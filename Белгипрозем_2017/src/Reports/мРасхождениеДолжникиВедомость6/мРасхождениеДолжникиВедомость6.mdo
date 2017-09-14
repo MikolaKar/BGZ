@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e6406fc-34b4-4e96-a90d-bfd4aa40678b">
+  <producedTypes>
+    <objectType typeId="116eca0e-ec03-4077-8882-c326a4671d78" valueTypeId="f525e20e-babf-4319-83f7-e6f31a0ede90"/>
+    <managerType typeId="532f1bfb-2558-4945-9e1c-2d08df50c515" valueTypeId="2124477d-774f-4121-b845-d8da4e81355e"/>
+  </producedTypes>
+  <name>мРасхождениеДолжникиВедомость6</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расхождение между отчетами Должники и Ведомость 6</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мРасхождениеДолжникиВедомость6.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="da98b2fc-760c-4b9e-aca8-99f55f4a1d2e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

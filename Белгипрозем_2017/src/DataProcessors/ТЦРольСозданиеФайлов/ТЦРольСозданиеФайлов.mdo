@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0c45ff2-7d6c-4daa-997e-39a526fdb100">
+  <producedTypes>
+    <objectType typeId="0817166a-e8dd-46ff-8f54-f51d750086c0" valueTypeId="a59e4061-a7b6-4d65-b829-f2b14935f8e3"/>
+    <managerType typeId="347ef6d9-7aad-48e5-ae38-f2f902ddaf30" valueTypeId="f235d207-1af9-498c-a304-f69d11333c65"/>
+  </producedTypes>
+  <name>ТЦРольСозданиеФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦРольСозданиеФайлов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЦРольСозданиеФайлов.Form.ТЦФорма</defaultForm>
+  <attributes uuid="811ebab2-e3fd-4d29-9327-ffcc11d637ea">
+    <name>РазмерФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер файла</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07354bb4-3a64-4aa7-b983-f40af5ee67e7">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f1102455-2d0c-439a-9184-49d58202b72f">
+    <name>ТЦФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

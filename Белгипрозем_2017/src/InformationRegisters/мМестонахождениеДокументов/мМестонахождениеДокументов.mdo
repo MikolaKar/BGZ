@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7a38206-9681-41f6-8bb0-f2ccc2c67f11">
+  <producedTypes>
+    <selectionType typeId="786840fa-40e3-4b40-a511-34b989dbfe7b" valueTypeId="64bd7025-b1d1-4172-afbf-79485b9227ac"/>
+    <listType typeId="2d9529c0-94ef-4268-9d5e-f5b297a31a7a" valueTypeId="34585caa-6ced-45a1-99f3-3b4c877933c8"/>
+    <managerType typeId="07078045-9926-4e09-9d97-f02f8120f45e" valueTypeId="eeb66e38-8f98-4a3f-b690-607971b6c188"/>
+    <recordSetType typeId="41a9d080-dd0e-4688-9833-0e89d6ed70d2" valueTypeId="002a7224-cc0e-4fbc-8f8d-f05ba630b1a4"/>
+    <recordKeyType typeId="802276cf-3344-4a09-87c6-2a470fc6fc59" valueTypeId="8ba4c88b-642e-4159-ae36-5f3041f51047"/>
+    <recordType typeId="3adfd380-c99e-403e-990a-6cafc20b0809" valueTypeId="324ebfa2-f48a-4d45-88bc-cc9634f8f562"/>
+    <recordManagerType typeId="55040709-3f92-406f-acac-8a7e99a537a6" valueTypeId="78c07894-91e7-4935-854f-bf8a1becc94d"/>
+  </producedTypes>
+  <name>мМестонахождениеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Местонахождение документов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Местонахождение документа</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Местонахождение документов</value>
+  </listPresentation>
+  <resources uuid="eb555ee7-82f2-486a-8858-d3e4ace2217b">
+    <name>Местонахождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местонахождения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мМестонахождениеДокументов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ec352388-fc71-4657-94ad-a838242363f3">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

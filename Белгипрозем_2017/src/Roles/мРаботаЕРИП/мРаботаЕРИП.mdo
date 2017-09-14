@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc37b83c-987d-4fc6-ab1c-9fe1e2ca1d09">
+  <name>мРаботаЕРИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с ЕРИП</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

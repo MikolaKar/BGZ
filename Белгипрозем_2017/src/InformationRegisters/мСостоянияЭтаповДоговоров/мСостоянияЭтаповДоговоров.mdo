@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c98c7452-a3e2-49cb-9d68-f239d56ea631">
+  <producedTypes>
+    <selectionType typeId="7d006948-3241-43ce-9d4c-ea6a49834691" valueTypeId="dd9e2009-16b3-4e7e-b68b-915838cbdf5c"/>
+    <listType typeId="c1d121a4-05dc-4200-b1f9-71c5c0e3208f" valueTypeId="046a386d-46aa-4619-b61d-5605fa623476"/>
+    <managerType typeId="833c2081-dfa6-4966-b885-f7171a8788e3" valueTypeId="29d0a044-274b-4adc-8738-924ad2bb500d"/>
+    <recordSetType typeId="89e58ae7-1094-4a47-ab0e-9e7270c14d27" valueTypeId="a7cbbb85-ce91-463e-80e0-60d6bb855285"/>
+    <recordKeyType typeId="57c96caa-b3fd-43ca-9aa8-3abf76e41be3" valueTypeId="e035cd62-4d7c-44e4-a44c-0d816bd2090f"/>
+    <recordType typeId="c5dfc6dd-a62a-4840-97f4-66c4a46ce8d5" valueTypeId="4eee5b1a-6fe7-452e-9a6f-fa6b58045566"/>
+    <recordManagerType typeId="00c1dc30-4fb1-4dba-8a3f-967c472d0326" valueTypeId="d8dd3b99-c6b8-4c39-9f97-7406ace76ed6"/>
+  </producedTypes>
+  <name>мСостоянияЭтаповДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния этапов договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Состояние этапа договора</value>
+  </recordPresentation>
+  <resources uuid="cab41dc1-fb02-474d-8862-100c153cfe34">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мСостоянияЭтаповДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ffcfe4c4-cdac-44b2-a9ee-1cee465fdbc5">
+    <name>ЭтапДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мЭтапыДоговоров</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

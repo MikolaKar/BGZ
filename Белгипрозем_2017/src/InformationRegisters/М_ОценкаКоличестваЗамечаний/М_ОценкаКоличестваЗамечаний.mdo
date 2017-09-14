@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a329fe2-f174-4cb7-8605-5458c2da166d">
+  <producedTypes>
+    <selectionType typeId="57f8f461-7426-40e6-b171-d3c74ff18cf3" valueTypeId="10c6ecf8-b937-4a15-b3bd-62e4e4cb74b9"/>
+    <listType typeId="fdbfefa7-564c-424e-8b6a-d75661ecf5d5" valueTypeId="f03c22a6-2dd0-400c-8314-8223a3794ec0"/>
+    <managerType typeId="7fdf3bce-a03a-406f-a7a3-a7e72fd46648" valueTypeId="25266dc1-4d1f-4089-b618-77d7c01aa5f7"/>
+    <recordSetType typeId="63fc73e0-d1bf-4b31-b511-9ea9b66e46e1" valueTypeId="4d9e82e8-bca0-4418-9802-e4de6bfeb977"/>
+    <recordKeyType typeId="71f99620-1283-4437-b5ec-8d432d213758" valueTypeId="246eeaf2-6fec-47d4-8508-fa786723fa57"/>
+    <recordType typeId="9a852c59-93fd-4b21-9bed-3bbbc91c97a7" valueTypeId="3138ed0b-9a04-46dd-bb49-1f7142ae564f"/>
+    <recordManagerType typeId="5bbea915-2a2b-4529-a95f-d5073b6624ab" valueTypeId="1df923b0-9cb2-4d46-b883-42626de8ccb7"/>
+  </producedTypes>
+  <name>М_ОценкаКоличестваЗамечаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка количества замечаний</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Используется в справочнике &quot;Акты проверки&quot; для определения оценки проверяющего на основании введенных замечаний </value>
+  </explanation>
+  <resources uuid="2b4ea445-cff9-48e6-931d-a81be6589fa7">
+    <name>Оценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4bfa308c-f0be-40dc-8f62-18d832656931">
+    <name>НеАктуально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не актуально</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0aa538cf-2f5b-478b-af33-c13ce719238a">
+    <name>КоличествоС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество С</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a3059912-fc4c-44a5-a388-8766c60be3b5">
+    <name>КоличествоПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество по</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="91e4fb26-e29e-4452-80f4-ada1a855bf63">
+    <name>ОценкаЗамечания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка замечания</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26e17056-1c6b-477f-bea9-472397957484">
+  <name>ExchangeMessage</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange message</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.1c.ru/SSL/Exchange/Message</namespace>
+</mdclass:XDTOPackage>

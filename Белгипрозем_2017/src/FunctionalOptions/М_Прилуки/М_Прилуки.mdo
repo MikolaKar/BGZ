@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b1ac41a-44e9-4263-9be9-b3979418fbe1">
+  <name>М_Прилуки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прилуки</value>
+  </synonym>
+  <comment>Это база БелПСХАГИ</comment>
+  <location>Constant.М_Прилуки</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Report.мЖурналРегистрацииВходящихДокументов</content>
+  <content>Subsystem.ДокументыИФайлы.Subsystem.М_ДопПрилуки</content>
+</mdclass:FunctionalOption>

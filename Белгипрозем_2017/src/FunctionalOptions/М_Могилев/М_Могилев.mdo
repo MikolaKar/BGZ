@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6fa8e778-fc46-4946-9697-01447d32dd7e">
+  <name>М_Могилев</name>
+  <synonym>
+    <key>ru</key>
+    <value>Могилев</value>
+  </synonym>
+  <comment>Это база Могилев</comment>
+  <location>Constant.М_Могилев</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Report.мЖурналРегистрацииВходящихДокументов</content>
+</mdclass:FunctionalOption>

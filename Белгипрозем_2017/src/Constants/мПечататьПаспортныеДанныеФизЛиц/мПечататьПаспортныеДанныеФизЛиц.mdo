@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="203fa63b-b1e7-49e5-b922-928d1a689d22">
+  <producedTypes>
+    <managerType typeId="0eccb732-908c-4f7b-82b4-62f7b1a4f741" valueTypeId="757a4cd7-51ee-4ab9-bc09-3a9a05b68913"/>
+    <valueManagerType typeId="ab80e35e-94b2-4570-9a9f-70c1d01fb29a" valueTypeId="f8481f4f-1120-4541-acd7-509714c455ef"/>
+  </producedTypes>
+  <name>мПечататьПаспортныеДанныеФизЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печатать паспортные данные физ лиц</value>
+  </synonym>
+  <comment>Вывод в шаблонах договоров,актов и т.д.</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

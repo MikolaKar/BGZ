@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb960507-e195-4b13-a5a1-3738c835f795">
+  <name>М_Вспомогательная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вспомогательная</value>
+  </synonym>
+  <comment></comment>
+  <explanation>
+    <key>ru</key>
+    <value>Для выполнения различных вспомогательных функций</value>
+  </explanation>
+  <content>bfb7bf19-31b2-4975-862e-75aa2100e111</content>
+</mdclass:Subsystem>

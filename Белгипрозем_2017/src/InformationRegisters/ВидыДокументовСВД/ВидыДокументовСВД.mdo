@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc9d08b2-a1be-48aa-b0f7-84e1062f5d22">
+  <producedTypes>
+    <selectionType typeId="29f2db30-33f5-4387-86ef-9ac85a10e3dd" valueTypeId="846cd7e9-8d1c-4277-a38f-583de5b55979"/>
+    <listType typeId="29f69239-dd09-4687-901a-73fc18e800e3" valueTypeId="b2c10a6a-1335-45aa-961e-ba0fac1d11cb"/>
+    <managerType typeId="de6dba59-15aa-4ae2-b0b0-9409f18edf2d" valueTypeId="f3aa0098-1596-4458-be89-d213d834d7ba"/>
+    <recordSetType typeId="f92ce787-04dd-4d9c-abf3-252728488842" valueTypeId="33732925-6626-4749-9628-4d9167db355e"/>
+    <recordKeyType typeId="1b2ef48b-b506-489e-ad9a-1a1866f16ea9" valueTypeId="508d3de3-bc69-425a-9d35-c5b4907a60a7"/>
+    <recordType typeId="b72b0cde-5674-40b4-9434-b60225ec8e23" valueTypeId="04e3f8df-4081-4695-a99d-d6e15d8cf55f"/>
+    <recordManagerType typeId="5a047c62-b72b-45e2-9d5b-85f1066b6f8c" valueTypeId="12e4ba7f-b38e-4b3a-b04e-f95569cf71d1"/>
+  </producedTypes>
+  <name>ВидыДокументовСВД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Представление видов документов в СВД</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВидыДокументовСВД.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВидыДокументовСВД.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e6cc11d6-36aa-40e3-a599-538629b10e52">
+    <name>ИмяВСВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя в СВД</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="ee2d2a24-e2c9-45ec-a8eb-d11b80efc18f">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыВнутреннихДокументов</types>
+      <types>CatalogRef.ВидыВходящихДокументов</types>
+      <types>CatalogRef.ВидыИсходящихДокументов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="78da136e-d84d-48d8-855b-c67de03da6d3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c2a5cf93-2195-4b61-86cb-2d9eccded9f7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d100a8f3-7eff-4337-afe7-4ea63943717f">
+    <name>ПредставлениеВСВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление в СВД</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelSeeAlso</group>
+    <commandParameterType>
+      <types>CatalogRef.ВидыВнутреннихДокументов</types>
+      <types>CatalogRef.ВидыВходящихДокументов</types>
+      <types>CatalogRef.ВидыИсходящихДокументов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

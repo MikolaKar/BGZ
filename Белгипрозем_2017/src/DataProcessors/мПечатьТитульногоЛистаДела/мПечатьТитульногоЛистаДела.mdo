@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4eddd22d-9b7c-4e60-a52b-ad629847a674">
+  <producedTypes>
+    <objectType typeId="9f84b68f-4f17-401b-96f8-d8070aa3997f" valueTypeId="3884c455-314f-49e4-92f7-94763c481b76"/>
+    <managerType typeId="37cfe882-8473-4eee-bd5d-e6025a21d84e" valueTypeId="459379cd-ff4d-4f2b-82df-9249bc0761d9"/>
+  </producedTypes>
+  <name>мПечатьТитульногоЛистаДела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать титульного листа дела</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПечатьТитульногоЛистаДела.Form.Форма</defaultForm>
+  <forms uuid="b62c2c58-b8d5-4580-b4e1-32fd855b54cc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="90b8d4a7-d61a-47b4-aded-80c7e20ff2ef">
+    <name>ТекстыШаблонов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тексты шаблонов</value>
+    </synonym>
+    <comment>Устарел. Используется РС мНастройкаПечатиТитульныхЛистовДел</comment>
+  </templates>
+  <templates uuid="bc36862b-188e-4db2-8c81-a39ba771aa70">
+    <name>ТитульныйЛистА4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист а4</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="6ad8f247-df4d-426e-bfee-2fe43d959515">
+    <name>ТитульныйЛистА3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист А3</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="788d6b12-7378-44d5-9741-075b03c0d352">
+    <name>ТитульныйЛистА4_Прилуки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист А4 Прилуки</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="607a9e2e-46d6-4315-8959-a31edc6389d6">
+    <name>ТитульныйЛистА3_Прилуки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист А3 Прилуки</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="08565af4-b860-4cae-9d42-0e5b1b0f4474">
+    <name>ПечатьТитульногоЛистаДела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать титульного листа дела</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Document</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcea3543-cff6-4a3d-85d6-f826ebaeeceb">
+  <producedTypes>
+    <objectType typeId="ac94d9fc-86db-45a7-a477-7f4455a6fdac" valueTypeId="a0501a2d-5254-408a-8e87-3a303f9bd176"/>
+    <managerType typeId="faffa030-beef-4cf6-a973-766ec9f44d76" valueTypeId="919a2dff-bc49-4812-a34e-ebf02d49e2b1"/>
+  </producedTypes>
+  <name>мИнформацияДляОплатыДоговора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информация для оплаты договора</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мИнформацияДляОплатыДоговора.Form.ФормаФЛ</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Печать информации для оплаты договора</value>
+  </explanation>
+  <forms uuid="a82a8ea2-7044-4cb5-8bff-208486f91f3b">
+    <name>ФормаФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ФЛ</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d4c6398-2c2c-404b-a051-6a01c394e005">
+    <name>ФормаЮЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ЮЛ</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1695e99c-fc89-4737-94a6-a056cbb56645">
+    <name>ДляОплатыДоговораЮрЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для оплаты договора юр лица</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="24746e32-b59f-48dd-8a03-8bdb0a6d84dd">
+    <name>ДляОплатыДоговораФизЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для оплаты договора физ лица</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="16d3f6ae-4b87-4f2a-a58e-5e71f23e88ba">
+    <name>ШаблонМакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон макета</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="0010baf8-e4e5-4e47-9b02-353198ddc793">
+    <name>ИнформацияДляОплатыДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация для оплаты договора</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ФорматTXT</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

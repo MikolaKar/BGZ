@@ -1,0 +1,2562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="150c02f5-a607-496d-a1c2-131218cd4f72">
+  <producedTypes>
+    <objectType typeId="a69afd2d-78f3-4c48-8839-12664c80c17e" valueTypeId="ea878e55-6d07-4230-8f41-d52c2db2976e"/>
+    <refType typeId="87d94f2f-95e6-44fc-b4be-8f66d40c205e" valueTypeId="4b7d8b91-7874-4b8b-baae-446c7b863914"/>
+    <selectionType typeId="67086bfc-362d-47d1-9c73-1e26faeeee1a" valueTypeId="e4f80497-a256-440b-b249-b9fde0bd6889"/>
+    <listType typeId="1106ac54-f6b5-43dd-b147-b6a61bc7feb6" valueTypeId="b203fdbc-9232-4865-9c03-5fcc1f9241a1"/>
+    <managerType typeId="91b6b153-0125-4375-bc30-09efae782976" valueTypeId="885faac0-3556-4e27-8f3c-d867c07513c3"/>
+    <containerType typeId="44e8ab31-ccbb-432e-9fdc-db5ce0d478eb" valueTypeId="6f507e6f-af37-4f84-afc7-097581b96cf5"/>
+  </producedTypes>
+  <name>ПараметрыОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры объектов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ПараметрыОбъектов.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ПараметрыОбъектов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>ValueType</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>Boolean</types>
+    <types>String</types>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>3</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <hierarchical>true</hierarchical>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>80</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="22def781-a8c0-4545-9ca4-28d0c3469b21">
+      <name>ПараметрыОбъектовГКИ</name>
+      <description>Параметры объектов ГКИ</description>
+      <isFolder>true</isFolder>
+      <code>000001012</code>
+      <type/>
+      <content id="e8cc09fd-fbfc-4b71-941a-c61f03ee88a2">
+        <name>ВнесениеАтрибутивныхИзменений</name>
+        <description>Внесение атрибутивных изменений</description>
+        <code>000000214</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>9</precision>
+            <scale>2</scale>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="c78d5455-e3dc-4127-96bd-c58ad2f2fcb5">
+        <name>ГрафИзмененияЕГРНИ_1_10000</name>
+        <description>Внесение граф. изменении по данным ЕГРНИ (М 1:10000)</description>
+        <code>000000223</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="353871bb-ae55-4f8b-9415-722663519dee">
+        <name>ГрафИзмененияЕГРНИ_1_2000</name>
+        <description>Внесение граф. изменении по данным ЕГРНИ (М 1:2000)</description>
+        <code>000000210</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="09535f97-b22d-475f-9abb-d3af6a2dbfae">
+        <name>ГрафИзмененияПоКоординатамДо30_1_10000</name>
+        <description>Внесение граф. изменении по координатам до 30 точек (М 1:10000)</description>
+        <code>000000224</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="f8e05079-afb6-48e8-b798-bbda3589d762">
+        <name>ГрафИзмененияПоКоординатамДо30_1_2000</name>
+        <description>Внесение граф. изменении по координатам до 30 точек (М 1:2000)</description>
+        <code>000000211</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="444f5c3e-86b1-4182-b98f-9b9b2b2e4a0f">
+        <name>ГрафИзмененияПоКоординатамСвыше30_1_10000</name>
+        <description>Внесение граф. изменении по координатам свыше 30 точек (М 1:10000)</description>
+        <code>000000225</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="738d696e-4d7f-43a6-b7af-83949f94c07d">
+        <name>ГрафИзмененияПоКоординатамСвыше30_1_2000</name>
+        <description>Внесение граф. изменении по координатам свыше 30 точек (М 1:2000)</description>
+        <code>000000212</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="c9a7b908-4b1d-45e4-a084-aef64e1fb154">
+        <name>ГрафИзмененияПоПланКартМатериалу_1_10000</name>
+        <description>Внесение граф. изменении с исп. планово-карт. материала (М 1:10000)</description>
+        <code>000000226</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="a96554e8-6537-41f0-b9c1-d83023a0e0aa">
+        <name>ГрафИзмененияПоПланКартМатериалу_1_2000</name>
+        <description>Внесение граф. изменении с исп. планово-карт. материала (М 1:2000)</description>
+        <code>000000213</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="d8fbd838-c98b-4bf3-9a71-4ed742ba5cb1">
+        <name>ВнесениеПолигональныхОбъектов</name>
+        <description>Внесение полигональных объектов</description>
+        <code>000000219</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>9</precision>
+            <scale>2</scale>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="62c4ac31-6aab-4b9b-8153-1d5243af0293">
+        <name>ФормированиеДанныхЕжеквартально</name>
+        <description>Ежеквартальное формирование учетных данных</description>
+        <code>000000216</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="ec9aac5e-a5f7-435f-be50-3e2c705d382f">
+        <name>ЗаполнениеАтрибутивнойИнформации</name>
+        <description>Заполнение атрибутивной информации</description>
+        <code>000000221</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="32066dba-6427-4ce9-b4a8-4297bd25d09c">
+        <name>ОформлениеВыкопировки</name>
+        <description>Оформление выкопировки и подготовка сопроводительной документации</description>
+        <code>000000222</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="95663181-f2d8-4bb5-9f6b-576b2b23ce42">
+        <name>ПодготовкаВекторныхДанных</name>
+        <description>Подготовка  векторных данных</description>
+        <code>000000218</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>9</precision>
+            <scale>2</scale>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="ab601f8e-b650-47b9-947f-53203ed00fa6">
+        <name>ПолучениеСистематизацияДанныхЗемслужбы</name>
+        <description>Получение и систематизация данных из земслужбы</description>
+        <code>000000215</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="e978ceca-87d4-483f-b6bb-0b273e34bd17">
+        <name>ФормированиеДанныхЕжегодно</name>
+        <description>Формирование учетных данных в конце года</description>
+        <code>000000217</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="0f8368a8-8f52-4df6-93d7-59d102505a40">
+        <name>ЦифрованиеПолигональныхОбъектов</name>
+        <description>Цифрование полигональных объектов</description>
+        <code>000000220</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>7</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+    </items>
+    <items id="aa0525ae-0b31-45d0-ab84-5cb15157ad1b">
+      <name>Аукцион</name>
+      <description>Аукцион</description>
+      <code>000000043</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="6a86a573-acc2-4e25-ac98-317267ea8b35">
+      <name>Белгеология</name>
+      <description>Белгеология</description>
+      <code>000000080</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="9985ecb9-1602-40e9-99c6-7b8e01307642">
+      <name>ВыполнениеРаботВГороде</name>
+      <description>Выполнение работ в городе</description>
+      <code>000000100</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="37b6bc4e-9da5-4ca7-8328-f9c3054e4e70">
+      <name>ВычислениеОбщейПлощадиПоКоординатам</name>
+      <description>Вычисление площади по координатам (кол-во точек)</description>
+      <code>000000063</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="4632c1eb-0f75-48d0-b7b1-4f4fb1799f63">
+      <name>ГеодезическаяПривязкаGPS</name>
+      <description>Геод. привязка с использованием GPS (кол-во точек)</description>
+      <code>000000065</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e6efade3-f164-464a-9e9f-4fbaa3362393">
+      <name>ГосРегистрация</name>
+      <description>Гос регистрация</description>
+      <code>000000197</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>9</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="39b9e3e4-dbbf-4a6f-b450-f4714bb5762f">
+      <name>ГосРегистрацияВозникновение</name>
+      <description>Гос регистрация (возникновение права)</description>
+      <code>000000199</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>9</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="4ba2c90b-3736-4de2-839a-dfa0c390a7b4">
+      <name>ГосРегистрацияСоздание</name>
+      <description>Гос регистрация (создание)</description>
+      <code>000000198</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>9</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="cfdabb01-06b8-4d95-8d65-01b4e6f8ab1e">
+      <name>ЗаключениеБелГосГеоцентра</name>
+      <description>Заключение БелГосГеоцентра</description>
+      <code>000000067</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="1aedfdd9-2e94-4cac-a2b0-bad5d7811683">
+      <name>Землепользователи</name>
+      <description>Землепользователи</description>
+      <code>000000091</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="21ac035c-ee6f-467c-afb4-bc91ff29034d">
+      <name>ИзготовлениеКопииМатериалов</name>
+      <description>Изготовление копии материалов</description>
+      <code>000000101</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="913847ef-f835-4e15-bee3-46c5448fb02a">
+      <name>ИзготовлениеПланаГраницИзмененногоУчастка</name>
+      <description>Изготовление плана границ изм. уч-ка (кол-во точ.)</description>
+      <code>000000061</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d9ec15c7-8b76-43f5-b1df-0e76d44ec0e5">
+      <name>КатегорияСложности</name>
+      <description>Категория сложности</description>
+      <code>000000084</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="4cc71c33-af40-432f-99f9-96f9db2a059c">
+      <name>КоличествоВидовСельхозземель</name>
+      <description>Кол-во видов сельхозземель</description>
+      <code>000000042</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="71124ccc-731f-4358-9e06-6fc8e8edc709">
+      <name>КоличествоДелОстаточногоКаталогаБольше50Точек</name>
+      <description>Кол-во дел остаточного каталога (> 50 точек)</description>
+      <code>000000139</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="a338d1b2-23a0-4d2b-98a3-932e813b0b98">
+      <name>КоличествоДелОстаточногоКаталога11_20Точек</name>
+      <description>Кол-во дел остаточного каталога (11-20 точек)</description>
+      <code>000000138</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2cce7855-7b6a-4902-bb35-b2dcd6deba8e">
+      <name>КоличествоДелОстаточногоКаталога21_40Точек</name>
+      <description>Кол-во дел остаточного каталога (21-40 точек)</description>
+      <code>000000137</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0bd33e4e-decf-44aa-8872-dce4223a53ec">
+      <name>КоличествоДелОстаточногоКаталога41_50Точек</name>
+      <description>Кол-во дел остаточного каталога (41-50 точек)</description>
+      <code>000000136</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="af5b8f92-48db-4c72-99ad-2ed193411603">
+      <name>КоличествоДелОстаточногоКаталога6_10Точек</name>
+      <description>Кол-во дел остаточного каталога (6-10 точек)</description>
+      <code>000000135</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0e8681ca-a6fa-4b47-9ee4-fd1a558d4e20">
+      <name>КоличествоДелОстаточногоКаталогаВсего</name>
+      <description>Кол-во дел остаточного каталога (всего)</description>
+      <code>000000150</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ed0c7827-29ef-4fc2-bac4-864b8019b33c">
+      <name>КоличествоДелОстаточногоКаталогаДо6Точек</name>
+      <description>Кол-во дел остаточного каталога (до 6 точек)</description>
+      <code>000000134</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="6c302f34-8b19-4062-bd00-410bffb8291f">
+      <name>КоличествоЗаключенийИУведомлений</name>
+      <description>Кол-во заключений и уведомлений</description>
+      <code>000000013</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2cc002bf-cd0c-4071-9878-637104f50762">
+      <name>КоличествоЗемлепользователейЛинейныхДляРасчетаУбытковЛХ</name>
+      <description>Кол-во землепольз. лин. для расч. уб. и уп. выгоды л/х пр-ва</description>
+      <code>000000082</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="85157b63-e638-4958-ad76-348b6a089975">
+      <name>КоличествоЗемлепользователейЛинейныхДляРасчетаУбытковСХ</name>
+      <description>Кол-во землепольз. лин. для расч. уб. и уп. выгоды с/х пр-ва</description>
+      <code>000000028</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="deda9f6e-b564-495d-8ceb-d3d86130db2b">
+      <name>КоличествоЗемлепользователейПлощадныхДляРасчетаУбытковЛХ</name>
+      <description>Кол-во землепольз. площ. для расч. уб. и уп. выгод л/х пр-ва</description>
+      <code>000000083</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="a0349f9e-e76f-40c3-ae5a-1ae9a434821f">
+      <name>КоличествоЗемлепользователейПлощадныхДляРасчетаУбытковСХ</name>
+      <description>Кол-во землепольз. площ. для расч. уб. и уп. выгод с/х пр-ва</description>
+      <code>000000027</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ccffdd79-e152-480a-b610-22e64cda1392">
+      <name>КоличествоЗемлепользователейВсего</name>
+      <description>Кол-во землепользователей всего</description>
+      <code>000000001</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="bd9c196f-0261-4ad1-84d9-5c4a1bb029bf">
+      <name>КоличествоЗемлепользователейЛинейных</name>
+      <description>Кол-во землепользователей линейных</description>
+      <code>000000010</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="fb296966-3ac9-430e-8543-bbc586f8aae2">
+      <name>КоличествоЗемлепользователейПлощадных</name>
+      <description>Кол-во землепользователей площадных</description>
+      <code>000000011</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="301954ef-36fd-4b2c-8b1f-4e5b9d3ecafc">
+      <name>КоличествоИзготовленийЗемельноКадастровыхПлановА0</name>
+      <description>Кол-во изготовлений земельно-кадастровых планов А0</description>
+      <code>000000032</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="78ef1ad4-7366-4eec-8653-86acd66a1249">
+      <name>КоличествоИзготовленийЗемельноКадастровыхПлановА1</name>
+      <description>Кол-во изготовлений земельно-кадастровых планов А1</description>
+      <code>000000068</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="40640a75-4de0-4e26-a263-907003360a0b">
+      <name>КоличествоИзготовленийЗемельноКадастровыхПлановА2</name>
+      <description>Кол-во изготовлений земельно-кадастровых планов А2</description>
+      <code>000000069</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="4e253997-9d80-4fb9-b3de-d419e775814e">
+      <name>КоличествоИзготовленийЗемельноКадастровыхПлановА3</name>
+      <description>Кол-во изготовлений земельно-кадастровых планов А3</description>
+      <code>000000070</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="285c3b1d-b4e2-4621-97b9-afabdc8b017d">
+      <name>КоличествоИзготовленийЗемельноКадастровыхПлановА4</name>
+      <description>Кол-во изготовлений земельно-кадастровых планов А4</description>
+      <code>000000071</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="edca86d8-dd23-4ba8-bd4e-b5177e512619">
+      <name>КоличествоКопийЗемельноКадастровыхПлановА0</name>
+      <description>Кол-во копий земельно-кадастровых планов А0</description>
+      <code>000000086</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="8ee46354-1c5d-4c76-8dfb-73a2df6323c2">
+      <name>КоличествоКопийЗемельноКадастровыхПлановА1</name>
+      <description>Кол-во копий земельно-кадастровых планов А1</description>
+      <code>000000087</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="096d6627-f504-46d2-9f1c-3f1026213b93">
+      <name>КоличествоКопийЗемельноКадастровыхПлановА2</name>
+      <description>Кол-во копий земельно-кадастровых планов А2</description>
+      <code>000000088</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="7fcba541-aa37-47db-be03-c89ae668b239">
+      <name>КоличествоКопийЗемельноКадастровыхПлановА3</name>
+      <description>Кол-во копий земельно-кадастровых планов А3</description>
+      <code>000000089</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="efd7d19a-a4b6-4442-ae0a-db444473ce09">
+      <name>КоличествоКопийЗемельноКадастровыхПлановА4</name>
+      <description>Кол-во копий земельно-кадастровых планов А4</description>
+      <code>000000090</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="eff8b376-6c0f-4dc7-a149-733a10548342">
+      <name>КоличествоЛинейныхУчастковДляРасчетаПотерь</name>
+      <description>Кол-во линейных участков для расчета потерь</description>
+      <code>000000018</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="fb9490f4-7203-469b-b130-78fec71034b9">
+      <name>КоличествоОбособленныхЛинейныхУчастковДляРасчетаУбытков</name>
+      <description>Кол-во об. лин. уч. для расч. убыт. и уп. выгоды</description>
+      <code>000000026</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="07d8d84c-4000-4d9f-bb67-0c914fb37111">
+      <name>КоличествоОбособленныхПлощадныхУчастковДляРасчетаУбытков</name>
+      <description>Кол-во об. площ. уч. для расч. убыт. и уп. выгоды</description>
+      <code>000000025</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="80c49d4a-fa6b-47ea-8589-cba2ba1a8ea8">
+      <name>КоличествоОбособленныхПлощадныхУчастковДляРасчетаУбытковБезЛЭП</name>
+      <description>Кол-во об. площ. уч. для расч. убыт. и уп. выгоды без ЛЭП</description>
+      <code>000000095</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0a8bfcaf-ad5e-4744-b087-6b2e9957e37f">
+      <name>КоличествоОбособленныхЛинейныхУчастков</name>
+      <description>Кол-во обособленных линейных участков</description>
+      <code>000000005</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2fbbfc10-09f8-4af6-9335-7f23f16fd60b">
+      <name>КоличествоОбособленныхПлощадныхУчастков</name>
+      <description>Кол-во обособленных площадных участков</description>
+      <code>000000004</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="158fedae-bd89-4554-83e7-67bcefe31bfa">
+      <name>КоличествоОбособленныхПлощадныхУчастковБезЛЭП</name>
+      <description>Кол-во обособленных площадных участков без ЛЭП</description>
+      <code>000000097</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="13a13c63-86af-4c27-bd6a-1697e4c6522e">
+      <name>КоличествоОформленийЗемельноКадастровыхПлановА0</name>
+      <description>Кол-во оформлений земельно-кадастровых планов А0</description>
+      <code>000000035</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="9e0ffe41-565f-42c1-9d10-e41822e04823">
+      <name>КоличествоОформленийЗемельноКадастровыхПлановА1</name>
+      <description>Кол-во оформлений земельно-кадастровых планов А1</description>
+      <code>000000076</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b0d884bf-dd3e-4dc5-bb56-12381dd09ab2">
+      <name>КоличествоОформленийЗемельноКадастровыхПлановА2</name>
+      <description>Кол-во оформлений земельно-кадастровых планов А2</description>
+      <code>000000077</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1079cdd9-2411-4072-870b-80904069dcc4">
+      <name>КоличествоОформленийЗемельноКадастровыхПлановА3</name>
+      <description>Кол-во оформлений земельно-кадастровых планов А3</description>
+      <code>000000078</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c65446b2-bc18-4e3a-8f15-b0abb5d74101">
+      <name>КоличествоОформленийЗемельноКадастровыхПлановА4</name>
+      <description>Кол-во оформлений земельно-кадастровых планов А4</description>
+      <code>000000079</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b167447d-2cbd-48a3-a81d-71967d523a69">
+      <name>КоличествоПлощадныхУчастковДляРасчетаПотерь</name>
+      <description>Кол-во площадных участков для расчета потерь</description>
+      <code>000000017</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="7c20bf01-2679-4264-9b8d-ab19e52364a8">
+      <name>КоличествоПлощадныхУчастковДляРасчетаПотерьБезЛЭП</name>
+      <description>Кол-во площадных участков для расчета потерь без ЛЭП</description>
+      <code>000000098</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3f008901-9e32-464e-8a8d-9fe5176058a1">
+      <name>КоличествоПочвенныхКартА0</name>
+      <description>Кол-во почвенных карт А0</description>
+      <code>000000038</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="44f2703e-3140-449a-83fc-351526b011ab">
+      <name>КоличествоПочвенныхКартА1</name>
+      <description>Кол-во почвенных карт А1</description>
+      <code>000000072</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="a291f7cb-fde3-44ac-98ec-024406979a9c">
+      <name>КоличествоПочвенныхКартА2</name>
+      <description>Кол-во почвенных карт А2</description>
+      <code>000000073</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c4b02d4f-5257-4542-8488-780055d7c0a3">
+      <name>КоличествоПочвенныхКартА3</name>
+      <description>Кол-во почвенных карт А3</description>
+      <code>000000074</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="55583f54-b508-4ea9-9e61-1dd9efc1ef2c">
+      <name>КоличествоПочвенныхКартА4</name>
+      <description>Кол-во почвенных карт А4</description>
+      <code>000000075</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2496c7de-2db2-4187-9693-97c0ebcb4408">
+      <name>КоличествоПочвенныхРазновидностейЛинейных</name>
+      <description>Кол-во почвенных разновидностей линейных объектов</description>
+      <code>000000040</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c8e6c5bc-ba4e-4612-b823-d7a9f840e2c7">
+      <name>КоличествоПочвенныхРазновидностейПлощадных</name>
+      <description>Кол-во почвенных разновидностей площадных объектов</description>
+      <code>000000039</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="5fffc683-ead7-4bca-9042-adc5af3236ae">
+      <name>КоличествоСмежныхЗемлепользователей</name>
+      <description>Кол-во смежных землепользователей</description>
+      <code>000000057</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d1e8e42f-541f-4d78-948d-426fd0fe3506">
+      <name>КоличествоСогласований</name>
+      <description>Кол-во согласований</description>
+      <code>000000044</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="63aa384b-4296-4ae1-acc6-3ba6d698a142">
+      <name>КоличествоТочекОстаточногоКаталогаБольше50</name>
+      <description>Кол-во точек остаточного каталога (> 50 точек)</description>
+      <code>000000133</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="10eca2ab-64dc-4f94-b644-c12e73e34789">
+      <name>КоличествоТочекОстаточногоКаталога11_20</name>
+      <description>Кол-во точек остаточного каталога (11-20 точек)</description>
+      <code>000000130</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b1190c6e-e158-4e36-898c-81ecb7b8629b">
+      <name>КоличествоТочекОстаточногоКаталога21_40</name>
+      <description>Кол-во точек остаточного каталога (21-40 точек)</description>
+      <code>000000131</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="55366680-a4f7-4604-ad3a-f6c92a70fd6e">
+      <name>КоличествоТочекОстаточногоКаталога41_50</name>
+      <description>Кол-во точек остаточного каталога (41-50 точек)</description>
+      <code>000000132</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="cb666e07-b488-4022-b3c6-c8887636dbf6">
+      <name>КоличествоТочекОстаточногоКаталога6_10</name>
+      <description>Кол-во точек остаточного каталога (6-10 точек)</description>
+      <code>000000129</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="460b34f7-6e61-4e1d-adac-e8d325c46a95">
+      <name>КоличествоТочекОстаточногоКаталогаВсего</name>
+      <description>Кол-во точек остаточного каталога (всего)</description>
+      <code>000000151</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c6d47a1d-c210-4ce5-b0a8-01e4e757f5b8">
+      <name>КоличествоТочекОстаточногоКаталогаДо6</name>
+      <description>Кол-во точек остаточного каталога (до 6 точек)</description>
+      <code>000000128</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="16c61a90-ce38-45b9-892f-166511347339">
+      <name>КоличествоТочекПлановГраницБольше10</name>
+      <description>Кол-во точек планов границ (> 10 точек)</description>
+      <code>000000196</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1ec9e1e1-7f8c-48bf-a782-f68fc0fd3322">
+      <name>КоличествоТочекПлановГраницБольше40</name>
+      <description>Кол-во точек планов границ (> 40 точек)</description>
+      <code>000000116</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ab97f930-3de0-427e-9d4b-405a1ccae581">
+      <name>КоличествоТочекПлановГраниц11_20</name>
+      <description>Кол-во точек планов границ (11-20 точек)</description>
+      <code>000000115</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="9f3e9a3f-2b24-4082-880e-f144efd561b0">
+      <name>КоличествоТочекПлановГраниц21_40</name>
+      <description>Кол-во точек планов границ (21-40 точек)</description>
+      <code>000000114</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e2a43e15-0dc1-40e2-803c-2a7269f74ad1">
+      <name>КоличествоТочекПлановГраниц6_10</name>
+      <description>Кол-во точек планов границ (6-10 точек)</description>
+      <code>000000113</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="f2f4eac6-f02b-4eb2-a6fb-d8db8405c98a">
+      <name>КоличествоТочекПлановГраницВсего</name>
+      <description>Кол-во точек планов границ (всего)</description>
+      <code>000000112</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="55c5f093-764e-4395-8c8a-26f4eb0b33da">
+      <name>КоличествоТочекПлановГраницДо6</name>
+      <description>Кол-во точек планов границ (до 6 точек)</description>
+      <code>000000111</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="9fa7def6-2f8c-44b6-8cb9-a03072dba981">
+      <name>КоличествоТочекПлановНефиксГраницБольше50</name>
+      <description>Кол-во точек планов нефикс. границ (> 50 точек)</description>
+      <code>000000163</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0150c81c-b284-4bea-97e8-1867d72497f5">
+      <name>КоличествоТочекПоворотаГраницыУчастка</name>
+      <description>Кол-во точек поворота границы участка</description>
+      <code>000000046</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="242293af-95dd-48f1-9501-4bee44311f15">
+      <name>КоличествоУведомлений</name>
+      <description>Кол-во уведомлений (подготовка и направление)</description>
+      <code>000000045</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b4637daa-25ec-448f-aa0c-79a1ceaea1c2">
+      <name>КоличествоУгловТеодолитногоХода</name>
+      <description>Кол-во углов теодолитного хода</description>
+      <code>000000047</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d2884f4d-6c92-4ef0-b058-d0c2446edce2">
+      <name>КоличествоУчастийВКомиссиях</name>
+      <description>Кол-во участий в комиссиях</description>
+      <code>000000012</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ca57cb88-54a3-4560-8546-d7b314640949">
+      <name>КоличествоУчастковДляВнесенияВЗИС</name>
+      <description>Кол-во участков для внесения в ЗИС</description>
+      <code>000000148</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e867e596-9478-45c8-9a13-acaa6dc7bb83">
+      <name>КоличествоУчастковДляГосрегистрации</name>
+      <description>Кол-во участков для госрегистрации</description>
+      <code>000000104</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="95efe5aa-da8a-4ccb-a7a3-9c581bbef9d4">
+      <name>КоличествоУчастковДляРасчетаКадастровойСтоимости</name>
+      <description>Кол-во участков для расчета кадастровой стоимости</description>
+      <code>000000029</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ce165d6e-4365-4fe9-af38-8891ddd01ac7">
+      <name>КоличествоУчастковПлановГраницБольше40</name>
+      <description>Кол-во участков планов границ (> 40 точек)</description>
+      <code>000000109</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ee102993-952c-4956-a642-d3b3f22da93f">
+      <name>КоличествоУчастковПлановГраниц11_20</name>
+      <description>Кол-во участков планов границ (11-20 точек)</description>
+      <code>000000107</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="280103c6-587f-4e00-b3d3-8b42756a329b">
+      <name>КоличествоУчастковПлановГраниц21_40</name>
+      <description>Кол-во участков планов границ (21-40 точек)</description>
+      <code>000000108</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="7bfe6ec3-66b1-4928-bc72-99c235ffc32a">
+      <name>КоличествоУчастковПлановГраниц6_10</name>
+      <description>Кол-во участков планов границ (6-10 точек)</description>
+      <code>000000106</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="9a015836-3825-43a5-8c7e-0e0f27924558">
+      <name>КоличествоУчастковПлановГраницВсего</name>
+      <description>Кол-во участков планов границ (всего)</description>
+      <code>000000110</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="7f6568f0-f192-4728-a9c7-4f2f128deccb">
+      <name>КоличествоУчастковПлановГраницДо6</name>
+      <description>Кол-во участков планов границ (до 6 точек)</description>
+      <code>000000105</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="edbf47d3-77cc-47f9-90b6-7089339c7ecd">
+      <name>КоличествоУчастковПлановНефиксГраницБольше50</name>
+      <description>Кол-во участков планов нефикс. границ (> 50 точек)</description>
+      <code>000000158</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="a570886b-e794-436e-a08d-220b14491c44">
+      <name>КоличествоУчастковПлановНефиксГраниц11_20</name>
+      <description>Кол-во участков планов нефикс. границ (11-20 точек)</description>
+      <code>000000155</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="05bb9dd2-44c9-432f-9698-31e5f18bd7a5">
+      <name>КоличествоУчастковПлановНефиксГраниц21_40</name>
+      <description>Кол-во участков планов нефикс. границ (21-40 точек)</description>
+      <code>000000156</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d6e17c1d-0041-4c11-8559-bc7b02e5c6c8">
+      <name>КоличествоУчастковПлановНефиксГраниц41_50</name>
+      <description>Кол-во участков планов нефикс. границ (41-50 точек)</description>
+      <code>000000157</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="05130bc6-979b-42ad-97ad-eb7c0646b9c6">
+      <name>КоличествоУчастковПлановНефиксГраниц6_10</name>
+      <description>Кол-во участков планов нефикс. границ (6-10 точек)</description>
+      <code>000000154</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3465ce1e-1e05-4ea5-b0ec-527e673db73a">
+      <name>КоличествоУчастковПлановНефиксГраницДо6</name>
+      <description>Кол-во участков планов нефикс. границ (до 6 точек)</description>
+      <code>000000153</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="71eb4cfc-d5bb-44a2-a031-dafee3ee7514">
+      <name>КоличествоУчастковРазбивочногоЧертежа1_5</name>
+      <description>Кол-во участков разбивочного чертежа ( >1 &lt;=5 га)</description>
+      <code>000000118</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="fb7dc1ce-6b5f-44f6-9f26-a1759f05cf29">
+      <name>КоличествоУчастковРазбивочногоЧертежа10_15</name>
+      <description>Кол-во участков разбивочного чертежа ( >10 &lt;=15 га)</description>
+      <code>000000120</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="34357f40-2a4c-45c3-b571-1320d24c0dd4">
+      <name>КоличествоУчастковРазбивочногоЧертежа100_300</name>
+      <description>Кол-во участков разбивочного чертежа ( >100 &lt;=300 га)</description>
+      <code>000000123</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0205b8ef-325b-4ac1-a336-fc2de5466a60">
+      <name>КоличествоУчастковРазбивочногоЧертежа15_50</name>
+      <description>Кол-во участков разбивочного чертежа ( >15 &lt;=50 га)</description>
+      <code>000000121</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="6a555f28-2856-40e8-81de-88d306ad7b66">
+      <name>КоличествоУчастковРазбивочногоЧертежа300</name>
+      <description>Кол-во участков разбивочного чертежа ( >300 га)</description>
+      <code>000000124</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1f82e0e6-68d1-4718-90a4-d6e28c490e84">
+      <name>КоличествоУчастковРазбивочногоЧертежа5_10</name>
+      <description>Кол-во участков разбивочного чертежа ( >5 &lt;=10 га)</description>
+      <code>000000119</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="76ec81ef-53e3-4aec-944a-b0e80926ba8b">
+      <name>КоличествоУчастковРазбивочногоЧертежа50_100</name>
+      <description>Кол-во участков разбивочного чертежа ( >50 &lt;=100 га)</description>
+      <code>000000122</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="8e294469-ae96-4ee8-ae8f-47c3e27e3a5d">
+      <name>КоличествоУчастковРазбивочногоЧертежаВсего</name>
+      <description>Кол-во участков разбивочного чертежа (всего)</description>
+      <code>000000125</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0d06f367-0fbe-411a-bd3e-518d65805ff7">
+      <name>КоличествоУчастковРазбивочногоЧертежаДо1</name>
+      <description>Кол-во участков разбивочного чертежа (до 1 га)</description>
+      <code>000000117</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1b133a57-980a-4081-8b5f-072a885692c3">
+      <name>КоличествоЭлементарныхУчастков</name>
+      <description>Кол-во элементарных участков</description>
+      <code>000000041</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="8358380f-5572-48de-a5cc-d9cf1e558266">
+      <name>КоличествоДел</name>
+      <description>Количество дел</description>
+      <code>000000192</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="81d81538-2051-4e1b-8d35-25758f50b14d">
+      <name>КоличествоДюбелей</name>
+      <description>Количество дюбелей</description>
+      <code>000000149</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ff921f1d-a061-4daf-b678-cbaf4a5a6b4b">
+      <name>КоличествоЛинейныхЛХорганизаций</name>
+      <description>Количество линейных л/х организаций</description>
+      <code>000000144</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>7</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e719b2bc-f10d-4b3c-9a7a-16a2dad1cf94">
+      <name>КоличествоМежевыхЗнаков</name>
+      <description>Количество межевых знаков</description>
+      <code>000000048</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="68db62ac-e8b5-47bf-9286-30a8302cb679">
+      <name>КоличествоМеталлическихШтырей</name>
+      <description>Количество металлических штырей</description>
+      <code>000000099</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="7500372a-56cc-41f0-80f0-48354480157a">
+      <name>КоличествоОпорЛЭП</name>
+      <description>Количество опор ЛЭП, люков, колодцев</description>
+      <code>000000093</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="9be89e43-be0f-42ae-8200-fc33f5380a9f">
+      <name>КоличествоПлощадныхЛХорганизаций</name>
+      <description>Количество площадных л/х организаций</description>
+      <code>000000143</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="79450af6-a850-4e0d-9e49-a5d0e765fb7b">
+      <name>КоличествоЭкземпляров</name>
+      <description>Количество экземпляров</description>
+      <code>000000195</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="cad98b09-934e-405a-b77a-45d9565a0f11">
+      <name>КопииМатериаловА3цв2</name>
+      <description>Копии материалов А3 цв >1 листа</description>
+      <code>000000207</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1c8b1012-b76b-42c2-affb-f0c8df2686f9">
+      <name>КопииМатериаловА3цв1</name>
+      <description>Копии материалов А3 цв 1-й лист</description>
+      <code>000000206</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="8239e94e-4d2e-4644-874b-5edd74b11029">
+      <name>КопииМатериаловА3чб2</name>
+      <description>Копии материалов А3 ч/б >1 листа</description>
+      <code>000000203</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="199227a8-8b84-4741-b55f-8db4f61e551f">
+      <name>КопииМатериаловА3чб1</name>
+      <description>Копии материалов А3 ч/б 1-й лист</description>
+      <code>000000202</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="70086cdb-5015-407e-8d03-dbc10ad1ed1e">
+      <name>КопииМатериаловА4цв2</name>
+      <description>Копии материалов А4 цв >1 листа</description>
+      <code>000000205</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="923dc20a-ac8a-4d4a-a882-5e2191eee15b">
+      <name>КопииМатериаловА4цв1</name>
+      <description>Копии материалов А4 цв 1-й лист</description>
+      <code>000000204</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b0647f4c-311e-4d58-9f21-d4b925d3d0c0">
+      <name>КопииМатериаловА4чб2</name>
+      <description>Копии материалов А4 ч/б >1 листа</description>
+      <code>000000201</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="05440e8c-62f1-4c55-9dfa-4a9e5ce74a07">
+      <name>КопииМатериаловА4чб1</name>
+      <description>Копии материалов А4 ч/б 1-й лист</description>
+      <code>000000200</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="f8eb1513-106c-4a41-8f7a-fd20bc8609ea">
+      <name>КопииМатериаловМП</name>
+      <description>Копии материалов м.п.</description>
+      <code>000000208</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3247a963-4b47-4597-8650-109431ad755d">
+      <name>МелкоконтурностьЛинейных</name>
+      <description>Мелкоконтурность линейных объектов</description>
+      <code>000000142</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="50f9fdd6-ce90-4727-8faa-9ceb49084234">
+      <name>МелкоконтурностьПлощадных</name>
+      <description>Мелкоконтурность площадных объектов</description>
+      <code>000000006</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="39a94008-d4be-447a-96b3-52f7697bd2d7">
+      <name>НаличиеОграничений</name>
+      <description>Наличие ограничений (кол-во)</description>
+      <code>000000058</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="05e97e26-5070-45d2-a7b6-85a3b017ea71">
+      <name>НанесениеОграничений</name>
+      <description>Нанесение ограничений</description>
+      <code>000000194</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="c158994a-b04b-47ba-b88c-dcb0597d96c2">
+      <name>ОбщаяПлощадь</name>
+      <description>Общая площадь</description>
+      <code>000000009</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>8</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1b6b40a6-bba7-4d66-8edb-41148f533525">
+      <name>ОказаниеСодействияВОсуществленииРегистрации</name>
+      <description>Оказание содействия в осуществлении регистрации</description>
+      <code>000000059</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="4900e74d-3cc2-4535-a6c1-2efaa794259a">
+      <name>ОкопкаМежевыхЗнаков</name>
+      <description>Окопка межевых знаков</description>
+      <code>000000054</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="f67a08fe-c0ad-48b6-a75a-151a794e2db6">
+      <name>ОплатаИмущественныхПрав</name>
+      <description>Оплата имущественных прав***</description>
+      <code>000000152</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="cf2865c8-b42e-4848-86ff-7c68d8de77ac">
+      <name>ОстаточныйКаталогИзмененногоУчастка</name>
+      <description>Остаточный каталог измененного участка (кол-во точ</description>
+      <code>000000060</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="658f078f-daa0-4506-980e-b55e45f88b49">
+      <name>ОтысканиеПунктовГеодезическойСети</name>
+      <description>Отыскание пунктов геодезической сети</description>
+      <code>000000051</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="37e0a74e-16c0-463e-9bfe-e37553d4ee42">
+      <name>ОценкаАнализДокументовПоЖилПомещениюФЛ</name>
+      <description>Оценка. Анализ документов по жил. помещению физлица</description>
+      <code>000000175</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3b557bdd-75a7-4c25-b338-27eb3980b5cf">
+      <name>ОценкаАнализДокументовПоЖилПомещениюЮЛ</name>
+      <description>Оценка. Анализ документов по жил. помещению юрлица</description>
+      <code>000000174</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="4f54977d-31ce-4e05-88fa-88711e724e26">
+      <name>ОценкаАнализДокументовПоКапСтроению</name>
+      <description>Оценка. Анализ документов по кап. строению</description>
+      <code>000000173</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="11bad252-5822-44cb-872b-15ff545b53a8">
+      <name>ОценкаВыездЗаМинскОбласть</name>
+      <description>Оценка. Выезд за пределы Минской области</description>
+      <code>000000166</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="96b1e8ef-9fa6-4e86-bcd2-6249b6f0aac7">
+      <name>ОценкаВыездМинск</name>
+      <description>Оценка. Выезд Минск</description>
+      <code>000000164</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="85cf239d-b231-4ccd-9208-9bcc4546de31">
+      <name>ОценкаВыездМинскОбласть</name>
+      <description>Оценка. Выезд Минская область</description>
+      <code>000000165</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="068d779e-2578-48aa-9379-faee655da296">
+      <name>ОценкаИзготовлениеОтчета</name>
+      <description>Оценка. Изготовление отчета</description>
+      <code>000000185</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="27a9222b-9390-4aea-b0c7-df2d6c88e21c">
+      <name>ОценкаОбмерЖилПомещения</name>
+      <description>Оценка. Обмер жил. помещения</description>
+      <code>000000170</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b6f04186-2f72-4e5a-8a59-885b3c516355">
+      <name>ОценкаОбмерКапСтроения</name>
+      <description>Оценка. Обмер кап. строения</description>
+      <code>000000169</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ccb65472-8ef7-4ad6-a01b-5044986f4a24">
+      <name>ОценкаОбмерНасажденийЖилПомещения</name>
+      <description>Оценка. Обмер многолетних насаждений жил. помещения</description>
+      <code>000000172</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="da9db8d0-cc79-49a6-accd-64cbb58c9349">
+      <name>ОценкаОбмерНасажденийКапСтроения</name>
+      <description>Оценка. Обмер многолетних насаждений кап. строения</description>
+      <code>000000171</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="239b71ae-7b53-4b18-ba94-45112412aa53">
+      <name>ОценкаОпределениеЗатрат</name>
+      <description>Оценка. Определение затрат</description>
+      <code>000000184</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="002353df-b265-4e3c-be4f-5012b107e265">
+      <name>ОценкаОсмотрЖилПомещения</name>
+      <description>Оценка. Осмотр жил. помещения</description>
+      <code>000000168</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c1dd317d-d8d9-49fe-bdfa-4ce92ca835e2">
+      <name>ОценкаОсмотрКапСтроения</name>
+      <description>Оценка. Осмотр кап. строения</description>
+      <code>000000167</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3fcb0441-f68f-4766-b10b-19c283f1d2e2">
+      <name>ОценкаПодготовкаОтчетаЖилПомещения</name>
+      <description>Оценка. Подготовка отчета по жил. помещению</description>
+      <code>000000183</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ba8f7f53-4c69-460b-8ebe-11b1976d725d">
+      <name>ОценкаПодготовкаОтчетаКапСтроения</name>
+      <description>Оценка. Подготовка отчета по кап. строению</description>
+      <code>000000182</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="13fb6c48-bc20-40ea-a638-0e4b5f10acde">
+      <name>ОценкаПодготовкаОтчетаПоУбыткам</name>
+      <description>Оценка. Подготовка отчета по опред. размера убытков</description>
+      <code>000000186</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="306fb227-4daa-442e-b413-fff56d35b8be">
+      <name>ОценкаПолучениеИнформацииПоЖилПомещению</name>
+      <description>Оценка. Получение информации для расчетов по жил. помещению</description>
+      <code>000000177</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="27d30c24-9ed7-4397-a72d-f37bc17988f5">
+      <name>ОценкаПолучениеИнформацииПоКапСтроению</name>
+      <description>Оценка. Получение информации для расчетов по кап. строению</description>
+      <code>000000176</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d5bd994c-ea8b-4ec3-88c7-7107d3fd2cf6">
+      <name>ОценкаРасчетСтоимостиЖилПомещенияДоходным</name>
+      <description>Оценка. Расчет стоимости жил. помещения доходным методом</description>
+      <code>000000188</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="427fdd53-e108-4c7c-ad6f-7cd676856c0a">
+      <name>ОценкаРасчетСтоимостиЖилПомещенияЗатратным</name>
+      <description>Оценка. Расчет стоимости жил. помещения затратным методом</description>
+      <code>000000181</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="361ffe01-7d02-4db5-9570-0864cd776fc8">
+      <name>ОценкаРасчетСтоимостиЖилПомещенияСравннительным</name>
+      <description>Оценка. Расчет стоимости жил. помещения сравнительным методом</description>
+      <code>000000187</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="bab07923-d23d-4e0e-94d3-6d864ee8c103">
+      <name>ОценкаРасчетСтоимостиКапСтроенияДоходным</name>
+      <description>Оценка. Расчет стоимости кап. строения доходным методом</description>
+      <code>000000190</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="73eb87b2-b8f3-44ea-bb37-1d25a932dc28">
+      <name>ОценкаРасчетСтоимостиКапСтроенияЗатратным</name>
+      <description>Оценка. Расчет стоимости кап. строения затратным методом</description>
+      <code>000000180</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2bfd2063-1b45-4014-a7fa-69a215c75cf3">
+      <name>ОценкаРасчетСтоимостиКапСтроенияСравнительным</name>
+      <description>Оценка. Расчет стоимости кап. строения сравнительным методом</description>
+      <code>000000189</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="6a85b295-1b58-44ee-a1e4-ec131d2720ca">
+      <name>ОценкаРасчетСтоимостиНасажденийЖилПомещения</name>
+      <description>Оценка. Расчет стоимости многолетних насаждений жил. помещения</description>
+      <code>000000179</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c610ac74-24a2-475b-932e-5a6fc5f8092a">
+      <name>ОценкаРасчетСтоимостиНасажденийКапСтроения</name>
+      <description>Оценка. Расчет стоимости многолетних насаждений кап. строения</description>
+      <code>000000178</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="a7dca96a-53bc-4114-94e5-ca19bea4646e">
+      <name>ПеренесениеНаМестностьПроектныхГраниц</name>
+      <description>Перенесение на местность проектных границ</description>
+      <code>000000050</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="6e9aea16-d754-4596-87b7-4a4d4c49a0e7">
+      <name>Площадь</name>
+      <description>Площадь (площадка)</description>
+      <code>000000003</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b481f7dd-31ce-49ef-8091-77470670936e">
+      <name>ПлощадьДляРасчетаПотерь</name>
+      <description>Площадь для расчета потерь</description>
+      <code>000000019</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ea8644d7-c53c-453f-8ab1-f6ab7cc6c7e9">
+      <name>ПлощадьДляРасчетаУбытковЛХ</name>
+      <description>Площадь для расчета убытков и упущенной выгоды л/х пр-ва</description>
+      <code>000000081</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="dd29c0f6-105f-4c3e-99e5-2062c5ce65fb">
+      <name>ПлощадьДляРасчетаУбытковСХ</name>
+      <description>Площадь для расчета убытков и упущенной выгоды с/х пр-ва</description>
+      <code>000000024</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>8</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="48e1b6a7-d4c1-438f-8249-8febdaa6c1db">
+      <name>ПлощадьЗемельныхУчастковСОрганичениямиДМ</name>
+      <description>Площадь земельных участков с органичениями (всего в дм2)</description>
+      <code>000000159</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="acbdb69b-1390-4e51-992b-ea1c4a1c7a64">
+      <name>ПлощадьЗемельныхУчастковСОрганичениями10000</name>
+      <description>Площадь земельных участков с органичениями (М1:10000, га)</description>
+      <code>000000162</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1bdf8139-08aa-450f-a711-8a04fe18999c">
+      <name>ПлощадьЗемельныхУчастковСОрганичениями2000</name>
+      <description>Площадь земельных участков с органичениями (М1:2000, га)</description>
+      <code>000000160</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="8687bbff-bb92-4fe7-9bf2-4c3114e7f8b6">
+      <name>ПлощадьЗемельныхУчастковСОрганичениями5000</name>
+      <description>Площадь земельных участков с органичениями (М1:5000, га)</description>
+      <code>000000161</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3a275215-1a32-4baa-8cd7-115a1502d0f1">
+      <name>ПодготовкаПроектаРешения</name>
+      <description>Подготовка проекта решения</description>
+      <code>000000127</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="0ebebda5-48f9-4ad7-a2d9-b5771491f430">
+      <name>ПостановкаМежевыхЗнаков</name>
+      <description>Постановка межевых знаков</description>
+      <code>000000053</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="09cbcb92-14fa-4c39-8cd4-070aced1be27">
+      <name>ПДП_файлы</name>
+      <description>Предоставление измерительной информации в формате RINEX</description>
+      <code>000000145</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2aa479ae-5137-4980-b668-f35caf474a1b">
+      <name>ПДП_минуты</name>
+      <description>Предоставление корректирующей информации в режиме реального времени</description>
+      <code>000000146</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d9b91a13-d524-4baf-8dc7-a7c3ecc7d861">
+      <name>ПривязкаМежевыхЗнаков</name>
+      <description>Привязка межевых знаков к твердым предметам местн.</description>
+      <code>000000056</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="ae512be4-4eb2-4f6b-b8f8-4f761aa0e7fe">
+      <name>ПрорубкаПросек</name>
+      <description>Прорубка просек</description>
+      <code>000000055</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="407df5a9-011b-497f-b43a-6c69ccb379f9">
+      <name>Протяженность</name>
+      <description>Протяженность</description>
+      <code>000000007</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>7</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="b941c359-6d3a-4f1e-9461-4eb80b814cb0">
+      <name>ПротяженностьДляРасчетаПотерь</name>
+      <description>Протяженность для расчета потерь</description>
+      <code>000000020</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d8425794-c2a9-4fa8-893a-3b0a3894cf90">
+      <name>ПротяженностьДляРасчетаУбытковЛХ</name>
+      <description>Протяженность для расчета убытков л/х пр-ва</description>
+      <code>000000085</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e261f82c-95b8-4156-888e-c36b612e2333">
+      <name>ПротяженностьДляРасчетаУбытковСХ</name>
+      <description>Протяженность для расчета убытков с/х пр-ва</description>
+      <code>000000023</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="30000d44-7dcd-46c7-a47f-aa7c98d4da3c">
+      <name>РасчетКоординат</name>
+      <description>Расчет координат</description>
+      <code>000000064</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="94889071-347a-4778-b6e0-e979454511fc">
+      <name>РасчетТолькоУпущеннойВыгоды</name>
+      <description>Расчет только упущенной выгоды</description>
+      <code>000000147</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="bf9a77b5-958c-4435-8b42-507c570a6c62">
+      <name>РасчетУбытков</name>
+      <description>Расчет убытков</description>
+      <code>000000021</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="380bd021-a6ba-4429-82bd-760497bc0257">
+      <name>РасчетУпущеннойВыгоды</name>
+      <description>Расчет упущенной выгоды</description>
+      <code>000000022</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="2ba8e3aa-8e44-4c3e-84bd-39d07303b3e8">
+      <name>СканированиеДокументов</name>
+      <description>Сканирование документов</description>
+      <code>000000191</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="de1fd83e-424d-4dac-8b46-27e7149b8ecd">
+      <name>СнесениеКоординатГеодезическихЦентров</name>
+      <description>Снесение координат геодезических центров на землю</description>
+      <code>000000052</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="82a3a2a2-bc4c-4e5e-ab55-8c894a374af5">
+      <name>СнятиеГрафическихКоординат</name>
+      <description>Снятие графических координат (кол-во точек)</description>
+      <code>000000062</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0db3a794-db1e-452c-b65f-cef705f76c85">
+      <name>СнятиеГрафическихКоординатДляВычисленияПлощади</name>
+      <description>Снятие графических координат для вычисления площади (кол-во точек)</description>
+      <code>000000126</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c3f364e9-d858-46b7-8ec5-eee35df2b0de">
+      <name>СогласующиеОрганизации</name>
+      <description>Согласующие организации</description>
+      <code>000000092</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="417f3527-daee-4ca2-a97b-73ac85a2b52a">
+      <name>СоставлениеПланаГраниц</name>
+      <description>Составление плана границ</description>
+      <code>000000193</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="8d99d050-a4c6-49ab-803b-4188bab47f9c">
+      <name>СоставлениеРазбивочногоЧертежа</name>
+      <description>Составление разбивочного чертежа</description>
+      <code>000000049</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="7ec39408-425c-4cd0-87b9-3af2cd008da1">
+      <name>ТочкиДляВычисленияПлощадиСоставленияПланаГраниц</name>
+      <description>Точки для вычисления площади и составления плана гранц</description>
+      <code>000000103</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="7431b6e1-66de-434c-8858-0b95999b8d25">
+      <name>ТочкиДляОбработкиМатериалов</name>
+      <description>Точки для обработки материалов</description>
+      <code>000000102</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e0e8fce2-2988-431a-8149-01da10cb06a3">
+      <name>ТочкиОграниченийДляВычисленияПлощадиСоставленияПланаГраниц</name>
+      <description>Точки ограничений для вычисления площади и составления плана гранц</description>
+      <code>000000141</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="91d73224-c183-4c44-868f-8d1d1d220e45">
+      <name>ТочкиОграниченийДляОбработкиМатериалов</name>
+      <description>Точки ограничений для обработки материалов</description>
+      <code>000000140</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0c9be1a4-4925-4f61-9ecd-8092a41f0b01">
+      <name>Удаленность</name>
+      <description>Удаленность</description>
+      <code>000000002</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="76e19d8e-1b9e-44ce-a9f9-aa2bb6eb83ca">
+      <name>ШиринаИзломанная</name>
+      <description>Ширина изломанная</description>
+      <code>000000066</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="92f5ebe3-6594-485a-86fe-124096b3066a">
+      <name>ШиринаПостоянная</name>
+      <description>Ширина постоянная</description>
+      <code>000000008</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.ПараметрыОбъектов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>ChartOfCharacteristicTypes.ПараметрыОбъектов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="7bbffa3f-1152-43f5-92fb-2ede3b6d3a04">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мКлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b491884c-e65c-4f25-8eb2-dd1664dc27fa">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Комментарий используется при настройке наборов доп. реквизитов и сведений</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <forms uuid="d603f42c-63dc-4a83-b405-6c4468b91258">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d3a1fc4-ad80-43eb-97b1-88fba336eb96">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7db71529-c230-4796-9883-184bdb9d67d4">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddfa9343-5ffd-4020-b834-1ffed1d031b3">
+  <name>СтандартныеПодсистемыДокументооборота</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные подсистемы документооборота</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ПапкиПоиска</content>
+  <subsystems>БизнесСобытия</subsystems>
+  <subsystems>ВстроеннаяПочта</subsystems>
+  <subsystems>ВыполнениеЗадачПоПочте</subsystems>
+  <subsystems>ДокументооборотПраваДоступа</subsystems>
+  <subsystems>ИнтеграцияСМобильнымКлиентом</subsystems>
+  <subsystems>ИнтеграцияСМобильнымКлиентом_132</subsystems>
+  <subsystems>КомплектыДокументов</subsystems>
+  <subsystems>Контроль</subsystems>
+  <subsystems>ЛегкаяПочта</subsystems>
+  <subsystems>Мероприятия</subsystems>
+  <subsystems>Почта</subsystems>
+  <subsystems>Проекты</subsystems>
+  <subsystems>РабочиеГруппы</subsystems>
+  <subsystems>РабочийКалендарь</subsystems>
+  <subsystems>СВД</subsystems>
+  <subsystems>СписокПоследних</subsystems>
+  <subsystems>Уведомления</subsystems>
+  <subsystems>ФлагиОбъектов</subsystems>
+  <subsystems>Штрихкоды</subsystems>
+  <subsystems>ЭлектронныеПодписи</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04baa831-d7fb-4fec-b7a6-d9a339493c5d">
+  <name>мРуководительПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководитель производства</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

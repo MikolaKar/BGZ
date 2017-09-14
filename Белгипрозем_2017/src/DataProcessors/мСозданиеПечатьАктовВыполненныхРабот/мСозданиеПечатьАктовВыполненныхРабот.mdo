@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5690290-03c9-4858-af7f-0c7c7c1bcd55">
+  <producedTypes>
+    <objectType typeId="723142e0-4615-4276-b4c5-54629496e596" valueTypeId="5c7694d4-cbe8-456a-9155-1707b790c885"/>
+    <managerType typeId="61533369-2771-48a3-8953-d64192e004ec" valueTypeId="27ac87ab-ddd5-44ee-af2b-058d38449441"/>
+  </producedTypes>
+  <name>мСозданиеПечатьАктовВыполненныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание и печать актов выполненных работ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мСозданиеПечатьАктовВыполненныхРабот.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="dab0bd7e-e081-41a0-97d3-3b7ea2119c33">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="422f9df2-208b-4ce8-88b6-da27a07d4a33">
+    <name>ФормаГКИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ГКИ</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b259aeed-56d7-468c-a5f3-9ec5489d0799">
+    <name>ПФ_DOCX_АктФизЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктФизЛиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="57282dd4-4019-419b-bae8-ad53a7c11537">
+    <name>ПФ_DOCX_АктФизЛиц_Брест</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктФизЛиц_Брест</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="3a1686b6-559a-4325-9bda-c44bf4fc8b42">
+    <name>ПФ_DOCX_АктЮрЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктЮрЛиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="988a5c3b-1b93-4254-b525-6394698ec45c">
+    <name>ПФ_DOCX_АктЮрЛиц_Брест</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф DOCX акт юр лиц Брест</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="49d1795e-4b4a-4c75-a2f6-474f5aad6c9f">
+    <name>ПФ_DOCX_АктФизЛицКакЮрЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф DOCX акт физ лиц как юр лиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="07495cd6-5730-4328-96cf-fe37e01317ef">
+    <name>ПФ_DOCX_АктФизЛицКакЮрЛиц_Брест</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф DOCX акт физ лиц как юр лиц Брест</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="be9dc5da-f30e-499f-8990-cfe261c93985">
+    <name>Гродно_DOCX_АктФизЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гродно DOCX акт физ лиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e4cc9ab5-ff51-40cc-b9f0-155e0933d216">
+    <name>Гродно_DOCX_АктЮрЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гродно DOCX акт юр лиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="3aca1814-93c9-45b3-93a1-1a018382834e">
+    <name>ПФ_DOCX_АктФизЛиц_копия</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктФизЛиц</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="5e65462b-fdc0-4148-b592-ed647b9c71fe">
+    <name>ПФ_DOCX_АктФизЛиц_Прилуки</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктФизЛиц_Прилуки</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="54763d28-e551-4ad3-b4e8-a36404247f77">
+    <name>ПФ_DOCX_АктЮрЛиц_Прилуки</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктЮрЛиц_Прилуки</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="446a5b97-2850-4ce9-8a97-dac7b08789a9">
+    <name>ПФ_DOCX_АктГКИ_Обновление</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктГКИ_Обновление</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="1b3d4aef-7806-41d8-ae51-d56051d7d97d">
+    <name>ПФ_DOCX_АктГКИ_Эксплуатация</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктГКИ_Эксплуатация</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="050387c7-fe97-4cce-b4ae-98b57f3634b4">
+    <name>ПФ_DOCX_АктГКИ_КадастроваяОценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктГКИ_КадастроваяОценка</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="cf7c1688-facd-491b-8723-e416a5b1dbc2">
+    <name>ПФ_DOCX_АктГКИ_КадастроваяОценка_Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ_DOCX_АктГКИ_КадастроваяОценка_Расшифровка</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="cdc9ba1c-fc2b-4e15-81ed-bcccde5da44d">
+    <name>АктВыполненныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт выполненных работ</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ФорматWord</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

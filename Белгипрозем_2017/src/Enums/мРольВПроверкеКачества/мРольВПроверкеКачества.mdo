@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e57ff085-6f49-40b9-9615-eec2780e92c1">
+  <producedTypes>
+    <refType typeId="e876061c-8c1d-4e1a-a551-f6726c00b34d" valueTypeId="0a535c03-811f-451a-a183-75c7140ac388"/>
+    <listType typeId="585afa51-ecac-43c9-a854-6bea9f89e56e" valueTypeId="c1cf4fcf-dd4d-4760-a61d-1d84fc4c0a41"/>
+    <managerType typeId="dc1e704f-8211-4c5e-b8ca-50caf2c182f3" valueTypeId="9803011d-fcde-4e05-b516-0522f80da44d"/>
+  </producedTypes>
+  <name>мРольВПроверкеКачества</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роль в проверке качества</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4c22618f-bd62-4629-80d4-ad7f16924d6c">
+    <name>НачальникОтдела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальник отдела</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d694d611-8ea3-4a4c-ba3c-7d3daedb8c48">
+    <name>ЗаместительНачальникаОтдела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заместитель начальника отдела</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7d2fa635-039d-433a-8d4f-51b6c63e8ae1">
+    <name>НачальникСектора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальник сектора</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="48e0c099-f93a-49b7-934b-413e5b4f4350">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="8ac13495-d4bf-4a88-98c5-a0dda47235c1">
+    <name>ЗаместительНачальникаФилиала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заместитель начальника филиала</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

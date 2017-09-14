@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="580cb9bb-f6d1-49bf-8ddf-81343d2121fd">
+  <producedTypes>
+    <managerType typeId="5cc45ccf-8c42-4e9e-aaae-5a8fa0105891" valueTypeId="f5875506-25d9-4875-a677-fcb1b95b5338"/>
+    <valueManagerType typeId="86b0b876-17d8-4af9-bef5-de85b91660a3" valueTypeId="195d809d-66ce-47d0-b55c-03393efff1fa"/>
+  </producedTypes>
+  <name>ПутьСохраненияУдаляемыхВерсийWindows</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь сохранения удаляемых версий windows</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

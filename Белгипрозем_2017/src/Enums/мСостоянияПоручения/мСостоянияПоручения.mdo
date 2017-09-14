@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d88fcbdf-b203-4e01-b26b-a284c55a96a2">
+  <producedTypes>
+    <refType typeId="d3d5897d-6740-4a8f-bfcf-e00b1595ea2c" valueTypeId="a270e011-363b-4898-9105-cba6ccd3c857"/>
+    <listType typeId="ffe02ba4-1fa8-4aed-8d4d-d7e5228e9db7" valueTypeId="54fe301f-866b-4066-96c8-96055d708c3a"/>
+    <managerType typeId="4de3f7f6-c99b-4e71-abb2-00c877d8cf42" valueTypeId="c53b99b4-5be5-44ef-b412-954f2e144528"/>
+  </producedTypes>
+  <name>мСостоянияПоручения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния поручения</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для отслеживания входящих документов с видом Поручение</value>
+  </explanation>
+  <enumValues uuid="26e10e0d-495f-40ee-ac1f-ac57bc19ca61">
+    <name>Зарегистрировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрировано</value>
+    </synonym>
+    <comment>Вх. док. зарегистрирован в ДО</comment>
+  </enumValues>
+  <enumValues uuid="6b84527f-6501-4eb0-a0fb-495cd55fdc16">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment>Создается карточка объекта работ</comment>
+  </enumValues>
+  <enumValues uuid="42ffc0c1-aad6-44a8-a444-861ada9c8150">
+    <name>УточнениеИнформации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уточнение информации</value>
+    </synonym>
+    <comment>Готовится письмо для запроса доп. информации или получение информации по оценке</comment>
+  </enumValues>
+  <enumValues uuid="9ab6a5ec-9cf9-4221-b19a-2e92bfabc9ee">
+    <name>ЗапросИнформации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос информации</value>
+    </synonym>
+    <comment>Отправлено письмо заказчику - запрос доп. информации</comment>
+  </enumValues>
+  <enumValues uuid="7b464ac4-6409-447d-a63f-b9aa3daaca62">
+    <name>ВРаботеДопИнформация</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе (доп. инф.)</value>
+    </synonym>
+    <comment>Создается карточка объекта работ с учетом полученной доп. информации от заказчика</comment>
+  </enumValues>
+  <enumValues uuid="f39e2e22-1b0c-42a2-bcdc-60fd6ecdda18">
+    <name>Возвращено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвращено</value>
+    </synonym>
+    <comment>Поручение отправлено исполкому-заказчику</comment>
+  </enumValues>
+  <enumValues uuid="469a1061-0b71-43a7-bb1a-0fddc7d1df56">
+    <name>СоставлениеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составление договора</value>
+    </synonym>
+    <comment>Готовится договор</comment>
+  </enumValues>
+  <enumValues uuid="ab1b240f-0670-4fc9-9e2c-70b2c8064f9a">
+    <name>ДоговорСоставлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор составлен</value>
+    </synonym>
+    <comment>Договор в состоянии &quot;На подписании&quot;</comment>
+  </enumValues>
+  <enumValues uuid="6e6aec3c-efd5-4485-a91b-d0ecb720c8a8">
+    <name>НазначениеИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение исполнителя</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0d8fa05c-ae70-4bcd-8f0e-f9a791f95aee">
+    <name>ВыполнениеРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение работ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0b6e0c7d-9d8c-4c7e-8bb2-133fcf06dc2d">
+    <name>Исполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

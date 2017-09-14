@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9063c1fa-dd9d-407d-bf37-954ca7e7dd1e">
+  <producedTypes>
+    <objectType typeId="2fa9ae33-a17d-4a63-b4f6-5875b0b34d1a" valueTypeId="b21bd523-ccab-484e-ae51-4dae8e0c156a"/>
+    <managerType typeId="28fb0ae6-48cc-4d5e-abea-3bf4230d8561" valueTypeId="b1aa1b3e-0008-4e73-ba1c-aa3a5be0c97a"/>
+  </producedTypes>
+  <name>Мероприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мероприятия</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Мероприятия.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="4e19fe27-7033-404d-9431-fac028b4b040">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

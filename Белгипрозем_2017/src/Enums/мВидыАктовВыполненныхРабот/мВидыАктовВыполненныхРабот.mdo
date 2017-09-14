@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="189038be-f16c-4a7c-8385-24cea69e4fb4">
+  <producedTypes>
+    <refType typeId="dd3f750c-337b-43f7-8f7b-75e24b61d6dd" valueTypeId="3eb6dcf5-cac7-4a55-a9ce-d4e69b996a92"/>
+    <listType typeId="df4610eb-5114-498d-a3de-f232bd851edb" valueTypeId="1e75d188-0867-4b55-a8b4-2af87c9c4d03"/>
+    <managerType typeId="a34e7ceb-fa74-485c-9edd-e00591a5e28d" valueTypeId="2137bcaa-4ae2-4f64-86e0-1e5cde269c18"/>
+  </producedTypes>
+  <name>мВидыАктовВыполненныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды актов выполненных работ</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4c87f31c-936c-4751-b260-e3aab420df2d">
+    <name>Обычный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обычный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="121e0eb8-7692-4c4e-b16e-bc0ec6c896d2">
+    <name>Промежуточный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Промежуточный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="eaf32a41-bbce-4211-aa0c-4b1ae4bb61b9">
+    <name>Окончательный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончательный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

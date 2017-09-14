@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4d54ad0-13c3-4737-bd1a-724d4c9a4f2e">
+  <name>ПередЗаписьюДатыДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью даты договоров</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>InformationRegisterRecordSet.мДатыДоговоров</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.ПередЗаписьюДатыДоговоровПередЗаписью</handler>
+</mdclass:EventSubscription>

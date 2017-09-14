@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d91d344-87e8-4880-9585-2015457dd03a">
+  <name>мПриЗаписиСметы</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи сметы</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.мСметы</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.мПриЗаписиСметыПриЗаписи</handler>
+</mdclass:EventSubscription>

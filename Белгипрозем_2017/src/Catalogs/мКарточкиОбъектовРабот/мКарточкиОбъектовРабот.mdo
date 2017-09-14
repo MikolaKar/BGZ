@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="782bfee1-1128-40b8-bf4c-6ed4669a3579">
+  <producedTypes>
+    <objectType typeId="12403f29-812e-47a8-b256-96ed5e1df7fe" valueTypeId="23acc93e-5b4c-45c0-9824-28c44d9c173c"/>
+    <refType typeId="c090d556-66a6-4652-9d12-a89d196290cb" valueTypeId="5a9db276-4124-484e-bbe7-e30d74ae8446"/>
+    <selectionType typeId="03ed9b32-fe79-4026-83e2-ea44b842d56b" valueTypeId="3c3d1136-d804-46c6-99cd-c9315772d290"/>
+    <listType typeId="797f6382-e2af-4218-aae3-27a89bb2ce0e" valueTypeId="1c2b622c-073f-4fce-862b-4e3e16f9891e"/>
+    <managerType typeId="e0ec16b4-9400-4dd7-b89c-d418915a859b" valueTypeId="c6f90a03-6f4b-447b-8d24-69b7c3abbbcb"/>
+  </producedTypes>
+  <name>мКарточкиОбъектовРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточки объектов работ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мКарточкиОбъектовРабот.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мКарточкиОбъектовРабот.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Catalog.ВходящиеДокументы</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Карточка объекта работ</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Карточки объектов работ</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.мОбъектыРабот</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>60</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.мКарточкиОбъектовРабот.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.мКарточкиОбъектовРабот.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.мКарточкиОбъектовРабот.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="dbfd0be1-1402-43ee-8eed-078daa081a7f">
+    <name>ВидРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыРаботЮрЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="0dafef44-8d01-4a54-b693-a46319bded32">
+    <name>ДатаСоставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата составления</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="08561a50-73d7-49d0-a137-d1b1116d69fe">
+    <name>Поручение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поручение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Отправитель</name>
+      <value xsi:type="core:UndefinedValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a70a23a8-47ab-4e2c-9585-5255c9e87227">
+    <name>Составил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a0380037-f922-4722-aca6-5e29cc99dc76">
+    <name>ПакетДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пакет документов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мПакетыДокументов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+  </attributes>
+  <attributes uuid="a3637b6c-ad87-41c1-9d9e-573465578d6d">
+    <name>ВидКарточки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид карточки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мВариантыКарточекИсходныхДанных</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4b2b220a-921a-44cb-b0ee-65f617cd4f4f">
+    <name>ДатаПредоставленияДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата предоставления документов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="151bcd39-958c-4f0d-b9ec-2be46983b540">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мСостоянияКарточекОбъектовРабот</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3220ca60-2627-4c12-936c-9e073cc0203e">
+    <name>ЦельПредоставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель предоставления</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="2bb6ac59-5e1b-410b-af95-4e68337f6f76">
+    <name>ИсточникФинансирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник финансирования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мИсточникиФинансирования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f6a68c65-8078-46f0-84d1-364345bba8fb">
+    <name>КонтактноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КонтактныеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.мКарточкиОбъектовРабот.Attribute.Заказчик</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="420d7310-0bf9-4ece-acfa-76a2c3fd2a59">
+    <name>РасчетныйСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетный счет</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.БанковскиеСчета</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.мКарточкиОбъектовРабот.Attribute.Заказчик</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="27f18123-ad52-41bd-b6fc-93ce570be5ea">
+    <name>БезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без НДС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ad561252-9a79-49a2-abc9-2b0e582d11f8">
+    <name>ОсвобождениеОтНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Освобождение от НДС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мОсвобождениеОтНДС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="7f6555a9-b05f-410a-ace8-904887c56997">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Корреспонденты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="643ab1b3-351e-4ff0-be0f-43728a7a133a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <tabularSections uuid="7f33a749-3dce-4bea-be8e-a2417fc81bd9">
+    <producedTypes>
+      <objectType typeId="ea2c242e-cbe2-4c66-b128-bf57c01f8af3" valueTypeId="9c273b6a-459e-4966-b0d2-14e89f93141b"/>
+      <rowType typeId="7f9c8391-fcd3-4930-97f3-5184b949118c" valueTypeId="61514600-a198-411a-86a5-a85f93b99bee"/>
+    </producedTypes>
+    <name>ПараметрыОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры объекта</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="516c7a77-3534-4ae7-91d9-28fcb4e659fa">
+      <name>ПараметрОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр объекта</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ПараметрыОбъектов</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="86b197ef-4861-4e86-9471-7ee7ea553416">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Characteristic.ПараметрыОбъектов</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>ПараметрОбъекта</name>
+        <field>Catalog.мКарточкиОбъектовРабот.TabularSection.ПараметрыОбъекта.Attribute.ПараметрОбъекта</field>
+      </choiceParameterLinks>
+      <linkByType>
+        <field>Catalog.мКарточкиОбъектовРабот.TabularSection.ПараметрыОбъекта.Attribute.ПараметрОбъекта</field>
+      </linkByType>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a24af106-de40-4d64-9b3a-62089969e7ec">
+      <name>Установлен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Установлен</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="f0574280-75a7-42c7-a63b-72c2e22e01a8">
+    <producedTypes>
+      <objectType typeId="64c86746-ca43-418d-ac94-bf90ca0bcbbc" valueTypeId="060ab949-757c-40f1-a5c4-1b8b44bb7495"/>
+      <rowType typeId="62703b6c-ec64-4d04-9f0f-b151ee006c48" valueTypeId="0dfe7d6c-8276-40b8-ac79-78f541fedd9a"/>
+    </producedTypes>
+    <name>Документы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="48e3d1d0-bc9d-422b-986b-30fb9a143dfd">
+      <name>ДокументЗаказчика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ заказчика</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.мПакетыДокументов</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6092d957-52d0-4976-93be-34222bfb791c">
+      <name>Обязательный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обязательный</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Документ должен быть предоставлен обязательно</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="92ce0a13-344d-4dcc-84de-bd09ce7d41e2">
+      <name>ДатаПредоставления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата предоставления</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата предоставления документа (с учетом пунктов при их наличии)</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a06fabda-4819-499b-b920-af20e8933d67">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>250</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8d39bb61-67b7-41c9-8cba-ebf65c5a895b">
+    <producedTypes>
+      <objectType typeId="a239ae6a-56ad-4f03-99df-d4cd39844bdb" valueTypeId="2f045bd2-f42f-4e42-9732-bdc4720936d4"/>
+      <rowType typeId="295893b5-8ac7-403a-9cd0-8bfc9bcc92e4" valueTypeId="a09ba520-7b4f-49d5-aaf2-8e9f070e553e"/>
+    </producedTypes>
+    <name>ПунктыДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункты документа</value>
+    </synonym>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Обязательные пункты документа</value>
+    </toolTip>
+    <standardAttributes>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="15395daa-2ef8-4186-9d71-84d6e2cfa196">
+      <name>ДокументЗаказчика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ заказчика</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.мПакетыДокументов</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b0dd7e6c-a09a-4a78-af09-e5f18cd8af29">
+      <name>Пункт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0219938a-60b0-4dae-a133-855e9e4f50d3">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f1db0768-d847-4879-9311-5aaa73aece46">
+      <name>Имеется</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имеется</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Содержание пункта есть в документе</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7c60d19b-54a3-400c-a8cc-3bd00669173d">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="249b02d4-c4d6-4a7f-ac02-e5f371afc49f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="654e129f-c3c4-4e3f-96ab-091382d7445c">
+    <name>ФормаДляПросмотра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма для просмотра</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a0e8d131-80c3-46d1-bdd4-4246b966f94c">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c687b057-5f17-4660-b2f5-c5642daf8d87">
+    <name>КарточкаПИР_Площадно_Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка ПИР площадно линейный</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="445b73d5-6f91-44c3-abbf-5c41ff986a2a">
+    <name>КарточкаПИР_Площадно_Линейный_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка ПИР площадно линейный сравнение</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="de19e786-22eb-43cb-a583-3ae1ba0d8878">
+    <name>КарточкаОтвода_Площадно_Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка отвода площадно-инейный</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="8778fcc0-f879-48f5-97a9-97f1b56768ec">
+    <name>КарточкаОтвода_Площадно_Линейный_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка отвода площадно-инейный</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="518ccf1b-754a-4730-9b5b-acf759de3cb5">
+    <name>КарточкаИзготовлениеПлана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка изготовление земельно-кадастрового плана</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="8f8b881a-2d44-4369-8ee3-1b97a1acafb8">
+    <name>КарточкаИзготовлениеПлана_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка изготовление земельно-кадастрового плана сравнение</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="77c23176-a39e-4fcf-adf0-ea1aef47581c">
+    <name>КарточкаУстановленияНефиксированныхГраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка установления нефиксированных границ</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="394ed0fa-f198-4d37-9d24-c7bcd846769d">
+    <name>КарточкаУстановленияНефиксированныхГраниц_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка установления нефиксированных границ сравнение</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="fd07c31c-0c4c-4233-9f0e-0dd51bfe656a">
+    <name>КарточкаСоставленияОстаточногоКаталога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка составления остаточного каталога</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="159be7f3-5cce-4314-8238-7fbe0a2fd5c9">
+    <name>КарточкаСоставленияОстаточногоКаталога_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка составления остаточного каталога сравнение</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="2c8fd014-5269-4b59-9fe4-90a450c6a2ea">
+    <name>КарточкаУстановленияГраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка установления границ</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="e78b09b3-007f-47ec-9cdf-2238483310d6">
+    <name>КарточкаУстановленияГраниц_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка установления границ сравнение</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="64124733-28f6-4449-816e-1bdb9b57284e">
+    <name>КарточкаФормированияУчастков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка формирования участков</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="4c8b7810-fca1-47c0-8451-7bb80b14639a">
+    <name>КарточкаФормированияУчастков_Сравнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка формирования участков сравнение</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="7cc4171c-cb4d-4a22-8cf5-061e68300270">
+    <name>КарточкаУниверсальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка универсальная</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="4b6f5a01-4d82-47d0-bdad-8acaf8cda2ce">
+    <name>КарточкаОценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка оценка</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="e3c9cd56-de6f-4baf-b771-9aa14d9b0d9c">
+    <name>КарточкаУстановленияНефиксированныхГраницМинэнерго</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка установления нефиксированных границ Минэнерго</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="99a6a152-f20d-407c-8ca3-1368a47c381c">
+    <name>КарточкаГрадостроительныйПаспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка градостроительный паспорт</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="685c9b48-b52c-4f37-a4e1-d606dd7d46ae">
+    <name>КарточкаИзготовленияКопийМатериалов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка изготовления копий материалов</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="46684e37-a85e-4f9b-914d-e5a1ae454ee9">
+    <name>КарточкаВедениеЭксплуатацияЗИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка ведение (эксплуатация) ЗИС</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="860f6aa7-a525-450b-9e25-28c44c76b953">
+    <name>КарточкаОбъектаРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка объекта работ</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ВходящиеДокументы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

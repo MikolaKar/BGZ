@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16447"></meta></head><body>
+<style>A:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #006699; TEXT-DECORATION: underline
+}
+H2 {
+	FONT-SIZE: 130%; FONT-FAMILY: Verdana; BORDER-BOTTOM: sienna 1px solid; FONT-WEIGHT: normal; COLOR: #a3611f; PADDING-BOTTOM: 2px
+}
+H3 {
+	FONT-SIZE: 120%; MARGIN-TOP: 5px
+}
+P.Usual {
+	MARGIN-TOP: 10px
+}
+UL {
+	MARGIN-LEFT: 20pt
+}
+</style><p><a name="Top"></a></p>
+<p>Процесс  "<strong>Обработка входящего документа</strong>" состоит из цепочки простых процессов, определенных как шаблоны: <a href="Catalog.ШаблоныРассмотрения/Help">Рассмотрение</a>, <a href="Catalog.ШаблоныИсполнения/Help">Исполнение</a> или <a href="Catalog.ШаблоныОзнакомления/Help">Ознакомление</a> и <a href="Catalog.ШаблоныПоручения/Help">Поручение</a> (поместить в дело). </p>
+<p class="Usual"><strong>В этом разделе:</strong></p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#MainInfo">Общие сведения</a><a></a> </p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#SubjectRoles">Чем отличаются предметы процесса</a><a></a>  </p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#Stop">Как остановить процесс</a></p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#break">Как прервать процесс</a></p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#MainTask">Как установить главную задачу</a><a></a> </p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#State">Как посмотреть состояние процесса</a><a></a> </p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#autostart">Как настроить автоматический старт процесса</a><a></a> </p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#futurestart">Как отложить старт процесса</a><a></a> </p>
+<p class="Usual"><img align="left" src="CommonPicture.СправкаПереходВниз" width="16" height="16"></img><a href="#schedule">Как запускать процесс по расписанию</a><a></a> </p>
+<p><a name="MainInfo"></a></p>
+<h2><strong>Общие сведения</strong></h2>
+<p class="Usual">Для просмотра списка составных процессов "<strong>Обработка входящего документа</strong>" следует в разделе <a href="Subsystem.СовместнаяРабота/Help">Совместная работа</a> выполнить команду "<strong>Обработка входящего документа</strong>" в <a id="ENTERPRISE82,MNG_ENTERPRISE,WEB_ENTERPRISE" href="v8help://1cv8/NavigationBar">панели навигации</a>.</p>
+<p class="Usual">Для создания нового процесса следует выполнить команду "<strong>Создать</strong>".</p>
+<p class="Usual">В поле <strong>Наименование</strong> указывается наименование составного процесса. Если оно незаполнено, то при выборе <a href="Catalog.ВходящиеДокументы/Help">входящего документа</a>(выбирается в поле <strong>Предмет</strong>) его название заносится в поле <strong>Наименование</strong> с предваряемым указанием "<em>Обработка входящего</em> ". <br>После того, как поле <strong>Наименование</strong> заполнено, выбор другого документа в поле <strong>Предмет</strong> не приводит к изменению наименования. <br>Чтобы название документа входило в наименование при выборе предмета нужно очистить поле <strong>Наименование</strong>. <br>Если процесс создается по <a href="Catalog.ШаблоныСоставныхБизнесПроцессов/Help">шаблону</a> и в шаблоне задано наименование, то оно переносится в поле <strong>Наименование</strong>.</p>
+<p class="Usual">В поле <strong>Предмет</strong> указывается <a href="Catalog.ВходящиеДокументы/Help">входящий документ</a>.</p>
+<p class="Usual">В поле <strong>Автор</strong> указывается автор создаваемого процесса (при создании будет указан текущий <a href="Catalog.Пользователи/Help">пользователь</a>).</p>
+<p class="Usual">В поле <strong>Рассмотрение</strong> руководителем задается шаблон процесса <a href="Catalog.ШаблоныРассмотрения/Help">Рассмотрение</a>. Если шаблон выбран, то поле <strong>Исполнение \ ознакомление</strong> становится недоступным.</p>
+<p class="Usual">В поле <strong>Исполнение \ ознакомление</strong> задается шаблон процесса <a href="Catalog.ШаблоныИсполнения/Help">Исполнение</a> или <a href="Catalog.ШаблоныОзнакомления/Help">Ознакомление</a>. Если шаблон выбран, то поле <strong>Рассмотрение</strong> становится недоступным.</p>
+<p class="Usual">В поле <strong>Поручение (поместить в дело)</strong> задается шаблон процесса <a href="Catalog.ШаблоныПоручения/Help">Поручение</a>.</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="SubjectRoles"></a></p>
+<h2><strong>Чем отличаются предметы процесса</strong></h2>
+<p class="Usual">Предметы процесса могут быть основными и вспомогательными.</p>
+<p class="Usual"><img src="CommonPicture.ПредметОсновной16"></img> <strong>Основной предмет</strong> содержит важную информацию о задаче и выступает в качестве ее основания. </p>
+<p class="Usual"><img src="CommonPicture.ПредметВспомогательный16"></img> <strong>Вспомогательный предмет</strong>, как правило, содержит дополнительные данные, помогающие при выполнении задач. Состояние вспомогательного предмета не меняется по ходу выполнения задач процесса. В роли вспомогательного предмета может служить любой доступный объект в программе или файл с диска.</p>
+<p class="Usual">Чтобы добавить предмет в процесс , нажмите <img src="StdPicture.CreateListItem"></img> <strong>Добавить предмет </strong>на командной панели. Если процесс создается на основании, то его основной предмет устанавливается автоматически.</p>
+<p class="Usual">Файлы в процесс добавляются также как и предметы. Файл можно добавить либо из списка файлов программы, либо с диска. При добавлении с диска можно добавить сразу несколько файлов.</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="AddSubject"></a></p>
+<p><a name="AddTaskSubject"></a></p>
+<p><a name="Stop"></a></p>
+<h2><strong>Как остановить процесс</strong></h2>
+<p class="Usual">Для остановки процесса используйте команду <strong>Остановить</strong>. При этом остановленным будет помечен сам процесс, все его невыполненные задачи, а также все вложенные и подчиненные процессы и их невыполненные задачи.</p>
+<p class="Usual">Для того чтобы сделать остановленный процесс активным используйте команду <strong>Продолжить</strong>. При этом будут сделаны активными все вложенные и подчиненные процессы и их задачи. Остановленные задачи не отображаются в списках задач (например, <a href="Task.ЗадачаИсполнителя.Form.ФормаМоиЗадачи/Help">Мои задачи</a>).</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="break"></a></p>
+<h2><strong>Как прервать процесс</strong></h2>
+<p class="Usual">Нажмите <strong>Прервать</strong> на командной панели карточки процесса.</p>
+<p class="Usual">При этом с процессом происходят следующие изменения:</p>
+<ul><li>Процесс и его задачи прерываются, 
+</li><li>Подчиненные процессы и их задачи прерываются.</li></ul><p class="Usual">Прервать процесс может его автор или администратор. Прерванный процесс, в отличие от остановленного нельзя возобновить.</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="MainTask"></a></p>
+<h2><strong>Как установить главную задачу</strong></h2>
+<p class="Usual">С помощью поля <strong>Главная задача</strong> в карточке можно указать, что данный процесс создан в рамках вышестоящего процесса. Это поле заполняется автоматически при создании процессов на основании задач или документов, но может быть установлено вручную.</p>
+<p class="Usual">Дерево подчиненных процессов можно посмотреть при помощи команды <strong>Задачи</strong> в панели навигации карточки процесса. Поле <strong>Главная задача</strong> и просмотр дерева подчиненных процессов доступны только в том случае, если в программе разрешено использование подчиненных процессов (см. <a href="CommonForm.НастройкаПрограммы/Help">Настройка программы</a>).</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="State"></a></p>
+<h2><strong>Как посмотреть состояние процесса</strong></h2>
+<p class="Usual">Для просмотра текущего состояния процесса (списка выполненных и не выполненных задач) используйте команду <strong>Задачи</strong> в <a id="ENTERPRISE82,MNG_ENTERPRISE,WEB_ENTERPRISE" href="v8help://1cv8/NavigationBar">панели навигации</a> карточки процесса.</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="Result"></a></p>
+<p><a name="autostart"></a></p>
+<h2><strong>Как настроить автоматический старт процесса</strong></h2>
+<p class="Usual">Процессы могут начинаться автоматически после определенного события.</p>
+<p class="Usual">Например, можно сделать так, чтобы при регистрации входящего документа вида коммерческое предложение, он автоматически направлялся на рассмотрение руководителю.</p>
+<p class="Usual">Подробная инструкция по настройке автостарта доступна <a href="InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов/Help">здесь</a>.</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p><a name="futurestart"><u><font color="#800080"></font></u></a></p>
+<h2><strong>Как отложить старт процесса</strong></h2>
+<p class="Usual">Старт процесса можно отложить на любое удобное время.</p>
+<p class="Usual">Например, если Вы создали несрочный процесс для загруженного сотрудника, можно указать время старта процесса - через день. К тому времени Ваш коллега справится со срочными делами.</p>
+<p class="Usual">Подробная инструкция по настройке отложенного старта процесса доступна <a href="InformationRegister.НастройкаОтложенногоСтартаБизнесПроцессов.Form.ФормаНастройкиРасписания/Help">здесь</a>.</p>
+<p class="Usual"></p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало</a></p></td></tr></tbody></table><p><a name="schedule"></a></p>
+<h2><strong>Как запускать процесс по расписанию</strong></h2>
+<p class="Usual">Перейдите в меню <strong>Все действия</strong> и выполните команду <strong>Настроить повторение</strong>.</p>
+<table cellspacing="0" cellpadding="0"><tbody><tr><td valign="middle">
+<p class="Usual"><a href="#Top"><img border="0" src="CommonPicture.СправкаВНачало"></img></a></p></td>
+<td valign="middle">
+<p class="Usual"><a href="#Top">В начало </a></p></td></tr></tbody></table><p class="Usual"><strong></strong> </p>
+<p class="Usual"><strong>См. также:</strong> </p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p><a href="v8help://frame/form_common">Общая информация о формах</a><br><a href="CommonForm.ШаблоныБизнесПроцессов/Help">Общие сведения о шаблонах процессов</a><br><a href="CommonForm.ВидыДокументов/Help">Виды документов</a> <br><a href="Subsystem.СовместнаяРабота/Help">Раздел "Совместная работа"</a></p></blockquote></body></html>

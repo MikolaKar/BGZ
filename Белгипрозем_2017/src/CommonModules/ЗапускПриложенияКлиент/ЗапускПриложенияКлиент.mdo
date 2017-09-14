@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ae696d3-9c7b-4351-840e-82e3f5d8374a">
+  <name>ЗапускПриложенияКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запуск приложения клиент</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

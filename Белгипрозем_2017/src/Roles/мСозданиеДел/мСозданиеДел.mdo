@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c69d9c03-8126-48c8-9076-1fc028a000cf">
+  <name>мСозданиеДел</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание дел</value>
+  </synonym>
+  <comment>Право создания дел не для исполнителей работ в этапах</comment>
+</mdclass:Role>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59d871ef-0f16-4ef0-9024-8f40374c86f4">
+  <producedTypes>
+    <objectType typeId="d44077f9-3c19-430d-8223-b668e99f7381" valueTypeId="5508d5b4-cfd3-479d-b7e1-6d6226bc3435"/>
+    <managerType typeId="82599b1b-8ab6-47d0-b62d-3d6aea4034be" valueTypeId="df39f232-6bf9-47e9-a599-e1062995da54"/>
+  </producedTypes>
+  <name>ПланФактныйАнализСогласования</name>
+  <synonym>
+    <key>ru</key>
+    <value>План-фактный анализ согласования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПланФактныйАнализСогласования.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПланФактныйАнализСогласования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ПланФактныйАнализСогласования.Form.ФормаНастроек</defaultSettingsForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="34fd72b9-2445-4661-a653-edcaf81de1e2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e163a575-8009-4e16-87f5-e6fb437b317e">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8b669be6-e5b8-4eb5-a6d1-2ef35514d2a6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6dd8e11c-6f5a-4169-b1e7-de6660f733bc">
+  <producedTypes>
+    <objectType typeId="4c417c57-edae-4854-b89b-363a10f1c2d3" valueTypeId="35845927-beae-47b5-a11d-c44ea75c8478"/>
+    <managerType typeId="06247c44-f155-47fe-bb8a-ebd392e7d066" valueTypeId="e5be9621-6499-4863-b707-7c32c38a9d88"/>
+  </producedTypes>
+  <name>СтатистикаРаботНадДокументами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика работ над документами</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СтатистикаРаботНадДокументами.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СтатистикаРаботНадДокументами.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="9c84cd38-69ea-43ae-91c2-72b19f611070">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4b972b93-9a35-4e76-afaf-7ed62434bb45">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

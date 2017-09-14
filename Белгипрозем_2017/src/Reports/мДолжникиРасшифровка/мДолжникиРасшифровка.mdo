@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f1070db-8b44-4f89-920f-27ab7eb89731">
+  <producedTypes>
+    <objectType typeId="9c99ddbf-b67d-4cbe-8197-85a5bd4fddf9" valueTypeId="b145cd33-e4e6-42c8-952a-06ed41d5f599"/>
+    <managerType typeId="e2f46f69-3620-4a12-baf3-03946ff697b7" valueTypeId="b630a052-fad6-4fb2-b0e8-4ab84e80b96d"/>
+  </producedTypes>
+  <name>мДолжникиРасшифровка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расшифровка долга</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.мДолжникиРасшифровка.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.мДолжникиРасшифровка.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="b415b2ff-b180-49cf-ab40-6b1796a412d3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c6825b85-d2cd-4416-897c-515bc879eff2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

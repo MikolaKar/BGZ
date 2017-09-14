@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d50aa9a-530e-4a5e-b0fd-6518c97ef204">
+  <producedTypes>
+    <objectType typeId="b132d465-329c-42a1-8b25-d8f43008a626" valueTypeId="06552547-6252-46bf-bbe3-b51758065677"/>
+    <managerType typeId="2c963493-739e-49cc-b022-1a5b305323b7" valueTypeId="00a8f4b9-b1ea-44ed-8ab4-73e97e07e905"/>
+  </producedTypes>
+  <name>М_ЖурналРегистрацииИсходящихДокументов_Брест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал регистрации исходящих документов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.М_ЖурналРегистрацииИсходящихДокументов_Брест.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <settingsStorage>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="534f50f8-8ff5-4a46-91b0-41f46c3060e0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

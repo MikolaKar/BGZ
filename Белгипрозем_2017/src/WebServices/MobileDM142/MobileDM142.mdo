@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba1da1b7-e938-48ab-aa9e-036e364c2bce">
+  <name>MobileDM142</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mobile d m142</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.1c.ru/mobileDM142</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.MobileDM142</value>
+  </xdtoPackages>
+  <descriptorFileName>mobileDM142.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="33b190da-ddcc-4db7-925a-aa9ef9871dc5">
+    <name>Put</name>
+    <synonym>
+      <key>ru</key>
+      <value>Put</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>ExchangeResponse</name>
+      <nsUri>http://www.1c.ru/mobileDM142</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Put</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="6e1120dc-0d1c-4379-91d4-72b7791295af">
+      <name>message</name>
+      <synonym>
+        <key>ru</key>
+        <value>Message</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>ExchangeRequest</name>
+        <nsUri>http://www.1c.ru/mobileDM142</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="a1c1b8c1-a5e5-4ebc-b91a-9d4fceb34f08">
+    <name>Get</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>Response</name>
+      <nsUri>http://www.1c.ru/mobileDM142</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Get</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="bf25f363-b251-416d-bcc2-dee10b2cf14f">
+      <name>request</name>
+      <synonym>
+        <key>ru</key>
+        <value>Request</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>MessageRequest</name>
+        <nsUri>http://www.1c.ru/mobileDM142</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbc1a72f-6275-4951-b392-987d3e1fb8cf">
+  <producedTypes>
+    <objectType typeId="a243d70c-2715-4110-8c2c-33a01cd336ec" valueTypeId="3091fc4e-cfb8-4f72-b3d6-152aaf919bb2"/>
+    <managerType typeId="dcf5eeaf-e41f-430c-8de0-c4a4bae774a6" valueTypeId="3cdb4d3f-b769-440a-8ba3-37c7ab4d2426"/>
+  </producedTypes>
+  <name>ПечатьКонвертов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать конвертов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьКонвертов.Form.Форма</defaultForm>
+  <forms uuid="d5b826bb-6561-4336-b9f2-cedbd6109701">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="dcb0d194-4263-4945-b8e1-3c8b7d5b0fb0">
+    <name>С6_162х114_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>С6 162х114 1</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="bedb4a38-8bd5-4f82-8929-519025b6c5d5">
+    <name>С6_162х114</name>
+    <synonym>
+      <key>ru</key>
+      <value>С6 162х114</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="915f3e56-613b-4dd5-90a4-fb76984b9913">
+    <name>E65_110x220</name>
+    <synonym>
+      <key>ru</key>
+      <value>E65 110x220</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="5f5ec969-760e-44ac-9453-ccdd0022028f">
+    <name>ПечатьКонвертов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать конвертов</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.НепрочтенноеПисьмо</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

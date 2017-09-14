@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84ea420c-31c0-46ae-8b19-e5001170f0db">
+  <producedTypes>
+    <objectType typeId="adde897d-a846-49da-ae9a-112d27a064a7" valueTypeId="707fb2fb-5769-4188-81e9-144d9fc6a487"/>
+    <managerType typeId="ae8b70c8-f378-454b-a78c-467ae99b4a3c" valueTypeId="8971c777-db01-40ff-aebc-98e079802f0c"/>
+  </producedTypes>
+  <name>НеотработанныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Неотработанные документы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НеотработанныеДокументы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="105a582f-8c01-450e-8060-d2377b6c0723">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

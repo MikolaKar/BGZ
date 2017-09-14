@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="395dcc57-9c06-44a9-98c1-144bdd15c855">
+  <producedTypes>
+    <refType typeId="aa0b0aec-5f25-40d0-a47c-9ad9a326c735" valueTypeId="5dd1772d-4cad-4d0c-ab0a-1a994eadc615"/>
+    <listType typeId="e87386bc-e77e-4f88-8424-e01f7ec80cb5" valueTypeId="c801ae0c-6023-469d-a2db-1d338fea37b8"/>
+    <managerType typeId="6fe76058-eaf0-4122-9129-139fa51666ea" valueTypeId="4a2ac185-5b8e-4cb9-bc43-a2f5c0268ddf"/>
+  </producedTypes>
+  <name>ВариантыРасчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты расчетов</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="657f8926-46e3-4125-b0a1-94a5635b4a84">
+    <name>Интервал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="61da6288-b15a-46a9-8050-f2ea5fa77ac2">
+    <name>КаждыеПоследующие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каждые последующие</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="288fab9b-2173-46f8-b0a7-12d03c9755cd">
+    <name>Сверх</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сверх</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="8157eb61-1735-43f9-bd0e-010f90d280ab">
+    <name>КаждыеПоследующиеВИнтервале</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каждые последующие в интервале</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

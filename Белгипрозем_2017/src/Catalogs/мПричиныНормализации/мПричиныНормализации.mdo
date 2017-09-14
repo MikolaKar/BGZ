@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8961215d-732e-41d8-88ac-8a0e8087fc00">
+  <producedTypes>
+    <objectType typeId="e518a497-a7aa-4088-a56f-a0c06551b9c3" valueTypeId="fff01968-2933-4189-9e45-87bcd655675c"/>
+    <refType typeId="2e2a8fc3-7776-4fb5-bd82-6f2479fa65a6" valueTypeId="05fb2dfa-3ad6-4d72-8c85-7d5a91e7689a"/>
+    <selectionType typeId="25c8a6dd-4217-4f63-8a90-134a7429fd6c" valueTypeId="8b0fab15-e521-4083-8d51-4c1fc8d0a9e3"/>
+    <listType typeId="7afa3e06-ecdb-45b4-b70b-983cd3b892ee" valueTypeId="8680155e-402d-40e5-80bb-0e453264fd67"/>
+    <managerType typeId="8b984e2b-11e2-4b12-bf74-8e170c6d06e1" valueTypeId="6adfc708-0ebc-40d5-b610-358e1251dbdb"/>
+  </producedTypes>
+  <name>мПричиныНормализации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины нормализации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.мПричиныНормализации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.мПричиныНормализации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Причина нормализации</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Используется в справочнике Внутренние документы для указания причины, на основании которой граница земучастка отнесена к границе, требующей нормализации</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.мПричиныНормализации.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="b32adc15-bbfd-42f0-be47-cf5892008567">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="aa424d88-b8a4-4606-9693-0cd56f481773">
+    <name>ВидГраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид границ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.мВидыГраниц</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="d9846305-9791-4dae-bb94-8091882f174e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

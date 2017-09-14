@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0638c7de-91cd-43a1-b4f8-4f0d8fb11a17">
+  <producedTypes>
+    <objectType typeId="9fa2197c-dc1e-4604-b067-5d93065a2773" valueTypeId="c8370c99-044b-4ed8-a5ed-9dadbb908e64"/>
+    <managerType typeId="7aca02fb-cc98-4b5f-8fd5-002ebcb10f25" valueTypeId="5ed1544b-46f3-4beb-8db9-8f4e151245af"/>
+  </producedTypes>
+  <name>мИзменениеПодразделенияЭтапаПоИсполнителю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение подразделения этапа по исполнителю</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мИзменениеПодразделенияЭтапаПоИсполнителю.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="b97de6a5-70c8-4833-95f4-39b014c3bdf6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e6085be-6d95-4e53-be5e-a0b9bd66647a">
+  <producedTypes>
+    <objectType typeId="bd77bcfb-eb41-41aa-a555-1793e6b780a1" valueTypeId="8ed22115-c008-4373-96be-ede63693f03a"/>
+    <managerType typeId="5c399271-88a1-4b45-9574-c34a31a2d12d" valueTypeId="4a0b6f5f-8151-47f9-b31c-162726995442"/>
+  </producedTypes>
+  <name>мПоискПроблемныхЭтаповДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск проблемных этапов договоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПоискПроблемныхЭтаповДоговоров.Form.Форма</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Ищет этапы с неправильным расчетом планового срока</value>
+  </explanation>
+  <forms uuid="bfbbe98c-5b3f-403b-a012-cec197c91651">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

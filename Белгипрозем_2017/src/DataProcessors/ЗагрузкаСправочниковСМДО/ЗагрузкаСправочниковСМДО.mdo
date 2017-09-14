@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b63f946-954d-4209-945c-8069b7d50f19">
+  <producedTypes>
+    <objectType typeId="1d420f8f-4676-46b0-b852-4717b6a50d65" valueTypeId="2691c043-908e-4336-8cd3-fd206b56b3ce"/>
+    <managerType typeId="e3e58223-e89b-4dc8-8c16-32ebd629ac3f" valueTypeId="0e3a4dcf-04d7-4ef5-b200-65da781489d3"/>
+  </producedTypes>
+  <name>ЗагрузкаСправочниковСМДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка справочников организаций в ручном режиме</value>
+  </synonym>
+  <comment>МиСофт</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаСправочниковСМДО.Form.Форма</defaultForm>
+  <attributes uuid="2610c1c8-4d7f-4ada-841a-d0e09d8bd620">
+    <name>ДанныеСправочникаТЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные справочника ТЗ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9e8b3c3c-f271-4837-b605-ebbcada7efee">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="8dd9a430-4c55-4efb-bc07-054e2fe2ffb9">
+    <name>ЗагрузкаУчастниковСВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка участников СВД (не запускать!)</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78ec565c-87c9-4728-957d-3a17107a6e7c">
+  <producedTypes>
+    <refType typeId="105566d8-7159-4c8f-a569-9bb9b016e170" valueTypeId="65cbe46d-a677-4aec-8ed7-d2668537f5f3"/>
+    <listType typeId="f5ce4c9b-92f5-407d-acae-42b087776052" valueTypeId="576f004d-2369-47fc-b34f-c7faddc2a8e1"/>
+    <managerType typeId="b8d1739d-7677-4bb3-9d65-736b1d2f9ac7" valueTypeId="2faac6a0-20bc-49ed-a7ff-950bfa5e1ca0"/>
+  </producedTypes>
+  <name>мВидыВзаимозачета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды взаимозачета</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dcdecb20-cc6b-498c-9c7e-f987ad1cfe79">
+    <name>МеждуКорреспондентами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Между корреспондентами</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="36c28132-8b1e-426f-badd-4d84cdd45af5">
+    <name>МеждуДоговорами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Между договорами</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f6ae17bb-886a-4933-b677-619d5a0281e6">
+    <name>МеждуЭтапамиДоговоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Между этапами договоров</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

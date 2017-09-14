@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d8a1b01-c25d-4ae8-bed8-cc6824b53b79">
+  <producedTypes>
+    <managerType typeId="27bd5c87-608a-4576-a01d-64d3d33a1d71" valueTypeId="825ac928-1224-4b1e-bddd-eedc677c856e"/>
+    <valueManagerType typeId="469ad7fa-67f4-4e34-abb9-4e18121574f3" valueTypeId="1bbc7d39-39fb-4343-bd51-24d8c55661ae"/>
+  </producedTypes>
+  <name>мРентабельностьПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рентабельность по умолчанию</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.мРентабельность</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

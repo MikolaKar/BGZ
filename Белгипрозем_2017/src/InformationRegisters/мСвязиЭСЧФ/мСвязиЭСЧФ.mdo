@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="879c4b7b-5cc7-409a-bbe3-4c3e2c34bc98">
+  <producedTypes>
+    <selectionType typeId="fbe3370d-3aac-4c6b-9e11-997661233d1d" valueTypeId="e1786681-3f54-470f-9e27-af0bb15565e8"/>
+    <listType typeId="398c552c-ba57-4ebe-b9da-57d3023c0930" valueTypeId="8c93ecb9-769b-48fc-baae-1468d7adafa4"/>
+    <managerType typeId="96203038-d7aa-45aa-b394-b04882180f79" valueTypeId="f934f49f-6615-4ddd-9b36-67c50e20c3f7"/>
+    <recordSetType typeId="cccef25b-2ab9-40bc-b4dc-c73aff74eb4e" valueTypeId="e214c3d6-699f-4c97-aaf5-c5f9749320a5"/>
+    <recordKeyType typeId="9fc59dbd-2891-45b3-803d-1247e17bf52c" valueTypeId="80e1a1c8-a3cd-4258-ac03-1064f4601a9a"/>
+    <recordType typeId="9209040c-b5d2-4274-84f2-e09dc8b09119" valueTypeId="a3c3443d-fcd5-43af-bc29-36030991f883"/>
+    <recordManagerType typeId="0257d27e-a9cd-4a47-8817-04215d709f72" valueTypeId="dc5e20ad-1d68-4211-9cf2-de365365a065"/>
+  </producedTypes>
+  <name>мСвязиЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связи ЭСЧФ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Связи Актов и ЭСЧФ</value>
+  </explanation>
+  <dimensions uuid="bbb53f4c-4188-424d-96f1-f8c51e0ea6da">
+    <name>ДокументРеализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ реализации</value>
+    </synonym>
+    <comment>Акт выполненных работ</comment>
+    <type>
+      <types>DocumentRef.мРеализация</types>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1ca4f67f-98cf-4385-80a4-b6a61d073259">
+    <name>ЭСЧФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЭСЧФ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.мЭСЧФ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

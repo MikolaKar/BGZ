@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce0eb707-1448-4d60-b3b9-b4400c27b80f">
+  <producedTypes>
+    <selectionType typeId="b9b3cfcf-6a78-4239-89a5-7d9db0d5e2f6" valueTypeId="c0eb0d0f-6c0c-4a10-a983-caf164bc3f60"/>
+    <listType typeId="e5551126-2a83-46e2-a0f1-919d6a391fb3" valueTypeId="c12cd481-80f0-41ca-9906-bf5d281ab8bc"/>
+    <managerType typeId="b2361351-51e2-4ffc-8795-d254d6bc2f4b" valueTypeId="dc6250a9-184d-4400-a944-3c602cd65ee9"/>
+    <recordSetType typeId="ab1ffcab-d363-4f83-a87e-8a872e9f154e" valueTypeId="fcfff72a-5b3d-42e8-a98c-c29de29e3e0f"/>
+    <recordKeyType typeId="0986605f-3078-404e-8d51-672756aecd78" valueTypeId="0d823a7a-6140-48f0-a383-cc079d3461a8"/>
+    <recordType typeId="32965cbf-f15b-48d6-b268-ab910c743898" valueTypeId="a9cde34d-57bb-416f-baba-39ea53478328"/>
+    <recordManagerType typeId="3830f5c7-5e37-4038-a46b-a4354ff37f9d" valueTypeId="9d85794b-a275-46a0-a724-a475b0407383"/>
+  </producedTypes>
+  <name>мДелоВЗИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дело в ЗИС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Информация о дате внесения дела в ЗИС</value>
+  </explanation>
+  <resources uuid="561dbb3c-9e37-4357-9170-0e1a2635c82d">
+    <name>ВнесеноЗИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внесено в ЗИС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3eabcca-7de8-4b1b-9370-009ce50eb819">
+    <name>КомментарийЗИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий ЗИС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="76300fe3-b561-4e4c-9bbd-e117e718eca9">
+    <name>Дело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дело</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

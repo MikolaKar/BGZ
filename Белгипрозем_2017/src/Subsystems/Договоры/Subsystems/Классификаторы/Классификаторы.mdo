@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="093d96be-e681-4275-a1a6-26bab37e58ac">
+  <name>Классификаторы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификаторы</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.мВидыДатДоговоров</content>
+  <content>Catalog.мОсвобождениеОтНДС</content>
+  <content>Catalog.мКлассификаторЕдиницИзмерения</content>
+  <content>Catalog.мСтавкиНДС</content>
+  <content>Catalog.мВидыРаботФизЛица</content>
+  <content>Catalog.мВидыРаботЮрЛица</content>
+  <content>Catalog.мСпособыПлатежей</content>
+  <content>Catalog.мВидыЭкономическойДеятельности</content>
+  <content>Catalog.мКлассификаторПродукции</content>
+  <content>Catalog.мВидыРаботПоДоговорам</content>
+  <content>Catalog.мГруппыЭтаповДоговоров</content>
+  <parentSubsystem>Subsystem.Договоры</parentSubsystem>
+</mdclass:Subsystem>

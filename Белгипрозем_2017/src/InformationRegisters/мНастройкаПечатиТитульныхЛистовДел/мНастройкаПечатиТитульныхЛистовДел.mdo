@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96908200-2761-41a4-9371-4b82f8d8b74e">
+  <producedTypes>
+    <selectionType typeId="34f250e4-4fd8-4616-bbef-ecfeeca4becb" valueTypeId="918b2319-b4fa-47fd-8eec-d5d9b0c6f105"/>
+    <listType typeId="4a3ed090-69ee-4901-82c9-fc766f026c97" valueTypeId="8b991209-e0c0-474b-8331-740aee2df061"/>
+    <managerType typeId="ad747c2e-d16f-49a5-8cca-b47fe663ebb6" valueTypeId="65069092-6044-4f1f-8bc2-5b46c2d33117"/>
+    <recordSetType typeId="3e2e9b33-23c0-4c27-bcc7-a67e09a8a3ba" valueTypeId="490946fb-cf0f-4ad3-a1c4-e71f7ea0cbca"/>
+    <recordKeyType typeId="7975db8d-39f9-4dff-8a06-b4ec58e6cce4" valueTypeId="3db0cae0-2e9b-4a8e-94e7-c3884c8f5cfd"/>
+    <recordType typeId="d9968e34-55cd-4379-a9ab-b22e082cdcda" valueTypeId="54ad30ab-a30a-4b5b-9a9c-83978d71894c"/>
+    <recordManagerType typeId="f85c8497-e44a-47bb-b540-26fe3f05c751" valueTypeId="44a0fa6f-b492-46c7-901d-f24557d74d16"/>
+  </producedTypes>
+  <name>мНастройкаПечатиТитульныхЛистовДел</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка печати титульных листов дел</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="798785b5-d6b2-44e7-87f6-bdb185bd9c16">
+    <name>Заголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>60</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="31075fc9-a4cb-463a-8f6b-fc2158bab8ac">
+    <name>Подзаголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подзаголовок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ff64ea30-2eed-41e7-8e5c-7b31fe023999">
+    <name>Подписал1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписал1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf87e388-830e-49b8-bc0a-0f1ca7e0967a">
+    <name>Подписал2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписал2</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9100186b-1e8e-4238-a687-93b9be3adf52">
+    <name>Подписал3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписал3</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="80383cf8-e8f9-4e4b-8a69-2dc752d0b6ae">
+    <name>ВидРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.мВидыРаботПоДоговорам</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="58a31f1c-bd0c-4ffd-a271-0cbce379fc5c">
+    <name>ВидЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид лица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ЮрФизЛицо</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74c834c6-2d24-4455-8f72-67074dbd18a2">
+  <producedTypes>
+    <objectType typeId="96617b87-a41e-4553-b517-be3e8b009a12" valueTypeId="a7e3d13d-94cd-4847-8ac7-b2c0e5a4dd87"/>
+    <managerType typeId="92827aeb-14f2-48a4-89e1-846a6206d448" valueTypeId="3372f320-28cd-4a17-a27b-baec3529c602"/>
+  </producedTypes>
+  <name>ДоговораКИсполнению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договора к исполнению</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДоговораКИсполнению.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДоговораКИсполнению.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="1723d641-1024-4482-ae5d-3ae15db1535b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a4909f57-c067-4be0-8fb3-d64a0dd323e7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

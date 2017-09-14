@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85889e4f-a896-4f2b-81ac-54154d3d915b">
+  <name>мОбменБелпочта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными с Белпочтой</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

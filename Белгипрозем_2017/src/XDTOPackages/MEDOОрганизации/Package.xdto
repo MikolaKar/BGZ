@@ -1,0 +1,82 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/medoorganizations">
+	<valueType name="nameEnum" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">unp</enumeration>
+		<enumeration xsi:type="xs:string">name</enumeration>
+		<enumeration xsi:type="xs:string">shortName</enumeration>
+		<enumeration xsi:type="xs:string">soato</enumeration>
+		<enumeration xsi:type="xs:string">street</enumeration>
+		<enumeration xsi:type="xs:string">home</enumeration>
+		<enumeration xsi:type="xs:string">corpus</enumeration>
+		<enumeration xsi:type="xs:string">postIndex</enumeration>
+		<enumeration xsi:type="xs:string">abonentBox</enumeration>
+		<enumeration xsi:type="xs:string">phone</enumeration>
+		<enumeration xsi:type="xs:string">fax</enumeration>
+		<enumeration xsi:type="xs:string">email</enumeration>
+		<enumeration xsi:type="xs:string">smdocode</enumeration>
+		<enumeration xsi:type="xs:string">okpfRowId</enumeration>
+		<enumeration xsi:type="xs:string">okpfValue</enumeration>
+		<enumeration xsi:type="xs:string">typesedRowId</enumeration>
+		<enumeration xsi:type="xs:string">typesedValue</enumeration>
+	</valueType>
+	<valueType name="typeEnum" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">STRING</enumeration>
+		<enumeration xsi:type="xs:string">NUMBER</enumeration>
+		<enumeration xsi:type="xs:string">REFERENCE</enumeration>
+	</valueType>
+	<objectType name="columns">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="column" type="d3p1:columnStr" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="data">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="rows" type="d3p1:rows"/>
+	</objectType>
+	<objectType name="dictionaryData">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="model" type="d3p1:model"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="data" type="d3p1:data"/>
+	</objectType>
+	<objectType name="field">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="name" type="d3p1:nameE"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="type" type="d3p1:typeE"/>
+	</objectType>
+	<objectType name="header">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="field" type="d3p1:field" lowerBound="17" upperBound="17"/>
+	</objectType>
+	<objectType name="model">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="name" type="d3p1:nameS"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="dictionaryId" type="d3p1:dictionaryIdS"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="createDate" type="d3p1:createDateS"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="actualDate" type="d3p1:actualDateS"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="header" type="d3p1:header"/>
+	</objectType>
+	<objectType name="nameE">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="__content" type="d3p1:nameEnum" form="Text"/>
+	</objectType>
+	<objectType name="row">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="rowId" type="d3p1:rowIdS" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="createDate" type="d3p1:createDateS" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="columns" type="d3p1:columns" upperBound="-1"/>
+	</objectType>
+	<objectType name="rows">
+		<property xmlns:d3p1="http://www.1c.ru/medoorganizations" name="row" type="d3p1:row" upperBound="-1"/>
+	</objectType>
+	<objectType name="typeE">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+	<objectType name="nameS">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+	<objectType name="dictionaryIdS">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+	<objectType name="createDateS">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+	<objectType name="actualDateS">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+	<objectType name="columnStr">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+	<objectType name="rowIdS">
+		<property name="__content" type="xs:string" form="Text"/>
+	</objectType>
+</package>

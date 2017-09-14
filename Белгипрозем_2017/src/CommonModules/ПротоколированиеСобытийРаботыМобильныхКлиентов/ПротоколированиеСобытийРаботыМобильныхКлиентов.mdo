@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fe4e2df-b50f-4f19-a51b-98b7426e53d5">
+  <name>ПротоколированиеСобытийРаботыМобильныхКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протоколирование событий работы мобильных клиентов</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

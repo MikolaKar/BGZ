@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eaf1c301-714f-4283-a15b-e086e2622e61">
+  <producedTypes>
+    <refType typeId="b88b8f6e-6cff-4060-bd65-f2a592d4855e" valueTypeId="b79e41a2-5ef3-40d3-af31-e5586bd91851"/>
+    <listType typeId="c4bda41d-c2ce-4dbf-af48-86f561ddc335" valueTypeId="98433af9-4600-4b8c-9bb9-eb8434005ea6"/>
+    <managerType typeId="a5415cd0-d763-4a09-996d-d1259107ff16" valueTypeId="e490ed7c-087a-4517-b7bd-08b980c3f9cd"/>
+  </producedTypes>
+  <name>мВидыДокументовЭСЧФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>М виды документов ЭСЧФ</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="17d49d09-6a9d-4b41-a185-9feeea29ef64">
+    <name>Другое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Другое</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="34fa3c73-dfa6-4923-9e5d-d3ad67e042fd">
+    <name>ТН2</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТН-2</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6581778b-2103-4ea8-845d-f9bbb3cffeea">
+    <name>ТТН1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТТН-1</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fbfc00b1-f238-493b-af92-7acc3b68a0a8">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="aacb0385-8b91-471a-a0ac-ee7a020dbcd5">
+    <name>Акт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a030fb77-3171-4ddc-a606-9fb8ee73157f">
+    <name>CMRНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>CMR-накладная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e091ccf5-feca-45e6-9a4b-4a7b5707f823">
+    <name>СчетФактура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет-фактура</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="34577b8a-48cb-40b7-97c6-aae37d47099c">
+    <name>InvoiceСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Invoice (счет)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6d82e2ed-dba3-4d8b-82e8-7feac9129760">
+    <name>Авизо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авизо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5de30971-c19e-44d0-9646-2139d850c9d0">
+    <name>БухгалтерскаяСправка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерская справка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c9b4a043-e026-47b7-b75d-20ab9b4c42de">
+    <name>АктВыполненныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт выполненных работ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="85a663e2-4b73-456c-8884-f6fac883dd74">
+    <name>Коносамент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коносамент</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2aa4af88-8409-4b3d-8915-dd86334b87ed">
+    <name>Контракт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

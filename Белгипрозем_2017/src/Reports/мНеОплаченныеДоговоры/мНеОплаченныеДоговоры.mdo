@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="670be475-4f9b-493a-b074-3d09a5f8a520">
+  <producedTypes>
+    <objectType typeId="d7f31890-db53-443b-9641-ce4bf8acc05d" valueTypeId="da7ebf3b-8302-49f0-854b-d3a59d192547"/>
+    <managerType typeId="154839c1-4337-400b-a3f7-718ab6d97fc3" valueTypeId="ce3dae6c-6c96-4203-9d7f-4498ea9880a0"/>
+  </producedTypes>
+  <name>мНеОплаченныеДоговоры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Неоплаченные договоры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мНеОплаченныеДоговоры.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="51052b86-ad11-45f3-8a58-1d1ca640ac1b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

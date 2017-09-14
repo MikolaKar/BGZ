@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7361ccd5-e7c8-4c4e-b34e-0d256c7ca9f4">
+  <producedTypes>
+    <objectType typeId="ff4578a2-79fa-4995-afd6-f7191aefabec" valueTypeId="45dfd58e-a330-4e62-8632-fe5b9516bf89"/>
+    <managerType typeId="3ea4c67c-e499-467a-b09f-1957225de1cd" valueTypeId="3ee7bad1-8a79-48ce-8b64-d12b3d9a24c4"/>
+  </producedTypes>
+  <name>мПоискОбъектаВДоговорах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск объекта в договорах</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПоискОбъектаВДоговорах.Form.Форма</defaultForm>
+  <forms uuid="3ec9bf89-c983-4319-abc2-3bd41baef47c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="da2c35b7-9903-4c4c-afee-a301e0cf55a8">
+    <name>ПоискОбъектаВДоговорах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск объекта в договорах</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

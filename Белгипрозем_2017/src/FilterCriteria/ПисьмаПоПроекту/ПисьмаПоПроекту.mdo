@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6073eadf-ada6-476e-a14e-3f850bfbb29a">
+  <producedTypes>
+    <listType typeId="80d1099b-c09c-486a-8996-3afcb339e720" valueTypeId="a216147d-6e6c-4a2b-b6f8-6f6d15519951"/>
+    <managerType typeId="c87a9cd2-a9ec-40ff-abed-a5ea4bc731bb" valueTypeId="994437ed-280a-4155-a429-e18b8b907cc3"/>
+  </producedTypes>
+  <name>ПисьмаПоПроекту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Письма по проекту</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.Проекты</types>
+  </type>
+  <content>Document.ВходящееПисьмо.Attribute.Проект</content>
+  <content>Document.ИсходящееПисьмо.Attribute.Проект</content>
+  <defaultForm>FilterCriterion.ПисьмаПоПроекту.Form.ФормаСписка</defaultForm>
+  <forms uuid="89aa3359-5897-4a71-bb7c-36a3271c60a8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письма по проекту</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="02c9a6b7-03e2-4a62-8c10-a75c51d7ca13">
+    <name>ПисьмаПоПроекту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письма</value>
+    </synonym>
+    <comment></comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Проекты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:FilterCriterion>

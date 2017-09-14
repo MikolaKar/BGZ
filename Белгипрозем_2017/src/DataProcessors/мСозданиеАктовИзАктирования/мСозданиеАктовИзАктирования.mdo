@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8d03417-0845-41e3-b841-ef3ed610a7ae">
+  <producedTypes>
+    <objectType typeId="fd4f8e7b-8a5e-478f-95f9-f1c1ee192ff1" valueTypeId="69637d60-1e0e-4c04-b865-3b8b737dfc83"/>
+    <managerType typeId="eaf0a173-9378-4979-aa06-6730545bd515" valueTypeId="0292bd40-1024-4832-91ab-f48dcaaac888"/>
+  </producedTypes>
+  <name>мСозданиеАктовИзАктирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание актов выполненных работ из актирования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мСозданиеАктовИзАктирования.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="cc3a7461-9141-43e5-9027-407215fa9076">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

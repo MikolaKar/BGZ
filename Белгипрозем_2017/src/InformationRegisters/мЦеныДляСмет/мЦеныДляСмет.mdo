@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3cdd93eb-8317-4b29-b71a-90abb9bebc9f">
+  <producedTypes>
+    <selectionType typeId="5f5c0a06-9a95-4196-ba64-b66936d93e74" valueTypeId="56b6b698-1fbe-4b9a-b3e4-aea877c9b053"/>
+    <listType typeId="e91563ca-ae5d-470a-a447-b36d9832e4a1" valueTypeId="f9fab941-b28d-4240-991c-45d610879032"/>
+    <managerType typeId="9a7bd507-6854-43a1-a3fd-ced3e00d72b8" valueTypeId="990a56f5-5425-41d2-9cc9-4d96877d5df7"/>
+    <recordSetType typeId="874e6cc5-65fc-4658-aabb-af7b8e02352b" valueTypeId="057b964f-8a44-4216-8a05-67f981d5d570"/>
+    <recordKeyType typeId="8501ccc5-4196-4475-9891-68667745aa72" valueTypeId="f37a25d0-7137-4241-980f-6e264fff54c4"/>
+    <recordType typeId="efbd16f5-efb3-4910-90db-b8181d22e4f8" valueTypeId="759e1d01-36d2-404b-87cf-405960dd4162"/>
+    <recordManagerType typeId="f695aaea-c1bb-4d4a-8496-2481a38892a6" valueTypeId="16dd0c29-2d28-4815-95d4-34829983c6e5"/>
+  </producedTypes>
+  <name>мЦеныДляСмет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены для Смет</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Хранит на определенные даты цены, которые могут использоваться при составлении смет</value>
+  </explanation>
+  <resources uuid="02169b34-1cf4-4793-ab29-8cadf9b8ee48">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4dc84059-10fc-4b6a-8498-c4748db63fd0">
+    <name>ПараметрОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр объекта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ПараметрыОбъектов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45d26cc2-653b-48eb-b242-541315c81535">
+  <producedTypes>
+    <refType typeId="df04dfc9-7214-4ed2-88b2-f9bf3ad3264e" valueTypeId="4b975fa6-4432-4292-b500-a7a1a69ff471"/>
+    <listType typeId="78ff72fc-967f-4fef-a4ae-0c4f50f628dd" valueTypeId="fcc1ba2c-4adb-40c6-aed4-a151e887dca5"/>
+    <managerType typeId="365b9090-df66-45e4-a891-ea26e323f397" valueTypeId="bf45f6cb-16b5-4bdc-a1f0-7e70bc141146"/>
+  </producedTypes>
+  <name>ВидПечатногоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид печатного документа</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3e2492f1-6b22-4263-9dc2-3e4028e4c9ba">
+    <name>АктВыпРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт выполненных работ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="4d7e5572-67c0-4860-9461-cd11bc9c171c">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e6a1fc57-ff04-427e-a4bc-728b2f59cfb1">
+    <name>ДопСоглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительное соглашение</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

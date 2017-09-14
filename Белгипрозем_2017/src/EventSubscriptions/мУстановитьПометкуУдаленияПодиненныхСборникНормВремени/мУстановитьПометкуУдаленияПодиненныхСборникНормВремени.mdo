@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d20509b2-bbb7-4f12-a646-cc431a49f0bc">
+  <name>мУстановитьПометкуУдаленияПодиненныхСборникНормВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>М установить пометку удаления подиненных сборник норм времени</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.мСборникиНормВремени</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.М_ОбработчикиПодпискиНаСобытия.мУстановитьПометкуУдаленияПодиненныхСборникНормВремениПередЗаписью</handler>
+</mdclass:EventSubscription>

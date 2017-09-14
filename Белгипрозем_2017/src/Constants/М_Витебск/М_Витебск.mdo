@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa9d32f3-4b94-4965-9d42-da4c4c377ad2">
+  <producedTypes>
+    <managerType typeId="054e7080-c353-433e-95fc-ad9f20593656" valueTypeId="55385e3c-8893-4c2c-a0f5-7a57ba1eb6b6"/>
+    <valueManagerType typeId="84441530-12cf-49fe-8c43-ea1cff6092de" valueTypeId="1273e565-3c4b-4717-802c-4bd4945cd698"/>
+  </producedTypes>
+  <name>М_Витебск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Витебск</value>
+  </synonym>
+  <comment>Это база Витебск</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

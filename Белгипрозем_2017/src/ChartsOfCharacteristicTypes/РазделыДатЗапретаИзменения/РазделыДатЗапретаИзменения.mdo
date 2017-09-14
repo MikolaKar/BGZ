@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75e1abef-4907-4bce-a798-705eea0cc331">
+  <producedTypes>
+    <objectType typeId="cad360f8-f3b3-428d-b431-482fe3264345" valueTypeId="0fbc9130-b3f8-4105-a81c-711c44d431bd"/>
+    <refType typeId="5f5940a0-a4dd-4d9d-8e9d-cdc08ce27796" valueTypeId="36b8c7c7-0257-46f7-ae87-74c198d49821"/>
+    <selectionType typeId="d5619727-ed9c-4f25-a22c-c5ab47a6b189" valueTypeId="c046496a-466e-49f6-a13c-ed6da3f7c6a1"/>
+    <listType typeId="f4ef859b-f1f9-4652-9f66-9ae302aa6c81" valueTypeId="0585d701-7832-4feb-89ff-cec0419d75ef"/>
+    <managerType typeId="f42dac03-57c1-4eb8-aebd-7d088c875d9f" valueTypeId="c8c006db-8dac-4849-b0b4-1923a1d62253"/>
+    <containerType typeId="9f1031f9-3d87-4c87-a32e-1722abd61228" valueTypeId="36aecbc7-9491-4286-919f-80da884e8df7"/>
+  </producedTypes>
+  <name>РазделыДатЗапретаИзменения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разделы дат запрета изменения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.РазделыДатЗапретаИзменения.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>ValueType</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование раздела дат запрета изменения</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Раздел дат запрета изменения</value>
+  </objectPresentation>
+  <type>
+    <types>ChartOfCharacteristicTypesRef.РазделыДатЗапретаИзменения</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="dc05fcce-97da-4f78-8317-d9b2b7f1388d">
+      <name>Актирование</name>
+      <description>Актирование</description>
+      <code></code>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.РазделыДатЗапретаИзменения</types>
+      </type>
+    </items>
+    <items id="100aba96-ea50-4f82-a06c-2e3fdc39a9f1">
+      <name>Оплата</name>
+      <description>Оплата</description>
+      <code></code>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.РазделыДатЗапретаИзменения</types>
+      </type>
+    </items>
+    <items id="7d63fbe5-db98-407e-89f5-c770e6a90cb2">
+      <name>РасчетЗарплаты</name>
+      <description>Расчет зарплаты</description>
+      <code></code>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.РазделыДатЗапретаИзменения</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

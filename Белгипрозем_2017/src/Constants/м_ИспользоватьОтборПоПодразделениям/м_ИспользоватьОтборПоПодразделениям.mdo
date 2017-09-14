@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe8ca6f4-3eb4-4073-9425-0cdb8f0c82a1">
+  <producedTypes>
+    <managerType typeId="2057307d-af67-4c5d-8e57-1c2a05e22dc3" valueTypeId="7528aa36-2260-45a2-8b22-67f4a2cb3c28"/>
+    <valueManagerType typeId="bd70cf40-8138-480b-99cb-ca1f9fcdc93d" valueTypeId="9c5f9a4b-f48f-4bde-8890-55c832e0f654"/>
+  </producedTypes>
+  <name>м_ИспользоватьОтборПоПодразделениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать отбор по подразделениям</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

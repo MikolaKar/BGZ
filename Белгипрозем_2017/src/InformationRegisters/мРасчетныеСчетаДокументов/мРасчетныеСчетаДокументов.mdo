@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b837388b-3174-4a22-a7a8-d7c3951435e5">
+  <producedTypes>
+    <selectionType typeId="b2917777-eddf-41a0-89d1-b1bf1d3e1655" valueTypeId="135c1677-0081-40e7-a9e4-d1709193717b"/>
+    <listType typeId="ad9fbcba-ac46-4365-9f2d-23dd343df6b5" valueTypeId="5ffc9a55-29bf-40b9-af17-cec233e78036"/>
+    <managerType typeId="43b1d396-3c4a-441a-99c3-e451f4a44fa2" valueTypeId="91b557cf-ca2b-441e-90ec-ceade8a0759b"/>
+    <recordSetType typeId="499e2ee5-762e-4690-b901-6de5635016af" valueTypeId="68616bcf-1f3f-41ee-9439-3014633d5577"/>
+    <recordKeyType typeId="a251a42c-5518-4066-8337-eaf5bbf53d8a" valueTypeId="5c0ba854-57f9-41c1-8ace-459564f24f0f"/>
+    <recordType typeId="bf2827ea-3b4c-4b57-a4e5-a0d50688cb5c" valueTypeId="11850014-7786-47fb-8d45-d81229eeb698"/>
+    <recordManagerType typeId="66c9bb69-9972-43e4-9947-00ee8336b77c" valueTypeId="2e0fea56-03a4-4798-a9d1-161d217b4b35"/>
+  </producedTypes>
+  <name>мРасчетныеСчетаДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчетные счета документов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Расчетный счет в документе</value>
+  </recordPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для печати в документах</value>
+  </explanation>
+  <resources uuid="85f52496-dfb8-436e-a318-bb1ba5f7a658">
+    <name>РасчетныйСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетный счет</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.БанковскиеСчета</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bd35f8dd-e948-48e9-8000-3a769474662e">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

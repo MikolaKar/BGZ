@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2aa5af8-5399-4cf5-b40b-26404a365dad">
+  <name>СборникЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сборник цен</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаНастройка</picture>
+  </picture>
+  <content>Catalog.мКлассификаторЕдиницИзмерения</content>
+  <content>f9dd6284-a931-4a34-9e7f-bea9b50e5792</content>
+  <content>632d0c4f-0cb1-43de-879a-75264e233964</content>
+  <content>19668090-96db-4680-9868-349e0cfe1b3f</content>
+  <content>InformationRegister.ДействиеПримечаний</content>
+  <content>Catalog.мВидыСтоимостиНормоЧаса</content>
+  <content>InformationRegister.ПолевыеРаботы</content>
+  <parentSubsystem>Subsystem.Смета</parentSubsystem>
+</mdclass:Subsystem>

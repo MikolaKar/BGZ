@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a11c3215-c8b3-45a8-8adc-8d47d220b6ca">
+  <producedTypes>
+    <objectType typeId="6f589de8-0061-4310-a3ba-4d6cc4e8d245" valueTypeId="59f2ce4a-6c0e-4fef-b996-667a4aa4fc56"/>
+    <managerType typeId="200720cd-e1d3-49bd-af11-091a087be09a" valueTypeId="6ed615b8-7fc9-4d7e-85bc-dfaf8051a9f5"/>
+  </producedTypes>
+  <name>мПисьмаДляОтправкиАктовВыполненныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Письма для отправки актов выполненных работ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.мПисьмаДляОтправкиАктовВыполненныхРабот.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="ebb56e77-b559-4a87-9c59-9f679b60c9e7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="542a935a-db9e-4ba3-aebe-33a24b97ac9a">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

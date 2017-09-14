@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1f4e2ca-10a6-4578-8bff-2d65bf90d73b">
+  <producedTypes>
+    <managerType typeId="b37c34d5-f34a-4013-919c-cd35b49d756a" valueTypeId="53ed1dda-a5ed-415a-919a-2514d1117a02"/>
+    <valueManagerType typeId="2b9fea48-0427-407a-b55f-f7e87cf34df1" valueTypeId="531d4f8e-d7ef-42e7-978a-680c906c3d4b"/>
+  </producedTypes>
+  <name>м_РайонПоУмолчаниюДляСкановДел</name>
+  <synonym>
+    <key>ru</key>
+    <value>Район по умолчанию для сканов дел</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

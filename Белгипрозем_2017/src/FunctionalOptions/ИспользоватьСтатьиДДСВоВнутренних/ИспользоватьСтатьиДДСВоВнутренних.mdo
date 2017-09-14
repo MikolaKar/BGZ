@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0558431-f1b5-442e-bede-8966d51c52c9">
+  <name>ИспользоватьСтатьиДДСВоВнутренних</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать статьи ДДС во внутренних документах</value>
+  </synonym>
+  <comment></comment>
+  <location>Catalog.ВидыВнутреннихДокументов.Attribute.ВестиУчетПоСтатьямДДС</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ШаблоныВнутреннихДокументов.Attribute.СтатьяДвиженияДенежныхСредств</content>
+</mdclass:FunctionalOption>

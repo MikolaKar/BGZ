@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e4eb3a3-9373-4c09-807a-755c7f1a1901">
+  <producedTypes>
+    <objectType typeId="2e45c7d7-7a49-48e7-aeb6-c2ff96313bc7" valueTypeId="8187d1ac-68a9-4534-b0e9-84cc1fb9aeb6"/>
+    <managerType typeId="7f16b608-173b-4060-bdc6-9bd7cbce2f66" valueTypeId="2e3cae7d-4968-4414-aabd-9cb5719823cc"/>
+  </producedTypes>
+  <name>Гр_ПечатьЗаявленияНаВозврат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать заявления на возврат</value>
+  </synonym>
+  <comment>Печать заявления на возврат</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Гр_ПечатьЗаявленияНаВозврат.Form.Форма</defaultForm>
+  <forms uuid="2e1a7bd4-69a9-4e29-a2a3-cfa3c27f609c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f2e64a52-4717-4aae-ae40-0f2bffb65338">
+    <name>С5</name>
+    <synonym>
+      <key>ru</key>
+      <value>С5</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="a0354afc-9576-4754-8c87-aa936afe73a5">
+    <name>С6</name>
+    <synonym>
+      <key>ru</key>
+      <value>С6</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="add3ae21-54ed-409c-b43c-e0ca372731d4">
+    <name>ПечатьЗаявленияНаВозврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать заявления на возврат</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнутренниеДокументы</types>
+      <types>CatalogRef.ИсходящиеДокументы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.НепрочтенноеПисьмо</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

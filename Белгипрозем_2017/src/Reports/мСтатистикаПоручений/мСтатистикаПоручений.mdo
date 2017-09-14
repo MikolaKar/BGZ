@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="815f7d4c-353b-4fb8-b651-fbe47330c78c">
+  <producedTypes>
+    <objectType typeId="1ce7af73-59ab-40f0-a934-ebb1f6b37af3" valueTypeId="910d149b-a604-4d99-9572-be90b4b8e0d4"/>
+    <managerType typeId="a48b7ffb-830b-49b6-b73c-aef41e317bcf" valueTypeId="a6776b31-e213-4c16-98af-1772365eb617"/>
+  </producedTypes>
+  <name>мСтатистикаПоручений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика поручений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.мСтатистикаПоручений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Заявки исполкомов</value>
+  </explanation>
+  <templates uuid="ed576a45-c0ea-487f-b543-09315dbb1055">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

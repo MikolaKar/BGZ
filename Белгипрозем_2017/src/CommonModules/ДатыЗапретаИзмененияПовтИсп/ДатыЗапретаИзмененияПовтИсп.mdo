@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f51c0dc0-c7af-4de6-b9a2-eed5be306660">
+  <name>ДатыЗапретаИзмененияПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты запрета изменения повт исп</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

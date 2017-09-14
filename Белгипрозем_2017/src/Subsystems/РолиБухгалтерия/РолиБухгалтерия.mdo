@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9165f445-1f02-490d-8122-44571c6d9bcb">
+  <name>РолиБухгалтерия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли бухгалтерия</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Для группировки объектов, относящихся к бухгалтерии</value>
+  </explanation>
+  <content>Role.мБухгалтер</content>
+  <content>Role.мОтчетыДляСтатистики</content>
+  <content>Role.ЧтениеВходящихДокументов</content>
+  <content>Role.ЧтениеИсходящихДокументов</content>
+  <content>Role.ЧтениеОрганизаций</content>
+  <content>Role.мТолькоРаботаСВнутреннимиДокументами</content>
+  <content>Role.мРаботаЕРИП</content>
+  <content>Role.мОтчетАктСверки</content>
+  <content>Role.мПерепискаСДолжниками</content>
+  <content>Role.мПроведениеРасчетовСПокупателями</content>
+  <content>Role.мОтчетЗаактировано</content>
+  <content>Role.мОтчетВедомостьРезервыНоменклатуры</content>
+  <content>Role.мОтчетКоличествоДел</content>
+  <content>Role.мОтчетПоПлатежам</content>
+  <content>Role.мОтчетПросроченнаяКредиторскаяЗадолженность</content>
+  <content>Role.мОтчетРасходМатериалов</content>
+  <content>Role.мОтчетРеестрЛьготируемыхРабот</content>
+  <content>Role.РаботаСОплатами</content>
+  <content>Role.мОтчетВедомость6</content>
+  <content>Role.мОтчетДолжники</content>
+  <content>Role.мОтчетПоказателиВыполненияРабот</content>
+  <content>Role.мОтчетОплаченныеНоНеВыполненныеРаботы</content>
+  <content>Role.мОтчетСправкаПоВидамЗаактированныхРабот</content>
+  <content>Role.мРаботаСПретензиями</content>
+  <content>Role.мРаботаСЭСЧФ</content>
+</mdclass:Subsystem>

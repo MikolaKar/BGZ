@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="417807d3-fdb9-48b5-a86e-7fa0bd4fe4e6">
+  <producedTypes>
+    <managerType typeId="d004ebb0-987f-4ba5-8a5e-9f0b01a8e915" valueTypeId="75b47663-611d-4c09-89c1-fb63ccd2b725"/>
+    <valueManagerType typeId="d7f6a0dc-6b9d-4f48-bee4-c3ead1363472" valueTypeId="5a07993d-f87e-4fa2-a2ac-138bff64782f"/>
+  </producedTypes>
+  <name>ИдентификационныйНомерСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уникальный служебный идентификационный номер системы</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>36</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
